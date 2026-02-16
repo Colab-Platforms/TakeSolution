@@ -8,9 +8,9 @@ const Disclosure = () => {
   // Disclosure data for each year
   const disclosureData = {
     FY26: [
-      { type: 'Other Disclosures', date: '23-Dec-25', description: 'Press Release - TAKE Solutions Outlines a Strategic Plan to Build an Advanced AI-Driven Diagnostic & Preventive Care Platform as Part of Its Long-Term Value Creation Roadmap.', link: '#' },
-      { type: 'Other Disclosures', date: '30-Oct-25', description: 'Reconciliation of Share Capital Audit Report – Quarter ended September 30, 2025', link: '#' },
-      { type: 'Other Disclosures', date: '28-Oct-25', description: 'Newspaper Publication', link: '#' },
+      { type: 'Other Disclosures', date: '23-Feb-26', description: 'Outcome ofthe Board Meetine held on Saturday. February 14, 2026.', link: '/public/assets/investordata/disclosure/disclosure-data/Reg33_Outcome_BM_14022026_TSL.pdf' },
+      { type: 'Other Disclosures', date: '23-Dec-25', description: 'Press Release - TAKE Solutions Outlines a Strategic Plan to Build an Advanced AI-Driven Diagnostic & Preventive Care Platform as Part of Its Long-Term Value Creation Roadmap.', link: '/public/assets/investordata/disclosure/disclosure-data/PRTAKESolutions-23-dec-25.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-25', description: 'Reconciliation of Share Capital Audit Report — Quarter ended September 30, 2025', link: '/public/assets/investordata/disclosure/disclosure-data/Reg76_30092025_TSL.pdf' },
       { type: 'Other Disclosures', date: '27-Oct-25', description: 'Outcome of the Board Meeting held on Monday, October 27, 2025', link: '#' },
       { type: 'Other Disclosures', date: '22-Oct-25', description: 'Notice of Board Meeting', link: '#' },
       { type: 'Other Disclosures', date: '10-Oct-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018', link: '#' },
