@@ -43,12 +43,12 @@ const Disclosure = () => {
 
   // Annual Return data
   const annualReturnYears = [
-    { year: '2023-2024', link: '#' },
-    { year: '2022-2023', link: '#' },
-    { year: '2021-2022', link: '#' },
-    { year: '2020-2021', link: '#' },
-    { year: '2019-2020', link: '#' },
-    { year: '2018-2019', link: '#' }
+    { year: '2023-2024', link: '' },
+    { year: '2022-2023', link: '' },
+    { year: '2021-2022', link: '' },
+    { year: '2020-2021', link: '' },
+    { year: '2019-2020', link: '' },
+    { year: '2018-2019', link: '/public/assets/investordata/disclosure/annual_return-2018-19.pdf' }
   ];
 
   const currentDisclosures = disclosureData[selectedYear] || [];
