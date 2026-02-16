@@ -43,11 +43,11 @@ const Disclosure = () => {
 
   // Annual Return data
   const annualReturnYears = [
-    { year: '2023-2024', link: '' },
-    { year: '2022-2023', link: '' },
-    { year: '2021-2022', link: '' },
-    { year: '2020-2021', link: '' },
-    { year: '2019-2020', link: '' },
+    // { year: '2023-2024', link: '' },
+    { year: '2022-2023', link: '/public/assets/investordata/disclosure/2022-23/MGT_7_22-23_TSL.pdf' },
+    { year: '2021-2022', link: '/public/assets/investordata/disclosure/2021-22/Form_MGT_7.pdf' },
+    { year: '2020-2021', link: '/public/assets/investordata/disclosure/2020-21/MGT_7_2020-21_TSL_Signed.pdf' },
+    { year: '2019-2020', link: '/public/assets/investordata/disclosure/2019-20/Form_MGT-7_2019-20_TSL_Signed.pdf' },
     { year: '2018-2019', link: '/public/assets/investordata/disclosure/annual_return-2018-19.pdf' }
   ];
 
