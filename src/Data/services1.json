@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "/assets/images/service1.png",
+    "title": "Life Sciences Domain Expertise",
+    "desc": "Deep scientific and clinical research capabilities enabling specialized, high-impact healthcare solutions."  
+  },
+  {
+    "icon": "/assets/images/service2.png",
+    "title": "Advanced Data Science Platforms",
+    "desc": "Robust digital and AI-driven platforms transforming complex healthcare data into actionable intelligence." 
+  },
+  {
+    "icon": "/assets/images/service3.png",
+    "title": "Focus on High-Growth Healthcare Segments",
+    "desc": "Strategic alignment with rapidly expanding sectors including biotechnology, clinical research, and preventive healthcare."   
+  },
+  {
+    "icon": "/assets/images/service4.png",
+    "title": "Scalable AI-Driven Business Model",
+    "desc": "Flexible, technology-led architecture designed to scale efficiently across global healthcare ecosystems."  
+  } 
+]

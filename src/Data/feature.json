@@ -1,0 +1,27 @@
+[
+  {
+    "img": "/assets/images/feature1.png",   
+    "title": "Clinical Research",
+    "desc": "Accelerating Intelligent Clinical Development"
+  },
+  {
+    "img": "/assets/images/feature2.png",   
+    "title": "Biotechnology",
+    "desc": "Advancing Next-Generation Biologics"
+  },
+  {
+    "img": "/assets/images/feature3.png",   
+    "title": "Life Science",
+    "desc": "AI-Powered Scientific Innovation"
+  },
+  {
+    "img": "/assets/images/feature4.png",   
+    "title": "One Minute Clinic",
+    "desc": "Instant AI Health Assessment"
+  },  
+  {
+    "img": "/assets/images/feature5.png",   
+    "title": "Proactive Health",
+    "desc": "Predictive Personalized Health Platform"
+  }   
+]
