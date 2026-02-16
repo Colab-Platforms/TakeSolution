@@ -8,13 +8,14 @@ const Disclosure = () => {
   // Disclosure data for each year
   const disclosureData = {
     FY26: [
-      { type: 'Other Disclosures', date: '23-Feb-26', description: 'Outcome ofthe Board Meetine held on Saturday. February 14, 2026.', link: '/public/assets/investordata/disclosure/disclosure-data/Reg33_Outcome_BM_14022026_TSL.pdf' },
+      { type: 'Other Disclosures', date: '14-Feb-26', description: 'Outcome of the Board Meetine held on Saturday. February 14, 2026.', link: '/public/assets/investordata/disclosure/disclosure-data/Reg33_Outcome_BM_14022026_TSL.pdf' },
       { type: 'Other Disclosures', date: '23-Dec-25', description: 'Press Release - TAKE Solutions Outlines a Strategic Plan to Build an Advanced AI-Driven Diagnostic & Preventive Care Platform as Part of Its Long-Term Value Creation Roadmap.', link: '/public/assets/investordata/disclosure/disclosure-data/PRTAKESolutions-23-dec-25.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-25', description: 'Reconciliation of Share Capital Audit Report — Quarter ended September 30, 2025', link: '/public/assets/investordata/disclosure/disclosure-data/Reg76_30092025_TSL.pdf' },
-      { type: 'Other Disclosures', date: '27-Oct-25', description: 'Outcome of the Board Meeting held on Monday, October 27, 2025', link: '#' },
-      { type: 'Other Disclosures', date: '22-Oct-25', description: 'Notice of Board Meeting', link: '#' },
-      { type: 'Other Disclosures', date: '10-Oct-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018', link: '#' },
-      { type: 'Other Disclosures', date: '09-Oct-25', description: 'Intimation regarding resignation of Statutory Auditor of the Company', link: '#' },
+      { type: 'Other Disclosures', date: '28-Oct-25', description: 'Newspaper Publication', link: '/public/assets/investordata/disclosure/disclosure-data/NewspaperIntimation_28102025.pdf' },
+      { type: 'Other Disclosures', date: '27-Oct-25', description: 'Outcome of the Board Meeting held on Monday, October 27, 2025', link: '/public/assets/investordata/disclosure/disclosure-data/Reg30_Outcome_BM_27102025_TSL.pdf' },
+      { type: 'Other Disclosures', date: '22-Oct-25', description: 'Notice of Board Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/Reg29_Intimation_BM_22102025_TSL.pdf' },
+      { type: 'Other Disclosures', date: '10-Oct-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018', link: '/public/assets/investordata/disclosure/disclosure-data/Reg74(5)_10102025_TSL.pdf' },
+
       { type: 'Other Disclosures', date: '03-Oct-25', description: 'Scrutinizer\'s Report and Voting Results of the Twenty Fourth Annual General Meeting', link: '#' },
       { type: 'Other Disclosures', date: '30-Sep-25', description: 'Summary of proceedings of the Twenty Fourth Annual General Meeting', link: '#' },
       { type: 'Other Disclosures', date: '30-Sep-25', description: 'Closure of Trading Window', link: '#' },
