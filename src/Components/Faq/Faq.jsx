@@ -24,7 +24,7 @@ const Faq = () => {
     }, [firstItemOpen]);
 
     const FaqContent = {
-        img1:'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Feedbacks_jpg.jpg?v=1771236024',
+        img1:'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/FFFF_jpg.jpg?v=1771237512',
         Title:'A Comprehensive <span>Guide.</span>',
         Content:'Through AI-driven platforms and scientific intelligence, the Company aims to enable early risk detection, deliver real-time data-driven health insights, and empower healthcare providers and individuals to make proactive health decisions'
       }
