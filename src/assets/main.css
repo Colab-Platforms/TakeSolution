@@ -6,6 +6,8 @@
 
 html, body {
 	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -1088,8 +1090,11 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 .cs_site_header.header_style_2.cs_style_1.cs-gescout_sticky .container::before {
   opacity: 1;
 }
-.main-page-area{
+/* .main-page-area{
   padding: 30px 0 0;
+} */
+.main-page-area{
+  padding: 0px 0 0;
 }
 @media (max-width: 767px) {
   .cs_site_header.cs_style_1 .cs_top_header {
@@ -1132,14 +1137,48 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 =======================================*/
 
 .hero-area {
-  height: 900px;
+  height: 100vh;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
-  margin: -30px 40px 0;
+  background-attachment: fixed;
+  margin: 0;
   overflow: hidden;
   position: relative;
   z-index: 1;
+  transition: background-image 0.8s ease-in-out;
+}
+
+.hero-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 60, 0, 0.8);
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hero-carousel-btn:hover {
+  background-color: #ff3c00;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.hero-prev {
+  left: 30px;
+}
+
+.hero-next {
+  right: 30px;
 }
 
 .hero-contant h5 {
@@ -5098,7 +5137,8 @@ ul.list-style-one li a:hover {
 =========================================================---*/
 .top-header-area {
   background-color: #050a1e;
-  padding: 12px 0;
+  padding: 0;
+  display: none;
 }
 
 .header-info ul li {
@@ -8855,7 +8895,8 @@ p.blog-details-desc.three {
 }
 @media screen and (max-width: 1200px) {
   .hero-area {
-      height: inherit;
+      height: 100vh;
+      background-attachment: scroll;
   }
   .hero-contant{
     padding-top: 200px;

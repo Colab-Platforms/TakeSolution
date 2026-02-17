@@ -129,7 +129,7 @@
 
 .hero-area {
     height: 800px;
-    margin: 0px 30px 0;
+    margin: 0;
 }
 
 .hero-thumb {
@@ -448,7 +448,7 @@ h4.blog-details-title {
 
 .hero-area {
     height: 800px;
-    margin: 0px 30px 0;
+    margin: 0;
 }
 
 .hero-thumb img {
@@ -4555,3 +4555,37 @@ h3.blog-details-title.two {
 
 
 
+
+
+/* Mobile responsive - Hero carousel buttons */
+@media screen and (max-width: 768px) {
+  .hero-carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .hero-prev {
+    left: 15px;
+  }
+
+  .hero-next {
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .hero-prev {
+    left: 10px;
+  }
+
+  .hero-next {
+    right: 10px;
+  }
+}
