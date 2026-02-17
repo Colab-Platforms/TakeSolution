@@ -26,7 +26,7 @@ const Home = () => {
             <Features></Features>
             <About1
                 MainImg="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.png?v=1771072606"
-                ImgTitle="BEST IT SOLUTION"
+                // ImgTitle="BEST IT SOLUTION"
                 SubTitle="TakeSolution COMPANY"
                 Title="Transforming Healthcare Through<br> Intelligence & <span>Innovation.</span>"
                 Content="For over two decades, Take Solutions has been at the forefront of delivering domain-intensive technology solutions across life sciences, clinical research, and biosciences. Today, the Company is entering a new era of transformation by integrating artificial intelligence across its core businesses while expanding into AI-driven diagnostics and preventive healthcare."

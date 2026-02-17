@@ -15,17 +15,17 @@ const Footer = () => {
           {title:'Home', link:'/'},
         {title:'Investor', link:'/investor'},
         // {title:'Newsroom', link:'/newsroom'},
-        {title:'About Us', link:'/about'},
+        {title:'About Us'},
         // {title:'Testimonials', link:'/testimonial'}
       ];  
 
       const LogoContent = {
         img1:'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/logo-TAKE.png?v=1771067701',
-        // Content:'Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.'
+        Content:'The Company delivers scalable digital solutions that accelerate research, improve healthcare efficiency, and enable predictive, personalized health outcomes worldwide.'
       }
 
       const NewsletterContent = {
-            // Content:'Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.'
+            Content:'Stay connected with TAKE Solutions to receive the latest updates on AI-driven healthcare innovation, clinical research advancements, biotechnology developments, and preventive health platforms.'
       }
 
       const AdressContent = {

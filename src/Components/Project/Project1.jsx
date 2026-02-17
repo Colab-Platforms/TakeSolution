@@ -37,7 +37,7 @@ const Project1 = ({ bgImage, ClassAdd }) => {
                     <img src={item.img} alt="project1" />
                   </div>
                   <div className="project-content">
-                    <h3 className="project-title"><Link to="/project/project-details">{item.title}</Link></h3>
+                    <h3 className="project-title"><Link>{item.title}</Link></h3>
                     <p className="project-text">{item.desc}</p>
                   </div>
                 </div>
