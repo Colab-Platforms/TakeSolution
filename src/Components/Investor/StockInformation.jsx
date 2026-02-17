@@ -7,22 +7,22 @@ const StockInformation = () => {
       <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '40px'}}>
         <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #ff3c00'}}>
           <h4 style={{marginBottom: '15px', color: '#050a1e', fontFamily: 'Poppins', fontSize: '18px'}}>Stock Exchange Listing</h4>
-          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>BSE Code: 543210</p>
-          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>NSE Symbol: SOLUTEK</p>
-          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>ISIN: INE123A01012</p>
+          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>BSE Code: 532890(BSE)</p>
+          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>NSE Symbol: TAKE</p>
+          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>ISIN: INE142101023</p>
         </div>
         <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #ff3c00'}}>
           <h4 style={{marginBottom: '15px', color: '#050a1e', fontFamily: 'Poppins', fontSize: '18px'}}>Market Data</h4>
-          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Current Price: ₹1,245.50</p>
-          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>52 Week High: ₹1,450.00</p>
+          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Current Price: ₹47.40</p>
+          {/* <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>52 Week High: ₹1,450.00</p>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>52 Week Low: ₹980.00</p>
-          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Market Cap: ₹5,240 Cr</p>
+          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Market Cap: ₹5,240 Cr</p> */}
         </div>
         <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #ff3c00'}}>
           <h4 style={{marginBottom: '15px', color: '#050a1e', fontFamily: 'Poppins', fontSize: '18px'}}>Share Information</h4>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Face Value: ₹10</p>
-          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Paid-up Capital: ₹42.10 Cr</p>
-          <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Total Shares: 4.21 Cr</p>
+          {/* <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Paid-up Capital: ₹42.10 Cr</p> */}
+          {/* <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Total Shares: 4.21 Cr</p> */}
         </div>
       </div>
 
@@ -70,11 +70,11 @@ const StockInformation = () => {
                 <td>142.40</td>
                 <td>126.20</td>
                 <td>163.65</td>
-                <td>142.75</td>
+                <td>149.75</td>
                 <td>92.80</td>
                 <td>60.50</td>
                 <td>29.00</td>
-                <td>14.95</td>
+                <td>13.50</td>
               </tr>
               <tr>
                 <td className="row-label">High</td>
@@ -82,7 +82,7 @@ const StockInformation = () => {
                 <td>42.00</td>
                 <td>186.90</td>
                 <td>210.50</td>
-                <td>185.00</td>
+                <td>186.00</td>
                 <td>183.90</td>
                 <td>297.65</td>
                 <td>159.30</td>
@@ -186,7 +186,7 @@ const StockInformation = () => {
                 <td>(0.85)</td>
                 <td>(30.91)</td>
                 <td>(53.50)</td>
-                <td>(6.96)</td>
+                <td>(6.86)</td>
               </tr>
               <tr>
                 <td className="row-label">Price-to-earnings ratio¹</td>
