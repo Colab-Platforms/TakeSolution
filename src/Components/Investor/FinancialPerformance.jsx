@@ -7,10 +7,10 @@ import Disclosure from './Disclosure';
 import './FinancialPerformance.css';
 
 const FinancialPerformance = () => {
-  const [activeTab, setActiveTab] = useState('stock-information');
+  const [activeTab, setActiveTab] = useState('reports');
 
   const tabs = [
-    { id: 'stock-information', label: 'Stock Information' },
+    // { id: 'stock-information', label: 'Stock Information' },
     { id: 'reports', label: 'Financial & Other Reports' },
     { id: 'investor-corner', label: 'Investor Corner' },
     { id: 'corporate-governance', label: 'Corporate Governance' },
@@ -65,7 +65,7 @@ const FinancialPerformance = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="tab-content-wrapper">
-              {activeTab === 'stock-information' && <StockInformation />}
+              {/* {activeTab === 'stock-information' && <StockInformation />} */}
               {activeTab === 'reports' && <Reports />}
               {activeTab === 'investor-corner' && <InvestorCorner />}
               {activeTab === 'corporate-governance' && <CorporateGovernance />}

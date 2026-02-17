@@ -8,13 +8,15 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	const desktopImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_02_3_jpg.jpg?v=1771325925",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_02.1.jpg_1.jpg?v=1771323244",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_02_2_jpg.jpg?v=1771323244"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_02_2_jpg.jpg?v=1771323244",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2026-02-17_at_6.18.02_PM.jpg?v=1771332641"
 	];
 
 	const mobileImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.1MV.png?v=1771326474",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.2MV.png?v=1771326474",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.3MV.png?v=1771326474"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.3MV.png?v=1771326474",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2026-02-17_at_6.18.02_PM.jpg?v=1771332641"
 	];
 
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
