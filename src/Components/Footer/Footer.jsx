@@ -30,7 +30,7 @@ const Footer = () => {
 
       const AdressContent = {
         Title:'Elevating Customer Experience.',
-        Number:'+44 920 090 505'
+        Number:'+91 8108618322'
       }
 
     return (
