@@ -21,11 +21,11 @@ const Footer = () => {
 
       const LogoContent = {
         img1:'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/logo-TAKE.png?v=1771067701',
-        Content:'Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.'
+        // Content:'Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.'
       }
 
       const NewsletterContent = {
-            Content:'Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.'
+            // Content:'Globally monetize plug-and-play data it solu monotonectally disseminate oriented busine multifunctional mind design.'
       }
 
       const AdressContent = {

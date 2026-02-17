@@ -16,6 +16,9 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '22-Oct-25', description: 'Notice of Board Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/Reg29_Intimation_BM_22102025_TSL.pdf' },
       { type: 'Other Disclosures', date: '10-Oct-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018', link: '/public/assets/investordata/disclosure/disclosure-data/Reg74(5)_10102025_TSL.pdf' },
 
+
+      
+
       { type: 'Other Disclosures', date: '03-Oct-25', description: 'Scrutinizer\'s Report and Voting Results of the Twenty Fourth Annual General Meeting', link: '#' },
       { type: 'Other Disclosures', date: '30-Sep-25', description: 'Summary of proceedings of the Twenty Fourth Annual General Meeting', link: '#' },
       { type: 'Other Disclosures', date: '30-Sep-25', description: 'Closure of Trading Window', link: '#' },
