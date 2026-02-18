@@ -3990,6 +3990,10 @@ h3.blog-title-two a {
     display: none;
 }
 
+.project-area.styl-two .project-carousel {
+    margin: 0 20px;
+}
+
 .testimonial-area.style-two .testi-single-box {
     padding: 39px 10px 82px;
 }

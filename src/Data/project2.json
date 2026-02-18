@@ -1,42 +1,19 @@
+
 [
   {
-    "img": "/assets/images/home-two/project-thu.png",   
-    "title": "Product Development",
-    "desc": "Creative Theme"
+    "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/HP_jpg.jpg?v=1771394513",   
+    "title": "Preventive Health Care Platform",
+    "desc": "Software"
   },
   {
-    "img": "/assets/images/home-two/project-thu2.png",   
-    "title": "Product Development",
-    "desc": "Creative Theme"
+    "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/1MC_1__jpg.jpg?v=1771394514",   
+    "title": "One Minute Clinic",
+    "desc": "Hardware"
   },
   {
-    "img": "/assets/images/home-two/project-thu3.png",   
-    "title": "Product Development",
-    "desc": "Creative Theme"
-  },
-  {
-    "img": "/assets/images/home-two/project-thu4.png",   
-    "title": "Product Development",
-    "desc": "Creative Theme"
-  },  
-  {
-    "img": "/assets/images/home-two/project-thu.png",   
-    "title": "Product Development",
-    "desc": "Creative Theme"
-  },
-  {
-    "img": "/assets/images/home-two/project-thu2.png",   
-    "title": "Product Development",
-    "desc": "Creative Theme"
-  },
-  {
-    "img": "/assets/images/home-two/project-thu3.png",   
-    "title": "Product Development",
-    "desc": "Creative Theme"
-  },  
-  {
-    "img": "/assets/images/home-two/project-thu4.png",   
-    "title": "Product Development",
-    "desc": "Creative Theme"
-  }          
+    "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MP_jpg.jpg?v=1771394514",   
+    "title": "Marketplace",
+    "desc": "Software"
+  } 
 ]
+

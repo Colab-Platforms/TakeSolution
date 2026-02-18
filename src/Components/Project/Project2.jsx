@@ -23,9 +23,9 @@ const Project2 = () => {
       
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 600,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         swipeToSlide: true,
@@ -33,7 +33,7 @@ const Project2 = () => {
           {
             breakpoint: 1399,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
             }
           },
           {
@@ -58,7 +58,7 @@ const Project2 = () => {
                         <div className="section-title text-left">
                         <SectionTitle
                                     SubTitle="OUR PROJECT NOW"
-                                    Title="Technologys Evolution <br> Towards Brilliance"
+                                    Title="Our Upcoming <span>Projects.</span>"
                             ></SectionTitle>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ const Project2 = () => {
                                     <img src={item.img} alt="project-thumb" />
                                 </div>
                                 <div className="project-content">
-                                    <h4 className="project-title"><Link to="/project/project-details">{item.title}</Link></h4>
+                                    <h4 className="project-title"><Link>{item.title}</Link></h4>
                                     <p className="project-des">{item.desc}</p>
                                 </div>
                                 <div className="project-icon">

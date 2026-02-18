@@ -452,6 +452,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   left: 0;
   top: 0px;
   transition: all 0.4s ease;
+  background-color: #DDDDDD;
 }
 .cs_site_header.cs_style_1 .cs_main_header_in, .cs_site_header.cs_style_1 .cs_top_header_in {
   display: flex;
@@ -472,7 +473,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   height: 100%;
 }
 .cs_site_header.cs_style_1.cs_type_1 .cs_main_header {
-  background-color: transparent;
+  background-color: #f5f5f5;
   border-bottom: 1px solid #535353;
 }
 .cs_site_header.cs_style_1.cs-sticky-active {
@@ -682,7 +683,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
     position: relative;
     height: inherit;
     align-items: center;
-    color: var(--heading-color);
+    color: #333333;
  }
   .cs_nav .cs_nav_list > li > ul {
     left: 0;
@@ -1319,7 +1320,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 =======================================*/
 
 .feature-area {
-  padding: 0 0 88px;
+  padding: 0 0 40px;
   margin-top: -60px;
 }
 
@@ -2075,7 +2076,12 @@ h3.blog-title-two a:hover {
 .about-thumb {
   position: relative;
   z-index: 1;
-  margin-left: -96px;
+  margin-left: -50px;
+  overflow: visible;
+}
+
+.about-section .row {
+  overflow: visible;
 }
 
 h4.about-title {
@@ -2267,7 +2273,7 @@ h4.about-title {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(/assets/images/service6.png);
+  background: #ff3c00;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4619,7 +4625,7 @@ ul.list-style-one li a:hover {
 }
 
 .project-area.styl-two .project-section {
-  margin: 0 240px;
+  margin: 0 100px;
 }
 
 .project-area.styl-two h5.section-sub-title {
@@ -4633,7 +4639,7 @@ ul.list-style-one li a:hover {
 }
 
 .project-area.styl-two .project-carousel {
-  margin: 0 29px;
+  margin: 0 150px;
 }
 
 .project-area.styl-two h1.section-main-title {
@@ -5506,10 +5512,11 @@ ul.list-style-one li a:hover {
   <!-- start TAKESOLUTION about section -->
 =========================================================---*/
 .about-section {
-  padding: 120px 0 125px;
+  padding: 0px 0 125px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  overflow: visible;
 }
 
 .about-section .about-contact {

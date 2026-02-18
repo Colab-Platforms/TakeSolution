@@ -5,18 +5,18 @@ export default function Nav({ setMobileToggle }) {
   return (
     <ul className="cs_nav_list fw-medium">
       <li className="">
-        <Link to="/">Home</Link>
+        <Link to="/">HOME</Link>
       </li>
 
       <li>
         <Link to="/investor" onClick={() => setMobileToggle(false)}>
-          Investor
+          INVESTOR
         </Link>
       </li>
 
       <li>
         <Link>
-          About Us
+          ABOUT US
         </Link>
       </li>
 

@@ -1,4 +1,5 @@
 import About1 from "../Components/About/About1";
+import About3 from "../Components/About/About3";
 import Hero1 from "../Components/Banner/Hero1";
 import Blog1 from "../Components/Blog/Blog1";
 import Brand from "../Components/Brand/Brand";
@@ -7,6 +8,7 @@ import Faq from "../Components/Faq/Faq";
 import Features from "../Components/Features/Features";
 import Pricing from "../Components/Pricing/Pricing";
 import Project1 from "../Components/Project/Project1";
+import Project2 from "../Components/Project/Project2";
 import Services1 from "../Components/Services/Services1";
 import Testimonial1 from "../Components/Testimonial/Testimonial1";
 
@@ -25,7 +27,7 @@ const Home = () => {
                 // VideoText="WATCH VIDEO"
             ></Hero1>
             <Features></Features>
-            <About1
+            {/* <About1
                 MainImg="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.png?v=1771072606"
                 // ImgTitle="BEST IT SOLUTION"
                 SubTitle="TakeSolution COMPANY"
@@ -35,12 +37,23 @@ const Home = () => {
                 BottomText="By combining deep scientific expertise with advanced AI, analytics, and digital platforms, Take Solutions is building scalable solutions that enhance research efficiency, enable predictive insights, and improve access to preventive healthcare."
                 BtnUrl="/about"
                 BtnText="EXPLORE MORE"
-            ></About1>
+            ></About1> */}
+            <About3
+                bgImg="/assets/images/home-3/about3-bg.png"
+                MainImg="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Website_TakeSolution_IntroPost03.png?v=1771409451"
+                SubTitle="about company"
+                Title="Transforming Healthcare Through<br> Intelligence & <span>Innovation.</span>"
+                Content="For over two decades, Take Solutions has been at the forefront of delivering domain-intensive technology solutions across life sciences, clinical research, and biosciences. Today, the Company is entering a new era of transformation by integrating artificial intelligence across its core businesses while expanding into AI-driven diagnostics and preventive healthcare."
+                // BoxTitle1="Cloud Based Solution"
+                // BoxTitle2="Best Services"  
+                // listTitle1="Sed non odio non elit porttitor tinc"
+                // listTitle2="Sed non odio non elit porttitor tincidunt donec"                         
+           ></About3>
             <Services1></Services1>
-            <Project1 
+            <Project2 
                 bgImage="/assets/images/project-bg.png"
                 ClassAdd="project-area"
-            ></Project1>
+            ></Project2>
             {/* <Brand></Brand> */}
             {/* <Pricing></Pricing> */}
             <Faq></Faq>

@@ -25,7 +25,7 @@ const About3 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxT
                                     <h1 className="section-main-title">{parse(Title)}</h1>
                                     <p className="section-title-descr">{Content}</p>
                                 </div>
-                                <div className="about-box-item">
+                                {/* <div className="about-box-item">
                                     <div className="about-box d-flex align-items-center">
                                         <div className="about-icon">
                                             <img src="/assets/images/about4.png" alt="about4" />
@@ -42,21 +42,21 @@ const About3 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxT
                                             <h3>{BoxTitle2}</h3>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="about-item-list">
+                                </div> */}
+                                {/* <div className="about-item-list">
                                     <ul>
                                         <li>{listTitle1}</li>
                                         <li>{listTitle2}</li>
                                     </ul>
-                                </div>
-                                <div className="TAKESOLUTION-btn">
+                                </div> */}
+                                {/* <div className="TAKESOLUTION-btn">
                                     <Link to="/about">EXPLORE MORE
                                         <div className="TAKESOLUTION-hover-btn hover-bx"></div>
                                         <div className="TAKESOLUTION-hover-btn hover-bx2"></div>
                                         <div className="TAKESOLUTION-hover-btn hover-bx3"></div>
                                         <div className="TAKESOLUTION-hover-btn hover-bx4"></div>
                                     </Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

@@ -29,9 +29,9 @@ const Project1 = ({ bgImage, ClassAdd }) => {
           </div>
         </div>
         <div className="row carousel">
-          <div className="project_list" style={{ display: 'flex', justifyContent: 'center', gap: '30px', flexWrap: 'wrap', width: '100%', maxWidth: '1200px', margin: '0 auto' }}>
+          <div className="project_list flex flex-row" style={{ display: 'flex', justifyContent: 'center', gap: '30px', flexWrap: 'wrap', width: '100%', maxWidth: '1100px', margin: '0 auto' }}>
             {data.map((item, i) => (
-              <div key={i} style={{ flex: '0 0 calc(50% - 15px)', width: 'calc(50% - 15px)' }}>
+              <div key={i} style={{ flex: '0 0 calc(33.333% - 20px)', width: 'calc(33.333% - 20px)', minWidth: '280px' }}>
                 <div className="project-single-box">
                   <div className="project-thumb">
                     <img src={item.img} alt="project1" />
