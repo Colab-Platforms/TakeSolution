@@ -1,0 +1,252 @@
+.about5-stats-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about5-stats-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 60, 0, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.about5-stats-section::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(30, 91, 168, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.about5-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.about5-header .section-sub-title {
+  display: inline-block;
+}
+
+.about5-header .section-main-title {
+  margin-bottom: 20px;
+}
+
+.about5-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.about5-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.about5-stat-card {
+  background: #f4f4f4;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.5s ease;
+  position: relative;
+  border: 1px solid #e1e1e1;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.about5-stats-section.visible .about5-stat-card {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about5-stat-card:hover {
+  background-color: #ff3c00;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #ff3c00,
+    #ff3c00 10px,
+    #ff5c2e 10px,
+    #ff5c2e 20px
+  );
+  transition: all 0.5s ease;
+}
+
+.about5-stat-card.highlight {
+  display: none;
+}
+
+.about5-stats-section.visible .about5-stat-card.highlight {
+  display: none;
+}
+
+.about5-stat-card.highlight .about5-stat-icon {
+  display: none;
+}
+
+.about5-stat-card.highlight .about5-stat-content p {
+  display: none;
+}
+
+.about5-stat-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  position: relative;
+  border: 3px solid transparent;
+}
+
+.about5-stat-card:hover .about5-stat-icon {
+  background-color: #050a1e;
+  border: 3px solid #ffffff;
+}
+
+.about5-stat-card:hover .about5-stat-icon span {
+  filter: brightness(0) invert(1);
+  transition: filter 0.5s ease;
+}
+
+.about5-stat-card.highlight .about5-stat-icon {
+  display: none;
+}
+
+.about5-stat-icon span {
+  display: block;
+}
+
+.about5-stat-content {
+  position: relative;
+}
+
+.about5-stat-content p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  transition: color 0.5s ease;
+}
+
+.about5-stat-card:hover .about5-stat-content p {
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+.about5-stat-card.highlight .about5-stat-content p {
+  color: #ffffff;
+}
+
+.about5-stat-card::before {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about5-stats-section {
+    padding: 60px 0;
+  }
+
+  .about5-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .about5-description {
+    font-size: 14px;
+  }
+
+  .about5-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .about5-stat-card {
+    padding: 30px 20px;
+  }
+
+  .about5-stat-card.highlight {
+    transform: scale(1.02);
+  }
+
+  .about5-stats-section.visible .about5-stat-card.highlight {
+    animation: slideUp 0.6s ease-out forwards, pulse 2s ease-in-out 0.6s infinite;
+  }
+
+  .about5-stat-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .about5-stat-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about5-stats-section {
+    padding: 40px 0;
+  }
+
+  .about5-title {
+    font-size: 24px;
+  }
+
+  .about5-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .about5-stat-card {
+    padding: 25px 15px;
+  }
+
+  .about5-stat-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+  }
+
+  .about5-stat-content p {
+    font-size: 13px;
+  }
+}

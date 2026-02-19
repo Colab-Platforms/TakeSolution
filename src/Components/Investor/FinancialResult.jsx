@@ -7,8 +7,13 @@ const FinancialResult = () => {
 
   const financialResultData = {
     FY26: [
-      { type: 'Other Disclosure', year: 'FY-2026', description: 'Consolidated_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Consolidated_Q1_FY26_TSL.pdf'},
-      { type: 'Other Disclosure', year: 'FY-2026', description: 'Standalone_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Standalone_Q1_FY26_TSL.pdf'}
+      { type: 'Other Disclosure', year: 'FY-2026', quarter: 'Q1', description: 'Consolidated_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Consolidated_Q1_FY26_TSL.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2026', quarter: 'Q1', description: 'Standalone_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Standalone_Q1_FY26_TSL.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2026', quarter: 'Q2', description: 'Consolidated_Q2_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q2/Consolidated_Q2_FY26_TSL.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2026', quarter: 'Q2', description: 'Standalone_Q2_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q2/Standalone_Q2_FY26_TSL.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2026', quarter: 'Q3', description: 'Consolidated_Q3_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q3/Consolidated_Q3_FY26_TSL.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2026', quarter: 'Q3', description: 'Standalone_Q3_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q3/Standalone_Q3_FY26_TSL.pdf'},
+
     ],
     FY25: [
       { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q1', description: 'Standalone_Q1_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q1/Standalone_Q1_FY_25.pdf'},
@@ -21,11 +26,36 @@ const FinancialResult = () => {
       { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q4', description: 'Consolidated_Q4_TSL', link: '/assets/investordata/financial-results/FY-2025/Q4/Consolidated_Q4_TSL.pdf'}
     ],
     FY24: [
-      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q1', description: 'Standalone_Q1_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q1/Standalone_Q1_FY_25.pdf'},
-      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q1', description: 'Consolidated_Q1_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q1/Standalone_Q1_FY_25.pdf'},
-      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q2', description: 'Standalone_Q2_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q2/Standalone_Q2_FY_25.pdf'},
-      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q2', description: 'Consolidated_Q2_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q2/Consolidated_Q2_FY_25.pdf'}
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q1', description: 'take-sebi-qtr_1_stand_alone-2023-24', link: '/assets/investordata/financial-results/FY-2024/Q1/take-sebi-qtr_1_stand_alone-2023-24.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q1', description: 'take-sebi-qtr_1_consolidated-2023-24', link: '/assets/investordata/financial-results/FY-2024/Q1/take-sebi-qtr_1_consolidated-2023-24.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q2', description: 'take-sebi-qtr_2_stand_alone-2023-24', link: '/assets/investordata/financial-results/FY-2024/Q2/take-sebi-qtr_2_stand_alone-2023-24.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q2', description: 'take-sebi-qtr_2_consolidated-2023-24', link: '/assets/investordata/financial-results/FY-2024/Q2/take-sebi-qtr_2_consolidated-2023-24.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q3', description: 'take-sebi-qtr_3_stand_alone-2023-24', link: '/assets/investordata/financial-results/FY-2024/Q3/take-sebi-qtr_3_stand_alone-2023-24.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q3', description: 'take-sebi-qtr_3_consolidated-2023-24', link: '/assets/investordata/financial-results/FY-2024/Q3/take-sebi-qtr_3_consolidated-2023-24.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q4', description: 'take-sebi-qtr_4_stand_alone-2023-24', link: '/assets/investordata/financial-results/FY-2024/Q4/take-sebi-qtr_4_stand_alone-2023-24.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q4', description: 'take-sebi-qtr_4_consolidated-2023-24', link: '/assets/investordata/financial-results/FY-2024/Q4/take-sebi-qtr_4_consolidated-2023-24.pdf'},
     ],
+    FY23: [
+      { type: 'Other Disclosure', year: 'FY-2023', quarter: 'Q1', description: 'take-sebi-qtr_1_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q1/take-sebi-qtr_1_stand_alone-2022-23.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2023', quarter: 'Q1', description: 'take-sebi-qtr_1_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q1/take-sebi-qtr_1_stand_alone-2022-23.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2023', quarter: 'Q2', description: 'take-sebi-qtr_2_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q2/take-sebi-qtr_2_stand_alone-2022-23.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2023', quarter: 'Q2', description: 'take-sebi-qtr_2_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q2/take-sebi-qtr_2_consolidated-2022-23.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2023', quarter: 'Q3', description: 'take-sebi-qtr_3_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q3/take-sebi-qtr_3_stand_alone-2022-23.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2023', quarter: 'Q3', description: 'take-sebi-qtr_3_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q3/take-sebi-qtr_3_consolidated-2022-23.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2023', quarter: 'Q4', description: 'take-sebi-qtr_4_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q4/take-sebi-qtr_4_stand_alone-2022-23.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2023', quarter: 'Q4', description: 'take-sebi-qtr_4_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q4/take-sebi-qtr_4_consolidated-2022-23.pdf'},
+    ],
+
+    // FY22: [
+    //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q1', description: 'take-sebi-qtr_1_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q1/take-sebi-qtr_1_stand_alone-2022-23.pdf'},
+    //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q1', description: 'take-sebi-qtr_1_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q1/take-sebi-qtr_1_stand_alone-2022-23.pdf'},
+    //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q2', description: 'take-sebi-qtr_2_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q2/take-sebi-qtr_2_stand_alone-2022-23.pdf'},
+    //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q2', description: 'take-sebi-qtr_2_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q2/take-sebi-qtr_2_consolidated-2022-23.pdf'},
+    //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q3', description: 'take-sebi-qtr_3_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q3/take-sebi-qtr_3_stand_alone-2022-23.pdf'},
+    //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q3', description: 'take-sebi-qtr_3_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q3/take-sebi-qtr_3_consolidated-2022-23.pdf'},
+    //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q4', description: 'take-sebi-qtr_4_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q4/take-sebi-qtr_4_stand_alone-2022-23.pdf'},
+    //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q4', description: 'take-sebi-qtr_4_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q4/take-sebi-qtr_4_consolidated-2022-23.pdf'},
+    // ],
     FY18: [
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'take-sebi-qtr_1_transcript-2017-18', link: '/assets/investordata/financial-results/take-sebi-qtr_1_transcript-2017-18.pdf' },
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'Consolidated Standealone financial results', link: '/assets/investordata/financial-results/Consolidated Standealone financial results.pdf' },

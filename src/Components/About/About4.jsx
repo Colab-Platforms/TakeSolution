@@ -30,24 +30,24 @@ const About4 = ({MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxTitle1,
 								</p>
 							</div>
 							<div className="about-us-content">
-								<div className="about-us-list">
+								{/* <div className="about-us-list">
 									<ul>
 										<li><span>{listTitle1}</span></li>
 										<li><span>{listTitle2}</span></li>
 									</ul>
-								</div>
-								<div className="TAKESOLUTION-btn">
+								</div> */}
+								{/* <div className="TAKESOLUTION-btn">
 									<Link to="/contact">EXPLORE MORE
 										<div className="TAKESOLUTION-hover-btn hover-bx"></div>
 										<div className="TAKESOLUTION-hover-btn hover-bx2"></div>
 										<div className="TAKESOLUTION-hover-btn hover-bx3"></div>
 										<div className="TAKESOLUTION-hover-btn hover-bx4"></div>
 									</Link>
-								</div>
+								</div> */}
 								<div className="col-lg-3 col-md-6 col-sm-6">
 									<div className="single-counter-box">
 										<div className="counter-icon">
-											<img src="/assets/images/inner/counter-icon.png" alt="icon" />
+											{/* <img src="/assets/images/inner/counter-icon.png" alt="icon" /> */}
 										</div>
 										<div className="counter-content">
 											<h4 className="counter">{BoxTitle1}</h4>
@@ -63,9 +63,9 @@ const About4 = ({MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxTitle1,
 								<div className="about-us-img">
 									<img src={MainImg} alt="thumb" />
 								</div>
-								<div className="about-us-video-icon" onClick={handelClick}>	
+								{/* <div className="about-us-video-icon" onClick={handelClick}>	
 									<span className="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true"><i className="bi bi-play"></i><span>WATCH VIDEO</span></span>
-								</div>
+								</div> */}
 								<div className="about-us-shape">
 									<img src="/assets/images/inner/us-shape.png" alt="shape" />
 								</div>
