@@ -1,17 +1,20 @@
 import { useState } from 'react';
 import StockInformation from './StockInformation';
-import Reports from './Reports';
+// import FinancialResult from './FinancialResult';
 import InvestorCorner from './InvestorCorner';
 import CorporateGovernance from './CorporateGovernance';
 import Disclosure from './Disclosure';
 import './FinancialPerformance.css';
+import FinancialResult from './FinancialResult';
+import AnnualReport from './AnnualReport';
 
 const FinancialPerformance = () => {
-  const [activeTab, setActiveTab] = useState('reports');
+  const [activeTab, setActiveTab] = useState('financial-result');
 
   const tabs = [
     // { id: 'stock-information', label: 'Stock Information' },
-    { id: 'reports', label: 'Financial & Other Reports' },
+    { id: 'financial-result', label: 'Financial Result' },
+    { id: 'annual-report', label: 'Anual Report' },
     { id: 'investor-corner', label: 'Investor Corner' },
     { id: 'corporate-governance', label: 'Corporate Governance' },
     { id: 'disclosure', label: 'Disclosure' }
@@ -66,7 +69,8 @@ const FinancialPerformance = () => {
           <div className="col-lg-12">
             <div className="tab-content-wrapper">
               {/* {activeTab === 'stock-information' && <StockInformation />} */}
-              {activeTab === 'reports' && <Reports />}
+              {activeTab === 'financial-result' && <FinancialResult />}
+              {activeTab === 'annual-report' && <AnnualReport /> }
               {activeTab === 'investor-corner' && <InvestorCorner />}
               {activeTab === 'corporate-governance' && <CorporateGovernance />}
               {activeTab === 'disclosure' && <Disclosure />}
