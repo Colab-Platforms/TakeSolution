@@ -15,7 +15,7 @@ const Footer = () => {
           {title:'Home', link:'/'},
         {title:'Investor', link:'/investor'},
         // {title:'Newsroom', link:'/newsroom'},
-        {title:'About Us'},
+        {title:'About Us', link: '/about'},
         // {title:'Testimonials', link:'/testimonial'}
       ];  
 

@@ -12,6 +12,31 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '10-Feb-26', description: 'Press Release - Take Solutions Announces Plans to Set up “One Minute Clinic” in India with the vision to make early health screening more accessible, intelligent, and affordable.', link: '/assets/investordata/disclosure/disclosure-data/PR One Minute Clinic.pdf' },
       { type: 'Other Disclosures', date: '03-Feb-26', description: 'Outcome of the Board Meeting held on Tuesday, 03rd February, 2026.', link: '/assets/investordata/disclosure/disclosure-data/Reg 30 Appointment of Auditor.pdf'},
       { type: 'Other Disclosures', date: '28-Jan-26', description: 'Outcome of the Board Meeting held on Wednesday, 28th January 2026.', link: '/assets/investordata/disclosure/disclosure-data/Reg 30 Apointment of Director.pdf'},
+
+      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
+      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
+      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
+      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
+      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
+      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
+      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' }
+
+
+    ],
+    FY25: [
+      { type: 'Quarterly Disclosures', date: '30-Jul-25', description: 'Reconciliation of Share Capital Audit Report - Quarter ended June 3, 2025', link: '#' },
+      { type: 'Other Disclosures', date: '30-Jul-25', description: 'Summary of proceedings of the Extra Ordinary General Meeting', link: '#' },
+      { type: 'Other Disclosures', date: '21-Jul-25', description: 'Newspaper Publication', link: '#' },
+      { type: 'Other Disclosures', date: '14-Jul-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018', link: '#' },
+      { type: 'Other Disclosures', date: '09-Jul-25', description: 'Newspaper Publication', link: '#' },
+      { type: 'Other Disclosures', date: '08-Jul-25', description: 'Notice of Extra Ordinary General Meeting', link: '#' },
+      { type: 'Other Disclosures', date: '08-Jul-25', description: 'Newspaper Publication', link: '#' },
+      { type: 'Other Disclosures', date: '07-Jul-25', description: 'Outcome of the Board Meeting held on Monday, July 7, 2025', link: '#' },
+      { type: 'Other Disclosures', date: '02-Jul-25', description: 'Notice of Board Meeting', link: '#' },
+      { type: 'Other Disclosures', date: '27-Jun-25', description: 'Closure of trading window', link: '#' },
+      { type: 'Other Disclosures', date: '02-Jun-25', description: 'Newspaper Publication', link: '#' },
+      { type: 'Other Disclosures', date: '30-May-25', description: 'Annual Secretarial Compliance Report of the Company for the year ended March 31, 2025', link: '#' },
+      { type: 'Other Disclosures', date: '30-May-25', description: 'Outcome of the Board Meeting held on Friday, May 30, 2025', link: '#' },
       { type: 'Other Disclosures', date: '31-Dec-25', description: 'Disclosure under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirement) Regulations, 2015 – Resignation of Whole Time Director (Executive Capacity), Chief Financial Of􀏐icer and Director (Non-Executive and Non-Independent Capacity)', link: '/assets/investordata/disclosure/disclosure-data/Reg 30 Resignation of Director and CFO.pdf'},
       { type: 'Other Disclosures', date: '23-Dec-25', description: 'Press Release - TAKE Solutions Outlines a Strategic Plan to Build an Advanced AI-Driven Diagnostic & Preventive Care Platform as Part of Its Long-Term Value Creation Roadmap.', link: '/assets/investordata/disclosure/disclosure-data/PRTAKESolutions-23-dec-25.pdf' },
       { type: 'Other Disclosures', date: '18-Dec-25', description: 'Disclosure under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirement) Regulations, 2015 – Shifting of Registered Office of the Company', link: '/assets/investordata/disclosure/disclosure-data/Reg 30 Shifting of Registered Office of the Company.pdf'},
@@ -45,32 +70,7 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-May-25', description: 'Outcome of the Board Meeting held on Friday, May 30, 2025.', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
       { type: 'Other Disclosures', date: '24-May-25', description: 'Intimation under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirement) Regulations, 2015 – Appointment of Independent Directors', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
 
-      { type: 'Other Disclosures', date: '23-May-25', description: 'Notice of Board Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-
-      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' }
-
-
-    ],
-    FY25: [
-      { type: 'Quarterly Disclosures', date: '30-Jul-25', description: 'Reconciliation of Share Capital Audit Report - Quarter ended June 3, 2025', link: '#' },
-      { type: 'Other Disclosures', date: '30-Jul-25', description: 'Summary of proceedings of the Extra Ordinary General Meeting', link: '#' },
-      { type: 'Other Disclosures', date: '21-Jul-25', description: 'Newspaper Publication', link: '#' },
-      { type: 'Other Disclosures', date: '14-Jul-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018', link: '#' },
-      { type: 'Other Disclosures', date: '09-Jul-25', description: 'Newspaper Publication', link: '#' },
-      { type: 'Other Disclosures', date: '08-Jul-25', description: 'Notice of Extra Ordinary General Meeting', link: '#' },
-      { type: 'Other Disclosures', date: '08-Jul-25', description: 'Newspaper Publication', link: '#' },
-      { type: 'Other Disclosures', date: '07-Jul-25', description: 'Outcome of the Board Meeting held on Monday, July 7, 2025', link: '#' },
-      { type: 'Other Disclosures', date: '02-Jul-25', description: 'Notice of Board Meeting', link: '#' },
-      { type: 'Other Disclosures', date: '27-Jun-25', description: 'Closure of trading window', link: '#' },
-      { type: 'Other Disclosures', date: '02-Jun-25', description: 'Newspaper Publication', link: '#' },
-      { type: 'Other Disclosures', date: '30-May-25', description: 'Annual Secretarial Compliance Report of the Company for the year ended March 31, 2025', link: '#' },
-      { type: 'Other Disclosures', date: '30-May-25', description: 'Outcome of the Board Meeting held on Friday, May 30, 2025', link: '#' }
+      { type: 'Other Disclosures', date: '23-May-25', description: 'Notice of Board Meeting', link: '/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' }
     ]
   };
 

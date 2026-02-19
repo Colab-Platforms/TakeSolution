@@ -6042,6 +6042,10 @@ li.list-arrow {
   position: relative;
 }
 
+.about-us-area .row {
+  align-items: center;
+}
+
 .about-us-area .section-title.text-left {
   margin-bottom: 10px;
 }
@@ -6120,6 +6124,18 @@ li.list-arrow {
 .about-us-thumb {
   position: relative;
   z-index: 1;
+}
+
+.about-us-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-us-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
 }
 
 .about-us-video-icon {

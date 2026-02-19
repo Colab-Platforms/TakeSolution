@@ -10,7 +10,7 @@ const About6 = () => {
       // title: 'Reaching People And Touching Lives',
       // subtitle: 'Globally As A Leading Provider Of Valued Medicines',
       description: 'To lead the transformation of global healthcare through artificial intelligence and deep technology, enabling faster discoveries, smarter clinical decisions, and proactive care. The vision is to build a connected, intelligent healthcare ecosystem that shifts the focus from treating illness to predicting, preventing, and improving human health at scale.',
-      image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/about-vision.jpg?v=1771067701',
+      image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2026-02-19_at_6.48.46_PM.jpg?v=1771507157',
       type: 'image'
     },
     // {
@@ -26,7 +26,7 @@ const About6 = () => {
       title: 'Our values define how we innovate, operate, and create lasting impact.',
       subtitle: '',
       description: '',
-      image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/about-values.jpg?v=1771067701',
+      image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Layer_0.png?v=1771506255',
       type: 'values',
       values: [
         {

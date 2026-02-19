@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-page">
             <BreadCumb Title="About Us"></BreadCumb>
             <About4
-                MainImg="/assets/images/inner/about-us-thu.png"
+                MainImg="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ChatGPT_Image_Feb_19_2026_05_51_58_PM.png?v=1771504924"
                 SubTitle="TakeSolution COMPANY"
                 Title="Redefining the Future of <br>Healthcare <span>with AI.</span>"
                 Content="TAKE Solutions is a global AI-driven deep technology company transforming life sciences, clinical research, biotechnology, and preventive healthcare through intelligent platforms and scientific expertise."
