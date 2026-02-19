@@ -18,12 +18,12 @@ const About = () => {
                 BoxTitle1="826"
                 BoxTitle2="Satisfied Clients"                  
             ></About4>
-            <Project1 
+            {/* <Project1 
                 bgImage="/assets/images/inner/project-bg-3.png"
                 ClassAdd="project-area style-two"
-            ></Project1>
-            <Brand></Brand>
-            <Blog1></Blog1>
+            ></Project1> */}
+            {/* <Brand></Brand> */}
+            {/* <Blog1></Blog1> */}
         </div>
     );
 };

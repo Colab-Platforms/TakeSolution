@@ -7,10 +7,26 @@ const FinancialResult = () => {
 
   const financialResultData = {
     FY26: [
-      // { type: 'Other Disclosures', year: 'FY-2017', quarter: 'Q1', description: '', link: '' },
-      // { type: 'Other Disclosures', year: 'FY-2017', quarter: 'Q2', description: '', link: '' },
-      // { type: 'Other Disclosures', year: 'FY-2017', quarter: 'Q3', description: '', link: '' },
-      // { type: 'Other Disclosures', year: 'FY-2017', quarter: 'Q4', description: '', link: '' },
+      { type: 'Other Disclosure', year: 'FY-2026', description: 'Consolidated_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Consolidated_Q1_FY26_TSL.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2026', description: 'Standalone_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Standalone_Q1_FY26_TSL.pdf'}
+    ],
+    FY25: [
+      { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q1', description: 'Standalone_Q1_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q1/Standalone_Q1_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q1', description: 'Consolidated_Q1_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q1/Standalone_Q1_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q2', description: 'Standalone_Q2_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q2/Standalone_Q2_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q2', description: 'Consolidated_Q2_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q2/Consolidated_Q2_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q3', description: 'Standalone_Q3_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q3/Standalone_Q3_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q3', description: 'Consolidated_Q3_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q3/Consolidated_Q3_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q4', description: 'Standalone_Q4_TSL', link: '/assets/investordata/financial-results/FY-2025/Q4/Standalone_Q4_TSL.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2025', quarter: 'Q4', description: 'Consolidated_Q4_TSL', link: '/assets/investordata/financial-results/FY-2025/Q4/Consolidated_Q4_TSL.pdf'}
+    ],
+    FY24: [
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q1', description: 'Standalone_Q1_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q1/Standalone_Q1_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q1', description: 'Consolidated_Q1_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q1/Standalone_Q1_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q2', description: 'Standalone_Q2_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q2/Standalone_Q2_FY_25.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2024', quarter: 'Q2', description: 'Consolidated_Q2_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q2/Consolidated_Q2_FY_25.pdf'}
+    ],
+    FY18: [
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'take-sebi-qtr_1_transcript-2017-18', link: '/assets/investordata/financial-results/take-sebi-qtr_1_transcript-2017-18.pdf' },
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'Consolidated Standealone financial results', link: '/assets/investordata/financial-results/Consolidated Standealone financial results.pdf' },
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'Consolidated Financial Results', link: '/assets/investordata/financial-results/Consolidated Financial Results.pdf' },
@@ -26,16 +42,9 @@ const FinancialResult = () => {
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'take-sebi-qtr_4_transcript-2017-18', link: '/assets/investordata/financial-results/FY-2018/Q4/take-sebi-qtr_4_transcript-2017-18.pdf' },
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'take-sebi-qtr_4_stand_alone-2017-18', link: '/assets/investordata/financial-results/FY-2018/Q4/take-sebi-qtr_4_stand_alone-2017-18.pdf' },
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'take-sebi-qtr_4_consolidated-2017-18', link: '/assets/investordata/financial-results/FY-2018/Q4/take-sebi-qtr_4_consolidated-2017-18.pdf' },
-      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q4/Earnings Release.pdf' },
-
-
-      // { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Quarter ended December 31, 2017 Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q3/Quarter ended December 31, 2017 Earnings Release.pdf' },
-      // { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Quarter ended December 31, 2017 Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q3/Quarter ended December 31, 2017 Earnings Release.pdf' },
-      // { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Quarter ended December 31, 2017 Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q3/Quarter ended December 31, 2017 Earnings Release.pdf' },
-
-      
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q4/Earnings Release.pdf' },      
     ],
-    FY25: [
+    // FY25: [
       // { type: 'Quarterly Disclosures', year: 'FY-2017', description: 'Reconciliation of Share Capital Audit Report - Quarter ended June 3, 2025', link: '#' },
       // { type: 'Other Disclosures', date: '30-Jul-25', description: 'Summary of proceedings of the Extra Ordinary General Meeting', link: '#' },
       // { type: 'Other Disclosures', date: '21-Jul-25', description: 'Newspaper Publication', link: '#' },
@@ -49,7 +58,7 @@ const FinancialResult = () => {
       // { type: 'Other Disclosures', date: '02-Jun-25', description: 'Newspaper Publication', link: '#' },
       // { type: 'Other Disclosures', date: '30-May-25', description: 'Annual Secretarial Compliance Report of the Company for the year ended March 31, 2025', link: '#' },
       // { type: 'Other Disclosures', date: '30-May-25', description: 'Outcome of the Board Meeting held on Friday, May 30, 2025', link: '#' }
-    ]
+    // ]
   };
 
   const currentYearFinancialData = financialResultData[selectedYear];
