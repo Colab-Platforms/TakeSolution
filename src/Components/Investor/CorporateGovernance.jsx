@@ -3,35 +3,35 @@ import React from 'react';
 const CorporateGovernance = () => {
   // Corporate Governance Policies
   const policies = [
-    { title: 'Code of Conduct for Directors & Senior Management Personnel', link: '#' },
-    { title: 'Code of Conduct for Prohibition of Insider Trading', link: '#' },
-    { title: 'Dividend Distribution Policy', link: '#' },
-    { title: 'Handbook on Investors\' Rights', link: '#' },
-    { title: 'Nomination, Remuneration and Evaluation Policy', link: '#' },
-    { title: 'Policy on Disclosure on Material Events', link: '#' },
-    { title: 'Policy on Prevention of Sexual harassment at Workplace', link: '#' },
-    { title: 'Whistle Blower Policy', link: '#' },
-    { title: 'Code of Conduct for Independent Directors', link: '#' },
-    { title: 'Authorization of KMP under Regulation 30', link: '#' },
-    { title: 'CSR Policy', link: '#' },
-    { title: 'Familiarisation Programme', link: '#' },
-    { title: 'Details of Familiarization Programme of TSL', link: '#' },
-    { title: 'Letter of Appointment – Independent Director', link: '#' },
-    { title: 'Policy for Determining Material Subsidiaries', link: '#' },
-    { title: 'Policy on Diversity of Board of Directors', link: '#' },
-    { title: 'Policy on Related Party Transaction', link: '#' },
-    { title: 'Policy on Preservation of Documents and Archival of Documents', link: '#' },
-    { title: 'Policy for Registrars and Share Transfer Agents', link: '#' }
+    { title: 'Code of Conduct for Directors & Senior Management Personnel', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Code of Conduct for Directors and Senior Management Personnel.pdf' },
+    { title: 'Code of Conduct for Prohibition of Insider Trading', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/CODE OF CONDUCT FOR PROHIBITION OF INSIDER TRADING.pdf' },
+    { title: 'Dividend Distribution Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Dividend-Distribution-Policy.pdf' },
+    { title: 'Handbook on Investors\' Rights', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Investors’ Rights Handbook.pdf' },
+    { title: 'Nomination, Remuneration and Evaluation Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Nomination and Remuneration Policy - TSL.pdf' },
+    { title: 'Policy on Disclosure on Material Events', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/policy-on-disclosure-on-material-events.pdf' },
+    { title: 'Policy on Prevention of Sexual harassment at Workplace', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Policy on Prevention of Sexual Harrassment at Workplace.pdf' },
+    { title: 'Whistle Blower Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/whistle-blower-policy.pdf' },
+    { title: 'Code of Conduct for Independent Directors', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Code of Conduct for Independent Directors.pdf' },
+    { title: 'Authorization of KMP under Regulation 30', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Authorisation_KMP_Reg30(5)_TSL.docx' },
+    { title: 'CSR Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Corporate-Social-Responsibility.pdf' },
+    { title: 'Familiarisation Programme', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/FAMILIARISATION PROGRAMME FOR INDEPENDENT DIRECTORS.pdf' },
+    { title: 'Details of Familiarization Programme of TSL', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/POLICY ON RELATED PARTY TRANSACTIONS.pdf' },
+    // { title: 'Letter of Appointment – Independent Director', link: '' },
+    { title: 'Policy for Determining Material Subsidiaries', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Policy on Determination of Material Subsidiary.pdf' },
+    { title: 'Policy on Diversity of Board of Directors', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Policy on Diversity of Board.pdf' },
+    // { title: 'Policy on Related Party Transaction', link: '#' },
+    { title: 'Policy on Preservation of Documents and Archival of Documents', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Policy-on-Preservation-of-Documents-and-Archival-of-Documents.pdf' },
+    { title: 'Policy for Registrars and Share Transfer Agents', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/policy-for-registrars-and-share-transfer-agents.pdf' }
   ];
 
   // Mandatory Dematerialisation Documents
   const dematDocuments = [
-    { title: 'Mandatory Demat For Transfer - Second Reminder to Shareholders', link: '#' },
-    { title: 'BSE Circular - Mandatory Demat For Transfer', link: '#' },
-    { title: 'Mandatory Demat For Transfer - Communication to Shareholders', link: '#' },
-    { title: 'Mandatory Demat For Transfer - First Reminder to Shareholders', link: '#' },
-    { title: 'NSE Circular - Mandatory Demat For Transfer', link: '#' },
-    { title: 'SEBI Circular Notification', link: '#' }
+    { title: 'Mandatory Demat For Transfer - Second Reminder to Shareholders', link: '/assets/investordata/corporate-governance/Mandatory Dematerialisation of Shares for Transfer Requests/mandatory-demat-for-transfer-second-reminder-to-shareholders.pdf' },
+    { title: 'BSE Circular - Mandatory Demat For Transfer', link: '/assets/investordata/corporate-governance/Mandatory Dematerialisation of Shares for Transfer Requests/BSE-circular- mandatory-demat-for-transfer.pdf' },
+    { title: 'KYC letter A', link: '/assets/investordata/corporate-governance/Mandatory Dematerialisation of Shares for Transfer Requests/KYC letter A.pdf' },
+    { title: 'Mandatory Demat For Transfer - First Reminder to Shareholders', link: '/assets/investordata/corporate-governance/Mandatory Dematerialisation of Shares for Transfer Requests/mandatory-demat-for-transfer-first-reminder-to-shareholders.pdf' },
+    { title: 'NSE Circular - Mandatory Demat For Transfer', link: '/assets/investordata/corporate-governance/Mandatory Dematerialisation of Shares for Transfer Requests/NSE-circular-mandatory-demat-for-transfer.pdf' },
+    { title: 'SEBI Circular Notification', link: '/assets/investordata/corporate-governance/Mandatory Dematerialisation of Shares for Transfer Requests/SEBI-gazette-notification-june-8-2018.pdf' }
   ];
 
   return (

@@ -133,14 +133,14 @@ const Footer = () => {
                                 <p>© Copyright 2026 By TAKESOLUTION</p>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6">
+                        {/* <div className="col-lg-6 col-md-6 col-sm-6">
                             <div className="copyright-list">
                                 <ul>
                                     <li><Link to="/">Privacy Policy</Link></li>
-                                    <li><Link to="/">Supports</Link></li>
+                                    <li><Link to="/">Supports</Link></li> 
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 	        </div>

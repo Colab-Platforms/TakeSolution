@@ -1,62 +1,66 @@
 import { useState } from 'react';
 
 const FinancialResult = () => {
-  // const [selectedYear, setSelectedYear] = useState('FY25');
+  const [selectedYear, setSelectedYear] = useState('FY26');
 
-  // const years = ['FY26', 'FY25', 'FY24', 'FY23', 'FY22', 'FY21', 'FY20', 'FY19', 'FY18', 'FY17', 'FY16', 'FY15', 'FY14', 'FY13', 'FY12'];
+  const years = ['FY26', 'FY25', 'FY24', 'FY23', 'FY22', 'FY21', 'FY20', 'FY19', 'FY18', 'FY17', 'FY16', 'FY15', 'FY14', 'FY13', 'FY12'];
 
-  // Aap yahan apna data add kar sakte hain
-  const financialResultData = [
-    // { type: 'Other Disclosures', date: '13-Feb-26', description: 'Consideration and Approval of Unaudited Financial Results as on 31•1 December 2025.', link: '/assets/investordata/financial-results/FINAL_UFR.pdf' },
-    //   { type: 'Other Disclosures', date: '02-Sep-20', description: 'Un-Audited Financial Result quarter ending 30th June, 2020 pursuant to Regulation 33 of the SEBI (LODR) Regulations, 2015.', link: '/assets/investordata/financial-results/1.-Financial-Results-30.06.2020.pdf' },
-    //   { type: 'Other Disclosures', date: '29-Jan-21', description: 'Unaudited Financial Result for quarter ending 31st December 2020 pursuant to Regulation 33 of the SEBI (lODR) Regulations, 2015.', link: '/assets/investordata/financial-results/3.-Financial-Results-31.12.2020.pdf'},
-    //   { type: 'Other Disclosures', date: '09-Nov-20', description: 'Un-Audited Financial Result quarter and half year ended on 30th September 2020 pursuant to Regulation 33 of the SEBI (LODR) Regulations, 2015.', link: '/assets/investordata/financial-results/2.-Financial-Results-30.09.2020.pdf'},
-    //   { type: 'Other Disclosures', date: '02-Nov-21', description: 'Un-Audited Financial Result quarter and half year ended on 30th September 2021 pursuant to Regulation 33 of the SEBI (LODR) Regulations, 2015.', link: '/assets/investordata/financial-results/2.-Financial-Results-30.09.2021.pdf'},
-    //   { type: 'Other Disclosures', date: '10-Jun-21', description: 'Outcome ofthe Board Meeting ofthe board held on 10th June 2021.', link: '/assets/investordata/financial-results/4.-Financial-Results-31.03.2021.pdf' },
-    //   { type: 'Other Disclosures', date: '01-Feb-22', description: 'Unaudited Financial Result for quarter ending 31st December 2021 pursuant to Regulation 33 of the SEBI (lODR) Regulations, 2015.', link: '/assets/investordata/financial-results/3.-Financial-Results-31.12.2021.pdf'},
-    //   { type: 'Other Disclosures', date: '09-Aug-21', description: 'Un-Audited Financial Result quarter ending 30th June, 2021 pursuant to Regulation 33 of the SEBI (LODR) Regulations, 2015.', link: '/assets/investordata/financial-results/1.-Financial-Results-30.06.2021.pdf'},
-    //   { type: 'Other Disclosures', date: '23-May-22', description: 'Outcome of the Board Meeting held for consideration and approval of Audited Financial Results as on 31 sl March 2022.', link: '/assets/investordata/financial-results/4.-Financial-Results-31.03.2022.pdf' },
-    //   { type: 'Other Disclosures', date: '09-Nov-22', description: 'Submission of Un-audited Financial Results for the second quarter and half year ended on 30th September 2022.', link: '/assets/investordata/financial-results/2.-Financial-Result-30.09.2022-1.pdf' },
+  const financialResultData = {
+    FY26: [
+      // { type: 'Other Disclosures', year: 'FY-2017', quarter: 'Q1', description: '', link: '' },
+      // { type: 'Other Disclosures', year: 'FY-2017', quarter: 'Q2', description: '', link: '' },
+      // { type: 'Other Disclosures', year: 'FY-2017', quarter: 'Q3', description: '', link: '' },
+      // { type: 'Other Disclosures', year: 'FY-2017', quarter: 'Q4', description: '', link: '' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'take-sebi-qtr_1_transcript-2017-18', link: '/assets/investordata/financial-results/take-sebi-qtr_1_transcript-2017-18.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'Consolidated Standealone financial results', link: '/assets/investordata/financial-results/Consolidated Standealone financial results.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'Consolidated Financial Results', link: '/assets/investordata/financial-results/Consolidated Financial Results.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'Quarter ended June 30, 2017 Earnings Release', link: '/assets/investordata/financial-results/Quarter ended June 30, 2017 Earnings Release.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q2', description: 'TF', link: '/assets/investordata/financial-results/TF.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q2', description: 'standalone financial results', link: '/assets/investordata/financial-results/standalone financial results.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q2', description: 'Consolidated financial results', link: '/assets/investordata/financial-results/Consolidated Financial Results.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q2', description: 'Quarter ended September 30, 2017 Earnings Release', link: '/assets/investordata/financial-results/Quarter ended September 30, 2017 Earnings Release.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'take-sebi-qtr_3_transcript-2017-18', link: '/assets/investordata/financial-results/FY-2018/Q3/take-sebi-qtr_3_transcript-2017-18.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Standalone', link: '/assets/investordata/financial-results/FY-2018/Q3/Standalone.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Consolidated FS', link: '/assets/investordata/financial-results/FY-2018/Q3/Consolidated FS.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Quarter ended December 31, 2017 Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q3/Quarter ended December 31, 2017 Earnings Release.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'take-sebi-qtr_4_transcript-2017-18', link: '/assets/investordata/financial-results/FY-2018/Q4/take-sebi-qtr_4_transcript-2017-18.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'take-sebi-qtr_4_stand_alone-2017-18', link: '/assets/investordata/financial-results/FY-2018/Q4/take-sebi-qtr_4_stand_alone-2017-18.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'take-sebi-qtr_4_consolidated-2017-18', link: '/assets/investordata/financial-results/FY-2018/Q4/take-sebi-qtr_4_consolidated-2017-18.pdf' },
+      { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q4', description: 'Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q4/Earnings Release.pdf' },
 
-      // { type: 'Other Disclosures', date: '27-Oct-25', description: 'Outcome of the Board Meeting held on Monday, October 27, 2025', link: '/public/assets/investordata/disclosure/disclosure-data/Reg30_Outcome_BM_27102025_TSL.pdf' },
+
+      // { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Quarter ended December 31, 2017 Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q3/Quarter ended December 31, 2017 Earnings Release.pdf' },
+      // { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Quarter ended December 31, 2017 Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q3/Quarter ended December 31, 2017 Earnings Release.pdf' },
+      // { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q3', description: 'Quarter ended December 31, 2017 Earnings Release', link: '/assets/investordata/financial-results/FY-2018/Q3/Quarter ended December 31, 2017 Earnings Release.pdf' },
+
       
-      // { type: 'Other Disclosures', date: '22-Oct-25', description: 'Notice of Board Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/Reg29_Intimation_BM_22102025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '10-Oct-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018', link: '/public/assets/investordata/disclosure/disclosure-data/Reg74(5)_10102025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '09-Oct-25', description: 'Intimation regarding resignation of Statutory Auditor of the Company', link: '/public/assets/investordata/disclosure/disclosure-data/INTIMATION_REG_30_AUDITOR_RESIGNATION_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '03-Oct-25', description: 'Scrutinizer’s Report and Voting Results of the Twenty Fourth Annual General Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/Scrutinizer_Report_AGM_30092025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '30-Sep-25', description: 'Summary of proceedings of the Twenty Fourth Annual General Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/AGM_Proceedings_2025.pdf'},
-      // { type: 'Other Disclosures', date: '30-Sep-25', description: 'Closure of Trading Window', link: '/public/assets/investordata/disclosure/disclosure-data/TradingWindowClosure_30092025.pdf' },
-      // { type: 'Other Disclosures', date: '26-Sep-25', description: 'Intimation for disinvestment of M/s. Take Consultancy Services Inc, wholly owned subsidiary', link: '/public/assets/investordata/disclosure/disclosure-data/Reg30_Disinvestment_TCS-Inc_260925.pdf' },
-      // { type: 'Other Disclosures', date: '17-Sep-25', description: 'Newspaper Publication', link: '/public/assets/investordata/disclosure/disclosure-data/Reg47_Intimation_Newspaper_TSL_170925.pdf' },
-      // { type: 'Other Disclosures', date: '08-Sep-25', description: 'Newspaper Publication', link: '/public/assets/investordata/disclosure/disclosure-data/NewspaperIntimation_08092025.pdf' },
-      // { type: 'Annual Disclosures', date: '06-Sep-25', description: 'Submission of Annual Report - FY 2024-25', link: '/public/assets/investordata/disclosure/disclosure-data/AR_Submission_06092025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '01-Aug-25', description: 'Scrutinizer\'s Report and Voting Results of the Extra Ordinary General Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '30-Jul-25', description: 'Reconciliation of Share Capital Audit Report - Quarter ended June 3, 2025.', link: '/public/assets/investordata/disclosure/disclosure-data/Reg76_30062025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '30-Jul-25', description: 'Summary of proceedings of the Extra-Ordinary General Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/EGM_Proceedings_2025.pdf' },
-      // { type: 'Other Disclosures', date: '21-Jul-25', description: 'Newspaper Publication', link: '/public/assets/investordata/disclosure/disclosure-data/Reg47_Intimation_Newspaper_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '14-Jul-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018.', link: '/public/assets/investordata/disclosure/disclosure-data/Reg74(5)_14072025_TSL.pdf' },
+    ],
+    FY25: [
+      // { type: 'Quarterly Disclosures', year: 'FY-2017', description: 'Reconciliation of Share Capital Audit Report - Quarter ended June 3, 2025', link: '#' },
+      // { type: 'Other Disclosures', date: '30-Jul-25', description: 'Summary of proceedings of the Extra Ordinary General Meeting', link: '#' },
+      // { type: 'Other Disclosures', date: '21-Jul-25', description: 'Newspaper Publication', link: '#' },
+      // { type: 'Other Disclosures', date: '14-Jul-25', description: 'Certificate pursuant to Regulation 74(5) of SEBI (Depositories and Participants) Regulations 2018', link: '#' },
       // { type: 'Other Disclosures', date: '09-Jul-25', description: 'Newspaper Publication', link: '#' },
-      // { type: 'Other Disclosures', date: '08-Jul-25', description: 'Notice of Extra-Ordinary General Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/Intimation_EGM_Notice_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '08-Jul-25', description: 'Newspaper Publication', link: '/public/assets/investordata/disclosure/disclosure-data/NewspaperIntimation-08-jul-25.pdf' },
-      // { type: 'Other Disclosures', date: '07-Jul-25', description: 'Outcome of the Board Meeting held on Monday, July 7, 2025.', link: '/public/assets/investordata/disclosure/disclosure-data/Reg30_Outcome_BM_07072025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '02-Jul-25', description: 'Notice of Board Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/Reg 29_Intimation_BM_02072025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '27-Jun-25', description: 'Closure of trading window', link: '/public/assets/investordata/disclosure/disclosure-data/TradingWindowClosure_30062025.pdf' },
-      // { type: 'Other Disclosures', date: '02-Jun-25', description: 'Newspaper Publication', link: '/public/assets/investordata/disclosure/disclosure-data/NewspaperIntimation-02-06-2025.pdf' },
-      // { type: 'Other Disclosures', date: '30-May-25', description: 'Annual Secretarial Compliance Report of the Company for the year ended March 31, 2025', link: '/public/assets/investordata/disclosure/disclosure-data/Reg24A_ASCR_30052025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '30-May-25', description: 'Outcome of the Board Meeting held on Friday, May 30, 2025.', link: '/public/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '24-May-25', description: 'Intimation under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirement) Regulations, 2015 – Appointment of Independent Directors', link: '/public/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-      // { type: 'Other Disclosures', date: '23-May-25', description: 'Notice of Board Meeting', link: '/public/assets/investordata/disclosure/disclosure-data/ScrutinizerReport_EGM_01082025_TSL.pdf' },
-  ]
+      // { type: 'Other Disclosures', date: '08-Jul-25', description: 'Notice of Extra Ordinary General Meeting', link: '#' },
+      // { type: 'Other Disclosures', date: '08-Jul-25', description: 'Newspaper Publication', link: '#' },
+      // { type: 'Other Disclosures', date: '07-Jul-25', description: 'Outcome of the Board Meeting held on Monday, July 7, 2025', link: '#' },
+      // { type: 'Other Disclosures', date: '02-Jul-25', description: 'Notice of Board Meeting', link: '#' },
+      // { type: 'Other Disclosures', date: '27-Jun-25', description: 'Closure of trading window', link: '#' },
+      // { type: 'Other Disclosures', date: '02-Jun-25', description: 'Newspaper Publication', link: '#' },
+      // { type: 'Other Disclosures', date: '30-May-25', description: 'Annual Secretarial Compliance Report of the Company for the year ended March 31, 2025', link: '#' },
+      // { type: 'Other Disclosures', date: '30-May-25', description: 'Outcome of the Board Meeting held on Friday, May 30, 2025', link: '#' }
+    ]
+  };
 
-  // const currentYearData = reportsData[selectedYear] || reportsData['FY25'];
+  const currentYearFinancialData = financialResultData[selectedYear];
 
   return (
     <div className="tab-content active">
-      <h3 className="content-title">Quarter - 3</h3>
+      {/* <h3 className="content-title">Quarter - 3</h3> */}
 
       {/* Year Tabs */}
-      {/* <div className="disclosure-year-tabs"> */}
-        {/* {years.map((year) => (
+      <div className="disclosure-year-tabs">
+        {years.map((year) => (
           <button
             key={year}
             className={`disclosure-year-btn ${selectedYear === year ? 'active' : ''}`}
@@ -64,8 +68,8 @@ const FinancialResult = () => {
           >
             {year}
           </button>
-        ))} */}
-      {/* </div> */}
+        ))}
+      </div>
 
       {/* Disclosure Table */}
       <div className="disclosure-table-wrapper">
@@ -73,15 +77,17 @@ const FinancialResult = () => {
           <thead>
             <tr>
               {/* <th>Type</th> */}
-              <th>Date</th>
+              <th>Year</th>
+              <th>Quarter</th>
               <th>Description</th>
             </tr>
           </thead>
           <tbody>
-            {financialResultData?.map((item, index) => (
+            {currentYearFinancialData?.map((item, index) => (
               <tr key={index}>
                 {/* <td>{item.type}</td> */}
-                <td>{item.date}</td>
+                <td>{item?.year}</td>
+                <td>{item?.quarter}</td>
                 <td>
                   <a href={item.link} className="disclosure-description-link" target="_blank" rel="noopener noreferrer">
                     <span className="pdf-icon-small">📄</span>
