@@ -7,11 +7,11 @@ const AnnualReport = () => {
 
     // Aap yahan apna data add kar sakte hain
     const financialResultData = [
-        { type: 'Other Disclosures', year: '2017-18', description: 'AR-2017-18', link: '/assets/investordata/annual-report/AR-2017-18.pdf' },
-        { type: 'Other Disclosures', year: '2018-19', description: 'AR-2018-19', link: '/assets/investordata/annual-report/AR-2018-19.pdf' },
-        { type: 'Other Disclosures', year: '2019-20', description: 'AR-2019-20', link: '/assets/investordata/annual-report/AR-2019-20.pdf' },
+        // { type: 'Other Disclosures', year: '2017-18', description: 'AR-2017-18', link: '/assets/investordata/annual-report/AR-2017-18.pdf' },
+        // { type: 'Other Disclosures', year: '2018-19', description: 'AR-2018-19', link: '/assets/investordata/annual-report/AR-2018-19.pdf' },
+        // { type: 'Other Disclosures', year: '2019-20', description: 'AR-2019-20', link: '/assets/investordata/annual-report/AR-2019-20.pdf' },
 
-        { type: 'Other Disclosures', year: '2020-21', description: 'AR-2020-21', link: '/assets/investordata/annual-report/AR-2020-21.pdf' },
+        // { type: 'Other Disclosures', year: '2020-21', description: 'AR-2020-21', link: '/assets/investordata/annual-report/AR-2020-21.pdf' },
         
         // { type: 'Other Disclosures', year: '2018-19', description: 'AR-2018-19', link: '/assets/investordata/annual-report/AR-2018-19.pdf' },
         // { type: 'Other Disclosures', year: '2018-19', description: 'AR-2018-19', link: '/assets/investordata/annual-report/AR-2018-19.pdf' },
