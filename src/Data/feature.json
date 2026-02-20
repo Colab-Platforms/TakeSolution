@@ -1,27 +1,37 @@
 [
-  {
-    "img": "/assets/images/feature1.png",   
-    "title": "Clinical Research",
-    "desc": "Accelerating Intelligent Clinical Development"
-  },
-  {
-    "img": "/assets/images/feature2.png",   
-    "title": "Biotechnology",
-    "desc": "Advancing Next-Generation Biologics"
-  },
-  {
-    "img": "/assets/images/feature3.png",   
-    "title": "Life Science",
-    "desc": "AI-Powered Scientific Innovation"
-  },
-  {
-    "img": "/assets/images/feature4.png",   
+    {
+    "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteClinicIcon.png?v=1771582212",   
     "title": "One Minute Clinic",
-    "desc": "Instant AI Health Assessment"
-  },  
+    "desc": "Instant AI Health Assessment",
+    "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/one-minute-clinic-banner.jpg?v=1771067701",
+    "BtnUrl": "/feature/featrue-details"
+  }, 
   {
-    "img": "/assets/images/feature5.png",   
+    "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ClinicalResearchIcon.png?v=1771582211",   
+    "title": "Clinical Research",
+    "desc": "Accelerating Intelligent Clinical Development",
+    "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/clinical-research-banner.jpg?v=1771067701",
+    "BtnUrl": "/feature/featrue-details"
+  },
+  {
+    "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Biotechnology.png?v=1771582211",   
+    "title": "Biotechnology",
+    "desc": "Advancing Next-Generation Biologics",
+    "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/biotechnology-banner.jpg?v=1771067701",
+    "BtnUrl": "/feature/featrue-details"
+  },
+  {
+    "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience.png?v=1771582212",   
+    "title": "Life Science",
+    "desc": "AI-Powered Scientific Innovation",
+    "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/life-science-banner.jpg?v=1771067701",
+    "BtnUrl": "/feature/featrue-details"
+  }, 
+  {
+    "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealthIcon.png?v=1771582211",   
     "title": "Proactive Health",
-    "desc": "Predictive Personalized Health Platform"
+    "desc": "Predictive Personalized Health Platform",
+    "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/proactive-health-banner.jpg?v=1771067701",
+    "BtnUrl": "/feature/featrue-details"
   }   
 ]

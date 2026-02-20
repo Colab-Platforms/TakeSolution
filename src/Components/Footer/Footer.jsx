@@ -78,10 +78,9 @@ const Footer = () => {
                                 <p className="footer-widget-text">{LogoContent.Content}</p>
                                 <div className="footer-social">
                                     <div className="footer-widget-social">
-                                        {/* <a href="#"><i className="bi bi-facebook"></i></a>
-                                        <a href="#"><i className="bi bi-twitter"></i></a>
-                                        <a href="#"><i className="bi bi-linkedin"></i></a>
-                                        <a href="#"><i className="bi bi-instagram"></i></a>                                         */}
+                                        <a href="https://www.instagram.com/takesolutions_/"><i className="bi bi-instagram"></i></a>
+                                        <a href="https://youtube.com/@takesolutions-v5x?si=q5mF3aBoglXA6dnu"><i className="bi bi-youtube"></i></a>
+                                        <a href="https://x.com/TakeSolutions"><i className="bi bi-twitter-x"></i></a>                                        
                                     </div>
                                 </div>
                             </div>

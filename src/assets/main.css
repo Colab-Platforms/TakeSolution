@@ -1157,7 +1157,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 60, 0, 0.8);
+  background-color: transparent;
   border: none;
   color: white;
   font-size: 24px;
@@ -1324,7 +1324,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 
 .feature-area {
   padding: 0 0 40px;
-  margin-top: 60px;
+  margin-top: -60px;
 }
 
 .feature-box {
@@ -1344,7 +1344,8 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   overflow: hidden;
   margin-bottom: 30px;
   transition: all 0.5s ease;
-  min-height: 200px;
+  min-height: 220px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;

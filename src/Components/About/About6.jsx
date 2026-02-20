@@ -7,9 +7,9 @@ const About6 = () => {
   const tabs = [
     {
       label: 'Our Vision',
-      // title: 'Reaching People And Touching Lives',
-      // subtitle: 'Globally As A Leading Provider Of Valued Medicines',
-      description: 'To lead the transformation of global healthcare through artificial intelligence and deep technology, enabling faster discoveries, smarter clinical decisions, and proactive care. The vision is to build a connected, intelligent healthcare ecosystem that shifts the focus from treating illness to predicting, preventing, and improving human health at scale.',
+      title: 'To transform global healthcare through artificial intelligence and intelligent digital innovation.',
+      subtitle: '',
+      description: 'TAKE Solutions envisions a connected healthcare ecosystem where life sciences, clinical research, biotechnology, and preventive health are powered by intelligent, data-driven platforms. We aspire to create a future where research is accelerated, regulatory processes are streamlined, risks are predicted early, and healthcare decisions are guided by real-time insights.\n\nOur vision is to bridge science and technology, enabling organizations to innovate faster, operate smarter, and deliver safer, more effective outcomes for patients worldwide. By combining advanced analytics, secure digital infrastructure, and deep domain expertise, we aim to redefine how healthcare systems function — making them more proactive, precise, and sustainable for generations to come.',
       image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2026-02-19_at_6.48.46_PM.jpg?v=1771507157',
       type: 'image'
     },
@@ -76,9 +76,11 @@ const About6 = () => {
           <div className="about6-content-wrapper">
             <div className="about6-content-left">
               <div className="about6-content-inner">
+                {currentTab.subtitle && (
+                  <p className="about6-content-subtitle">{currentTab.subtitle}</p>
+                )}
                 <h3 className="about6-content-title">{currentTab.title}</h3>
-                <p className="about6-content-subtitle">{currentTab.subtitle}</p>
-                <p className="about6-content-description">{currentTab.description}</p>
+                <p className="about6-content-description" style={{whiteSpace: 'pre-line'}}>{currentTab.description}</p>
               </div>
             </div>
 

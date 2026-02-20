@@ -4,6 +4,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { router } from './Routes/Routes.jsx';
+import { CarouselProvider } from './Context/CarouselContext.jsx';
 import "slick-carousel/slick/slick.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -12,6 +13,8 @@ import './assets/responsive.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CarouselProvider>
+      <RouterProvider router={router} />
+    </CarouselProvider>
   </StrictMode>,
 )
