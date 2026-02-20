@@ -181,7 +181,7 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'TRADINGWINDOWCLOSURE03012020', link: '/assets/investordata/disclosure/disclosure-data/FY20/TRADINGWINDOWCLOSURE03012020.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'tradingwindowclosure310320', link: '/assets/investordata/disclosure/disclosure-data/FY20/tradingwindowclosure310320.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'transcriptinvestorscall080819', link: '/assets/investordata/disclosure/disclosure-data/FY20/transcriptinvestorscall080819.pdf' }
-    ]
+    ],
 
     FY19: [
       { type: 'Other Disclosures', date: '30-Oct-19', description: 'analystcall21112018', link: '/assets/investordata/disclosure/disclosure-data/FY19/analystcall21112018.pdf' },
