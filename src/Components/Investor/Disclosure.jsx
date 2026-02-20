@@ -59,6 +59,8 @@ const Disclosure = () => {
 
     ],
 
+    
+
 
     FY25: [
       { type: 'Other Disclosures', date: '30-Oct-25', description: 'Corrigendum AGM Proceedings ', link: '/assets/investordata/disclosure/disclosure-data/FY25/AGM Proceedings_2023.pdf' },
@@ -108,6 +110,51 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-25', description: 'TradingWindow', link: '/assets/investordata/disclosure/disclosure-data/FY25/TradingWindow.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-25', description: 'TradingWindowClosure_30 06 2024', link: '/assets/investordata/disclosure/disclosure-data/FY25/TradingWindowClosure_30 06 2024.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-25', description: 'TradingWindowClosure_30 09 2024', link: '/assets/investordata/disclosure/disclosure-data/FY25/TradingWindowClosure_30 09 2024.pdf' }
+    ],
+
+     FY24:[
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'AGM Proceedings_2023', link: '/assets/investordata/disclosure/disclosure-data/FY24/AGM Proceedings_2023.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'AR_Submission_17072023_TSL_Final', link: '/assets/investordata/disclosure/disclosure-data/FY24/AR_Submission_17072023_TSL_Final.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Bookclosure', link: '/assets/investordata/disclosure/disclosure-data/FY24/Bookclosure.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Intimation_Expiry_JMTerm_TAKEPte', link: '/assets/investordata/disclosure/disclosure-data/FY24/Intimation_Expiry_JMTerm_TAKEPte.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Intimation_Reg31(4)_SAST_31032023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Intimation_Reg31(4)_SAST_31032023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Intimation_Scrutinizer_Report_Reg44_12052023', link: '/assets/investordata/disclosure/disclosure-data/FY24/Intimation_Scrutinizer_Report_Reg44_12052023.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'LargeCorporateIntimation_31032023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/LargeCorporateIntimation_31032023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Newspaper Intimation_10 11 2023', link: '/assets/investordata/disclosure/disclosure-data/FY24/Newspaper Intimation_10 11 2023.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'NewspaperIntimation_09042023', link: '/assets/investordata/disclosure/disclosure-data/FY24/NewspaperIntimation_09042023.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'NewspaperIntimation_19072023', link: '/assets/investordata/disclosure/disclosure-data/FY24/NewspaperIntimation_19072023.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'NewspaperIntimation_20072023', link: '/assets/investordata/disclosure/disclosure-data/FY24/NewspaperIntimation_20072023.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'NewspaperPublication_14 02 2024', link: '/assets/investordata/disclosure/disclosure-data/FY24/NewspaperPublication_14 02 2024.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Notice_BM_19052023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Notice_BM_19052023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg 29_Intimation_BM_29 01 2024_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg 29_Intimation_BM_29 01 2024_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg7(3)_31032023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg7(3)_31032023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg23(9)_RPT_29052023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg23(9)_RPT_29052023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg24A_ASCR_30052023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg24A_ASCR_30052023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg29_Intimation_BM_02 11 2023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg29_Intimation_BM_02 11 2023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg29_Intimation_BM_07082023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg29_Intimation_BM_07082023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg30_Outcome_BM_08 11 2023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg30_Outcome_BM_08 11 2023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg30_Outcome_BM_13022024_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg30_Outcome_BM_13022024_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg30_Outcome_BM_14082023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg30_Outcome_BM_14082023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg30_Shifting_of_Registered_Office', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg30_Shifting_of_Registered_Office.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg33_Outcome_BM_FinancialResults_29052023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg33_Outcome_BM_FinancialResults_29052023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg40(9)_31032023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg40(9)_31032023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg47_Financialresults_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg47_Financialresults_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg47_Intimation_Newspaper_20 12 2023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg47_Intimation_Newspaper_20 12 2023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg47_Intimation_Newspaper_21092023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg47_Intimation_Newspaper_21092023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg74(5)_09 01 2024_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg74(5)_09 01 2024_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg74(5)_10072023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg74(5)_10072023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg74(5)_11042023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg74(5)_11042023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg74(5)_11102023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg74(5)_11102023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg76_31 12 2023', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg76_31 12 2023.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg76_30062023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg76_30062023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg76_30092023', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg76_30092023.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg76_31032023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Reg76_31032023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Trading Window_Closure_29092023_TSL', link: '/assets/investordata/disclosure/disclosure-data/FY24/Trading Window_Closure_29092023_TSL.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Trading WindowClosure_28 03 2024', link: '/assets/investordata/disclosure/disclosure-data/FY24/Trading WindowClosure_28 03 2024.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'TSL letterhead_LTD-Mylapore new', link: '/assets/investordata/disclosure/disclosure-data/FY24/TSL letterhead_LTD-Mylapore new.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'VotingResults_ScrutinizerReport_AGM_16082023', link: '/assets/investordata/disclosure/disclosure-data/FY24/VotingResults_ScrutinizerReport_AGM_16082023.pdf' },
+
+    
     ],
 
     FY19: [

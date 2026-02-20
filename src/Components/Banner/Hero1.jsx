@@ -8,20 +8,20 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 
 	const desktopImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsitePage_01_jpg.jpg?v=1771572772",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteClinic_jpg.jpg?v=1771578487",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteCliniccc_jpg.jpg?v=1771592074",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Clinical_Research_jpg.jpg?v=1771578571",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Biotechnology_jpg.jpg?v=1771579252",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Biote_jpg.jpg?v=1771593522",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience_jpg.jpg?v=1771579252",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealth_jpg.jpg?v=1771579252"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealth.jpg_1.jpg?v=1771591667"
 	];
 
 	const mobileImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_01Mobile_jpg.jpg?v=1771401281",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.1MV.png?v=1771326474",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.2MV.png?v=1771326474",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_01Mobile_jpg.jpg?v=1771401281",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2026-02-17_at_6.18.02_PM.jpg?v=1771332641",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.1MV.png?v=1771326474"
+		// "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MainIntro_jpg.jpg?v=1771593855",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteClinic.jpg_1.jpg?v=1771593854",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ClinicalResearch_jpg.jpg?v=1771593855",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BioTechnology.jpg_1.jpg?v=1771593853",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience.jpg_1.jpg?v=1771593854",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealth.jpg_2.jpg?v=1771593855"
 	];
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

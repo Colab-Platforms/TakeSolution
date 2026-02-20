@@ -12,7 +12,7 @@ export const CarouselProvider = ({ children }) => {
         const nextIndex = (prev + 1) % 6;
         return nextIndex;
       });
-    }, (currentIndex === 0 ? 10000 : 5000));
+    }, (currentIndex === 0 ? 7000 : 4000));
     return () => clearInterval(interval);
   }, [currentIndex]);
 
