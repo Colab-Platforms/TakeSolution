@@ -4622,7 +4622,8 @@ h3.blog-details-title.two {
   }
 
   .hero-area {
-    padding-top: 80px;
+    padding-top: 90px;
+    min-height: calc(100vh - 90px);
   }
 
   .hero-contant {
