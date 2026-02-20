@@ -7,6 +7,8 @@ import Disclosure from './Disclosure';
 import './FinancialPerformance.css';
 import FinancialResult from './FinancialResult';
 import AnnualReport from './AnnualReport';
+import BoardOfDirectors from './BoardOfDirectors'
+import FinancialSubsidary from './FinancialSubsidary';
 
 const FinancialPerformance = () => {
   const [activeTab, setActiveTab] = useState('financial-result');
@@ -17,7 +19,9 @@ const FinancialPerformance = () => {
     { id: 'annual-report', label: 'Anual Report' },
     { id: 'investor-corner', label: 'Investor Corner' },
     { id: 'corporate-governance', label: 'Corporate Governance' },
-    { id: 'disclosure', label: 'Disclosure' }
+    { id: 'Disclosure', label: 'Disclosure' },
+    { id: 'Board of directors', label: 'Board of directors' },
+    { id: 'Subsidiary Financials', label: 'Subsidiary Financials' },
   ];
 
   return (
@@ -73,7 +77,9 @@ const FinancialPerformance = () => {
               {activeTab === 'annual-report' && <AnnualReport /> }
               {activeTab === 'investor-corner' && <InvestorCorner />}
               {activeTab === 'corporate-governance' && <CorporateGovernance />}
-              {activeTab === 'disclosure' && <Disclosure />}
+              {activeTab === 'Disclosure' && <Disclosure/>}
+              {activeTab === 'Board of directors' && <BoardOfDirectors/>}
+              {activeTab === 'Subsidiary Financials' && <FinancialSubsidary/>}
             </div>
           </div>
         </div>

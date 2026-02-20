@@ -6,7 +6,8 @@ const InvestorCorner = () => {
     title: 'Notice of the Extra Ordinary General Meeting',
     years: [
       { year: '2021', link: '/assets/investordata/investor-corner/extra-ordinary-general-meeting/Final_EGM_Notice_Sept29_2021.pdf' },
-      { year: '2025', link: '/assets/investordata/investor-corner/extra-ordinary-general-meeting/Notice_EGM_TSL_2024.pdf' },
+      { year: '2024', link: '/assets/investordata/investor-corner/extra-ordinary-general-meeting/Notice_EGM_TSL_2024.pdf' },
+      { year: '2025', link: '/assets/investordata/investor-corner/extra-ordinary-general-meeting/Notice of EOGM 2025.pdf' },
       { year: '2026', link: '/assets/investordata/investor-corner/extra-ordinary-general-meeting/TS-EOGM-Notice-Final.pdf' }
     ]
   };
