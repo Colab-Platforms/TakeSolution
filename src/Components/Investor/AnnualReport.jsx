@@ -7,7 +7,9 @@ const AnnualReport = () => {
 
     // Aap yahan apna data add kar sakte hain
     const financialResultData = [
-        { type: 'Other Disclosures', year: 'FY-2017', description: 'Annual Report-2017', link: '/assets/investordata/financial-results/FY-2017/Annual Report -2017.pdf' },
+        { type: 'Other Disclosures', year: 'FY-2017', description: 'TAKE_Solutions_Annual_Report_2016-2017', link: '/assets/investordata/financial-results/FY-2017/Annual Report -2017.pdf' },
+        { type: 'Other Disclosures', year: 'FY-2018', description: 'TAKE_Solutions_Annual_Report_2017-2018', link: '/assets/investordata/annual-report/TAKE_Solutions_Annual_Report_2017-2018.pdf' },
+        { type: 'Other Disclosures', year: 'FY-2019', description: 'TAKE_Solutions_Annual_Report_2018-2019', link: '/assets/investordata/annual-report/TAKE_Solutions_Annual_Report_2018-2019.pdf' },
         { type: 'Other Disclosures', year: 'FY-2020', description: 'TAKE_Solutions_Annual_Report_2019-2020', link: '/assets/investordata/financial-results/FY-2020/TAKE_Solutions_Annual_Report_2019-2020.pdf' },
         { type: 'Other Disclosures', year: 'FY-2021', description: 'TAKE_Solutions_Annual_Report_2020-2021', link: '/assets/investordata/financial-results/FY-2021/TAKE_Solutions_Annual_Report_2020-2021.pdf' },
         { type: 'Other Disclosures', year: 'FY-2022', description: 'TAKE_Solutions_Annual_Report_2021-2022', link: '/assets/investordata/financial-results/FY-2022/TAKE_Solutions_Annual_Report_2021-2022.pdf' },

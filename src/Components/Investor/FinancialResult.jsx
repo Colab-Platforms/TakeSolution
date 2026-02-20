@@ -56,6 +56,46 @@ const FinancialResult = () => {
     //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q4', description: 'take-sebi-qtr_4_stand_alone-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q4/take-sebi-qtr_4_stand_alone-2022-23.pdf'},
     //   { type: 'Other Disclosure', year: 'FY-2022', quarter: 'Q4', description: 'take-sebi-qtr_4_consolidated-2022-23', link: '/assets/investordata/financial-results/FY-2023/Q4/take-sebi-qtr_4_consolidated-2022-23.pdf'},
     // ],
+
+    
+//ujjwal done fy20-fy19
+    FY20: [
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q1', description: 'Consolidated Financial Results', link: '/assets/investordata/financial-results/FY-2020/Q-1/Consolidated Financial Results.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q1', description: 'Earnings Release.pdf', link: '/assets/investordata/financial-results/FY-2020/Q-1/Earnings Release.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q1', description: 'Standalone4 Financial Results', link: '/assets/investordata/financial-results/FY-2020/Q-1/Standalone4 Financial Results.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q1', description: 'take-sebi-qtr_1_transcript-2019-20', link: '/assets/investordata/financial-results/FY-2020/Q-1/take-sebi-qtr_1_transcript-2019-20.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q2', description: 'Earnings Release', link: '/assets/investordata/financial-results/FY-2020/Q-2/Earnings Release.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q2', description: 'take-sebi-qtr_2_consolidated-2019-20', link: '/assets/investordata/financial-results/FY-2020/Q-2/take-sebi-qtr_2_consolidated-2019-20.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q2', description: 'take-sebi-qtr_2_stand_alone-2019-20', link: '/assets/investordata/financial-results/FY-2020/Q-2/take-sebi-qtr_2_stand_alone-2019-20.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q3', description: 'Earnings Release.pdf', link: '/assets/investordata/financial-results/FY-2020/Q-3/Earnings Release.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q3', description: 'take-sebi-qtr_3_consolidated-2019-20', link: '/assets/investordata/financial-results/FY-2020/Q-3/take-sebi-qtr_3_consolidated-2019-20.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q3', description: 'take-sebi-qtr_3_stand_alone-2019-20', link: '/assets/investordata/financial-results/FY-2020/Q-3/take-sebi-qtr_3_stand_alone-2019-20.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q4', description: 'TAKE Earnings Release', link: '/assets/investordata/financial-results/FY-2020/Q-4/TAKE Earnings Release.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q4', description: 'take-sebi-qtr_4_consolidated-2019-20', link: '/assets/investordata/financial-results/FY-2020/Q-4/take-sebi-qtr_4_consolidated-2019-20.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2020', quarter: 'Q4', description: 'take-sebi-qtr_4_stand_alone-2019-20', link: '/assets/investordata/financial-results/FY-2020/Q-4/take-sebi-qtr_4_stand_alone-2019-20.pdf'},
+    ],
+
+
+    FY19: [
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q1', description: 'Consolidated FInancials', link: '/assets/investordata/financial-results/FY-2019/Q-1/Consolidated FInancials.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q1', description: 'Earnings Release Q1FY19', link: '/assets/investordata/financial-results/FY-2019/Q-1/Earnings Release Q1FY19.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q1', description: 'Standalone financial Results', link: '/assets/investordata/financial-results/FY-2019/Q-1/Standalone financial Results.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q1', description: 'take-sebi-qtr_1_transcript-2018-19', link: '/assets/investordata/financial-results/FY-2019/Q-1/take-sebi-qtr_1_transcript-2018-19.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q2', description: 'Earnings Release', link: '/assets/investordata/financial-results/FY-2019/Q-2/Earnings Release.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q2', description: 'TAKE-CFS-SEBI-Q2-FY19.xlsx', link: '/assets/investordata/financial-results/FY-2019/Q-2/TAKE-CFS-SEBI-Q2-FY19.xlsx.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q2', description: 'TAKE-Standalone-SEBI-Q2-FY19.xlsx', link: '/assets/investordata/financial-results/FY-2019/Q-2/TAKE-Standalone-SEBI-Q2-FY19.xlsx.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q3', description: 'Earnings Release', link: '/assets/investordata/financial-results/FY-2019/Q-3/Earnings Release.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q3', description: 'take-sebi-qtr_3_consolidated-2018-19', link: '/assets/investordata/financial-results/FY-2019/Q-3/take-sebi-qtr_3_consolidated-2018-19.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q3', description: 'take-sebi-qtr_3_stand_alone-2018-19', link: '/assets/investordata/financial-results/FY-2019/Q-3/take-sebi-qtr_3_stand_alone-2018-19.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter:'Q3', description: 'take-sebi-qtr_3_transcript-2018-19', link: '/assets/investordata/financial-results/FY-2019/Q-3/take-sebi-qtr_3_transcript-2018-19.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q4', description: '2.Financials', link: '/assets/investordata/financial-results/FY-2019/Q-4/2.Financials.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q4', description: '2.Stanalone Financials', link: '/assets/investordata/financial-results/FY-2019/Q-4/2.Stanalone Financials.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q4', description: 'Earnings Release Q4 FY19 - TAKE Solutions', link: '/assets/investordata/financial-results/FY-2019/Q-4/Earnings Release Q4 FY19 - TAKE Solutions.pdf'},
+      { type: 'Other Disclosure', year: 'FY-2019', quarter: 'Q4', description: 'take-sebi-qtr_4_transcript-2018-19', link: '/assets/investordata/financial-results/FY-2019/Q-4/take-sebi-qtr_4_transcript-2018-19.pdf'},
+    ],
+
+
+
     FY18: [
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'take-sebi-qtr_1_transcript-2017-18', link: '/assets/investordata/financial-results/take-sebi-qtr_1_transcript-2017-18.pdf' },
       { type: 'Other Disclosures', year: 'FY-2018', quarter: 'Q1', description: 'Consolidated Standealone financial results', link: '/assets/investordata/financial-results/Consolidated Standealone financial results.pdf' },

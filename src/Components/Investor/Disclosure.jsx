@@ -77,6 +77,8 @@ const Disclosure = () => {
   // Annual Return data
   const annualReturnYears = [
     // { year: '2023-2024', link: '' },
+    { year: '2024-2025', link: '/assets/investordata/disclosure/2024-25/2024-25.pdf' },
+    { year: '2023-2024', link: '/assets/investordata/disclosure/2023-24/2023-2024.pdf' },
     { year: '2022-2023', link: '/assets/investordata/disclosure/2022-23/MGT_7_22-23_TSL.pdf' },
     { year: '2021-2022', link: '/assets/investordata/disclosure/2021-22/Form_MGT_7.pdf' },
     { year: '2020-2021', link: '/assets/investordata/disclosure/2020-21/MGT_7_2020-21_TSL_Signed.pdf' },
