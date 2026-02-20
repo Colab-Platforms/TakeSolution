@@ -14,7 +14,9 @@ const InvestorCorner = () => {
   const egmVotingData = {
     title: 'EGM Voting Results',
     years: [
-      { year: '2021', link: '/assets/investordata/investor-corner/EGM Voting Results/Reg44_Voting_Results_261021.pdf' }
+      { year: '2021', link: '/assets/investordata/investor-corner/EGM Voting Results/Reg44_Voting_Results_261021.pdf' },
+      { year: '2024', link: 'public/assets/investordata/investor-corner/EGM Voting Results/Microsoft Word - EGM_Proceedings_2024.pdf' },
+      { year: '2025', link: 'public/assets/investordata/investor-corner/EGM Voting Results/EGM_Proceedings_2025.pdf' }
     ]
   };
 
@@ -40,6 +42,10 @@ const InvestorCorner = () => {
   const agmVotingData = {
     title: 'AGM Voting Results',
     years: [
+      
+      { year: '2025', link: 'public/assets/investordata/investor-corner/AGM Voting Results/AGM voting results 2025.pdf' },
+      { year: '2024', link: 'public/assets/investordata/investor-corner/AGM Voting Results/AGM voting results 2024.pdf' },
+      { year: '2023', link: 'public/assets/investordata/investor-corner/AGM Voting Results/AGM voting results 2023.pdf' },
       { year: '2022', link: '/assets/investordata/investor-corner/AGM Voting Results/Voting_Results_Scrutinizer_Report_AGM_261222.pdf' },
       { year: '2021', link: '/assets/investordata/investor-corner/AGM Voting Results/Voting_Results_2021.pdf' },
       { year: '2020', link: '/assets/investordata/investor-corner/AGM Voting Results/AGM PROCEEDINGS 2020.pdf' },
