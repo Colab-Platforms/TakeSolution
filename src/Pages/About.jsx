@@ -13,8 +13,8 @@ const About = () => {
             <About4
                 MainImg="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ChatGPT_Image_Feb_19_2026_05_51_58_PM.png?v=1771504924"
                 SubTitle="TakeSolution COMPANY"
-                Title="Redefining the Future of <br>Healthcare <span>with AI.</span>"
-                Content="TAKE Solutions is a global AI-driven deep technology company transforming life sciences, clinical research, biotechnology, and preventive healthcare through intelligent platforms and scientific expertise."
+                Title="Shaping the Future of  <br>Healthcare <span>with Artificial Intelligence.</span>"
+                Content="TAKE Solutions is a global AI-driven technology company delivering intelligent platforms across life sciences, clinical research, biotechnology, and preventive healthcare. We combine innovation, data, and scientific expertise to build smarter, faster, and more efficient healthcare ecosystems worldwide.."
                 listTitle1="Best IT Solutions & Service"
                 listTitle2="24 Hour's Customer Service"
             ></About4>

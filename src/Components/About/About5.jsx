@@ -46,9 +46,16 @@ const About5 = () => {
                     <h5 className="section-sub-title">About TakeSolutions</h5>
                     <h1 className="section-main-title">Company <span>Overview</span></h1>
                     <p className="about5-description">
-                        TAKE Solutions Limited is a global healthcare technology and analytics company driving digital transformation across life sciences, biotechnology, clinical research, and preventive healthcare. By leveraging artificial intelligence, advanced analytics, and deep scientific expertise, the Company enables pharmaceutical, biotechnology, and healthcare organizations to accelerate innovation, improve research efficiency, and enhance clinical and patient outcomes through scalable, intelligent platforms.
+                        Take Solutions Limited is a globally recognized technology and analytics company, delivering comprehensive solutions across the Life Sciences and Supply Chain sectors. With a strong focus on digital transformation, regulatory compliance, and operational excellence, we enable organizations worldwide to achieve sustainable growth and long-term competitiveness.
+Listed on the NSE and BSE, Take Solutions has built a reputation for domain-driven innovation, robust governance, and consistent value creation for all stakeholders. Our strategic investments in data sciences, artificial intelligence, and automation strengthen our ability to deliver intelligent business outcomes and accelerate our clients’ success.
+
                         <br />
-                        With a strong foundation in healthcare intelligence, regulatory expertise, and data-driven systems, TAKE Solutions is building next-generation digital platforms that shift healthcare from reactive treatment to predictive and preventive care. Listed on the NSE and BSE, the Company is recognized for its domain-led innovation, robust governance, and consistent value creation, while its strategic focus on AI, automation, and advanced analytics positions it at the forefront of the evolving global healthcare ecosystem.
+                        Headquartered in Chennai with a global footprint, the company’s multidisciplinary teams bring together deep industry expertise, advanced technologies, and strong execution capabilities. This integrated approach ensures precision, transparency, and scalability across every engagement.
+
+Our Vision: To be a trusted global enterprise driving transformation and value through innovation, data integrity, and sustainable growth.
+
+Our Mission: To create enduring stakeholder value by leveraging technology, domain expertise, and responsible business practices that empower industry advancement and human progress.
+
                     </p>
 
                 </div>
