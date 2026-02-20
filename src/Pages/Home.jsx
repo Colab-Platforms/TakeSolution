@@ -20,7 +20,7 @@ const Home = () => {
                 bgImg="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_02_jpg.jpg?v=1771312434"
                 SubTitle="TakeSolution IT SERVICES"
                 Title="Powering the Future of Healthcare with<br>Artificial Intelligence."
-                Content="TAKE Solutions is a global AI-driven deep tech company transforming life sciences, clinical research, biotechnology, and preventive healthcare."
+                // Content="TAKE Solutions is a global AI-driven deep tech company transforming life sciences, clinical research, biotechnology, and preventive healthcare."
                 BtnText="EXPLORE MORE"
                 BtnLink="/about"
                 // Image="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Gemini_Generated_Image_6sas3c6sas3c6sas-Photoroom.png?v=1771225818"

@@ -448,11 +448,14 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 .cs_site_header {
   position: absolute;
   width: 100%;
-  z-index: 101;
+  z-index: 1000;
   left: 0;
   top: 0px;
   transition: all 0.4s ease;
-  background-color: #DDDDDD;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .cs_site_header.cs_style_1 .cs_main_header_in, .cs_site_header.cs_style_1 .cs_top_header_in {
   display: flex;
@@ -1321,7 +1324,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 
 .feature-area {
   padding: 0 0 40px;
-  margin-top: -60px;
+  margin-top: 60px;
 }
 
 .feature-box {
@@ -1341,6 +1344,10 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   overflow: hidden;
   margin-bottom: 30px;
   transition: all 0.5s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* .feature-sinble-single-box::before {
