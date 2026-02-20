@@ -5,20 +5,23 @@ export const CarouselContext = createContext();
 export const CarouselProvider = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-slide every 5 seconds
+  // Auto-slide with different intervals - main image (0) stays 10s, others 5s
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % 5); // 5 is the number of features
-    }, 5000);
+      setCurrentIndex((prev) => {
+        const nextIndex = (prev + 1) % 6;
+        return nextIndex;
+      });
+    }, (currentIndex === 0 ? 10000 : 5000));
     return () => clearInterval(interval);
-  }, []);
+  }, [currentIndex]);
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + 5) % 5);
+    setCurrentIndex((prev) => (prev - 1 + 6) % 6);
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % 5);
+    setCurrentIndex((prev) => (prev + 1) % 6);
   };
 
   const setIndex = (index) => {

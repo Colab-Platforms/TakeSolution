@@ -15,7 +15,7 @@ const Features = () => {
                         {data.map((item, i) => (
                             // <Link to={item.BtnUrl} key={i}>
                                 <div 
-                                    className={`feature-sinble-single-box ${currentIndex === i ? 'animate-up' : ''}`}
+                                    className={`feature-sinble-single-box ${currentIndex === i + 1 ? 'animate-up' : ''}`}
                                 >
                                     <div className="feature-icon">
                                         <img src={item.img} alt={item.title} />

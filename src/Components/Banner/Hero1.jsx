@@ -7,6 +7,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	const { currentIndex, handlePrev, handleNext } = useContext(CarouselContext);
 
 	const desktopImages = [
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsitePage_01_jpg.jpg?v=1771572772",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteClinic_jpg.jpg?v=1771578487",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Clinical_Research_jpg.jpg?v=1771578571",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Biotechnology_jpg.jpg?v=1771579252",
@@ -15,6 +16,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	];
 
 	const mobileImages = [
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_01Mobile_jpg.jpg?v=1771401281",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.1MV.png?v=1771326474",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/02.2MV.png?v=1771326474",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WebsiteHomePage_01Mobile_jpg.jpg?v=1771401281",
