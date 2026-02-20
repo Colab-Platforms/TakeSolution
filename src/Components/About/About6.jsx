@@ -8,7 +8,7 @@ const About6 = () => {
     {
       label: 'Our Vision',
       title: 'To transform global healthcare through artificial intelligence and intelligent digital innovation.',
-      subtitle: 'Our Vision',
+      subtitle: '',
       description: 'TAKE Solutions envisions a connected healthcare ecosystem where life sciences, clinical research, biotechnology, and preventive health are powered by intelligent, data-driven platforms. We aspire to create a future where research is accelerated, regulatory processes are streamlined, risks are predicted early, and healthcare decisions are guided by real-time insights.\n\nOur vision is to bridge science and technology, enabling organizations to innovate faster, operate smarter, and deliver safer, more effective outcomes for patients worldwide. By combining advanced analytics, secure digital infrastructure, and deep domain expertise, we aim to redefine how healthcare systems function — making them more proactive, precise, and sustainable for generations to come.',
       image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2026-02-19_at_6.48.46_PM.jpg?v=1771507157',
       type: 'image'
