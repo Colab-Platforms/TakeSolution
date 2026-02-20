@@ -155,7 +155,7 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'VotingResults_ScrutinizerReport_AGM_16082023', link: '/assets/investordata/disclosure/disclosure-data/FY24/VotingResults_ScrutinizerReport_AGM_16082023.pdf' },
 
     
-    ]
+    ],
 
     FY19: [
       { type: 'Other Disclosures', date: '30-Oct-19', description: 'analystcall21112018', link: '/assets/investordata/disclosure/disclosure-data/FY19/analystcall21112018.pdf' },

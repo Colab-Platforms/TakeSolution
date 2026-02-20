@@ -25,8 +25,8 @@ const Faq = () => {
 
     const FaqContent = {
         img1:'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/FFFF_jpg.jpg?v=1771237512',
-        Title:'A Comprehensive <span>Guide.</span>',
-        Content:'Through AI-driven platforms and scientific intelligence, the Company aims to enable early risk detection, deliver real-time data-driven health insights, and empower healthcare providers and individuals to make proactive health decisions'
+        Title:'AI-Driven Healthcare <span>Evolution.</span>',
+        Content:'We build next-generation digital platforms that power innovation across research, clinical development, biotechnology, and proactive health management. Our mission is simple — to enable faster discoveries, smarter decisions, and healthier outcomes at a global scale.'
       }
 
     return (
@@ -37,7 +37,7 @@ const Faq = () => {
                             <div className="section-title text-left">
                                 <SectionTitle
                                     SubTitle="TAKESOLUTION COMPANY"
-                                    Title="Keeping Your Business<br> Safe and <span>Available.</span>"
+                                    Title="Empowering Healthcare <br> Innovation for a <span>Healthier World.</span>"
                                 ></SectionTitle>
                             </div>
                             <div className="faq-thumb">

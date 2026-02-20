@@ -686,7 +686,8 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
     position: relative;
     height: inherit;
     align-items: center;
-    color: #333333;
+    color: #ff3c00;
+    font-weight: 600;
  }
   .cs_nav .cs_nav_list > li > ul {
     left: 0;
@@ -1344,8 +1345,8 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   overflow: hidden;
   margin-bottom: 30px;
   transition: all 0.5s ease;
-  min-height: 220px;
-  height: 220px;
+  min-height: 260px;
+  height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1387,12 +1388,12 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 } */
 
 .feature-icon {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.4);
   border: 2px solid #ffffff;
-  line-height: 70px;
+  line-height: 60px;
   margin: auto;
   position: relative;
   z-index: 1;
@@ -4011,7 +4012,8 @@ ul.list-style-one li a:hover {
 }
 
 .TAKESOLUTION_nav_manu.style-two .TAKESOLUTION_menu > ul > li > a {
-  color: #232323 !important;
+  color: #ff3c00 !important;
+  font-weight: 600;
 }
 
 .TAKESOLUTION_nav_manu.style-two.sticky .TAKESOLUTION_menu > ul > li > a {
