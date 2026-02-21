@@ -215,7 +215,14 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg47_Newspaper_Advertisement_230123', link: '/assets/investordata/disclosure/disclosure-data/FY23/Reg47_Newspaper_Advertisement_230123.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg47_Newspaper_Advt_Q2_091222', link: '/assets/investordata/disclosure/disclosure-data/FY23/Reg47_Newspaper_Advt_Q2_091222.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg47_Newspaper_Intimation_300522', link: '/assets/investordata/disclosure/disclosure-data/FY23/Reg47_Newspaper_Intimation_300522.pdf' },
-      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg74(5)_300922', link: '/assets/investordata/disclosure/disclosure-data/FY23/Reg74(5)_300922.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg74(5)_310322', link: '/assets/investordata/disclosure/disclosure-data/FY23/Reg74(5)_310322.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Reg74(5)_SEBI(DP)_311222', link: '/assets/investordata/disclosure/disclosure-data/FY23/Reg74(5)_SEBI(DP)_311222.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'SE_Intimation_Board_Meeting', link: '/assets/investordata/disclosure/disclosure-data/FY23/SE_Intimation_Board_Meeting.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'SE_Intimation_EGM_Requisition_JM_220622', link: '/assets/investordata/disclosure/disclosure-data/FY23/SE_Intimation_EGM_Requisition_JM_220622.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'SE_Intimation_Postal Ballot_Notice_Jul_Aug_2022', link: '/assets/investordata/disclosure/disclosure-data/FY23/SE_Intimation_Postal Ballot_Notice_Jul_Aug_2022.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'September 30_Trading Window', link: '/assets/investordata/disclosure/disclosure-data/FY23/September 30_Trading Window.docx' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Share_Capital_Reco_311222', link: '/assets/investordata/disclosure/disclosure-data/FY23/Share_Capital_Reco_311222.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Voting_Results_Scrutinizer_Report_AGM_261222', link: '/assets/investordata/disclosure/disclosure-data/FY23/Voting_Results_Scrutinizer_Report_AGM_261222.pdf' },
  
     
     ],
