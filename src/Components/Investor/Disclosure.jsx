@@ -20,6 +20,20 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Resignation of Director and CFO', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Resignation of Director and CFO.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Shifting of Registered Office of the Company', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Shifting of Registered Office of the Company.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Appointment of Mr. Parmeshvar Namdev Dhangare', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Appointment of Mr. Parmeshvar Namdev Dhangare.pdf' },
+      
+      
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Intimation cut off date EOGM', link: '/assets/investordata/disclosure/disclosure-data/FY26/Intimation cut off date EOGM.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'News Adv UFR Q3', link: '/assets/investordata/disclosure/disclosure-data/FY26/News Adv UFR Q3.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Newspaper Adv Notice of EOGM 2026', link: '/assets/investordata/disclosure/disclosure-data/FY26/Newspaper Adv Notice of EOGM 2026.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Outcome of BM UFR Q3', link: '/assets/investordata/disclosure/disclosure-data/FY26/Outcome of BM UFR Q3.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reconciliation of Share Capital Audit report for the quarter ended December 31, 2025', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reconciliation of Share Capital Audit report for the quarter ended December 31, 2025.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 74(5) Q3', link: 'TakeSolution/public/assets/investordata/disclosure/disclosure-data/FY26/Reg 74(5) Q3.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Outcome of BM 11 February 2026', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Outcome of BM 11 February 2026.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Outcome of BM Final', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Outcome of BM Final.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Prior intimation of BM 7 February 2026', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Prior intimation of BM 7 February 2026.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Prior intimation of BM UFR Q3', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Prior intimation of BM UFR Q3.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Trading window closure Q3', link: '/assets/investordata/disclosure/disclosure-data/FY26/Trading window closure Q3.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Trading Window Closure sd', link: '/assets/investordata/disclosure/disclosure-data/FY26/Trading Window Closure sd.pdf' },
 
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q1', link: '/assets/investordata/disclosure/disclosure-data/FY26/Shareholding Pattern Q1.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q2', link: '/assets/investordata/disclosure/disclosure-data/FY26/Shareholding Pattern Q2.pdf' },
