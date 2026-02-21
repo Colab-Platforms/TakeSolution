@@ -11,7 +11,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MainIntro_01_jpg.jpg?v=1771665195",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteCliniccc_jpg.jpg?v=1771592074",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Clinical_Research_jpg.jpg?v=1771578571",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/image-gen_7_1.png?v=1771650952", // biotech
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Biotech_img.png?v=1771670861", // biotech
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience_jpg.jpg?v=1771579252",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealth.jpg_1.jpg?v=1771591667"
 	];

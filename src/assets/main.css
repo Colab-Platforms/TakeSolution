@@ -447,15 +447,18 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 ----------------------------------------------------------------*/
 .cs_site_header {
   position: absolute;
-  width: 100%;
+  width: auto;
   z-index: 1000;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0px;
   transition: all 0.4s ease;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 20px 20px;
+  margin-top: 10px;
 }
 .cs_site_header.cs_style_1 .cs_main_header_in, .cs_site_header.cs_style_1 .cs_top_header_in {
   display: flex;
@@ -1152,6 +1155,11 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   position: relative;
   z-index: 1;
   transition: background-image 0.8s ease-in-out;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .hero-carousel-btn {
