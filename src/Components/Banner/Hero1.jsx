@@ -17,12 +17,12 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	];
 
 	const mobileImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MainIntro_01_jpg.jpg?v=1771665195",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteClinic.jpg_1.jpg?v=1771593854",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ClinicalResearch_jpg.jpg?v=1771593855",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BioTechnology.jpg_1.jpg?v=1771593853",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience.jpg_1.jpg?v=1771593854",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealth.jpg_2.jpg?v=1771593855"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/main_intro.png?v=1771669891",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/One_Minute_clinic.png?v=1771669600",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/clnicle_research.png?v=1771669354",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BioTech.png?v=1771668674",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Life_science.png?v=1771668896",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Preventive_health.png?v=17716690875"
 	];
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -124,7 +124,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 						<div className="hero-contant">
 							{/* <h5>{SubTitle}</h5> */}
 							<h1>{getBannerText()}</h1>
-							<p>{Content}</p>
+							{/* <p>{Content}</p> */}
 						</div>
 					</div>
 				</div>
