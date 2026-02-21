@@ -29,11 +29,11 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reconciliation of Share Capital Audit report for the quarter ended December 31, 2025', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reconciliation of Share Capital Audit report for the quarter ended December 31, 2025.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 74(5) Q3', link: 'TakeSolution/public/assets/investordata/disclosure/disclosure-data/FY26/Reg 74(5) Q3.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Outcome of BM 11 February 2026', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Outcome of BM 11 February 2026.pdf' },
-      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Outcome of BM Final', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Outcome of BM Final.pdf' },
+      // { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Outcome of BM Final', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Outcome of BM Final.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Prior intimation of BM 7 February 2026', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Prior intimation of BM 7 February 2026.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Take Prior intimation of BM UFR Q3', link: '/assets/investordata/disclosure/disclosure-data/FY26/Take Prior intimation of BM UFR Q3.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Trading window closure Q3', link: '/assets/investordata/disclosure/disclosure-data/FY26/Trading window closure Q3.pdf' },
-      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Trading Window Closure sd', link: '/assets/investordata/disclosure/disclosure-data/FY26/Trading Window Closure sd.pdf' },
+      // { type: 'Other Disclosures', date: '17-Feb-26', description: 'Trading Window Closure sd', link: '/assets/investordata/disclosure/disclosure-data/FY26/Trading Window Closure sd.pdf' },
 
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q1', link: '/assets/investordata/disclosure/disclosure-data/FY26/Shareholding Pattern Q1.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q2', link: '/assets/investordata/disclosure/disclosure-data/FY26/Shareholding Pattern Q2.pdf' },
