@@ -21,7 +21,13 @@ const CorporateGovernance = () => {
     { title: 'Policy on Diversity of Board of Directors', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Policy on Diversity of Board.pdf' },
     // { title: 'Policy on Related Party Transaction', link: '#' },
     { title: 'Policy on Preservation of Documents and Archival of Documents', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Policy-on-Preservation-of-Documents-and-Archival-of-Documents.pdf' },
-    { title: 'Policy for Registrars and Share Transfer Agents', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/policy-for-registrars-and-share-transfer-agents.pdf' }
+    { title: 'Policy for Registrars and Share Transfer Agents', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/policy-for-registrars-and-share-transfer-agents.pdf' },
+
+    { title: 'Take Investor_Grievances_Redressal_Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Take Investor_Grievances_Redressal_Policy (1).pdf' },
+    { title: 'Take Policy-on-Materiality-of-and-dealing-with-related-party-transactions ', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Take Policy-on-Materiality-of-and-dealing-with-related-party-transactions (1).pdf' },
+    { title: 'Take Risk-Management-policy ', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Take Risk-Management-policy (1).pdf' },
+    { title: 'Take Vigil-Mechanism-Policy ', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Take Vigil-Mechanism-Policy (1).pdf' }
+    
   ];
 
   // Mandatory Dematerialisation Documents
@@ -33,6 +39,12 @@ const CorporateGovernance = () => {
     { title: 'NSE Circular - Mandatory Demat For Transfer', link: '/assets/investordata/corporate-governance/Mandatory Dematerialisation of Shares for Transfer Requests/NSE-circular-mandatory-demat-for-transfer.pdf' },
     { title: 'SEBI Circular Notification', link: '/assets/investordata/corporate-governance/Mandatory Dematerialisation of Shares for Transfer Requests/SEBI-gazette-notification-june-8-2018.pdf' }
   ];
+
+
+  // Mandatory Dematerialisation Documents
+  const investorGreviance = [
+    { title: 'Investor Grievance', link: '/assets/investordata/corporate-governance/investorGreviance/Investor Grievance (1).pdf' },
+  ]
 
   return (
     <div className="tab-content active">
@@ -58,6 +70,21 @@ const CorporateGovernance = () => {
         <h4 className="governance-section-title">Mandatory Dematerialisation of Shares for Transfer Requests</h4>
         <div className="policies-grid">
           {dematDocuments.map((doc, index) => (
+            <div key={index} className="policy-item">
+              <a href={doc.link} className="policy-document-link" target="_blank" rel="noopener noreferrer">
+                <span className="pdf-icon">📄</span>
+                <span className="policy-title">{doc.title}</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Mandatory Dematerialisation */}
+      <div className="governance-policies-section">
+        <h4 className="governance-section-title">Investor Greviance</h4>
+        <div className="policies-grid">
+          {investorGreviance.map((doc, index) => (
             <div key={index} className="policy-item">
               <a href={doc.link} className="policy-document-link" target="_blank" rel="noopener noreferrer">
                 <span className="pdf-icon">📄</span>

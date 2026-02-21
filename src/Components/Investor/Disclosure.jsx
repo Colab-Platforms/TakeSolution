@@ -10,6 +10,7 @@ const Disclosure = () => {
 
     ///ujjwal uploaded FY- 26,25,20,19,18
     FY26: [
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'TAKE Solutions Taps Anthropic to Accelerate AI Dominance in $370B', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/TAKE Solutions Taps Anthropic to Accelerate AI Dominance in $370B.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Press Release - TAKE Solutions to build a Scalable Unified AI Platform', link: '/assets/investordata/disclosure/disclosure-data/FY26/Press Release - TAKE Solutions to build a Scalable Unified AI Platform.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Press Release - Take Solutions Announces Plans to Set up “One Minute Clinic” in India', link: '/assets/investordata/disclosure/disclosure-data/FY26/Press Release - Take Solutions Announces Plans to Set up “One Minute Clinic” in India.pdf' },
 
@@ -19,6 +20,10 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Resignation of Director and CFO', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Resignation of Director and CFO.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Shifting of Registered Office of the Company', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Shifting of Registered Office of the Company.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Appointment of Mr. Parmeshvar Namdev Dhangare', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Appointment of Mr. Parmeshvar Namdev Dhangare.pdf' },
+
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q1', link: '/assets/investordata/disclosure/disclosure-data/FY26/Shareholding Pattern Q1.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q2', link: '/assets/investordata/disclosure/disclosure-data/FY26/Shareholding Pattern Q2.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q3', link: '/assets/investordata/disclosure/disclosure-data/FY26/Shareholding Pattern Q3.pdf' },
 
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Annual Secretarial Compliance Report.pdf', link: '/assets/investordata/disclosure/disclosure-data/FY26/Annual Secretarial Compliance Report.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Certificate of Regulation.pdf', link: '/assets/investordata/disclosure/disclosure-data/FY26/Certificate of Regulation.pdf' },

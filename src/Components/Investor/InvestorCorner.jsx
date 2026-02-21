@@ -32,11 +32,7 @@ const InvestorCorner = () => {
       { year: '2020', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/TAKE_Solutions_AGM_Notice_2020.pdf' },
       { year: '2019', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/take-solution-notice-2019.pdf' },
       { year: '2018', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/Notice-2018-FINAL.pdf' },
-      { year: '2017', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/notice-ts-ar-yr2017.pdf' },
-      { year: '2016', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/notice-ts-ar-yr2016.pdf' },
-      { year: '2015', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/Notice-TS-ar-yr2015.pdf' },
-      { year: '2014', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/Notice-TS-ar-yr2014.pdf' },
-      { year: '2013', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/Notice-TS-ar-yr2013.pdf' }
+      
     ]
   };
 
@@ -52,7 +48,7 @@ const InvestorCorner = () => {
       { year: '2020', link: '/assets/investordata/investor-corner/AGM Voting Results/AGM PROCEEDINGS 2020.pdf' },
       { year: '2019', link: '/assets/investordata/investor-corner/AGM Voting Results/agm-voting-08aug2019.pdf' },
       { year: '2018', link: '/assets/investordata/investor-corner/AGM Voting Results/agm-voting-10aug2018.pdf' },
-      { year: '2017', link: '/assets/investordata/investor-corner/AGM Voting Results/agm-voting-11aug2017.pdf' }
+      
     ]
   };
 
