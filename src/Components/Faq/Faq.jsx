@@ -26,7 +26,7 @@ const Faq = () => {
     const FaqContent = {
         img1:'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/FFFF_jpg.jpg?v=1771237512',
         Title:'AI-Driven Healthcare <span>Evolution.</span>',
-        Content:'We build next-generation digital platforms that power innovation across research, clinical development, biotechnology, and proactive health management. Our mission is simple — to enable faster discoveries, smarter decisions, and healthier outcomes at a global scale.'
+        Content:'We build next-generation digital platforms that power innovation across research, clinical development, biotechnology, and proactive health management. Our mission is simple to enable faster discoveries, smarter decisions, and healthier outcomes at a global scale.'
       }
 
     return (

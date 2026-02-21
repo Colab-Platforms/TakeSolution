@@ -2,7 +2,7 @@
 .feature-sinble-single-box {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .feature-sinble-single-box.animate-up {

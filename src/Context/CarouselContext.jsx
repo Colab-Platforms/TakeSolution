@@ -4,6 +4,7 @@ export const CarouselContext = createContext();
 
 export const CarouselProvider = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Auto-slide with different intervals - main image (0) stays 10s, others 5s
   useEffect(() => {
@@ -29,7 +30,7 @@ export const CarouselProvider = ({ children }) => {
   };
 
   return (
-    <CarouselContext.Provider value={{ currentIndex, handlePrev, handleNext, setIndex }}>
+    <CarouselContext.Provider value={{ currentIndex, handlePrev, handleNext, setIndex, isTransitioning }}>
       {children}
     </CarouselContext.Provider>
   );
