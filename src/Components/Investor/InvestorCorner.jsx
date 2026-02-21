@@ -56,10 +56,20 @@ const InvestorCorner = () => {
     title: 'Notice of the Postal Ballot',
     years: [
       { year: '2023', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_FY22-23.pdf' },
+      { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
       { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Postal_Ballot_Notice_TSL.pdf' },
-      { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' }
     ]
   };
+
+  const postalBallotVotingData = {
+    title: 'Postal Ballot Voting Rseult',
+    years: [
+      { year: '2023', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
+      { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
+      { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
+
+    ]
+  }
 
   return (
     <div className="tab-content active">
@@ -160,6 +170,29 @@ const InvestorCorner = () => {
       {/* Postal Ballot Notice */}
       <div className="investor-table-section">
         <h4 className="table-section-title">{postalBallotData.title}</h4>
+        <div className="investor-table">
+          <div className="table-row table-header">
+            <div className="table-cell">Financial Year</div>
+            {postalBallotData.years.map((item, index) => (
+              <div key={index} className="table-cell">{item.year}</div>
+            ))}
+          </div>
+          <div className="table-row">
+            <div className="table-cell">Notice</div>
+            {postalBallotData.years.map((item, index) => (
+              <div key={index} className="table-cell">
+                <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
+                  📄
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Postal Ballot Voting Result */}
+      <div className="investor-table-section">
+        <h4 className="table-section-title">{postalBallotVotingData.title}</h4>
         <div className="investor-table">
           <div className="table-row table-header">
             <div className="table-cell">Financial Year</div>
