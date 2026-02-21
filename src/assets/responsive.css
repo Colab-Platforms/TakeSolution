@@ -6,7 +6,7 @@
 }
 
 .hero-area {
-    height: 600px;
+    height: 100vh;
 }
 
 .hero-thumb {
@@ -128,7 +128,7 @@
 }
 
 .hero-area {
-    height: 600px;
+    height: 100vh;
     margin: 0;
 }
 
@@ -447,7 +447,7 @@ h4.blog-details-title {
 }
 
 .hero-area {
-    height: 600px;
+    height: 100vh;
     margin: 0;
 }
 
@@ -816,7 +816,7 @@ h4.blog-details-title {
 }
 
 .hero-area {
-    height: 600px;
+    height: 100vh;
     margin: 0px 0px 0;
 }
 
