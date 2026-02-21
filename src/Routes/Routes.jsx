@@ -22,6 +22,7 @@ import BlogSidebar from "../Pages/BlogSidebar";
 import BlogDetails from "../Pages/BlogDetails";
 import Project from "../Pages/Project";
 import Investor from "../Pages/Investor";
+import NotFound from "../Pages/NotFound";
 
 export const router = createBrowserRouter([
     {
@@ -87,6 +88,10 @@ export const router = createBrowserRouter([
         {
           path: "/contact",
           element: <Contact></Contact>,
+        },
+        {
+          path: "*",
+          element: <NotFound></NotFound>,
         },                                                              
       ],
     },

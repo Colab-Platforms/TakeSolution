@@ -271,6 +271,14 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'REJOINDER', link: '/assets/investordata/disclosure/disclosure-data/FY21/REJOINDER.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'rptsept30092020', link: '/assets/investordata/disclosure/disclosure-data/FY21/rptsept30092020.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'RPT310320', link: '/assets/investordata/disclosure/disclosure-data/FY21/RPT310320.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'rptsept30092020', link: '/assets/investordata/disclosure/disclosure-data/FY21/rptsept30092020.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'SHA30092020', link: '/assets/investordata/disclosure/disclosure-data/FY21/SHA30092020.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'shareholders_communication', link: '/assets/investordata/disclosure/disclosure-data/FY21/shareholders_communication.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'TradingWindow310321', link: '/assets/investordata/disclosure/disclosure-data/FY21/TradingWindow310321.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'tradingwindow311220', link: '/assets/investordata/disclosure/disclosure-data/FY21/tradingwindow311220.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'tradingwindow30092020', link: '/assets/investordata/disclosure/disclosure-data/FY21/tradingwindow30092020.pdf' },
+      { type: 'Other Disclosures', date: '30-Oct-20', description: 'Tradingwindowdisclosure300620', link: '/assets/investordata/disclosure/disclosure-data/FY21/Tradingwindowdisclosure300620.pdf' },
+
       
       
      
