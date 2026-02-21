@@ -4,6 +4,7 @@
     "title": "One Minute Clinic",
     "desc": "Instant AI Health Assessment",
     "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/one-minute-clinic-banner.jpg?v=1771067701",
+    "bannerText": ["One Minute Today. A ", "Healthier Tomorrow"],
     "BtnUrl": "/feature/featrue-details"
   }, 
   {
@@ -11,6 +12,7 @@
     "title": "Clinical Research",
     "desc": "Accelerating Intelligent Clinical Development",
     "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/clinical-research-banner.jpg?v=1771067701",
+    "bannerText": ["AI powered ", "clinically proven"],
     "BtnUrl": "/feature/featrue-details"
   },
   {
@@ -18,6 +20,7 @@
     "title": "Biotechnology",
     "desc": "Advancing Next-Generation Biologics",
     "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/biotechnology-banner.jpg?v=1771067701",
+    "bannerText": ["Transforming ", "Science into solutions"],
     "BtnUrl": "/feature/featrue-details"
   },
   {
@@ -25,13 +28,15 @@
     "title": "Life Science",
     "desc": "AI-Powered Scientific Innovation",
     "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/life-science-banner.jpg?v=1771067701",
+    "bannerText": ["The Science Behind ", "Better Living"],
     "BtnUrl": "/feature/featrue-details"
   }, 
   {
     "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealthIcon.png?v=1771582211",   
-    "title": "Proactive Health",
+    "title": "Preventive Health",
     "desc": "Predictive Personalized Health Platform",
     "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/proactive-health-banner.jpg?v=1771067701",
+    "bannerText": ["Today’s Action. Tomorrow’s ", "Wellness"],
     "BtnUrl": "/feature/featrue-details"
   }   
 ]

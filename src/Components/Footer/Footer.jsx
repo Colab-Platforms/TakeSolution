@@ -125,6 +125,30 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="footer-widget left">
+                                <div className="widget-title">
+                                    <h2>Contact Us</h2>
+                                </div>
+                                <div className="contact-info">
+                                    <div className="contact-item">
+                                        <i className="bi bi-envelope"></i>
+                                        <a href="mailto:investorrelations@takesolutions.com">investorrelations@takesolutions.com</a>
+                                    </div>
+                                    <div className="contact-item">
+                                        <i className="bi bi-telephone"></i>
+                                        <a href="tel:+918108618322">+91 8108618322</a>
+                                    </div>
+                                    <div className="contact-item">
+                                        <i className="bi bi-geo-alt"></i>
+                                        <p>No. B3. No.9, B Block, Alsa Arcade, 3rd Floor, 2nd Avenue, Anna Nagar East, Chennai 600102</p>
+                                    </div>
+                                    <div className="contact-item">
+                                        <p className="cin-text"><strong>CIN:</strong> L63090TN2000PLC046338</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="row copyright">
                         <div className="col-lg-6 col-md-6 col-sm-6">
