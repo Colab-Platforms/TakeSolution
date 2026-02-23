@@ -46,6 +46,11 @@ const CorporateGovernance = () => {
     { title: 'Investor Grievance', link: '/assets/investordata/corporate-governance/investorGreviance/Investor Grievance (1).pdf' },
   ]
 
+  const moaAndAoa = [
+        { title: 'MOA & AOA', link: '/assets/investordata/corporate-governance/MOAAndAOA/MOA & AOA.pdf' },
+
+  ]
+
   return (
     <div className="tab-content active">
       <h3 className="content-title">Corporate Governance</h3>
@@ -85,6 +90,22 @@ const CorporateGovernance = () => {
         <h4 className="governance-section-title">Investor Greviance</h4>
         <div className="policies-grid">
           {investorGreviance.map((doc, index) => (
+            <div key={index} className="policy-item">
+              <a href={doc.link} className="policy-document-link" target="_blank" rel="noopener noreferrer">
+                <span className="pdf-icon">📄</span>
+                <span className="policy-title">{doc.title}</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+      {/* MOA and AOA */}
+      <div className="governance-policies-section">
+        <h4 className="governance-section-title">MOA AND AOA</h4>
+        <div className="policies-grid">
+          {moaAndAoa.map((doc, index) => (
             <div key={index} className="policy-item">
               <a href={doc.link} className="policy-document-link" target="_blank" rel="noopener noreferrer">
                 <span className="pdf-icon">📄</span>
