@@ -4591,6 +4591,8 @@ h3.blog-details-title.two {
 
   .hero-area {
     padding-top: 100px;
+    background-size: cover;
+    background-position: center;
   }
 
   .hero-contant {
