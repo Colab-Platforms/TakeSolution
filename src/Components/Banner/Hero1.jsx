@@ -17,12 +17,12 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	];
 
 	const mobileImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/main_intro.png?v=1771669891",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/One_Minute_clinic.png?v=1771669600",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/clnicle_research.png?v=1771669354",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BioTech.png?v=1771668674",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Life_science.png?v=1771668896",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Preventive_health.png?v=17716690875"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MainIntro.jpg_2.jpg?v=1771853061",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Artboard_1_copy_jpg.jpg?v=1771849370", //oneminutute
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ClinicalResearch.jpg_1.jpg?v=1771853061",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BioTechnology.jpg_2.jpg?v=1771853061",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience.jpg_2.jpg?v=1771853061",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/PreventiveHealth_jpg.jpg?v=1771853061"
 	];
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

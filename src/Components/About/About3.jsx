@@ -3,7 +3,7 @@ import parse from 'html-react-parser';
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 
-const About3 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxTitle1,BoxTitle2}) => {
+const About3 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxTitle1,BoxTitle2,img1,img2,img3,img4}) => {
 
     useEffect(() => {
         loadBackgroudImages();
@@ -15,7 +15,24 @@ const About3 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxT
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-lg-6">
                             <div className="about-thumb">
-                                <img src={MainImg} alt="thumb" />
+                                {img1 && img2 && img3 && img4 ? (
+                                    <div className="about-thumb-grid">
+                                        <div className="grid-item grid-top">
+                                            <img src={img1} alt="thumb1" />
+                                        </div>
+                                        <div className="grid-item grid-left">
+                                            <img src={img2} alt="thumb2" />
+                                        </div>
+                                        <div className="grid-item grid-right">
+                                            <img src={img3} alt="thumb3" />
+                                        </div>
+                                        <div className="grid-item grid-bottom">
+                                            <img src={img4} alt="thumb4" />
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <img src={MainImg} alt="thumb" />
+                                )}
                             </div>
                         </div>
                         <div className="col-lg-6">
