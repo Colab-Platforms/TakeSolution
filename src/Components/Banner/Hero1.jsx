@@ -8,12 +8,12 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	const { currentIndex, handlePrev, handleNext } = useContext(CarouselContext);
 
 	const desktopImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MainIntro_01_jpg.jpg?v=1771665195",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteCliniccc_jpg.jpg?v=1771592074",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Clinical_Research_jpg.jpg?v=1771578571",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Biotech_img.png?v=1771670861", // biotech
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience_jpg.jpg?v=1771579252",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealth.jpg_1.jpg?v=1771591667"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/final_3.jpg?v=1771837871",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ndPage_jpg.jpg?v=1771844239", //oneminute
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage_jpg.jpg?v=1771844239", //clinicResearch
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4thPage_jpg.jpg?v=1771844239", // biotech
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg.jpg?v=1771844238", // lifescience
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/preventive_health.jpg?v=1771832251" // preventiveHealth
 	];
 
 	const mobileImages = [
@@ -46,7 +46,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		if (currentIndex === 0) {
 			return (
 				<>
-					<h1 style={{ 
+					{/* <h1 style={{ 
 						color: '#ffffff',
 						// WebkitTextStroke: '1px #ff3c00',
 						fontSize: '40px',
@@ -57,7 +57,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 						textAlign: isMobile ? 'center' : 'left'
 					}}>
 						Powering the Future of<br />Healthcare with Artificial Intelligence.
-					</h1>
+					</h1> */}
 					{/* <p style={{
 						color: '#ffffff',
 						fontSize: '19px',
@@ -119,13 +119,13 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 			<div className="container">
 				<div className="row hero align-items-center">
 					<div className="col-lg-6">
-					</div>
-					<div className="col-lg-6">
 						<div className="hero-contant">
 							{/* <h5>{SubTitle}</h5> */}
 							<h1>{getBannerText()}</h1>
 							{/* <p>{Content}</p> */}
 						</div>
+					</div>
+					<div className="col-lg-6">
 					</div>
 				</div>
 			</div>
