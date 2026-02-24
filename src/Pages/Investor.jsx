@@ -23,3 +23,5 @@ const Investor = () => {
 };
 
 export default Investor;
+
+

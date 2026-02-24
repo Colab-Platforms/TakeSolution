@@ -28,7 +28,7 @@
 
 .section-subtitle {
   display: inline-block;
-  color: #ff3c00;
+  color: #2285A3;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -75,14 +75,14 @@
 }
 
 .year-btn:hover {
-  border-color: #ff3c00;
-  color: #ff3c00;
+  border-color: #2285A3;
+  color: #2285A3;
 }
 
 .year-btn.active {
-  background: #ff3c00;
+  background: #2285A3;
   color: white;
-  border-color: #ff3c00;
+  border-color: #2285A3;
 }
 
 /* Quarter Selector */
@@ -168,7 +168,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: #ff3c00;
+  background: #2285A3;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -218,7 +218,7 @@
   padding: 20px;
   background: #f8f9fa;
   border-radius: 6px;
-  border-left: 4px solid #ff3c00;
+  border-left: 4px solid #2285A3;
   transition: all 0.3s ease;
 }
 
@@ -347,9 +347,9 @@
 }
 
 .tab-btn.active {
-  background: #ff3c00;
+  background: #2285A3;
   color: white;
-  border-color: #ff3c00;
+  border-color: #2285A3;
   box-shadow: 0 4px 12px rgba(255, 60, 0, 0.3);
 }
 
@@ -383,7 +383,7 @@
   font-weight: 700;
   margin-bottom: 30px;
   font-family: "Poppins";
-  border-bottom: 3px solid #ff3c00;
+  border-bottom: 3px solid #2285A3;
   padding-bottom: 15px;
 }
 
@@ -468,7 +468,7 @@
   margin-bottom: 25px;
   font-family: "Poppins";
   padding-bottom: 10px;
-  border-bottom: 3px solid #ff3c00;
+  border-bottom: 3px solid #2285A3;
 }
 
 .table-responsive {
@@ -599,7 +599,7 @@
   margin-bottom: 20px;
   font-family: "Poppins";
   padding-bottom: 10px;
-  border-bottom: 2px solid #ff3c00;
+  border-bottom: 2px solid #2285A3;
 }
 
 .report-list {
@@ -628,7 +628,7 @@
 
 .report-link:hover {
   background: #f8f9fa;
-  color: #ff3c00;
+  color: #2285A3;
   padding-left: 15px;
 }
 
@@ -650,7 +650,7 @@
 }
 
 .corner-card:hover {
-  border-color: #ff3c00;
+  border-color: #2285A3;
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
@@ -711,7 +711,7 @@
 }
 
 .faq-list a:hover {
-  color: #ff3c00;
+  color: #2285A3;
 }
 
 /* Corporate Governance Styles */
@@ -730,7 +730,7 @@
   margin-bottom: 20px;
   font-family: "Poppins";
   padding-bottom: 10px;
-  border-bottom: 2px solid #ff3c00;
+  border-bottom: 2px solid #2285A3;
 }
 
 .board-members {
@@ -783,7 +783,7 @@
   margin-bottom: 10px;
   background: #f8f9fa;
   border-radius: 6px;
-  border-left: 4px solid #ff3c00;
+  border-left: 4px solid #2285A3;
   font-family: "Fira Sans";
   font-weight: 500;
 }
@@ -808,7 +808,7 @@
 
 .policy-link:hover {
   background: #f8f9fa;
-  color: #ff3c00;
+  color: #2285A3;
   padding-left: 15px;
 }
 
@@ -828,7 +828,7 @@
   margin-bottom: 20px;
   font-family: "Poppins";
   padding-bottom: 10px;
-  border-bottom: 2px solid #ff3c00;
+  border-bottom: 2px solid #2285A3;
 }
 
 .disclosure-list {
@@ -841,7 +841,7 @@
   background: #f8f9fa;
   padding: 20px;
   border-radius: 8px;
-  border-left: 4px solid #ff3c00;
+  border-left: 4px solid #2285A3;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -854,7 +854,7 @@
 }
 
 .disclosure-item .date {
-  color: #ff3c00;
+  color: #2285A3;
   font-size: 13px;
   font-weight: 600;
   font-family: "Poppins";
@@ -879,7 +879,7 @@
 }
 
 .disclosure-item .download-link:hover {
-  color: #ff3c00;
+  color: #2285A3;
 }
 
 .shareholding-list,
@@ -1355,7 +1355,7 @@
 }
 
 .quarter-report-link:hover {
-  color: #ff3c00;
+  color: #2285A3;
   padding-left: 10px;
 }
 
@@ -1566,7 +1566,7 @@
 }
 
 .policy-document-link:hover .policy-title {
-  color: #ff3c00;
+  color: #2285A3;
 }
 
 /* Responsive for Corporate Governance */
@@ -1708,7 +1708,7 @@
 }
 
 .disclosure-description-link:hover {
-  color: #ff3c00;
+  color: #2285A3;
 }
 
 .pdf-icon-small {
@@ -1825,3 +1825,5 @@
     min-width: 800px;
   }
 }
+
+

@@ -41,11 +41,11 @@
 }
 
 .about6-tab-btn:hover {
-  color: #ff3c00;
+  color: #2285A3;
 }
 
 .about6-tab-btn.active {
-  color: #ff3c00;
+  color: #2285A3;
 }
 
 .about6-tab-btn.active::after {
@@ -55,7 +55,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #ff3c00 0%, #ff5c2e 100%);
+  background: linear-gradient(90deg, #2285A3 0%, #ff5c2e 100%);
   border-radius: 2px;
   animation: slideIn 0.4s ease;
 }
@@ -121,13 +121,13 @@
 .about6-content-subtitle {
   font-size: 14px;
   font-weight: 600;
-  color: #ff3c00;
+  color: #2285A3;
   margin: 0 0 20px 0;
   font-family: "Poppins";
   text-transform: uppercase;
   letter-spacing: 0.5px;
   padding-bottom: 15px;
-  border-bottom: 3px solid #ff3c00;
+  border-bottom: 3px solid #2285A3;
   display: inline-block;
 }
 
@@ -219,7 +219,7 @@
   font-family: "Poppins";
   line-height: 1.6;
   padding-bottom: 15px;
-  border-bottom: 3px solid #ff3c00;
+  border-bottom: 3px solid #2285A3;
   display: inline-block;
 }
 
@@ -248,7 +248,7 @@
 .about6-value-name {
   font-size: 18px;
   font-weight: 700;
-  color: #ff3c00;
+  color: #2285A3;
   margin: 0 0 12px 0;
   font-family: "Poppins";
   text-transform: capitalize;
@@ -393,3 +393,5 @@
     font-size: 12px;
   }
 }
+
+

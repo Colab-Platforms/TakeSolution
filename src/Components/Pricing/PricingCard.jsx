@@ -28,3 +28,5 @@ const PricingCard = ({Price,PricePlan,FeatureList,BtnUrl,BtnText}) => {
 };
 
 export default PricingCard;
+
+

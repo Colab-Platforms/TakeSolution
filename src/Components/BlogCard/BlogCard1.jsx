@@ -21,3 +21,5 @@ const BlogCard1 = ({BlogImg,Title,Content}) => {
 };
 
 export default BlogCard1;
+
+

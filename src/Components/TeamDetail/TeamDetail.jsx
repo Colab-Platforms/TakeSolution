@@ -134,3 +134,5 @@ const TeamDetail = () => {
 };
 
 export default TeamDetail;
+
+

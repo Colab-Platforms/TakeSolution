@@ -217,3 +217,5 @@ const InvestorCorner = () => {
 };
 
 export default InvestorCorner;
+
+

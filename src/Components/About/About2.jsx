@@ -59,3 +59,5 @@ const About2 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,Cont
 };
 
 export default About2;
+
+

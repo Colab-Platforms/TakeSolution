@@ -10,3 +10,5 @@ const SectionTitle = ({Title,SubTitle}) => {
 };
 
 export default SectionTitle;
+
+

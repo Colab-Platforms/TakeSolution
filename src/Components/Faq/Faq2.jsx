@@ -63,3 +63,5 @@ const Faq2 = () => {
 };
 
 export default Faq2;
+
+

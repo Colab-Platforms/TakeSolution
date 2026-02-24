@@ -36,7 +36,7 @@ const Services1 = () => {
                         <img src="/assets/images/service5.png" alt="service5" />
                     </div>
                     <div className="service-shape2">
-                        <img src="/assets/images/service7.png" alt="service5" />
+                        <img src="/assets/images/service7-teal.svg" alt="service5" />
                     </div>
                     <div className="service-shape3 bounce-animate4">
                         <img src="/assets/images/service8.png" alt="service5" />
@@ -47,3 +47,5 @@ const Services1 = () => {
 };
 
 export default Services1;
+
+

@@ -66,3 +66,5 @@ const Hero2 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image}) => {
 };
 
 export default Hero2;
+
+

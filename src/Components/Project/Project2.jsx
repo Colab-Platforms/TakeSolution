@@ -1,26 +1,36 @@
 import Slider from "react-slick";
 import data from '../../Data/project2.json';
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import SectionTitle from "../Common/SectionTitle";
 
 const Project2 = () => {
 
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1199);
+
     useEffect(() => {
         loadBackgroudImages();
       }, []);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsDesktop(window.innerWidth > 1199);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
       const sliderRef = useRef(null);
 
       const next = () => {
         sliderRef.current.slickNext();
       };
-    
+
       const previous = () => {
         sliderRef.current.slickPrev();
-      };  
-      
+      };
+
     const settings = {
         dots: false,
         infinite: false,
@@ -50,6 +60,9 @@ const Project2 = () => {
         ]
       };
 
+    // Show navigation buttons on mobile always, on desktop only when there are more than 3 projects
+    const showNavButtons = !isDesktop || data.length > 3;
+
     return (
         <div className="project-area styl-two" data-background="/assets/images/home-two/project-bg-two.jpg">
             <div className="container-fluid">
@@ -57,13 +70,14 @@ const Project2 = () => {
                     <div className="col-lg-6">
                         <div className="section-title text-left">
                         <SectionTitle
-                                    SubTitle="OUR PROJECT NOW"
-                                    Title="Our Upcoming <span>Projects.</span>"
+                                    SubTitle="OUR UPCOMING PROJECTS"
+                                    Title="<span></span>"
                             ></SectionTitle>
                         </div>
                     </div>
                     <div className="col-lg-6  d-flex align-items-center justify-content-end">
                     <div className="project-right2">
+                        {showNavButtons && (
                         <div className="cs_slider_arrows cs_style_2 testtimonial_arow_area cs_hide_md">
                             <div className="cs_left_arrow cs_slider_arrow cs_center" onClick={previous}>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +89,7 @@ const Project2 = () => {
                                 <rect width="16" height="16" fill="white" transform="matrix(-1 0 0 1 16 0)"/>
                                 </clipPath>
                                 </defs>
-                                </svg> 
+                                </svg>
                             </div>
                             <div className="cs_right_arrow cs_slider_arrow cs_center" onClick={next}>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,10 +101,11 @@ const Project2 = () => {
                                 <rect width="16" height="16" fill="white"/>
                                 </clipPath>
                                 </defs>
-                                </svg> 
+                                </svg>
                             </div>
                             </div>
-                        </div>                       
+                        )}
+                        </div>
                     </div>
                 </div>
                 <div className="row project-carousel">
@@ -127,3 +142,5 @@ const Project2 = () => {
 };
 
 export default Project2;
+
+

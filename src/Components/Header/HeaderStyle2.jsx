@@ -72,3 +72,5 @@ export default function HeaderStyle2({ variant }) {
     </header>
   );
 }
+
+

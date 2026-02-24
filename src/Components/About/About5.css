@@ -91,11 +91,11 @@
 }
 
 .about5-stat-card:hover {
-  background-color: #ff3c00;
+  background-color: #2285A3;
   background-image: repeating-linear-gradient(
     45deg,
-    #ff3c00,
-    #ff3c00 10px,
+    #2285A3,
+    #2285A3 10px,
     #ff5c2e 10px,
     #ff5c2e 20px
   );
@@ -250,3 +250,5 @@
     font-size: 13px;
   }
 }
+
+

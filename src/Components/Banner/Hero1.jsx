@@ -9,7 +9,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 
 	const desktopImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/final_3.jpg?v=1771837871",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ndPage_jpg.jpg?v=1771844239", //oneminute
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ndPage.jpg_1.jpg?v=1771931693", //oneminute
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage_jpg.jpg?v=1771844239", //clinicResearch
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4thPage_jpg.jpg?v=1771844239", // biotech
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg.jpg?v=1771844238", // lifescience
@@ -18,11 +18,11 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 
 	const mobileImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/mobile_view.jpg?v=1771918231",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/oneminute_ef3cc2f2-4f81-44b8-b1c4-49f8a1c13d51.jpg?v=1771924409", //oneminutute
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/mobile_view_2.jpg?v=1771933172", //oneminutute
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/clinicle_research.jpg?v=1771923565",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/biotech_85d06b65-c7ea-4194-862e-330cb512ac00.jpg?v=1771923649",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/oneminute_2415d43b-82d2-4141-82fa-69bdb86ab2d1.jpg?v=1771923519",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/preventive.jpg?v=1771924408"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000816.jpg?v=1771933171",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000814.jpg?v=1771933171",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000817.jpg?v=1771933172"
 	];
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -55,7 +55,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 				<>
 					{/* <h1 style={{ 
 						color: '#ffffff',
-						// WebkitTextStroke: '1px #ff3c00',
+						// WebkitTextStroke: '1px #2285A3',
 						fontSize: '40px',
 						lineHeight: '70px',
 						fontWeight: '700',
@@ -91,7 +91,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 				<>
 					<span style={{ 
 						color: '#ffffff',
-						// WebkitTextStroke: '1px #ff3c00',
+						// WebkitTextStroke: '1px #2285A3',
 						display: 'block',
 						textAlign: 'left',
 						lineHeight: '1.2',
@@ -101,7 +101,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 						{textArray[0]}
 					</span>
 					<span style={{ 
-						color: '#ff3c00',
+						color: '#2285A3',
 						// WebkitTextStroke: '1px #ffffff',
 						display: 'block',
 						textAlign: 'left',
@@ -143,3 +143,5 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 };
 
 export default Hero1;
+
+

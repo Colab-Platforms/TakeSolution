@@ -16,3 +16,5 @@ const ProcessCard2 = ({Image,Number,Title,Content}) => {
 };
 
 export default ProcessCard2;
+
+

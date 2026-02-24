@@ -5,20 +5,20 @@ const StockInformation = () => {
       
       {/* Stock Info Cards */}
       <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '40px'}}>
-        <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #ff3c00'}}>
+        <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #2285A3'}}>
           <h4 style={{marginBottom: '15px', color: '#050a1e', fontFamily: 'Poppins', fontSize: '18px'}}>Stock Exchange Listing</h4>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>BSE Code: 532890(BSE)</p>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>NSE Symbol: TAKE</p>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>ISIN: INE142101023</p>
         </div>
-        <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #ff3c00'}}>
+        <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #2285A3'}}>
           <h4 style={{marginBottom: '15px', color: '#050a1e', fontFamily: 'Poppins', fontSize: '18px'}}>Market Data</h4>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Current Price: ₹47.40</p>
           {/* <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>52 Week High: ₹1,450.00</p>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>52 Week Low: ₹980.00</p>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Market Cap: ₹5,240 Cr</p> */}
         </div>
-        <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #ff3c00'}}>
+        <div style={{background: '#f8f9fa', padding: '25px', borderRadius: '8px', borderLeft: '4px solid #2285A3'}}>
           <h4 style={{marginBottom: '15px', color: '#050a1e', fontFamily: 'Poppins', fontSize: '18px'}}>Share Information</h4>
           <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Face Value: ₹10</p>
           {/* <p style={{margin: '8px 0', color: '#7a7a7a', fontFamily: 'Fira Sans'}}>Paid-up Capital: ₹42.10 Cr</p> */}
@@ -243,3 +243,5 @@ const StockInformation = () => {
 };
 
 export default StockInformation;
+
+

@@ -48,3 +48,5 @@ const About1 = ({MainImg,ImgTitle,SubTitle,Title,Content,listTitle,BottomText,Bt
 };
 
 export default About1;
+
+

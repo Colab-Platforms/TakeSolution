@@ -35,3 +35,5 @@ export const CarouselProvider = ({ children }) => {
     </CarouselContext.Provider>
   );
 };
+
+

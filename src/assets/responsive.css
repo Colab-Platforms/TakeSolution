@@ -58,6 +58,7 @@
 
 .project-area.styl-two h4.project-title a {
     font-size: 20px;
+    line-height: 26px;
 }
 
 .project-area.styl-two .project-icon {
@@ -582,7 +583,7 @@ h3.service-title {
 
 .project-area.styl-two h4.project-title a {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
 }
 
 .project-area.styl-two h1.section-main-title {
@@ -1755,7 +1756,7 @@ h3.blog-title-two a {
 
 .project-area.styl-two h4.project-title a {
     font-size:18px;
-    line-height:30px;
+    line-height:24px;
 }
 
 .project-area.styl-two .project-carousel {
@@ -4717,3 +4718,5 @@ h3.blog-details-title.two {
     transform: none;
   }
 }
+
+
