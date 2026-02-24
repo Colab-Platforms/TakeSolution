@@ -453,9 +453,13 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   transform: translateX(-50%);
   top: 0px;
   transition: all 0.4s ease;
-  background: transparent;
+  background: transparent !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: none;
-  margin-top: 10px;
+  border-radius: 0 0 20px 20px;
+  margin-top: 0px;
+  padding: 0 !important;
 }
 .cs_site_header.cs_style_1 .cs_main_header_in, .cs_site_header.cs_style_1 .cs_top_header_in {
   display: flex;
@@ -465,10 +469,11 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   position: relative;
 }
 .cs_site_header.cs_style_1 .cs_main_header_in {
-  height: 100px;
+  height: 60px !important;
 }
 .cs_site_header.cs_style_1 .cs_top_header_in {
-  height: 45px;
+  height: 0px !important;
+  display: none !important;
 }
 .cs_site_header.cs_style_1 .cs_main_header_right {
   display: flex;
@@ -583,11 +588,13 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   display: inline-block;
   padding-left: 20px;
   max-width: 200px;
+  max-height: 50px;
 }
 
 .cs_site_branding img {
   max-width: 100%;
   height: auto;
+  max-height: 50px;
 }
 .cs_site_branding + .cs_nav {
   margin-left: 65px;
@@ -898,8 +905,8 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
     top: 50%;
     right: 0px;
     margin-top: -13px;
-    color:#000
- }
+    color: #ffffff;
+  }
   .cs-toggle_active span {
     background-color: rgba(0, 0, 0, 0);
     transition-delay: 0.2s;
@@ -1155,6 +1162,15 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   width: 100%;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero-carousel-btn {
   position: absolute;
   top: 50%;
@@ -1230,6 +1246,9 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
   font-weight: 700;
   font-family: "Poppins";
   margin: 0;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
 
 .hero-contant p {
@@ -1334,7 +1353,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 
 .feature-area {
   padding: 0 0 40px;
-  margin-top: 80px;
+  margin-top: -60px;
 }
 
 .feature-box {
@@ -9137,21 +9156,23 @@ z-index: 999;
 
 
 
-/* About3 Grid Layout for 4 Images - Diamond Pattern */
+/* About3 Grid Layout for 4 Images - Square Pattern */
 .about-thumb-grid {
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 1100px;
   aspect-ratio: 1;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotate(-45deg);
+  padding: 60px;
 }
 
 .grid-item {
   position: absolute;
-  width: 35%;
+  width: 40%;
   aspect-ratio: 1;
   border-radius: 20px;
   overflow: hidden;
@@ -9171,27 +9192,27 @@ z-index: 999;
   top: 0;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
-  margin-top: 6%;
+  margin-top: 0%;
 }
 
 .grid-left {
   top: 50%;
   left: 0;
   transform: translateY(-50%) rotate(45deg);
-  margin-left: 6%;
+  margin-left: 0%;
 }
 
 .grid-right {
   top: 50%;
   right: 0;
   transform: translateY(-50%) rotate(45deg);
-  margin-right: 6%;
+  margin-right: 0%;
 }
 
 .grid-bottom {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
-  margin-bottom: 6%;
+  margin-bottom: 0%;
 }
 

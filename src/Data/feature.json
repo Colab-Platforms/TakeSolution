@@ -4,7 +4,7 @@
     "title": "One Minute Clinic",
     "desc": "Instant AI Health Assessment",
     "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/one-minute-clinic-banner.jpg?v=1771067701",
-    "bannerText": ["One Minute Today. A ", "Healthier Tomorrow"],
+    "bannerText": ["One Minute Today.", " A Healthier Tomorrow"],
     "BtnUrl": "/feature/featrue-details"
   }, 
   {
@@ -36,7 +36,7 @@
     "title": "Preventive Health",
     "desc": "Predictive Personalized Health Platform",
     "banner": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/proactive-health-banner.jpg?v=1771067701",
-    "bannerText": ["Today’s Action. Tomorrow’s ", "Wellness"],
+    "bannerText": ["Today’s Action.", " Tomorrow’s Wellness"],
     "BtnUrl": "/feature/featrue-details"
   }   
 ]

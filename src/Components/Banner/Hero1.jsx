@@ -17,7 +17,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	];
 
 	const mobileImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MainIntro.jpg_2.jpg?v=1771853061",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/mobile_view.jpg?v=1771918231",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Artboard_1_copy_jpg.jpg?v=1771849370", //oneminutute
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ClinicalResearch.jpg_1.jpg?v=1771853061",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BioTechnology.jpg_2.jpg?v=1771853061",
@@ -28,6 +28,8 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
 	const heroImages = isMobile ? mobileImages : desktopImages;
+
+	const textWidth = isMobile ? '60%' : '38%';
 
 	useEffect(() => {
         loadBackgroudImages();
@@ -86,9 +88,10 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 						color: '#ffffff',
 						// WebkitTextStroke: '1px #ff3c00',
 						display: 'block',
-						textAlign: isMobile ? 'center' : 'right',
+						textAlign: isMobile ? 'center' : 'left',
 						lineHeight: '1.2',
-						margin: '0'
+						margin: '0',
+						paddingLeft: '10%'
 					}}>
 						{textArray[0]}
 					</span>
@@ -96,9 +99,10 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 						color: '#ff3c00',
 						// WebkitTextStroke: '1px #ffffff',
 						display: 'block',
-						textAlign: isMobile ? 'center' : 'right',
+						textAlign: isMobile ? 'center' : 'left',
 						lineHeight: '1.2',
-						margin: '0'
+						margin: '0',
+						paddingLeft: '10%'
 					}}>
 						{textArray[1]}
 					</span>
@@ -116,12 +120,12 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 			<button className="hero-carousel-btn hero-next" onClick={handleNext}>
 				<i className="bi bi-chevron-right"></i>
 			</button>
-			<div className="container">
+			<div className="container-fluid">
 				<div className="row hero align-items-center">
-					<div className="col-lg-6">
+					<div className="col-lg-6" style={{width: '38% !important'}}>
 						<div className="hero-contant">
 							{/* <h5>{SubTitle}</h5> */}
-							<h1>{getBannerText()}</h1>
+							<h1 key={currentIndex}>{getBannerText()}</h1>
 							{/* <p>{Content}</p> */}
 						</div>
 					</div>
