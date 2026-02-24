@@ -69,8 +69,12 @@ const Services1 = () => {
                     <p>Flexible, technology-led architecture designed to scale efficiently across global healthcare ecosystems.</p>
                 </div>
 
-                <div className="center-circle"></div>
-                <div className="center-circle1"></div>
+                <div className="center-circle">
+                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TakeLogo_Emo.png?v=1771930648" alt="Take Logo" className="circle-logo" />
+                </div>
+                <div className="center-circle1">
+                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TakeLogo_Emo.png?v=1771930648" alt="Take Logo" className="circle-logo" />
+                </div>
             </div>
 
                         
