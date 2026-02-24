@@ -5619,7 +5619,7 @@ ul.list-style-one li a:hover {
   <!-- start TAKESOLUTION about section -->
 =========================================================---*/
 .about-section {
-  padding: 0px 0 200px;
+  padding: 0px 0 0px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
