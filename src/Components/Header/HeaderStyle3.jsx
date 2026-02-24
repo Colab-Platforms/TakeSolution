@@ -66,7 +66,7 @@ export default function HeaderStyle3({ variant }) {
 
             <div className="cs_main_header_left">
               <Link className="cs_site_branding" to="/">
-                <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/logo-TAKE.png?v=1771067701" alt="Logo" />
+                <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TakeLogo_003.png?v=1771936186" alt="Logo" />
               </Link>
               </div>
 

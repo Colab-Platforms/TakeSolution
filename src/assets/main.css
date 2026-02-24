@@ -2762,6 +2762,10 @@ ul.pricing-list li i {
   z-index: 1;
 }
 
+.faq-thumb img {
+  border-radius: 20px;
+}
+
 .faq-shape {
   position: absolute;
   top: 0;
@@ -3535,6 +3539,17 @@ ul.testi-rating li {
 
 .row.footer {
   padding: 118px 0 101px;
+}
+
+.footer-logo {
+  max-width: 300px;
+  margin-bottom: 0px;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 p.footer-widget-text {
@@ -6027,6 +6042,10 @@ ul.list-style-one li a:hover {
 .faq-area.style-two .faq-thumb {
   position: relative;
   right: -54px;
+}
+
+.faq-area.style-two .faq-thumb img {
+  border-radius: 20px;
 }
 
 .faq-area.style-two .accordion li a {

@@ -67,7 +67,7 @@ const Faq = () => {
                         <img src="/assets/images/faq2.png" alt="faq2" />
                     </div>
                     <div className="faq-shape2">
-                        <img src="/assets/images/faq3.png" alt="faq2" />
+                        {/* <img src="/assets/images/faq3.png" alt="faq2" /> */}
                     </div>
                 </div>
             </div>
