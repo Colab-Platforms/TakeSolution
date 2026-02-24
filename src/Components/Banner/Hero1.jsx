@@ -13,16 +13,16 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage_jpg.jpg?v=1771844239", //clinicResearch
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4thPage_jpg.jpg?v=1771844239", // biotech
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg.jpg?v=1771844238", // lifescience
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/b8b24afc2deb56b66a307a9cd08addc6928af051.png?v=1771844735" // preventiveHealth
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/preventive_health_71223d5f-aa86-4b32-8486-36ce9b247889.jpg?v=1771924931" // preventiveHealth
 	];
 
 	const mobileImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/mobile_view.jpg?v=1771918231",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Artboard_1_copy_jpg.jpg?v=1771849370", //oneminutute
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ClinicalResearch.jpg_1.jpg?v=1771853061",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BioTechnology.jpg_2.jpg?v=1771853061",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience.jpg_2.jpg?v=1771853061",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/PreventiveHealth_jpg.jpg?v=1771853061"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/oneminute_ef3cc2f2-4f81-44b8-b1c4-49f8a1c13d51.jpg?v=1771924409", //oneminutute
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/clinicle_research.jpg?v=1771923565",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/biotech_85d06b65-c7ea-4194-862e-330cb512ac00.jpg?v=1771923649",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/oneminute_2415d43b-82d2-4141-82fa-69bdb86ab2d1.jpg?v=1771923519",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/preventive.jpg?v=1771924408"
 	];
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -44,6 +44,11 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	}, []);
 
 	const getBannerText = () => {
+		// Don't show text on mobile
+		if (isMobile) {
+			return null;
+		}
+
 		// For index 0 (main image), show custom title with white and red colors
 		if (currentIndex === 0) {
 			return (
@@ -88,7 +93,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 						color: '#ffffff',
 						// WebkitTextStroke: '1px #ff3c00',
 						display: 'block',
-						textAlign: isMobile ? 'center' : 'left',
+						textAlign: 'left',
 						lineHeight: '1.2',
 						margin: '0',
 						paddingLeft: '10%'
@@ -99,7 +104,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 						color: '#ff3c00',
 						// WebkitTextStroke: '1px #ffffff',
 						display: 'block',
-						textAlign: isMobile ? 'center' : 'left',
+						textAlign: 'left',
 						lineHeight: '1.2',
 						margin: '0',
 						paddingLeft: '10%'
