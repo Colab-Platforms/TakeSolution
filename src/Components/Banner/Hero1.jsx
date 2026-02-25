@@ -13,7 +13,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage_jpg.jpg?v=1771844239", //clinicResearch
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4thPage_jpg.jpg?v=1771844239", // biotech
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg.jpg?v=1771844238", // lifescience
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/preventive_health_71223d5f-aa86-4b32-8486-36ce9b247889.jpg?v=1771924931" // preventiveHealth
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000824_jpg.jpg?v=1771999573" // preventiveHealth
 	];
 
 	const mobileImages = [

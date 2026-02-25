@@ -7,13 +7,13 @@
 
 .feature-sinble-single-box.animate-up {
   transform: translateY(-100px);
-}
+} 
 
 /* Disable animation on mobile */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .feature-sinble-single-box.animate-up {
     transform: translateY(0);
   }
-}
+} */
 
 

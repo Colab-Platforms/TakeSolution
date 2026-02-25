@@ -1,5 +1,6 @@
 [
     {
+    "cardbg":"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1.jpg?v=1771997160",
     "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/OneMinuteClinicIcon.png?v=1771582212",   
     "title": "One Minute Clinic",
     "desc": "Instant AI Health Assessment",
@@ -8,6 +9,7 @@
     "BtnUrl": "/feature/featrue-details"
   }, 
   {
+    "cardbg":"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_2.jpg?v=1771997160",
     "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ClinicalResearchIcon.png?v=1771582211",   
     "title": "Clinical Research",
     "desc": "Accelerating Intelligent Clinical Development",
@@ -16,6 +18,7 @@
     "BtnUrl": "/feature/featrue-details"
   },
   {
+    "cardbg":"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_3.jpg?v=1771997160",
     "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Biotechnology.png?v=1771582211",   
     "title": "Biotechnology",
     "desc": "Advancing Next-Generation Biologics",
@@ -24,6 +27,7 @@
     "BtnUrl": "/feature/featrue-details"
   },
   {
+    "cardbg":"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_4.jpg?v=1771997160",
     "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/LifeScience.png?v=1771582212",   
     "title": "Life Science",
     "desc": "AI-Powered Scientific Innovation",
@@ -32,6 +36,7 @@
     "BtnUrl": "/feature/featrue-details"
   }, 
   {
+    "cardbg":"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_5.jpg?v=1771997160",
     "img": "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ProactiveHealthIcon.png?v=1771582211",   
     "title": "Preventive Health",
     "desc": "Predictive Personalized Health Platform",

@@ -24,13 +24,18 @@ const Features = () => {
                                 onClick={() => handleCardClick(i)}
                                 style={{ cursor: 'pointer' }}
                             >
-                                <div className="feature-icon">
+
+                                <div className='cardbg'>
+                                    <img src={item.cardbg} alt={item.title} />
+
+                                </div>
+                                {/* <div className="feature-icon">
                                     <img src={item.img} alt={item.title} />
                                 </div>
                                 <div className="feature-content">
                                     <h3 className="feature-title">{item.title}</h3>
                                     <p className="feature-text">{item.desc}</p>
-                                </div>
+                                </div> */}
                             </div>
                         ))}
                     </div>
