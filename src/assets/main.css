@@ -4844,7 +4844,7 @@ ul.list-style-one li a:hover {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -35px;
+  bottom: -40px;
   z-index: 1;
 }
 
@@ -9132,6 +9132,7 @@ p.blog-details-desc.three {
 }
 .project-right2{
 z-index: 999;
+margin-bottom: 10px;
 }
 .project2-item-area{
   z-index: 9999;

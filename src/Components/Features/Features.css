@@ -10,10 +10,28 @@
 } 
 
 /* Disable animation on mobile */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .feature-sinble-single-box.animate-up {
     transform: translateY(0);
   }
-} */
+
+
+
+  .feature-sinble-single-box {
+      padding: 36px 0px 32px;
+  }
+
+  
+  
+  .cardbg img{
+    object-fit: fill;
+    max-width: 100%;
+    width: 410px;
+    height: 267px;
+  }
+
+
+ 
+}
 
 

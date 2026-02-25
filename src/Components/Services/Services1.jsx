@@ -70,10 +70,10 @@ const Services1 = () => {
                 </div>
 
                 <div className="center-circle">
-                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TakeLogo_Emo.png?v=1771930648" alt="Take Logo" className="circle-logo" />
+                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-1.png?v=1772011358" alt="Take Logo" className="circle-logo" />
                 </div>
                 <div className="center-circle1">
-                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TakeLogo_Emo.png?v=1771930648" alt="Take Logo" className="circle-logo" />
+                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-1.png?v=1772011358" alt="Take Logo" className="circle-logo" />
                 </div>
             </div>
 
