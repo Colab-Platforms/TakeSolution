@@ -34,12 +34,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
   text-align: left;
-}
-
-.about6-accordion-header:hover {
-  opacity: 0.8;
 }
 
 .about6-accordion-title {
@@ -48,7 +43,6 @@
   color: #1a1a1a;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  transition: color 0.3s ease;
 }
 
 .about6-accordion-icon {
@@ -62,28 +56,43 @@
   background: transparent;
   color: #2285A3;
   border: 2px solid #2285A3;
-  transition: all 0.3s ease;
 }
 
-.about6-accordion-item.active .about6-accordion-icon {
-  background: #2285A3;
-  color: #ffffff;
+.about6-accordion-icon svg {
+  transform: rotate(-90deg);
+  transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about6-accordion-header:hover .about6-accordion-icon svg {
+  transform: rotate(0deg);
+}
+
+.about6-accordion-item.hovered .about6-accordion-icon svg {
+  transform: rotate(0deg);
+}
+
+.about6-accordion-item.active .about6-accordion-icon svg {
+  transform: rotate(0deg);
 }
 
 /* Accordion Content */
 .about6-accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  transition: max-height 1.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              padding 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 1.5s ease;
+  opacity: 0;
 }
 
 .about6-accordion-content.open {
   max-height: 2000px;
   padding-bottom: 40px;
+  opacity: 1;
 }
 
 .about6-accordion-inner {
-  animation: fadeInContent 0.5s ease;
+  animation: fadeInContent 0.8s ease;
 }
 
 @keyframes fadeInContent {
@@ -101,7 +110,7 @@
 .about6-vision-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 264px;
   align-items: start;
 }
 
@@ -110,31 +119,48 @@
 }
 
 .about6-content-subtitle {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   color: #2285A3;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+  width: 107%;
 }
 
 .about6-content-text {
-  font-size: 16px;
+  font-size: 25px;
   color: #555;
-  line-height: 1.8;
+  line-height: 40px;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   white-space: pre-line;
+  font-weight: 600;
 }
 
-/* Values Layout */
+/* Values Layout - Grid with Left Subtitle */
+.about6-values-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about6-values-left {
+  padding-right: 20px;
+}
+
 .about6-values-subtitle {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   color: #2285A3;
-  margin: 0 0 30px 0;
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+}
+
+.about6-values-right {
+  width: 100%;
 }
 
 .about6-values-grid {
@@ -148,7 +174,7 @@
 }
 
 .about6-value-name {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 700;
   color: #2285A3;
   margin: 0 0 12px 0;
@@ -156,11 +182,12 @@
 }
 
 .about6-value-description {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.7;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #666;
+    line-height: 45px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 /* Responsive Design */
@@ -170,6 +197,11 @@
   }
 
   .about6-vision-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about6-values-layout {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -210,14 +242,13 @@
     font-size: 15px;
   }
 
-  .about6-values-subtitle {
-    font-size: 18px;
-    margin-bottom: 20px;
+  .about6-vision-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .about6-vision-layout {
-    grid-template-columns: 1fr ;
-    gap: 20px;
+  .about6-values-subtitle {
+    font-size: 18px;
   }
 
   .about6-values-grid {
@@ -271,7 +302,6 @@
 
   .about6-values-subtitle {
     font-size: 16px;
-    margin-bottom: 15px;
   }
 
   .about6-values-grid {

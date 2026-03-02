@@ -3,6 +3,7 @@ import './About6.css';
 
 const About6 = () => {
   const [openSection, setOpenSection] = useState(0);
+  const [hoveredSection, setHoveredSection] = useState(null);
 
   const sections = [
     {
@@ -43,12 +44,27 @@ const About6 = () => {
     setOpenSection(openSection === index ? -1 : index);
   };
 
+  const handleMouseEnter = (index) => {
+    setHoveredSection(index);
+    setOpenSection(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredSection(null);
+    setOpenSection(-1);
+  };
+
   return (
     <div className="about6-section">
       <div className="container">
         <div className="about6-accordion">
           {sections.map((section, index) => (
-            <div key={index} className={`about6-accordion-item ${openSection === index ? 'active' : ''}`}>
+            <div 
+              key={index} 
+              className={`about6-accordion-item ${openSection === index ? 'active' : ''} ${hoveredSection === index ? 'hovered' : ''}`}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
               <button 
                 className="about6-accordion-header"
                 onClick={() => toggleSection(index)}
@@ -62,10 +78,6 @@ const About6 = () => {
                     fill="none" 
                     stroke="currentColor" 
                     strokeWidth="2"
-                    style={{
-                      transform: openSection === index ? 'rotate(180deg)' : 'rotate(0deg)',
-                      transition: 'transform 0.3s ease'
-                    }}
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
@@ -84,17 +96,21 @@ const About6 = () => {
                       </div>
                     </div>
                   ) : (
-                    <>
-                      <h4 className="about6-values-subtitle">{section.subtitle}</h4>
-                      <div className="about6-values-grid">
-                        {section.values.map((value, vIndex) => (
-                          <div key={vIndex} className="about6-value-card">
-                            <h5 className="about6-value-name">{value.name}</h5>
-                            <p className="about6-value-description">{value.description}</p>
-                          </div>
-                        ))}
+                    <div className="about6-values-layout">
+                      <div className="about6-values-left">
+                        <h4 className="about6-values-subtitle">{section.subtitle}</h4>
                       </div>
-                    </>
+                      <div className="about6-values-right">
+                        <div className="about6-values-grid">
+                          {section.values.map((value, vIndex) => (
+                            <div key={vIndex} className="about6-value-card">
+                              <h5 className="about6-value-name">{value.name}</h5>
+                              <p className="about6-value-description">{value.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   )}
                 </div>
               </div>
