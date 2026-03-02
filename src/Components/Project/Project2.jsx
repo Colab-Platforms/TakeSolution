@@ -64,7 +64,7 @@ const Project2 = () => {
     const showNavButtons = !isDesktop || data.length > 3;
 
     return (
-        <div className="project-area styl-two" data-background="/assets/images/home-two/project-bg-two.jpg">
+        <div className="project-area styl-two" >
             <div className="container-fluid">
                 <div className="row project-section">
                     <div className="col-lg-6">
@@ -77,7 +77,7 @@ const Project2 = () => {
                     </div>
                     <div className="col-lg-6  d-flex align-items-center justify-content-end">
                     <div className="project-right2">
-                        {showNavButtons && (
+                        {/* {showNavButtons && (
                         <div className="cs_slider_arrows cs_style_2 testtimonial_arow_area cs_hide_md">
                             <div className="cs_left_arrow cs_slider_arrow cs_center" onClick={previous}>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +104,7 @@ const Project2 = () => {
                                 </svg>
                             </div>
                             </div>
-                        )}
+                        )} */}
                         </div>
                     </div>
                 </div>
@@ -121,12 +121,12 @@ const Project2 = () => {
                                     <h4 className="project-title"><Link>{item.title}</Link></h4>
                                     <p className="project-des">{item.desc}</p>
                                 </div>
-                                <div className="project-icon">
+                                {/* <div className="project-icon">
                                     <span><i className="bi bi-arrow-right"></i></span>
                                 </div>
                                 <div className="project-shape">
                                     <img src="/assets/images/home-two/border-shape.png" alt="shape" />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         ))}

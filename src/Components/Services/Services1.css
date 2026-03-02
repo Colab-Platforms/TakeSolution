@@ -3,9 +3,62 @@
     padding: 60px 20px;
     background: ffffff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: auto;
+    margin: 55px 0px;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.gradient-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #2285A3 20%, #2285A3 80%, transparent);
+    max-width: 300px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.services-main-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.services-sub-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2285A3;
+    font-style: italic;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    white-space: nowrap;
 }
 
 .services-grid {
@@ -28,27 +81,32 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    height: 340px;
+    
 }
 
-.service-card:hover {
+/* .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .service-card h2 {
-    color: #1a4d5e;
+    color: #2285A3;
+
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 16px;
     line-height: 1.3;
-    width: 237px;
+    width: 347px;
 }
 
 .service-card p {
-    color: #5a6c7d;
+    color: #1e1e1e;
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
+    width: 233px;
+    font-weight: 600;
 }
 
 /* Top Left Card - DNA */
@@ -57,6 +115,7 @@
                 url('/assets/images/serviceimages/Frame 31.jpg.jpeg');
     background-size: cover;
     background-position: center;
+    
 }
 
 .dna-icon {
@@ -76,9 +135,11 @@
 /* Top Right Card - Data Science */
 .top-right {
     background: 
-                url('/assets/images/serviceimages/Frame 32.jpg.jpeg');
+                url('/assets/images/serviceimages/Frame 33.jpg.jpeg');
     background-size: cover;
     background-position: center;
+    /* padding: 87px 30px; */
+        align-content: end;
 }
 
 .ai-badge {
@@ -125,9 +186,10 @@
 /* Bottom Left Card - Atom */
 .bottom-left {
     background:
-                url('/assets/images/serviceimages/Frame 33.jpg.jpeg');
+                url('/assets/images/serviceimages/Frame 32.jpg.jpeg');
     background-size: cover;
     background-position: center;
+        /* align-content: end; */
 }
 
 .atom-icon {
@@ -150,6 +212,7 @@
                 url('/assets/images/serviceimages/Frame 34.jpg.jpeg');
     background-size: 135%;
     background-position: center;
+        align-content: end;
 }
 
 .world-map {
@@ -169,15 +232,18 @@
 /* Center Circle */
 .center-circle {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 120px;
     height: 120px;
-    background: #0d3d4d;
+    background: linear-gradient(173deg, #A2CCD8, #e9eeef);
+    /* background: #0d3d4d; */
     border-radius: 50%;
-    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.9),
-                0 8px 32px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.9),
+                0 8px 32px rgba(0, 0, 0, 0.2); */
+
+    outline: 28px solid #FFFFFF;
     z-index: 10;
     display: flex;
     align-items: center;
@@ -191,14 +257,16 @@
     transform: translate(-50%, -50%);
     width: 120px;
     height: 120px;
-    background: #0d3d4d;
+    background: linear-gradient(173deg, #A2CCD8, #e9eeef);
     border-radius: 50%;
-    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.9),
-                0 8px 32px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.9),
+                0 8px 32px rgba(0, 0, 0, 0.2); */
+    outline: 28px solid #FFFFFF;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 
 .circle-logo {
@@ -209,6 +277,25 @@
 
 /* Responsive Design */
 @media (max-width: 968px) {
+    .services-header {
+        margin-bottom: 40px;
+    }
+
+    .header-content {
+        gap: 20px;
+    }
+
+    .gradient-line {
+        max-width: 150px;
+    }
+
+    .services-main-title,
+    .services-sub-title {
+        font-size: 24px;
+        white-space: normal;
+        text-align: center;
+    }
+
     .services-grid {
         display: flex;
         flex-direction: column;
@@ -227,8 +314,10 @@
         height: 100px;
         margin: -50px auto;
         z-index: 10;
-        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.9),
-                    0 8px 32px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.9),
+                    0 8px 32px rgba(0, 0, 0, 0.2); */
+        outline: 28px solid #FFFFFF;
+        
         order: 2;
     }
 
@@ -241,8 +330,9 @@
         height: 100px;
         margin: -50px auto;
         z-index: 10;
-        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.9),
-                    0 8px 32px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.9),
+                    0 8px 32px rgba(0, 0, 0, 0.2); */
+        outline: 28px solid #FFFFFF;
         order: 5;
     }
 
@@ -289,6 +379,23 @@
         padding: 20px 15px;
     }
 
+    .services-header {
+        margin-bottom: 30px;
+    }
+
+    .header-content {
+        gap: 15px;
+    }
+
+    .gradient-line {
+        max-width: 80px;
+    }
+
+    .services-main-title,
+    .services-sub-title {
+        font-size: 18px;
+    }
+
     .service-card {
         padding: 25px 20px;
         height: 240px
@@ -299,11 +406,14 @@
         width: 63px;
         height: 63px;
         margin: -40px auto;
+        outline: 20px solid #FFFFFF;
     }
     .center-circle1{
         width: 63px;
         height: 63px;
         margin: -40px auto;
+        outline: 20px solid #FFFFFF;
+        display: flex;
     }
 
     .services-grid {
