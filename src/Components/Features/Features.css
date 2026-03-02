@@ -9,45 +9,29 @@
   transform: translateY(-100px);
 } 
 
-/* Mobile Horizontal Slider */
+/* Disable animation on mobile */
 @media screen and (max-width: 768px) {
   .feature-sinble-single-box.animate-up {
     transform: translateY(0);
   }
-
-  .feature-box {
-    display: flex !important;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 20px 0;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-  }
-
-  .feature-box::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
-
-  .feature-sinble-single-box {
-    flex: 0 0 85%;
-    scroll-snap-align: center;
-    padding: 0;
-    margin-right: 25px;
-  }
-
-  .feature-sinble-single-box:last-child {
-    margin-right: 0;
-  }
-  
-  .cardbg img {
-    object-fit: cover;
-    max-width: 100%;
-    width: 100%;
-    /* height: 200px; */
-    border-radius: 12px;
-  }
 }
 
+.cardbg {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.cardbg img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.feature-sinble-single-box:hover .cardbg img {
+  transform: scale(1.05);
+}
 
