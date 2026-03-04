@@ -1101,6 +1101,44 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 .cs_nav .cs_nav_list span.cs-munu_dropdown_toggle.active + ul, .cs_nav .cs-munu_toggle.cs_teggle_active + .cs_nav_list {
   display: block;
 }
+
+/* Mobile Menu Close Button */
+.cs_mobile_menu_close {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  list-style: none;
+}
+
+@media screen and (max-width: 991px) {
+  .cs_mobile_menu_close {
+    display: block;
+  }
+}
+
+.cs_close_btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.cs_close_btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(90deg);
+}
+
+.cs_close_btn svg {
+  width: 24px;
+  height: 24px;
+}
 .cs_site_header.cs_color_1 .cs_header_search_btn {
   color: initial;
 }

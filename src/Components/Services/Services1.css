@@ -402,6 +402,11 @@
         
     }
 
+    .service-card h2 {
+        font-size: 18px;
+        max-width: 180px;
+    }
+
     .center-circle {
         width: 63px;
         height: 63px;
@@ -442,7 +447,8 @@
     }
 
     .service-card h2 {
-        font-size: 18px;
+        font-size: 15px;
+        max-width: 156px;
     }
 
     .service-card p {
