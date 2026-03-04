@@ -16,6 +16,10 @@ const Faq = () => {
         setOpenItemIndex(index);
       }
     };
+
+    const handleItemHover = index => {
+      setOpenItemIndex(index);
+    };
     
     useEffect(() => {
       if (firstItemOpen) {
@@ -66,7 +70,12 @@ const Faq = () => {
                                 <div id="tab1" className="tab_content">
                                     <ul className="accordion">
                                     {data.map((item, index)=>(
-                                        <li key={index} className={`cs_accordian ${index === openItemIndex ? "active" : "" }`}>
+                                        <li 
+                                            key={index} 
+                                            className={`cs_accordian ${index === openItemIndex ? "active" : "" }`}
+                                            onMouseEnter={() => handleItemHover(index)}
+                                            onMouseLeave={() => setOpenItemIndex(-1)}
+                                        >
                                             <a onClick={() => handleItemClick(index)}><span>{item.title}</span></a>
                                             <p ref={el => contentRefs.current[index] = el}>{item.desc}</p>
                                         </li>

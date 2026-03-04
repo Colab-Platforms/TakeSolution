@@ -97,7 +97,6 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 						paddingLeft: '10%',
 						fontFamily: 'Montserrat',
 						fontWeight: '600',
-						fontStyle: 'italic',
 						fontSize: '60px',
 						lineHeight: '70px',
 						letterSpacing: '0%'

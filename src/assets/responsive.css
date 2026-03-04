@@ -3775,7 +3775,11 @@ h3.faq-title {
  }
 
 .accordion a:after {
-   display: none;
+   display: block !important;
+   width: 35px;
+   height: 35px;
+   font-size: 28px;
+   line-height: 28px;
 }
 
 .faq-shape2 {

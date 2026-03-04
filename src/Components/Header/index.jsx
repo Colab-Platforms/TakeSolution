@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { RxHamburgerMenu } from "react-icons/rx";
 import Nav from './Nav';
 export default function Header({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
@@ -55,7 +56,7 @@ export default function Header({ variant }) {
                     }
                     onClick={() => setMobileToggle(!mobileToggle)}
                   >
-                    <span></span>
+                    <RxHamburgerMenu />
                   </span>
                   <Nav setMobileToggle={setMobileToggle} />
                 </div>

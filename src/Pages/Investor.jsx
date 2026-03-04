@@ -15,7 +15,7 @@ const Investor = () => {
         BtnLink="#financial"
         Image="/assets/images/hero-thumb.png"
       ></Hero1> */}
-      <BreadCumb Title="Investor"></BreadCumb>
+      {/* <BreadCumb Title="Investor"></BreadCumb> */}
       <FinancialPerformance></FinancialPerformance>
       {/* <Contact1></Contact1> */}
     </div>

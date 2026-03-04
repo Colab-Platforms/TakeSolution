@@ -28,9 +28,9 @@ export default function FooterPreview() {
           <div className="footer-column links">
             <div className="footer-title">Useful Links</div>
             <ul>
-              <li>Home</li>
-              <li>Investor</li>
-              <li>About Us</li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/investor">Investor</Link></li>
+              <li><Link to="/about">About Us</Link></li>
             </ul>
           </div>
 

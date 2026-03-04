@@ -113,7 +113,7 @@
 
 .footer-title {
   color: #0f766e;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 13px;
@@ -128,13 +128,19 @@
 
 .links li {
   margin-bottom: 12px;
-  cursor: pointer;
   font-size: 14px;
-  color: #4b5563;
-  transition: color 0.3s ease;
+  font-weight: 600;
 }
 
-.links li:hover {
+.links li a {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.links li a:hover {
   color: #0f766e;
 }
 
@@ -142,6 +148,7 @@
   font-size: 14px;
   line-height: 1.8;
   color: #4b5563;
+  font-weight: 600;
 }
 
 .contact-item {
@@ -160,6 +167,7 @@
 
 .contact-item span {
   line-height: 1.6;
+  font-weight: 600;
 }
 
 .cin-text {
