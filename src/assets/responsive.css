@@ -2157,6 +2157,7 @@ h1.section-main-title {
 
 p.section-title-descr {
     width: 90%;
+    font-size: 18px;
 }
 
 .service-shape {
@@ -3656,7 +3657,7 @@ h3.blog-details-title.two {
 }
 
 .feature-sinble-single-box {
-    padding: 36px 0px 32px;
+    padding: 36px 12px 32px;
 }
 
 .feature-box {
@@ -3681,6 +3682,9 @@ h1.section-main-title {
 
 p.section-title-descr {
     width: 100%;
+    font-size: 18px;
+    line-height: 33px;
+    color: #454757;
 }
 
 .about-text p {
@@ -4254,10 +4258,6 @@ h3.blog-title-two a {
 .single-counter-box {
     right: 34px;
     top: 233px;
-}
-
-.about-us-thumb {
-    margin-top: 260px;
 }
 
 .project-area.style-two {

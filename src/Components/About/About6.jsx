@@ -2,44 +2,30 @@ import { useState } from 'react';
 import './About6.css';
 
 const About6 = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [openSection, setOpenSection] = useState(0);
 
-  const tabs = [
+  const sections = [
     {
-      label: 'Our Vision',
-      title: 'To transform global healthcare through artificial intelligence and intelligent digital innovation.',
-      subtitle: '',
-      description: 'TAKE Solutions envisions a connected healthcare ecosystem where life sciences, clinical research, biotechnology, and preventive health are powered by intelligent, data-driven platforms. We aspire to create a future where research is accelerated, regulatory processes are streamlined, risks are predicted early, and healthcare decisions are guided by real-time insights.\n\nOur vision is to bridge science and technology, enabling organizations to innovate faster, operate smarter, and deliver safer, more effective outcomes for patients worldwide. By combining advanced analytics, secure digital infrastructure, and deep domain expertise, we aim to redefine how healthcare systems function — making them more proactive, precise, and sustainable for generations to come.',
-      image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/WhatsApp_Image_2026-02-19_at_6.48.46_PM.jpg?v=1771507157',
-      type: 'image'
+      title: 'Our Vision',
+      subtitle: 'To transform global healthcare through artificial intelligence and intelligent digital innovation.',
+      content: 'TAKE Solutions envisions a connected, data-driven healthcare ecosystem where life sciences and clinical research are accelerated, regulations streamlined, risks predicted early, and decisions guided by real-time insights.\n\nBy bridging science and technology, we enable smarter innovation, safer outcomes, and more proactive, precise, and sustainable healthcare worldwide.'
     },
-    // {
-    //   label: 'Synology',
-    //   title: 'Synergistic Excellence',
-    //   subtitle: 'Combining Expertise And Innovation',
-    //   description: 'Through strategic partnerships and collaborative efforts, we create synergies that drive innovation. Our integrated approach combines cutting-edge research with practical healthcare solutions to address global health challenges.',
-    //   image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/about-synology.jpg?v=1771067701',
-    //   type: 'image'
-    // },
     {
-      label: 'Our values',
-      title: 'Our values define how we innovate, operate, and create lasting impact.',
-      subtitle: '',
-      description: '',
-      image: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Layer_0.png?v=1771506255',
-      type: 'values',
+      title: 'Our Values',
+      subtitle: 'Our values define how we innovate, operate, and create lasting impact.',
+      content: '',
       values: [
         {
           name: 'Quality',
-          description: 'Delivering precision-driven solutions that meet the highest standards of scientific, technological, and operational excellence.'
+          description: 'Delivering precision-driven solutions with the highest standards of scientific, technological, and operational excellence.'
         },
         {
           name: 'Consistency',
-          description: 'Continuously advancing capabilities and delivering sustained value to customers, partners, and stakeholders.'
+          description: 'Continuously enhancing capabilities to deliver sustained value to customers, partners, and stakeholders.'
         },
         {
           name: 'Innovation',
-          description: 'Harnessing artificial intelligence, deep technology, and data science to solve complex healthcare challenges and create future-ready solutions.'
+          description: 'Leveraging AI, advanced technology, and data science to solve complex healthcare challenges and build future-ready solutions.'
         },
         {
           name: 'Trust',
@@ -53,77 +39,71 @@ const About6 = () => {
     }
   ];
 
-  const currentTab = tabs[activeTab];
+  const toggleSection = (index) => {
+    setOpenSection(openSection === index ? -1 : index);
+  };
 
   return (
     <div className="about6-section">
       <div className="container">
-        {/* Tabs Navigation */}
-        <div className="about6-tabs-nav">
-          {tabs.map((tab, index) => (
-            <button
-              key={index}
-              className={`about6-tab-btn ${activeTab === index ? 'active' : ''}`}
-              onClick={() => setActiveTab(index)}
-            >
-              {tab.label}
-            </button>
+        <div className="about6-accordion">
+          {sections.map((section, index) => (
+            <div key={index} className={`about6-accordion-item ${openSection === index ? 'active' : ''}`}>
+              <button 
+                className="about6-accordion-header"
+                onClick={() => toggleSection(index)}
+              >
+                <h3 className="about6-accordion-title">{section.title}</h3>
+                <span className="about6-accordion-icon">
+                  <svg 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2"
+                    style={{
+                      transform: openSection === index ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.3s ease'
+                    }}
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              
+              <div className={`about6-accordion-content ${openSection === index ? 'open' : ''}`}>
+                <div className="about6-accordion-inner">
+                  {section.content ? (
+                    <div className="about6-vision-layout">
+                      <div className="about6-vision-left">
+                        <h4 className="about6-content-subtitle">{section.subtitle}</h4>
+                      </div>
+                      <div className="about6-vision-right">
+                        <p className="about6-content-text">{section.content}</p>
+                      </div>
+                    </div>
+                  ) : (
+                    <>
+                      <h4 className="about6-values-subtitle">{section.subtitle}</h4>
+                      <div className="about6-values-grid">
+                        {section.values.map((value, vIndex) => (
+                          <div key={vIndex} className="about6-value-card">
+                            <h5 className="about6-value-name">{value.name}</h5>
+                            <p className="about6-value-description">{value.description}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
-
-        {/* Tab Content */}
-        {currentTab.type === 'image' ? (
-          <div className="about6-content-wrapper">
-            <div className="about6-content-left">
-              <div className="about6-content-inner">
-                {currentTab.subtitle && (
-                  <p className="about6-content-subtitle">{currentTab.subtitle}</p>
-                )}
-                <h3 className="about6-content-title">{currentTab.title}</h3>
-                <p className="about6-content-description" style={{whiteSpace: 'pre-line'}}>{currentTab.description}</p>
-              </div>
-            </div>
-
-            <div className="about6-content-right">
-              <div className="about6-image-wrapper">
-                <img 
-                  src={currentTab.image} 
-                  alt={currentTab.label}
-                  className="about6-image"
-                />
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div className="about6-values-full-wrapper">
-            <div className="about6-values-content">
-              <h3 className="about6-values-title">{currentTab.title}</h3>
-              <div className="about6-values-grid">
-                {currentTab.values.map((value, index) => (
-                  <div key={index} className="about6-value-item">
-                    <h4 className="about6-value-name">{value.name}</h4>
-                    <p className="about6-value-description">{value.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="about6-values-image">
-              <div className="about6-image-wrapper">
-                <img 
-                  src={currentTab.image} 
-                  alt={currentTab.label}
-                  className="about6-image"
-                />
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
 };
 
 export default About6;
-
-

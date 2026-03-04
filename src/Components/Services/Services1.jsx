@@ -3,6 +3,20 @@ import './Services1.css';
 const Services1 = () => {
     return (
         <div className="services-container">
+            <div className="services-header">
+                <div className="header-content">
+                    <div className="gradient-line"></div>
+                    <div className="header-text">
+                        <h2 className="services-main-title">
+                            Creating Long Term Value through
+                        </h2>
+                        <h3 className="services-sub-title">
+                            Technology & Intelligence
+                        </h3>
+                    </div>
+                    <div className="gradient-line"></div>
+                </div>
+            </div>
             <div className="services-grid">
                 {/* Top Left Card */}
                 <div className="service-card top-left">
@@ -31,8 +45,13 @@ const Services1 = () => {
                             <circle cx="80" cy="50" r="6" fill="#F5A623"/>
                         </svg>
                     </div> */}
-                    <h2>Focus on High-Growth Healthcare Segments</h2>
-                    <p>Strategic alignment with rapidly expanding sectors including biotechnology, clinical research, and preventive healthcare.</p>
+
+
+                    <h2>Advanced Data Science Platforms</h2>
+                    <p>Robust digital and AI-driven platforms transforming complex healthcare data into actionable intelligence.</p>
+
+
+                   
                 </div>
 
                 {/* Top Right Card */}
@@ -47,8 +66,8 @@ const Services1 = () => {
                             <path d="M0 45 Q25 25 50 45 T100 45 T150 45 T200 45" stroke="#6BC5E8" strokeWidth="2" fill="none"/>
                         </svg>
                     </div> */}
-                    <h2>Advanced Data Science Platforms</h2>
-                    <p>Robust digital and AI-driven platforms transforming complex healthcare data into actionable intelligence.</p>
+                    <h2>Focus on High-Growth Healthcare Segments</h2>
+                    <p>Strategic alignment with rapidly expanding sectors including biotechnology, clinical research, and preventive healthcare.</p>
                 </div>
 
                 {/* Center Circle */}
@@ -70,10 +89,10 @@ const Services1 = () => {
                 </div>
 
                 <div className="center-circle">
-                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-1.png?v=1772011358" alt="Take Logo" className="circle-logo" />
+                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-1_2.png?v=1772196422" alt="Take Logo" className="circle-logo" />
                 </div>
                 <div className="center-circle1">
-                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-1.png?v=1772011358" alt="Take Logo" className="circle-logo" />
+                    <img src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Untitled-1_2.png?v=1772196422" alt="Take Logo" className="circle-logo" />
                 </div>
             </div>
 

@@ -8,24 +8,24 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	const { currentIndex, handlePrev, handleNext } = useContext(CarouselContext);
 
 	const desktopImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/final_3.jpg?v=1771837871",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BAN_jpg.jpg?v=1772173590",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ndPage.jpg_1.jpg?v=1771931693", //oneminute
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage_jpg.jpg?v=1771844239", //clinicResearch
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4thPage_jpg.jpg?v=1771844239", // biotech
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4th_jpg.jpg?v=1772174989", // biotech
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg.jpg?v=1771844238", // lifescience
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000824_jpg.jpg?v=1771999573" // preventiveHealth
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/6th_jpg.jpg?v=1772174989", // preventiveHealth
 	];
 
 	const mobileImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/mobile_view.jpg?v=1771918231",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/mobile_view_2.jpg?v=1771933172", //oneminutute
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/clinicle_research.jpg?v=1771923565",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000816.jpg?v=1771933171",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000814.jpg?v=1771933171",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000817.jpg?v=1771933172"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ban_mv_jpg.jpg?v=1772186025",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ND_MV.jpg_1.jpg?v=1772186025", //oneminutute
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3RD_MV.jpg_1.jpg?v=1772186028",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4th_mv_jpg.jpg?v=1772186025",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thmv_jpg.jpg?v=1772186026",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/6thmv_jpg.jpg?v=1772186025"
 	];
 
-	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);	
 
 	const heroImages = isMobile ? mobileImages : desktopImages;
 
@@ -91,23 +91,31 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 				<>
 					<span style={{ 
 						color: '#ffffff',
-						// WebkitTextStroke: '1px #2285A3',
 						display: 'block',
 						textAlign: 'left',
-						lineHeight: '1.2',
 						margin: '0',
-						paddingLeft: '10%'
+						paddingLeft: '10%',
+						fontFamily: 'Montserrat',
+						fontWeight: '600',
+						fontStyle: 'italic',
+						fontSize: '60px',
+						lineHeight: '70px',
+						letterSpacing: '0%'
 					}}>
 						{textArray[0]}
 					</span>
 					<span style={{ 
 						color: '#2285A3',
-						// WebkitTextStroke: '1px #ffffff',
 						display: 'block',
 						textAlign: 'left',
-						lineHeight: '1.2',
 						margin: '0',
-						paddingLeft: '10%'
+						paddingLeft: '10%',
+						fontFamily: 'Montserrat',
+						fontWeight: '600',
+						fontStyle: 'italic',
+						fontSize: '60px',
+						lineHeight: '70px',
+						letterSpacing: '0%'
 					}}>
 						{textArray[1]}
 					</span>

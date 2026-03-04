@@ -1,56 +1,161 @@
 .about5-stats-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
 }
 
-.about5-stats-section::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255, 60, 0, 0.05) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
+@media (max-width: 768px) {
+  .about5-stats-section {
+    padding: 50px 0;
+  }
 }
 
-.about5-stats-section::after {
-  content: '';
-  position: absolute;
-  bottom: -30%;
-  left: -5%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(30, 91, 168, 0.05) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
+@media (max-width: 480px) {
+  .about5-stats-section {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .about5-stats-section {
+    padding: 0px 0;
+  }
 }
 
 .about5-header {
-  text-align: center;
-  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
   position: relative;
   z-index: 1;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .about5-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.about5-header-left {
+  position: sticky;
+  top: 0px;
+}
+
+@media (max-width: 1024px) {
+  .about5-header-left {
+    position: static;
+  }
 }
 
 .about5-header .section-sub-title {
-  display: inline-block;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2285a3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+about5-description-p1 {
+  width: 100%;
+  font-weight: 600px;
+  font-size: 22px;
+  line-height: 37px;
+}
+
+about5-description-p2 {
+  width: 100%;
+  font-weight: 600px;
+  font-size: 22px;
+  line-height: 37px;
+}
+about5-description-p3 {
+  width: 80%;
 }
 
 .about5-header .section-main-title {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  /* text-align: left; */
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 55px;
+  padding-left: 59px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .about5-header .section-main-title {
+    padding-left: 0;
+  }
+}
+
+.about5-header .section-main-title span {
+  color: #2285a3;
+  font-style: italic;
 }
 
 .about5-description {
-  font-size: 15px;
-  color: #666;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: 'Fira Sans', sans-serif;
+  font-size: 22px;
+  color: #555;
+  line-height: 37px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 10px 30px;
+  width: 109%;
+  font-weight: 600;
+  color: #454757;
+}
+
+@media (max-width: 768px) {
+  .about5-description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about5-description {
+    font-size: 22px;
+  }
+}
+
+.about5-description-p3 {
+  width: 86%;
+  font-size: 22px;
+  color: #555;
+  line-height: 37px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 10px 30px;
+  margin-top: 2.5rem;
+  font-weight: 600;
+  color: #454757;
+}
+
+@media (max-width: 768px) {
+  .about5-description-p3 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about5-description-p3 {
+    font-size: 22px;
+  }
+}
+
+.about5-description br {
+  display: block;
+  content: "";
+  margin-top: 20px;
 }
 
 .about5-stats-grid {
@@ -91,11 +196,11 @@
 }
 
 .about5-stat-card:hover {
-  background-color: #2285A3;
+  background-color: #2285a3;
   background-image: repeating-linear-gradient(
     45deg,
-    #2285A3,
-    #2285A3 10px,
+    #2285a3,
+    #2285a3 10px,
     #ff5c2e 10px,
     #ff5c2e 20px
   );
@@ -160,7 +265,7 @@
   font-weight: 600;
   color: #333;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   transition: color 0.5s ease;
 }
@@ -179,18 +284,76 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .about5-stats-section {
-    padding: 60px 0;
+@media (max-width: 1024px) {
+  .about5-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .about5-title {
-    font-size: 28px;
-    margin-bottom: 15px;
+  .about5-header-left {
+    position: static;
+  }
+
+  .about5-header .section-main-title {
+    font-size: 36px;
+    line-height: 48px;
+    padding-left: 0;
   }
 
   .about5-description {
-    font-size: 14px;
+    font-size: 20px;
+    line-height: 34px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .about5-description-p3 {
+    font-size: 20px;
+    line-height: 34px;
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about5-stats-section {
+    padding: 50px 0;
+  }
+
+  .about5-header {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 0;
+  }
+
+  .about5-header-left {
+    position: static;
+  }
+
+  .about5-header .section-sub-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .about5-header .section-main-title {
+    font-size: 32px;
+    line-height: 42px;
+    padding-left: 0;
+  }
+
+  .about5-description {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  .about5-description-p3 {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 8px 0;
+    width: 100%;
+    margin-top: 1.5rem;
   }
 
   .about5-stats-grid {
@@ -207,7 +370,9 @@
   }
 
   .about5-stats-section.visible .about5-stat-card.highlight {
-    animation: slideUp 0.6s ease-out forwards, pulse 2s ease-in-out 0.6s infinite;
+    animation:
+      slideUp 0.6s ease-out forwards,
+      pulse 2s ease-in-out 0.6s infinite;
   }
 
   .about5-stat-icon {
@@ -227,8 +392,34 @@
     padding: 40px 0;
   }
 
-  .about5-title {
-    font-size: 24px;
+  .about5-header {
+    gap: 20px;
+  }
+
+  .about5-header .section-sub-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .about5-header .section-main-title {
+    font-size: 26px;
+    line-height: 36px;
+    padding-left: 0;
+  }
+
+  .about5-description {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 6px 0;
+    width: 100%;
+  }
+
+  .about5-description-p3 {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 6px 0;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .about5-stats-grid {
@@ -251,4 +442,27 @@
   }
 }
 
+@media (max-width: 375px) {
+  .about5-stats-section {
+    padding: 0px 0;
+  }
 
+  .about5-header .section-sub-title {
+    font-size: 14px;
+  }
+
+  .about5-header .section-main-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about5-description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .about5-description-p3 {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
