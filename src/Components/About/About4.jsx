@@ -30,9 +30,9 @@ const About4 = ({
             </div>
           </div>
         </div>
-        <div className="about2-us-shape">
+        {/* <div className="about2-us-shape">
           <img src="/assets/images/inner/about-us-sh.png" alt="shape" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
