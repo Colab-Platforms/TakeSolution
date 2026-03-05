@@ -73,9 +73,15 @@ export default function FooterPreview() {
           <div className="footer-column">
             <div className="footer-title">Join Us</div>
             <div className="social-icons">
-              <FaYoutube className="social-icon" />
-              <FaInstagram className="social-icon" />
-              <FaXTwitter className="social-icon" />
+              <a href="https://youtube.com/@takesolutions-v5x?si=q5mF3aBoglXA6dnu" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className="social-icon" />
+              </a>
+              <a href="https://www.instagram.com/takesolutions_/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="social-icon" />
+              </a>
+              <a href="https://x.com/TakeSolutions" target="_blank" rel="noopener noreferrer">
+                <FaXTwitter className="social-icon" />
+              </a>
             </div>
           </div>
         </div>
