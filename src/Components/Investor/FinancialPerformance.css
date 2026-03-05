@@ -13,6 +13,7 @@
     right: 266px;
     height: 758px;
   background-image: url(/assets/investordata/image/investorbgimage.png);
+  opacity: 0.5;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;

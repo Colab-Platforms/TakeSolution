@@ -468,7 +468,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 .cs_site_header.header_style_2 {
   background: linear-gradient(89.71deg, rgba(255, 255, 255, 0.9) 83.88%, rgba(193, 193, 194, 0.36) 106.8%) !important;
   border-radius: 50px;
-  padding: 0px 40px !important;
+  padding: 0px 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
@@ -604,7 +604,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 }
 
 .cs_site_branding img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   max-height: 90px;
 }
@@ -1237,7 +1237,7 @@ a,i, cite, em, var, address, dfn,ol,li,ul{
 }
 .cs_site_header.header_style_2 .cs_nav .cs_nav_list > li > a {
   color: #000000;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
 }
 .cs_site_header.header_style_2 .cs_nav .cs_nav_list > li > a:hover {
@@ -3063,7 +3063,7 @@ a.active {
   z-index: 1;
   font-size: 18px;
   color: #050a1e;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Poppins";
 }
 
