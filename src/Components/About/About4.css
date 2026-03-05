@@ -9,10 +9,10 @@
 .about-us-area::before {
     content: '';
     position: absolute;
-    top: 89px;
-    left: 104px;
-    width: 70%;
-    height: 69%;
+    top: 26px;
+    left: 3px;
+    width: 104%;
+    height: 85%;
     background-image: url(/assets/images/about-bg-wave.png);
     background-repeat: no-repeat;
     background-position: top left;
