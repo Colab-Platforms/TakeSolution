@@ -1,0 +1,59 @@
+[
+  {
+    "year": "2025-26",
+    "quarters": [
+      { "label": "Q3", "value": 45.2 },
+      { "label": "Q2", "value": 38.5 },
+      { "label": "Q1", "value": 42.1 }
+    ],
+    "highlights": [
+      {
+        "title": "Initiation of closure of trading window",
+        "icon": "📄"
+      },
+      {
+        "title": "Notice of Board Meeting to Stock Exchange",
+        "icon": "📄"
+      },
+      {
+        "title": "Newspaper advertisement - Results (Marathi)",
+        "icon": "📄"
+      },
+      {
+        "title": "Newspaper advertisement - Results (English)",
+        "icon": "📄"
+      },
+      {
+        "title": "Outcome of Board Meeting",
+        "icon": "📄"
+      },
+      {
+        "title": "Auditor's Report",
+        "icon": "📄"
+      }
+    ]
+  },
+  {
+    "year": "2024-25",
+    "quarters": [
+      { "label": "Q3", "value": 41.8 },
+      { "label": "Q2", "value": 39.2 },
+      { "label": "Q1", "value": 40.5 }
+    ],
+    "highlights": [
+      {
+        "title": "Annual Report Published",
+        "icon": "📄"
+      },
+      {
+        "title": "Dividend Announcement",
+        "icon": "📄"
+      },
+      {
+        "title": "Shareholder Meeting",
+        "icon": "📄"
+      }
+    ]
+  }
+]
+

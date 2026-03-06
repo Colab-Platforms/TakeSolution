@@ -1,0 +1,176 @@
+import { Link } from "react-router-dom";
+
+
+const Footer = () => {
+
+    const Services = [
+        'IT Management',
+        'Digital Marketing',
+        'Web Development',
+        'App Development',
+        'Digital Marketing',
+      ];
+
+      const UsefulLinks = [
+          {title:'Home', link:'/'},
+        {title:'Investor', link:'/investor'},
+        // {title:'Newsroom', link:'/newsroom'},
+        {title:'About Us', link: '/about'},
+        // {title:'Testimonials', link:'/testimonial'}
+      ];  
+
+      const LogoContent = {
+        img1:'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TakeLogo_003.png?v=1771936186',
+        Content:'The Company delivers scalable digital solutions that accelerate research, improve healthcare efficiency, and enable predictive, personalized health outcomes worldwide.'
+      }
+
+      const NewsletterContent = {
+            Content:'Stay connected with TAKE Solutions to receive the latest updates on AI-driven healthcare innovation, clinical research advancements, biotechnology developments, and preventive health platforms.'
+      }
+
+      const AdressContent = {
+        Title:'Elevating Customer Experience.',
+        Number:'+91 8108618322'
+      }
+
+    return (
+        <div className="footer_main_area">
+            <div className="address-area">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12">
+                            <div className="address-box">
+                                <div className="address-icon">
+                                    <img src="/assets/images/address1.png" alt="address1" />
+                                </div>
+                                <div className="address-title">
+                                    <h3>{AdressContent.Title}</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-12">
+                            <div className="address-box2">
+                                <div className="address-icon">
+                                    <img src="/assets/images/address2.png" alt="address1" />
+                                </div>
+                                <div className="TAKESOLUTION-btn">
+                                    <Link to="">
+                                        {AdressContent.Number}
+                                        <div className="TAKESOLUTION-hover-btn hover-bx"></div>
+                                        <div className="TAKESOLUTION-hover-btn hover-bx2"></div>
+                                        <div className="TAKESOLUTION-hover-btn hover-bx3"></div>
+                                        <div className="TAKESOLUTION-hover-btn hover-bx4"></div>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="footer-area">
+                <div className="container">
+                    <div className="row footer">
+                        <div className="col-lg-4 col-md-6 col-sm-6">
+                            <div className="footer-widget">
+                                <div className="footer-logo">
+                                <Link to="/"><img src={LogoContent.img1} alt="footer-logo" /></Link>
+                                </div>
+                                <p className="footer-widget-text">{LogoContent.Content}</p>
+                                <div className="footer-social">
+                                    <div className="footer-widget-social">
+                                        <a href="https://www.instagram.com/takesolutions_/"><i className="bi bi-instagram"></i></a>
+                                        <a href="https://youtube.com/@takesolutions-v5x?si=q5mF3aBoglXA6dnu"><i className="bi bi-youtube"></i></a>
+                                        <a href="https://x.com/TakeSolutions"><i className="bi bi-twitter-x"></i></a>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-2 col-md-6 col-sm-6">
+                            <div className="footer-widget left">
+                                <div className="widget-title">
+                                    <h2>Useful Links</h2>
+                                </div>
+                                <ul>
+                                {UsefulLinks.map((item, i) => (
+                                    <li key={i}><Link to={item.link}>{item.title}</Link></li>
+                                ))}
+                                </ul>
+                            </div>
+                        </div>
+                        {/* <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="footer-widget left">
+                                <div className="widget-title">
+                                    <h2>Services.</h2>
+                                </div>
+                                <ul>
+                                {Services.map((item, i) => ( 
+                                    <li key={i}><Link to="/service/service-details">{item}</Link></li>
+                                ))}
+                                </ul>
+                            </div>
+                        </div> */}
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="footer-widget-newsletter">
+                                <div className="widget-title">
+                                    <h2>Newsletter</h2>
+                                </div>
+                                <p className="newsletter-text">{NewsletterContent.Content}</p>
+                                <div className="Subscribe-form2">
+                                    <form>
+                                        <div className="form-field2">
+                                            <input type="email" name="EMAIL" placeholder="Enter Your E-mail" required="" />
+                                            <button className="subscribe-button" type="submit"><i className="bi bi-send"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="footer-widget left">
+                                <div className="widget-title">
+                                    <h2>Contact Us</h2>
+                                </div>
+                                <div className="contact-info">
+                                    <div className="contact-item">
+                                        <i className="bi bi-envelope"></i>
+                                        <a href="mailto:investorrelations@takesolutions.com">investorrelations@takesolutions.com</a>
+                                    </div>
+                                    <div className="contact-item">
+                                        <i className="bi bi-telephone"></i>
+                                        <a href="tel:+918108618322">+91 8108618322</a>
+                                    </div>
+                                    <div className="contact-item">
+                                        <i className="bi bi-geo-alt"></i>
+                                        <p>No. B3. No.9, B Block, Alsa Arcade, 3rd Floor, 2nd Avenue, Anna Nagar East, Chennai 600102</p>
+                                    </div>
+                                    <div className="contact-item">
+                                        <p className="cin-text"><strong>CIN:</strong> L63090TN2000PLC046338</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row copyright">
+                        <div className="col-lg-6 col-md-6 col-sm-6">
+                            <div className="-copyright-text">
+                                <p>© Copyright 2026 By TAKESOLUTION</p>
+                            </div>
+                        </div>
+                        {/* <div className="col-lg-6 col-md-6 col-sm-6">
+                            <div className="copyright-list">
+                                <ul>
+                                    <li><Link to="/">Privacy Policy</Link></li>
+                                    <li><Link to="/">Supports</Link></li> 
+                                </ul>
+                            </div>
+                        </div> */}
+                    </div>
+                </div>
+	        </div>
+        </div>
+    );
+};
+
+export default Footer;
+
+
