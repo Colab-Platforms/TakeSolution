@@ -72,8 +72,9 @@ const AddEditModal = ({ show, onHide, onSuccess, item }) => {
 
     setUploading(true);
     const formDataUpload = new FormData();
-    formDataUpload.append('file', selectedFile);
+    // IMPORTANT: Append category BEFORE file so multer can read it
     formDataUpload.append('category', 'board-of-directors');
+    formDataUpload.append('file', selectedFile);
 
     try {
       const response = await uploadAPI.upload(formDataUpload);

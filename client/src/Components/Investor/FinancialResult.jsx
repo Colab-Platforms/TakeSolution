@@ -16,14 +16,18 @@ const FinancialResult = () => {
     setLoading(true);
     try {
       const response = await financialResultAPI.getByFiscalYear(selectedYear);
-      if (response.data.success) {
+      if (response.data.success && response.data.data.length > 0) {
         setFinancialResultData({
           [selectedYear]: response.data.data
         });
+      } else {
+        // If API returns empty, don't set anything - let it fallback to hardcoded
+        setFinancialResultData({});
       }
     } catch (error) {
       console.error('Error fetching financial results:', error);
-      setFinancialResultData({ [selectedYear]: [] });
+      // On error, don't set anything - let it fallback to hardcoded
+      setFinancialResultData({});
     } finally {
       setLoading(false);
     }

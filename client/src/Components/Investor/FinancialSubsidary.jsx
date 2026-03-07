@@ -13,11 +13,35 @@ const FinancialSubsidary = () => {
     setLoading(true);
     try {
       const response = await financialSubsidaryAPI.getAll();
-      if (response.data.success) {
-        setApiData(response.data.data);
+      if (response.data.success && response.data.data.length > 0) {
+        // Merge API data with hardcoded data
+        // Create a map of years from API data to avoid duplicates
+        const apiYears = new Set(response.data.data.map(item => item.year));
+        
+        // Filter hardcoded data to exclude years that exist in API
+        const filteredHardcoded = hardcodedFinancialResultData.filter(
+          item => !apiYears.has(item.year)
+        );
+        
+        // Combine API data with remaining hardcoded data
+        const mergedData = [...response.data.data, ...filteredHardcoded];
+        
+        // Sort by year (descending - newest first)
+        mergedData.sort((a, b) => {
+          const yearA = parseInt(a.year.replace('FY-', ''));
+          const yearB = parseInt(b.year.replace('FY-', ''));
+          return yearB - yearA;
+        });
+        
+        setApiData(mergedData);
+      } else {
+        // If API returns empty, keep apiData empty to fallback to hardcoded
+        setApiData([]);
       }
     } catch (error) {
       console.error('Error fetching financial subsidary data:', error);
+      // On error, keep apiData empty to fallback to hardcoded
+      setApiData([]);
     } finally {
       setLoading(false);
     }

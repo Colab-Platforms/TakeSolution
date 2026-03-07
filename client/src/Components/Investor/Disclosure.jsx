@@ -16,14 +16,18 @@ const Disclosure = () => {
     setLoading(true);
     try {
       const response = await disclosureAPI.getAll(selectedYear);
-      if (response.data.success) {
+      if (response.data.success && response.data.data.length > 0) {
         setDisclosureData({
           [selectedYear]: response.data.data
         });
+      } else {
+        // If API returns empty, don't set anything - let it fallback to hardcoded
+        setDisclosureData({});
       }
     } catch (error) {
       console.error('Error fetching disclosure data:', error);
-      setDisclosureData({ [selectedYear]: [] });
+      // On error, don't set anything - let it fallback to hardcoded
+      setDisclosureData({});
     } finally {
       setLoading(false);
     }

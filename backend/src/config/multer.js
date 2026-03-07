@@ -27,8 +27,12 @@ createUploadDirs();
 // Storage configuration
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
+    // req.body is populated by multer when processing multipart/form-data
+    // The category field should be available here
     const category = req.body.category || 'general';
     let uploadPath = 'uploads/investordata/';
+
+    console.log('Upload category received:', category); // Debug log
 
     switch (category) {
       case 'financial-result':
@@ -55,6 +59,8 @@ const storage = multer.diskStorage({
       default:
         uploadPath += 'general';
     }
+
+    console.log('Upload path determined:', uploadPath); // Debug log
 
     // Ensure the directory exists before saving
     if (!fs.existsSync(uploadPath)) {

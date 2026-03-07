@@ -13,7 +13,7 @@ const InvestorCorner = () => {
     setLoading(true);
     try {
       const response = await investorCornerAPI.getAll();
-      if (response.data.success) {
+      if (response.data.success && response.data.data.length > 0) {
         // Group data by category
         const grouped = response.data.data.reduce((acc, item) => {
           if (!acc[item.category]) {
@@ -23,9 +23,14 @@ const InvestorCorner = () => {
           return acc;
         }, {});
         setApiData(grouped);
+      } else {
+        // If API returns empty, keep apiData empty to fallback to hardcoded
+        setApiData({});
       }
     } catch (error) {
       console.error('Error fetching investor corner data:', error);
+      // On error, keep apiData empty to fallback to hardcoded
+      setApiData({});
     } finally {
       setLoading(false);
     }
