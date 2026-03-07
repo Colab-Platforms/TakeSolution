@@ -14,6 +14,7 @@ const AddEditModal = ({ show, onHide, onSuccess, item, fiscalYear }) => {
     pdfFileName: ''
   });
   const [loading, setLoading] = useState(false);
+  const [uploadMethod, setUploadMethod] = useState('upload'); // 'upload' or 'link'
 
   useEffect(() => {
     if (item) {
@@ -41,6 +42,15 @@ const AddEditModal = ({ show, onHide, onSuccess, item, fiscalYear }) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
+    });
+  };
+
+  const handleUrlChange = (e) => {
+    const url = e.target.value;
+    setFormData({
+      ...formData,
+      pdfUrl: url,
+      pdfFileName: url.split('/').pop() || 'External PDF'
     });
   };
 
@@ -138,16 +148,36 @@ const AddEditModal = ({ show, onHide, onSuccess, item, fiscalYear }) => {
             />
           </Form.Group>
 
-          <FileUpload
-            onUploadSuccess={handleUploadSuccess}
-            category="disclosure"
-            label="Upload PDF"
-          />
-
-          {formData.pdfUrl && (
-            <div className="alert alert-success mt-3">
-              ✓ File uploaded: {formData.pdfFileName}
+          <Form.Group className="mb-3">
+            <Form.Label>PDF Source</Form.Label>
+            <div className="d-flex gap-3 mb-3">
+              <Form.Check type="radio" label="Upload File" name="uploadMethod" checked={uploadMethod === 'upload'} onChange={() => setUploadMethod('upload')} />
+              <Form.Check type="radio" label="Paste Link" name="uploadMethod" checked={uploadMethod === 'link'} onChange={() => setUploadMethod('link')} />
             </div>
+          </Form.Group>
+
+          {uploadMethod === 'upload' ? (
+            <>
+              <FileUpload onUploadSuccess={handleUploadSuccess} category="disclosure" label="Upload PDF" />
+              {formData.pdfUrl && (
+                <div className="alert alert-success mt-3">
+                  ✓ File uploaded: {formData.pdfFileName}
+                </div>
+              )}
+            </>
+          ) : (
+            <>
+              <Form.Group className="mb-3">
+                <Form.Label>PDF URL</Form.Label>
+                <Form.Control type="url" placeholder="https://example.com/your-file.pdf" value={formData.pdfUrl} onChange={handleUrlChange} required />
+                <Form.Text className="text-muted">Paste the direct link to your PDF file (from GitHub, Google Drive, Dropbox, etc.)</Form.Text>
+              </Form.Group>
+              {formData.pdfUrl && (
+                <div className="alert alert-info mt-3">
+                  <small><strong>Preview:</strong> <a href={formData.pdfUrl} target="_blank" rel="noopener noreferrer">{formData.pdfUrl}</a></small>
+                </div>
+              )}
+            </>
           )}
         </Modal.Body>
         <Modal.Footer>

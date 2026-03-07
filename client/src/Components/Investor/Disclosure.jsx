@@ -605,12 +605,25 @@ const Disclosure = () => {
     { year: '2018-2019', link: '/assets/investordata/disclosure/annual_return-2018-19.pdf' }
   ];
 
+  // Helper function to get the correct PDF URL
+  const getPdfUrl = (pdfUrl) => {
+    if (pdfUrl) {
+      // If it's an external URL (starts with http:// or https://), use it directly
+      if (pdfUrl.startsWith('http://') || pdfUrl.startsWith('https://')) {
+        return pdfUrl;
+      }
+      // Otherwise, it's a local path, prepend BASE_URL
+      return `${BASE_URL}${pdfUrl}`;
+    }
+    return pdfUrl;
+  };
+
   // Use API data if available, otherwise fallback to hardcoded data
   const currentDisclosures = disclosureData[selectedYear] && disclosureData[selectedYear].length > 0
     ? disclosureData[selectedYear].map(item => ({
         type: item.type || 'Other Disclosures',
         description: item.description,
-        link: `${BASE_URL}${item.pdfUrl}`
+        link: getPdfUrl(item.pdfUrl)
       }))
     : (hardcodedDisclosureData[selectedYear] || []);
 

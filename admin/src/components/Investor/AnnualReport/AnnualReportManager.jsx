@@ -16,6 +16,17 @@ const AnnualReportManager = () => {
   const [deleteItem, setDeleteItem] = useState(null);
   const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
 
+  // Helper function to get the correct PDF URL
+  const getPdfUrl = (pdfUrl) => {
+    if (!pdfUrl) return '#';
+    // If it's an external URL (starts with http:// or https://), use it directly
+    if (pdfUrl.startsWith('http://') || pdfUrl.startsWith('https://')) {
+      return pdfUrl;
+    }
+    // Otherwise, it's a local path, prepend BASE_URL
+    return `${BASE_URL}${pdfUrl}`;
+  };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -89,7 +100,7 @@ const AnnualReportManager = () => {
                 <td>{item.year}</td>
                 <td>{item.description}</td>
                 <td>
-                  <a href={`${BASE_URL}${item.pdfUrl}`} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">
+                  <a href={getPdfUrl(item.pdfUrl)} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">
                     <FiExternalLink className="me-1" />View PDF
                   </a>
                 </td>

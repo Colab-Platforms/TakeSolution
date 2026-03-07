@@ -62,6 +62,20 @@ const AnnualReport = () => {
 
     const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:5000';
 
+    // Helper function to get the correct PDF URL
+    const getPdfUrl = (pdfUrl, fallbackLink) => {
+        if (pdfUrl) {
+            // If it's an external URL (starts with http:// or https://), use it directly
+            if (pdfUrl.startsWith('http://') || pdfUrl.startsWith('https://')) {
+                return pdfUrl;
+            }
+            // Otherwise, it's a local path, prepend BASE_URL
+            return `${BASE_URL}${pdfUrl}`;
+        }
+        // Fallback to hardcoded link
+        return fallbackLink;
+    };
+
     return (
         <div className="tab-content active">
             {/* Loading State */}
@@ -96,7 +110,7 @@ const AnnualReport = () => {
                                         <td>{item.year}</td>
                                         <td>
                                             <a 
-                                                href={item.pdfUrl ? `${BASE_URL}${item.pdfUrl}` : item.link} 
+                                                href={getPdfUrl(item.pdfUrl, item.link)} 
                                                 className="disclosure-description-link" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"

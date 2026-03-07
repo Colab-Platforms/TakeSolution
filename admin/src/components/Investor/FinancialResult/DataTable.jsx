@@ -5,6 +5,17 @@ import { FiEdit, FiTrash2, FiExternalLink } from 'react-icons/fi';
 const DataTable = ({ data, onEdit, onDelete }) => {
   const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
 
+  // Helper function to get the correct PDF URL
+  const getPdfUrl = (pdfUrl) => {
+    if (!pdfUrl) return '#';
+    // If it's an external URL (starts with http:// or https://), use it directly
+    if (pdfUrl.startsWith('http://') || pdfUrl.startsWith('https://')) {
+      return pdfUrl;
+    }
+    // Otherwise, it's a local path, prepend BASE_URL
+    return `${BASE_URL}${pdfUrl}`;
+  };
+
   if (data.length === 0) {
     return (
       <div className="text-center py-5 text-muted">
@@ -32,7 +43,7 @@ const DataTable = ({ data, onEdit, onDelete }) => {
             <td>{item.description}</td>
             <td>
               <a
-                href={`${BASE_URL}${item.pdfUrl}`}
+                href={getPdfUrl(item.pdfUrl)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-sm btn-outline-primary"

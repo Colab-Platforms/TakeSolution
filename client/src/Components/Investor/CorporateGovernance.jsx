@@ -33,12 +33,25 @@ const CorporateGovernance = () => {
 
   const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:5000';
 
+  // Helper function to get the correct PDF URL
+  const getPdfUrl = (pdfUrl) => {
+    if (pdfUrl) {
+      // If it's an external URL (starts with http:// or https://), use it directly
+      if (pdfUrl.startsWith('http://') || pdfUrl.startsWith('https://')) {
+        return pdfUrl;
+      }
+      // Otherwise, it's a local path, prepend BASE_URL
+      return `${BASE_URL}${pdfUrl}`;
+    }
+    return pdfUrl;
+  };
+
   // Helper function to get data for a category (API first, then fallback to hardcoded)
   const getDataForCategory = (category, hardcodedData) => {
     if (apiData[category] && apiData[category].length > 0) {
       return apiData[category].map(item => ({
         title: item.title,
-        link: `${BASE_URL}${item.pdfUrl}`
+        link: getPdfUrl(item.pdfUrl)
       }));
     }
     return hardcodedData;
@@ -126,7 +139,7 @@ const CorporateGovernance = () => {
       {allCategories.length > 0 && allCategories.map((category) => {
         const categoryData = apiData[category].map(item => ({
           title: item.title,
-          link: `${BASE_URL}${item.pdfUrl}`
+          link: getPdfUrl(item.pdfUrl)
         }));
 
         return (

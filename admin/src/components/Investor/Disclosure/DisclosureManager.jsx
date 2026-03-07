@@ -15,6 +15,18 @@ const DisclosureManager = () => {
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [deleteItem, setDeleteItem] = useState(null);
+  const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
+
+  // Helper function to get the correct PDF URL
+  const getPdfUrl = (pdfUrl) => {
+    if (!pdfUrl) return '#';
+    // If it's an external URL (starts with http:// or https://), use it directly
+    if (pdfUrl.startsWith('http://') || pdfUrl.startsWith('https://')) {
+      return pdfUrl;
+    }
+    // Otherwise, it's a local path, prepend BASE_URL
+    return `${BASE_URL}${pdfUrl}`;
+  };
 
   useEffect(() => {
     fetchData();
@@ -109,7 +121,7 @@ const DisclosureManager = () => {
                       <tr key={item._id}>
                         <td>{item.type}</td>
                         <td>
-                          <a href={item.pdfUrl} target="_blank" rel="noopener noreferrer">
+                          <a href={getPdfUrl(item.pdfUrl)} target="_blank" rel="noopener noreferrer">
                             {item.description}
                           </a>
                         </td>

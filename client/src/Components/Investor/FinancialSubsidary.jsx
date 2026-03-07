@@ -61,13 +61,26 @@ const FinancialSubsidary = () => {
         { type: 'Other Disclosures', year: 'FY-2024', description: 'subsidiary-company-financials_fy-2023-24', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2023-24.pdf' }
     ];
 
+    // Helper function to get the correct PDF URL
+    const getPdfUrl = (pdfUrl) => {
+      if (pdfUrl) {
+        // If it's an external URL (starts with http:// or https://), use it directly
+        if (pdfUrl.startsWith('http://') || pdfUrl.startsWith('https://')) {
+          return pdfUrl;
+        }
+        // Otherwise, it's a local path, prepend BASE_URL
+        return `${BASE_URL}${pdfUrl}`;
+      }
+      return pdfUrl;
+    };
+
     // Use API data if available, otherwise fallback to hardcoded
     const financialResultData = apiData.length > 0
       ? apiData.map(item => ({
           type: item.type || 'Other Disclosures',
           year: item.year,
           description: item.description,
-          link: `${BASE_URL}${item.pdfUrl}`
+          link: getPdfUrl(item.pdfUrl)
         }))
       : hardcodedFinancialResultData;
 
