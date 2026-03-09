@@ -9,6 +9,7 @@ import Features from "../Components/Features/Features";
 import Pricing from "../Components/Pricing/Pricing";
 import Project1 from "../Components/Project/Project1";
 import Project2 from "../Components/Project/Project2";
+import Project4 from "../Components/Project/Project4";
 import Services1 from "../Components/Services/Services1";
 import Testimonial1 from "../Components/Testimonial/Testimonial1";
 
@@ -54,10 +55,12 @@ const Home = () => {
                 // listTitle2="Sed non odio non elit porttitor tincidunt donec"                         
            ></About3>
             <Services1></Services1>
-            <Project2 
+            {/* <Project4></Project4> */}
+            <Project4/>
+            {/* <Project2 
                 bgImage="/assets/images/project-bg.png"
                 ClassAdd="project-area"
-            ></Project2>
+            ></Project2> */}
             {/* <Brand></Brand> */}
             {/* <Pricing></Pricing> */}
             <Faq></Faq>

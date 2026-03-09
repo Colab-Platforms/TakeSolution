@@ -55,7 +55,7 @@ export default function Header({ variant }) {
                     }
                     onClick={() => setMobileToggle(!mobileToggle)}
                   >
-                    <span></span>
+                    <img src="/assets/images/hamburgerMenu.png" alt="Menu" className="hamburger-menu-icon" />
                   </span>
                   <Nav setMobileToggle={setMobileToggle} />
                 </div>

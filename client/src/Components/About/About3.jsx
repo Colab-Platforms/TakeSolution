@@ -10,7 +10,7 @@ const About3 = ({bgImg,MainImg,SubTitle,Title,Content,listTitle1,listTitle2,BoxT
       }, []);
           
     return (
-            <div className="about-section" data-background={bgImg}>
+            <div className="about-section" >
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-lg-6">
