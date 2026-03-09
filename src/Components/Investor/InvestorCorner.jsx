@@ -16,8 +16,10 @@ const InvestorCorner = () => {
     title: 'EGM Voting Results',
     years: [
       { year: '2021', link: '/assets/investordata/investor-corner/EGM Voting Results/Reg44_Voting_Results_261021.pdf' },
-      { year: '2024', link: '/assets/investordata/investor-corner/EGM Voting Results/Microsoft Word - EGM_Proceedings_2024.pdf' },
-      { year: '2025', link: '/assets/investordata/investor-corner/EGM Voting Results/EGM_Proceedings_2025.pdf' }
+      { year: '2024', link: 'public/assets/investordata/investor-corner/EGM Voting Results/EGM Voting Results 2024.pdf' },
+      { year: '2025', link: 'public/assets/investordata/investor-corner/EGM Voting Results/EGM Voting Results 2025.pdf' },
+      { year: '2026', link: 'public/assets/investordata/investor-corner/EGM Voting Results/EGM Voting results 2026.pdf' }
+
     ]
   };
 
