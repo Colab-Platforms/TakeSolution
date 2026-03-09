@@ -19,7 +19,7 @@ const AddEditModal = ({ show, onHide, onSuccess, item }) => {
       return imageUrl;
     }
     // Otherwise, prepend the base URL
-    const baseUrl = process.env.REACT_APP_API_URL?.replace('/api', '') || 'http://localhost:5000';
+    const baseUrl = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000';
     return `${baseUrl}${imageUrl}`;
   };
 

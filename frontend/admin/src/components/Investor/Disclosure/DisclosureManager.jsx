@@ -15,7 +15,7 @@ const DisclosureManager = () => {
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [deleteItem, setDeleteItem] = useState(null);
-  const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
+  const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:5000';
 
   // Helper function to get the correct PDF URL
   const getPdfUrl = (pdfUrl) => {
@@ -30,6 +30,7 @@ const DisclosureManager = () => {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeTab]);
 
   const fetchData = async () => {

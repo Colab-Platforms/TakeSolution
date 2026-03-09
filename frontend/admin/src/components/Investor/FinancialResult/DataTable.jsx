@@ -3,7 +3,7 @@ import { Table, Button } from 'react-bootstrap';
 import { FiEdit, FiTrash2, FiExternalLink } from 'react-icons/fi';
 
 const DataTable = ({ data, onEdit, onDelete }) => {
-  const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
+  const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:5000';
 
   // Helper function to get the correct PDF URL
   const getPdfUrl = (pdfUrl) => {

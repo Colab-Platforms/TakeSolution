@@ -7,7 +7,6 @@ import AddEditModal from './AddEditModal';
 import ConfirmDialog from '../../Common/ConfirmDialog';
 
 const CorporateGovernanceManager = () => {
-  const [data, setData] = useState([]);
   const [groupedData, setGroupedData] = useState({});
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -24,7 +23,6 @@ const CorporateGovernanceManager = () => {
     try {
       const response = await corporateGovernanceAPI.getAll();
       if (response.data.success) {
-        setData(response.data.data);
         // Group data by category
         const grouped = response.data.data.reduce((acc, item) => {
           if (!acc[item.category]) {
@@ -88,7 +86,7 @@ const CorporateGovernanceManager = () => {
       return pdfUrl;
     }
     // Otherwise, prepend the base URL
-    const baseUrl = process.env.REACT_APP_API_URL?.replace('/api', '') || 'http://localhost:5000';
+    const baseUrl = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000';
     return `${baseUrl}${pdfUrl}`;
   };
 
