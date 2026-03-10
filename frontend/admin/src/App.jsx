@@ -13,7 +13,7 @@ import { isAuthenticated } from './services/auth';
 
 function App() {
   return (
-    <Router basename="/admin">
+    <Router>
       <ToastContainer
         position="top-right"
         autoClose={3000}
