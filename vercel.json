@@ -1,29 +1,19 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "frontend/client/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "frontend/client/dist"
-      }
-    },
-    {
-      "src": "frontend/admin/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "frontend/admin/build"
-      }
-    }
-  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
   "routes": [
     {
       "src": "/admin/(.*)",
-      "dest": "/frontend/admin/$1"
+      "dest": "/admin/$1"
+    },
+    {
+      "src": "/admin",
+      "dest": "/admin/index.html"
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/client/$1"
+      "dest": "/$1"
     }
   ]
 }
