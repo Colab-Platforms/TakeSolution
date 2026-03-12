@@ -10,10 +10,11 @@ const Disclosure = () => {
 
     ///ujjwal uploaded FY- 26,25,20,19,18
     FY26: [
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Incorporation of WOS TAKE Ventures Private Limited', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Incorporation of WOS TAKE Ventures Private Limited.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'TAKE Solutions Taps Anthropic to Accelerate AI Dominance in $370B', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/TAKE Solutions Taps Anthropic to Accelerate AI Dominance in $370B.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Press Release - TAKE Solutions to build a Scalable Unified AI Platform', link: '/assets/investordata/disclosure/disclosure-data/FY26/Press Release - TAKE Solutions to build a Scalable Unified AI Platform.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Press Release - Take Solutions Announces Plans to Set up “One Minute Clinic” in India', link: '/assets/investordata/disclosure/disclosure-data/FY26/Press Release - Take Solutions Announces Plans to Set up “One Minute Clinic” in India.pdf' },
-
+      
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Press Release Strategic Plan to Build an Advanced AI-Driven Diagnostic & Preventive Care Platform', link: '/assets/investordata/disclosure/disclosure-data/FY26/Press Release Strategic Plan to Build an Advanced AI-Driven Diagnostic & Preventive Care Platform.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Apointment of Director', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Apointment of Director.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Appointment of Auditor', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Appointment of Auditor.pdf' },
