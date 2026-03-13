@@ -9,20 +9,20 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 
 	const desktopImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BAN_jpg.jpg?v=1772173590",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ndPage.jpg_1.jpg?v=1771931693", //oneminute
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage_jpg.jpg?v=1771844239", //clinicResearch
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4th_jpg.jpg?v=1772174989", // biotech
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg.jpg?v=1771844238", // lifescience
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/6th_jpg.jpg?v=1772174989", // preventiveHealth
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/98d2c4f9f6cdc16a27c22f344b304a111f15072e.png?v=1773311583", //oneminute
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/0420548fb99d3e3620a6e8c2a819bc2765baff8e.png?v=1773311710", //clinicResearch
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4thPage_1.png?v=1773381367", // biotech
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage.png?v=1773381367", // lifescience
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/6thPage.png?v=1773381367", // preventiveHealth
 	];
 
 	const mobileImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ban_mv_jpg.jpg?v=1772186025",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ND_MV.jpg_1.jpg?v=1772186025", //oneminutute
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3RD_MV.jpg_1.jpg?v=1772186028",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4th_mv_jpg.jpg?v=1772186025",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thmv_jpg.jpg?v=1772186026",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/6thmv_jpg.jpg?v=1772186025"
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/1min.jpg?v=1773313751", //oneminutute
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/cr_mv.jpg?v=1773314351", //clinicalResearch
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/mobile_view_jpg.jpg?v=1773377478", //biotech
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/life_sci.png?v=1773378234",   // lifescience   
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/prevent.png?v=1773378234"   // preventive-healthcare
 	];
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);	
