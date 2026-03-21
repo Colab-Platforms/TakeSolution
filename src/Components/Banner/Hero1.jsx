@@ -11,7 +11,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BAN_jpg.jpg?v=1772173590",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ndPage_jpg_71297878-758d-4086-9293-807efdd0570e.jpg?v=1774006984", //oneminute
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage_jpg_8eb2285d-b44b-49be-9f3c-0aedc9ccf91f.jpg?v=1774006984", //clinicResearch
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4thPage_1.png?v=1773381367", // biotech
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4_image_3_jpg.jpg?v=1774071223", // biotech
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg_0a614094-4be3-4d15-bced-782aa8bbddcb.jpg?v=1774006983", // lifescience
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/6thPage_jpg.jpg?v=1774006984", // preventiveHealth
 	];
@@ -20,7 +20,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ban_mv_jpg.jpg?v=1772186025",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2nd_mv.jpg_2.jpg?v=1774007202", //oneminutute
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rd_mv.png?v=1774007203", //clinicalResearch
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/mobile_view_jpg.jpg?v=1773377478", //biotech
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4th_mobile_view_jpg.jpg?v=1774071224", //biotech
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5th_mobile_view_jpg.jpg?v=1774007202",   // lifescience   
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/6th_mv_jpg.jpg?v=1774007202"   // preventive-healthcare
 	];
