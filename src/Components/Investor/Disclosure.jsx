@@ -10,6 +10,8 @@ const Disclosure = () => {
 
     ///ujjwal uploaded FY- 26,25,20,19,18
     FY26: [
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Resignation of Auditor', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Resignation of Auditor.pdf' },
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Closure of Trading Window Q4', link: '/assets/investordata/disclosure/disclosure-data/FY26/Closure of Trading Window Q4.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Press Release - TAKE Solutions Launches “Take.Health"', link: '/assets/investordata/disclosure/disclosure-data/FY26/PR Take.Health.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Incorporation of WOS TAKE Ventures Private Limited', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Incorporation of WOS TAKE Ventures Private Limited.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'TAKE Solutions Taps Anthropic to Accelerate AI Dominance in $370B', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/TAKE Solutions Taps Anthropic to Accelerate AI Dominance in $370B.pdf' },
