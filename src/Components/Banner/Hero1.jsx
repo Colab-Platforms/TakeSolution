@@ -8,7 +8,9 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	const { currentIndex, handlePrev, handleNext } = useContext(CarouselContext);
 
 	const desktopImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BAN_jpg.jpg?v=1772173590",
+		
+		// "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BAN_jpg.jpg?v=1772173590",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000001067.png?v=1774531828",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ndPage_jpg_71297878-758d-4086-9293-807efdd0570e.jpg?v=1774006984", //oneminute
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage.jpg_3.jpg?v=1774334017", //clinicResearch
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4_image_3_jpg.jpg?v=1774071223", // biotech
@@ -17,7 +19,8 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	];
 
 	const mobileImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ban_mv_jpg.jpg?v=1772186025",
+		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MV_BANNER.png?v=1774531660",
+		// "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ban_mv_jpg.jpg?v=1772186025",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2nd_mv_2__jpg.jpg?v=1774333673", //oneminutute
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3RD_MV.jpg_2.jpg?v=1774333673", //clinicalResearch
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4th_mv.jpg_1.jpg?v=1774333673", //biotech
