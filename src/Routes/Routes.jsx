@@ -23,6 +23,7 @@ import BlogDetails from "../Pages/BlogDetails";
 import Project from "../Pages/Project";
 import Investor from "../Pages/Investor";
 import NotFound from "../Pages/NotFound";
+import Funding from "../Pages/Funding";
 
 export const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
         {
             path: "/about",
             element: <About></About>,
+        }, 
+        {
+          path: "/funding",
+          element: <Funding></Funding>,
         }, 
         {
           path: "/team",
