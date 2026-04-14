@@ -10,6 +10,7 @@ const Disclosure = () => {
 
     ///ujjwal uploaded FY- 26,25,20,19,18
     FY26: [
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 74(5) Q4', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Reg_74_5_Q4.pdf?v=1776144430' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'PR Media_Release_Take_Solutions_Launches_Rs_50_Million_Innovation_Fund', link: '/assets/investordata/disclosure/disclosure-data/FY26/PR Media_Release_Take_Solutions_Launches_Rs_50_Million_Innovation_Fund.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Appointment of Auditor A. Raghavendra Rao & Associates', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Appointment of Auditor A. Raghavendra Rao & Associates.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Resignation of Auditor', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Resignation of Auditor.pdf' },
@@ -26,8 +27,8 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Resignation of Director and CFO', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Resignation of Director and CFO.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Shifting of Registered Office of the Company', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Shifting of Registered Office of the Company.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 30 Appointment of Mr. Parmeshvar Namdev Dhangare', link: '/assets/investordata/disclosure/disclosure-data/FY26/Reg 30 Appointment of Mr. Parmeshvar Namdev Dhangare.pdf' },
-      
-      
+
+
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Intimation cut off date EOGM', link: '/assets/investordata/disclosure/disclosure-data/FY26/Intimation cut off date EOGM.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'News Adv UFR Q3', link: '/assets/investordata/disclosure/disclosure-data/FY26/News Adv UFR Q3.pdf' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Newspaper Adv Notice of EOGM 2026', link: '/assets/investordata/disclosure/disclosure-data/FY26/Newspaper Adv Notice of EOGM 2026.pdf' },
@@ -84,7 +85,7 @@ const Disclosure = () => {
 
     ],
 
-    
+
 
 
     FY25: [
@@ -137,7 +138,7 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-25', description: 'TradingWindowClosure_30 09 2024', link: '/assets/investordata/disclosure/disclosure-data/FY25/TradingWindowClosure_30 09 2024.pdf' }
     ],
 
-     FY24:[
+    FY24: [
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'AGM Proceedings_2023', link: '/assets/investordata/disclosure/disclosure-data/FY24/AGM Proceedings_2023.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'AR_Submission_17072023_TSL_Final', link: '/assets/investordata/disclosure/disclosure-data/FY24/AR_Submission_17072023_TSL_Final.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Bookclosure', link: '/assets/investordata/disclosure/disclosure-data/FY24/Bookclosure.pdf' },
@@ -179,10 +180,10 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'TSL letterhead_LTD-Mylapore new', link: '/assets/investordata/disclosure/disclosure-data/FY24/TSL letterhead_LTD-Mylapore new.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'VotingResults_ScrutinizerReport_AGM_16082023', link: '/assets/investordata/disclosure/disclosure-data/FY24/VotingResults_ScrutinizerReport_AGM_16082023.pdf' },
 
-    
+
     ],
 
-     FY23:[
+    FY23: [
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'AR_Submission_2021_22_Final', link: '/assets/investordata/disclosure/disclosure-data/FY23/AR_Submission_2021_22_Final.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Board_Meeting_Notice_060223', link: '/assets/investordata/disclosure/disclosure-data/FY23/Board_Meeting_Notice_060223.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Bookclosure', link: '/assets/investordata/disclosure/disclosure-data/FY23/Bookclosure.pdf' },
@@ -248,11 +249,11 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'September 30_Trading Window', link: '/assets/investordata/disclosure/disclosure-data/FY23/September 30_Trading Window.docx' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Share_Capital_Reco_311222', link: '/assets/investordata/disclosure/disclosure-data/FY23/Share_Capital_Reco_311222.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Voting_Results_Scrutinizer_Report_AGM_261222', link: '/assets/investordata/disclosure/disclosure-data/FY23/Voting_Results_Scrutinizer_Report_AGM_261222.pdf' },
- 
-    
+
+
     ],
 
-     FY21:[
+    FY21: [
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'AGMPROCEEDINGS2020', link: '/assets/investordata/disclosure/disclosure-data/FY21/AGMPROCEEDINGS2020.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'ARSubmission2020', link: '/assets/investordata/disclosure/disclosure-data/FY21/ARSubmission2020.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'ASCR310320', link: '/assets/investordata/disclosure/disclosure-data/FY21/ASCR310320.pdf' },
@@ -311,9 +312,9 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'tradingwindow30092020', link: '/assets/investordata/disclosure/disclosure-data/FY21/tradingwindow30092020.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'Tradingwindowdisclosure300620', link: '/assets/investordata/disclosure/disclosure-data/FY21/Tradingwindowdisclosure300620.pdf' },
 
-      
-      
-     
+
+
+
     ],
 
     FY19: [
@@ -365,7 +366,7 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-19', description: 'transcript210219', link: '/assets/investordata/disclosure/disclosure-data/FY19/transcript210219.pdf' }
     ],
 
-    FY18:[
+    FY18: [
       { type: 'Other Disclosures', date: '30-Oct-19', description: 'bmnotice200318', link: '/assets/investordata/disclosure/disclosure-data/FY18/bmnotice200318.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-19', description: 'bmnotice310118', link: '/assets/investordata/disclosure/disclosure-data/FY18/bmnotice310118.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-19', description: 'Bookclosure280717', link: '/assets/investordata/disclosure/disclosure-data/FY18/Bookclosure280717.pdf' },
@@ -429,7 +430,7 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-19', description: 'TSLTradingWindow14082017', link: '/assets/investordata/disclosure/disclosure-data/FY18/TSLTradingWindow14082017.pdf' }
     ],
 
-    FY20:[
+    FY20: [
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'agmnoticepublication', link: '/assets/investordata/disclosure/disclosure-data/FY20/agmnoticepublication.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'AnnualComplianceReport230519', link: '/assets/investordata/disclosure/disclosure-data/FY20/AnnualComplianceReport230519.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'arsubmission2019', link: '/assets/investordata/disclosure/disclosure-data/FY20/arsubmission2019.pdf' },
@@ -500,7 +501,7 @@ const Disclosure = () => {
       { type: 'Other Disclosures', date: '30-Oct-20', description: 'transcriptinvestorscall080819', link: '/assets/investordata/disclosure/disclosure-data/FY20/transcriptinvestorscall080819.pdf' }
     ],
 
-    FY22:[
+    FY22: [
       { type: 'Other Disclosures', date: '30-Oct-22', description: '20th_AGM_Proceedings_2021', link: '/assets/investordata/disclosure/disclosure-data/FY22/20th_AGM_Proceedings_2021.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-22', description: 'AGM_Bookclosure_2021', link: '/assets/investordata/disclosure/disclosure-data/FY22/AGM_Bookclosure_2021.pdf' },
       { type: 'Other Disclosures', date: '30-Oct-22', description: 'AR_Submission_20_21', link: '/assets/investordata/disclosure/disclosure-data/FY22/AR_Submission_20_21.pdf' },
@@ -563,7 +564,7 @@ const Disclosure = () => {
     ]
 
 
-    
+
 
 
 
