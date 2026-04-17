@@ -52,6 +52,12 @@ const CorporateGovernance = () => {
         { title: 'MOA & AOA', link: '/assets/investordata/corporate-governance/MOAAndAOA/MOA & AOA.pdf' },
 
   ]
+  const annualSecretarialComplianceReport = [
+        { title: 'Annual Secretarial Compliance Report', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Complaince_Report_31_March_2025.pdf?v=1776418054' },
+
+  ]
+
+  
 
   return (
     <div className="tab-content active">
@@ -108,6 +114,22 @@ const CorporateGovernance = () => {
         <h4 className="governance-section-title">MOA AND AOA</h4>
         <div className="policies-grid">
           {moaAndAoa.map((doc, index) => (
+            <div key={index} className="policy-item">
+              <a href={doc.link} className="policy-document-link" target="_blank" rel="noopener noreferrer">
+                <span className="pdf-icon">📄</span>
+                <span className="policy-title">{doc.title}</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+      {/* Annual Secretarial Compliance Report */}
+      <div className="governance-policies-section">
+        <h4 className="governance-section-title">Annual Secretarial Compliance Report</h4>
+        <div className="policies-grid">
+          {annualSecretarialComplianceReport.map((doc, index) => (
             <div key={index} className="policy-item">
               <a href={doc.link} className="policy-document-link" target="_blank" rel="noopener noreferrer">
                 <span className="pdf-icon">📄</span>
