@@ -76,9 +76,10 @@ const InvestorCorner = () => {
   const annualSecretarialComplianceReport = {
     title: 'Annual Secretarial Compliance Report',
     years: [
-      { year: '2025', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Complaince_Report_31_March_2025.pdf?v=1776418054' },
-      // { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
-      // { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
+      { year: '2025', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Compliance_Report_31_March_2025.pdf?v=1776424727' },
+      { year: '2024', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Compliance_Report_31_March_2024.pdf?v=1776424727' },
+      { year: '2023', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Compliance_Report_31_March_2023.pdf?v=1776424727' },
+      { year: '2022', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Compliance_Report_31_March_2022.pdf?v=1776424727' },
 
     ]
   }
