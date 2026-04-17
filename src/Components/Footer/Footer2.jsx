@@ -76,7 +76,7 @@ export default function FooterPreview() {
               <a href="https://youtube.com/@takesolutions-v5x?si=q5mF3aBoglXA6dnu" target="_blank" rel="noopener noreferrer">
                 <FaYoutube className="social-icon" />
               </a>
-              <a href="https://www.instagram.com/takesolutions_/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/takehealth_?igsh=MXY0ajFsazgzYmd1Nw==" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="social-icon" />
               </a>
               <a href="https://x.com/TakeSolutions" target="_blank" rel="noopener noreferrer">
