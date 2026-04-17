@@ -57,7 +57,7 @@ const CorporateGovernance = () => {
 
   // ]
   const kmpDeterminingAuthority = [
-        { title: 'KMP authorised for the purpose of determining materiality', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/KMP_authorised_for_the_purpose_of_determining_materiality.docx?v=1776418607' },
+        { title: 'KMP authorised for the purpose of determining materiality', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/KMP_authorised_for_the_purpose_of_determining_materiality.pdf?v=1776420396' },
 
   ]
 

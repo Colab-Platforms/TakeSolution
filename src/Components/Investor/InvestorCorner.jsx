@@ -64,7 +64,7 @@ const InvestorCorner = () => {
   };
 
   const postalBallotVotingData = {
-    title: 'Postal Ballot Voting Rseult',
+    title: 'Postal Ballot Voting Result',
     years: [
       { year: '2023', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
       { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
@@ -98,7 +98,7 @@ const InvestorCorner = () => {
             ))}
           </div>
           <div className="table-row">
-            <div className="table-cell">Notice</div>
+            <div className="table-cell">Reports</div>
             {eogmData.years.map((item, index) => (
               <div key={index} className="table-cell">
                 <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
@@ -144,7 +144,7 @@ const InvestorCorner = () => {
             ))}
           </div>
           <div className="table-row">
-            <div className="table-cell">Notice</div>
+            <div className="table-cell">Reports</div>
             {agmNoticeData.years.map((item, index) => (
               <div key={index} className="table-cell">
                 <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
@@ -190,7 +190,7 @@ const InvestorCorner = () => {
             ))}
           </div>
           <div className="table-row">
-            <div className="table-cell">Notice</div>
+            <div className="table-cell">Reports</div>
             {postalBallotData.years.map((item, index) => (
               <div key={index} className="table-cell">
                 <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
@@ -213,7 +213,7 @@ const InvestorCorner = () => {
             ))}
           </div>
           <div className="table-row">
-            <div className="table-cell">Notice</div>
+            <div className="table-cell">Results</div>
             {postalBallotData.years.map((item, index) => (
               <div key={index} className="table-cell">
                 <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
@@ -236,7 +236,7 @@ const InvestorCorner = () => {
             ))}
           </div>
           <div className="table-row">
-            <div className="table-cell">Notice</div>
+            <div className="table-cell">Reports</div>
             {annualSecretarialComplianceReport.years.map((item, index) => (
               <div key={index} className="table-cell">
                 <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
