@@ -72,6 +72,16 @@ const InvestorCorner = () => {
 
     ]
   }
+  
+  const annualSecretarialComplianceReport = {
+    title: 'Annual Secretarial Compliance Report',
+    years: [
+      { year: '2025', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Complaince_Report_31_March_2025.pdf?v=1776418054' },
+      // { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
+      // { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
+
+    ]
+  }
 
   return (
     <div className="tab-content active">
@@ -205,6 +215,29 @@ const InvestorCorner = () => {
           <div className="table-row">
             <div className="table-cell">Notice</div>
             {postalBallotData.years.map((item, index) => (
+              <div key={index} className="table-cell">
+                <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
+                  📄
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Annual Secretarial Compliance Report */}
+      <div className="investor-table-section">
+        <h4 className="table-section-title">{annualSecretarialComplianceReport.title}</h4>
+        <div className="investor-table">
+          <div className="table-row table-header">
+            <div className="table-cell">Financial Year</div>
+            {annualSecretarialComplianceReport.years.map((item, index) => (
+              <div key={index} className="table-cell">{item.year}</div>
+            ))}
+          </div>
+          <div className="table-row">
+            <div className="table-cell">Notice</div>
+            {annualSecretarialComplianceReport.years.map((item, index) => (
               <div key={index} className="table-cell">
                 <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
                   📄

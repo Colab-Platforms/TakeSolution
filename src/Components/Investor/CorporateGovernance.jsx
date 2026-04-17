@@ -3,7 +3,7 @@ import React from 'react';
 const CorporateGovernance = () => {
   // Corporate Governance Policies
   const policies = [
-    { title: 'Take Policy on Appointment and Remuneration of Directors Key Managerial Personnel', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Take_Policy_on_Appointment_and_Remuneration_of_Directors_Key_Managerial_Personnel.docx?v=1776417164' },
+    { title: 'Take Policy on Appointment and Remuneration of Directors Key Managerial Personnel', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Take_Policy_on_Appointment_and_Remuneration_of_Directors_Key_Managerial_Personnel.pdf?v=1776419616' },
     { title: 'Take Policy terms and conditions of appointment of Independent Directors', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Take_Policy-terms_and_conditions_of_appointment_of_Independent_Directors.pdf?v=1776417044' },
     { title: 'Code of Conduct for Directors & Senior Management Personnel', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Code of Conduct for Directors and Senior Management Personnel.pdf' },
     { title: 'Code of Conduct for Prohibition of Insider Trading', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/CODE OF CONDUCT FOR PROHIBITION OF INSIDER TRADING.pdf' },
