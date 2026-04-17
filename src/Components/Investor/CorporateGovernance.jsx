@@ -52,10 +52,10 @@ const CorporateGovernance = () => {
         { title: 'MOA & AOA', link: '/assets/investordata/corporate-governance/MOAAndAOA/MOA & AOA.pdf' },
 
   ]
-  const annualSecretarialComplianceReport = [
-        { title: 'Annual Secretarial Compliance Report', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Complaince_Report_31_March_2025.pdf?v=1776418054' },
+  // const annualSecretarialComplianceReport = [
+  //       { title: 'Annual Secretarial Compliance Report', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Annual_Secretarial_Complaince_Report_31_March_2025.pdf?v=1776418054' },
 
-  ]
+  // ]
   const kmpDeterminingAuthority = [
         { title: 'KMP authorised for the purpose of determining materiality', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/KMP_authorised_for_the_purpose_of_determining_materiality.docx?v=1776418607' },
 
@@ -130,7 +130,7 @@ const CorporateGovernance = () => {
 
 
       {/* Annual Secretarial Compliance Report */}
-      <div className="governance-policies-section">
+      {/* <div className="governance-policies-section">
         <h4 className="governance-section-title">Annual Secretarial Compliance Report</h4>
         <div className="policies-grid">
           {annualSecretarialComplianceReport.map((doc, index) => (
@@ -142,7 +142,7 @@ const CorporateGovernance = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
 
       {/* KMP authorised for the purpose of determining materiality */}
