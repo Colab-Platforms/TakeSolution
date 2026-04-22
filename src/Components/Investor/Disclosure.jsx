@@ -10,6 +10,7 @@ const Disclosure = () => {
 
     ///ujjwal uploaded FY- 26,25,20,19,18
     FY26: [
+      { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q4', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Shareholding_Pattern_Q4.pdf?v=1776838814' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'PR_Longevity_and_Anti-ageing', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/PR_Longevity_and_Anti-ageing.pdf?v=1776416744' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reconciliation of Share Capital Audit report for the quarter ended March 31, 2026', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Reconciliation_of_Share_Capital_Audit_report_for_the_quarter_ended_March_31_2026.pdf?v=1776159817' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Reg 74(5) Q4', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Reg_74_5_Q4.pdf?v=1776144430' },
