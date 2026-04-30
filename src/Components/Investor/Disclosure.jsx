@@ -10,6 +10,7 @@ const Disclosure = () => {
 
 
     FY26: [
+      { type: 'Other Disclosures', date: '31-Mar-26', description: 'Non-Applicability of Large Corporate Disclosure FY 26', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Non-Applicability_of_Large_Corporate_Disclosure_FY_26.pdf?v=1777531032' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Integrated Governance Q4', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Integrated_Governance_Q4.pdf?v=1777530077' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'Shareholding Pattern Q4', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Shareholding_Pattern_Q4.pdf?v=1776838814' },
       { type: 'Other Disclosures', date: '17-Feb-26', description: 'PR_Longevity_and_Anti-ageing', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/PR_Longevity_and_Anti-ageing.pdf?v=1776416744' },
