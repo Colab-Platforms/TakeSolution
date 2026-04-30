@@ -37,6 +37,14 @@ const BoardOfDirectors = () => {
         { name: "Mr. Peeyush Sethia", designation: "Member" },
         { name: "Mr. Parmeshvar Dhangare", designation: "Member" },
       ]
+    },
+    {
+      title: "RISK MANAGEMENT COMMITTEE",
+      members: [
+        { name: "Mr. Parmeshvar Dhangare", designation: "Chairperson" },
+        { name: "Ms. Pushpa Joshi", designation: "Member" },
+        { name: "Mr. Vilas Munis", designation: "Member" },
+      ]
     }
   ];
 
@@ -91,28 +99,28 @@ const BoardOfDirectors = () => {
   return (
     <div className="board-of-directors min-h-screen bg-white py-12 px-4" style={{ fontFamily: 'serif' }}>
       <div className="max-w-5xl mx-auto" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-        
+
         {/* Composition Tables Section */}
         <div className="space-y-20 mb-24" style={{ marginBottom: '6rem' }}>
-          
+
           {/* Board of Directors Composition */}
           <div className="composition-section" style={{ marginBottom: '4rem' }}>
-            <h3 style={{ 
-              fontSize: '1.25rem', 
-              fontWeight: 'bold', 
-              textAlign: 'center', 
-              textTransform: 'uppercase', 
-              marginBottom: '2.5rem', 
-              textDecoration: 'underline' 
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 'bold',
+              textAlign: 'center',
+              textTransform: 'uppercase',
+              marginBottom: '2.5rem',
+              textDecoration: 'underline'
             }}>
               COMPOSITION OF BOARD OF DIRECTORS OF THE COMPANY
             </h3>
             <div className="overflow-x-auto">
-              <table style={{ 
-                width: '100%', 
-                borderCollapse: 'collapse', 
-                borderTop: '1px solid black', 
-                borderBottom: '1px solid black' 
+              <table style={{
+                width: '100%',
+                borderCollapse: 'collapse',
+                borderTop: '1px solid black',
+                borderBottom: '1px solid black'
               }}>
                 <thead>
                   <tr>
@@ -136,22 +144,22 @@ const BoardOfDirectors = () => {
 
           {/* KMP Composition */}
           <div className="composition-section" style={{ marginBottom: '4rem' }}>
-            <h3 style={{ 
-              fontSize: '1.25rem', 
-              fontWeight: 'bold', 
-              textAlign: 'center', 
-              textTransform: 'uppercase', 
-              marginBottom: '2.5rem', 
-              textDecoration: 'underline' 
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 'bold',
+              textAlign: 'center',
+              textTransform: 'uppercase',
+              marginBottom: '2.5rem',
+              textDecoration: 'underline'
             }}>
               COMPOSITION OF KEY MANEGERIAL PERSONNEL(S) OF THE COMPANY
             </h3>
             <div className="overflow-x-auto">
-              <table style={{ 
-                width: '100%', 
-                borderCollapse: 'collapse', 
-                borderTop: '1px solid black', 
-                borderBottom: '1px solid black' 
+              <table style={{
+                width: '100%',
+                borderCollapse: 'collapse',
+                borderTop: '1px solid black',
+                borderBottom: '1px solid black'
               }}>
                 <thead>
                   <tr>
@@ -173,35 +181,35 @@ const BoardOfDirectors = () => {
 
           {/* Committees Composition */}
           <div className="composition-section">
-            <h3 style={{ 
-              fontSize: '1.25rem', 
-              fontWeight: 'bold', 
-              textAlign: 'center', 
-              textTransform: 'uppercase', 
-              marginBottom: '2.5rem', 
-              textDecoration: 'underline' 
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 'bold',
+              textAlign: 'center',
+              textTransform: 'uppercase',
+              marginBottom: '2.5rem',
+              textDecoration: 'underline'
             }}>
               COMPOSITION OF COMMITTEES OF THE COMPANY
             </h3>
-            
+
             <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
               {committees.map((committee, idx) => (
                 <div key={idx} className="committee-block">
-                  <h4 style={{ 
-                    fontSize: '1rem', 
-                    fontWeight: 'bold', 
-                    marginBottom: '1rem', 
-                    textDecoration: 'underline', 
-                    textTransform: 'uppercase' 
+                  <h4 style={{
+                    fontSize: '1rem',
+                    fontWeight: 'bold',
+                    marginBottom: '1rem',
+                    textDecoration: 'underline',
+                    textTransform: 'uppercase'
                   }}>
                     {committee.title}:
                   </h4>
                   <div className="overflow-x-auto">
-                    <table style={{ 
-                      width: '100%', 
-                      borderCollapse: 'collapse', 
-                      borderTop: '1px solid black', 
-                      borderBottom: '1px solid black' 
+                    <table style={{
+                      width: '100%',
+                      borderCollapse: 'collapse',
+                      borderTop: '1px solid black',
+                      borderBottom: '1px solid black'
                     }}>
                       <thead>
                         <tr>
@@ -226,14 +234,14 @@ const BoardOfDirectors = () => {
 
         </div>
 
-        <h2 style={{ 
-          fontSize: '2.25rem', 
-          fontWeight: 'extrabold', 
-          textAlign: 'center', 
-          marginBottom: '3rem', 
-          borderTop: '1px solid #e5e7eb', 
-          paddingTop: '6rem', 
-          fontFamily: 'sans-serif' 
+        <h2 style={{
+          fontSize: '2.25rem',
+          fontWeight: 'extrabold',
+          textAlign: 'center',
+          marginBottom: '3rem',
+          borderTop: '1px solid #e5e7eb',
+          paddingTop: '6rem',
+          fontFamily: 'sans-serif'
         }}>
           Detailed Profiles
         </h2>
@@ -241,19 +249,19 @@ const BoardOfDirectors = () => {
         {/* Detailed Profiles Section */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem', paddingBottom: '4rem' }}>
           {directors.map((director, index) => (
-            <div key={index} style={{ 
-              backgroundColor: 'white', 
-              borderRadius: '1rem', 
-              boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)', 
-              border: '1px solid #f3f4f6', 
+            <div key={index} style={{
+              backgroundColor: 'white',
+              borderRadius: '1rem',
+              boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
+              border: '1px solid #f3f4f6',
               overflow: 'hidden',
               transition: 'transform 0.3s ease'
             }}>
               {/* Director Header */}
-              <div style={{ 
-                background: 'linear-gradient(to right, #dc2626, #991b1b)', 
-                padding: '2rem', 
-                color: 'white' 
+              <div style={{
+                background: 'linear-gradient(to right, #dc2626, #991b1b)',
+                padding: '2rem',
+                color: 'white'
               }}>
                 <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', margin: 0 }}>{director.name}</h3>
                 <p style={{ color: '#fee2e2', marginTop: '0.5rem', fontSize: '1.125rem', fontWeight: '500', opacity: 0.9, margin: 0 }}>
@@ -270,13 +278,13 @@ const BoardOfDirectors = () => {
                 {/* Other Directorships Table */}
                 {director.directorships.length > 0 && (
                   <div style={{ marginTop: '2.5rem', borderTop: '1px solid #f3f4f6', paddingTop: '2.5rem' }}>
-                    <h4 style={{ 
-                      fontSize: '1.25rem', 
-                      fontWeight: 'bold', 
-                      color: '#1f2937', 
-                      marginBottom: '1.5rem', 
-                      display: 'flex', 
-                      alignItems: 'center' 
+                    <h4 style={{
+                      fontSize: '1.25rem',
+                      fontWeight: 'bold',
+                      color: '#1f2937',
+                      marginBottom: '1.5rem',
+                      display: 'flex',
+                      alignItems: 'center'
                     }}>
                       <span style={{ width: '0.5rem', height: '2rem', backgroundColor: '#dc2626', borderRadius: '9999px', marginRight: '0.75rem' }}></span>
                       Other Directorships
@@ -306,12 +314,12 @@ const BoardOfDirectors = () => {
 
                 {/* No Other Directorships */}
                 {director.directorships.length === 0 && (
-                  <div style={{ 
-                    marginTop: '2rem', 
-                    padding: '2rem', 
-                    backgroundColor: 'rgba(249, 250, 251, 0.5)', 
-                    border: '1px dashed #e5e7eb', 
-                    borderRadius: '1rem' 
+                  <div style={{
+                    marginTop: '2rem',
+                    padding: '2rem',
+                    backgroundColor: 'rgba(249, 250, 251, 0.5)',
+                    border: '1px dashed #e5e7eb',
+                    borderRadius: '1rem'
                   }}>
                     <p style={{ color: '#6b7280', fontStyle: 'italic', textAlign: 'center', fontSize: '0.875rem', fontWeight: '500', margin: 0 }}>
                       No directorship or full-time positions held in any other body corporates.
