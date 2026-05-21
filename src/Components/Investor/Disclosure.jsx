@@ -10,6 +10,7 @@ const Disclosure = () => {
 
 
     FY26: [
+      { type: 'Other Disclosures', date: '31-Mar-26', description: 'Outcome of Board Meeting - Audited Financial Results for the Financial year ended 31 March 2026', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Outcome_of_Board_Meeting_-_Audited_Financial_Results_for_the_Financial_year_ended_31_March_2026.pdf?v=1779343471' },
       { type: 'Other Disclosures', date: '31-Mar-26', description: 'Outcome of Board Meeting May 19.2026 for appointment of MD CFO', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Outcome_of_Board_Meeting_May_19._2026_for_appointment_of_MD_CFO.pdf?v=1779253859' },
       { type: 'Other Disclosures', date: '31-Mar-26', description: 'Newspaper Adv Postal Ballot May 2026', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Newspaper_Adv_Postal_Ballot_May_2026.pdf?v=1779166645' },
       { type: 'Other Disclosures', date: '31-Mar-26', description: 'TAKE Prior Intimation of BM', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TAKE_Prior_Intimation_of_BM.pdf?v=1778924572' },
