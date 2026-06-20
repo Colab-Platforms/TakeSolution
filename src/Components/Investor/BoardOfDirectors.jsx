@@ -16,6 +16,8 @@ const BoardOfDirectors = () => {
   const committees = [
     {
       title: "AUDIT COMMITTEE",
+      termsOfReference:
+        "The Audit Committee assists the Board in overseeing financial reporting, internal controls, audit processes, risk management, and regulatory compliance of the Company. The Committee reviews financial statements, internal and statutory audit reports, related party transactions, and the effectiveness of the vigil mechanism and internal control systems.",
       members: [
         { name: "Ms. Pushpa Joshi", designation: "Chairperson" },
         { name: "Mr. Peeyush Sethia", designation: "Member" },
@@ -24,6 +26,7 @@ const BoardOfDirectors = () => {
     },
     {
       title: "STAKEHOLDER'S RELATIONSHIP COMMITTEE",
+      termsOfReference: "The Stakeholders’ Relationship Committee oversees the redressal of grievances of shareholders and other stakeholders and ensures effective investor relations. The Committee reviews complaints relating to transfer/transmission of shares, non-receipt of dividends or reports, and other stakeholder service matters. ",
       members: [
         { name: "Mr. Parmeshvar Dhangare", designation: "Chairperson" },
         { name: "Mr. Kanwar Nitin Singh", designation: "Member" },
@@ -32,6 +35,7 @@ const BoardOfDirectors = () => {
     },
     {
       title: "NOMINATION & REMUNERATION COMMITTEE",
+      termsOfReference: "The Nomination and Remuneration Committee assists the Board in matters relating to appointment, remuneration, evaluation, and succession planning of Directors and Senior Management. The Committee also formulates and reviews remuneration policies and ensures compliance with applicable corporate governance requirements. ",
       members: [
         { name: "Ms. Pushpa Joshi", designation: "Chairperson" },
         { name: "Mr. Peeyush Sethia", designation: "Member" },
@@ -40,6 +44,7 @@ const BoardOfDirectors = () => {
     },
     {
       title: "RISK MANAGEMENT COMMITTEE",
+      termsOfReference: "The Risk Management Committee assists the Board in identifying, assessing, monitoring, and mitigating business risks faced by the Company. The Committee reviews the risk management framework, internal control systems, and measures adopted for effective risk mitigation and regulatory compliance. ",
       members: [
         { name: "Mr. Parmeshvar Dhangare", designation: "Chairperson" },
         { name: "Ms. Pushpa Joshi", designation: "Member" },
@@ -140,6 +145,8 @@ const BoardOfDirectors = () => {
                 </tbody>
               </table>
             </div>
+
+
           </div>
 
           {/* KMP Composition */}
@@ -226,6 +233,24 @@ const BoardOfDirectors = () => {
                         ))}
                       </tbody>
                     </table>
+
+                    <div style={{ marginTop: '1.25rem' }}>
+                      <h5 style={{
+                        fontWeight: 'bold',
+                        marginBottom: '0.5rem',
+                        textDecoration: 'underline'
+                      }}>
+                        Terms of Reference
+                      </h5>
+
+                      <p style={{
+                        lineHeight: '1.7',
+                        color: '#4b5563',
+                        fontSize: '0.95rem'
+                      }}>
+                        {committee.termsOfReference}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
