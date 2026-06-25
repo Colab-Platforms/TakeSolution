@@ -10,6 +10,7 @@ const Disclosure = () => {
 
 
     FY26: [
+      { type: 'Other Disclosures', date: '20-june-26', description: 'Trading Window Closure 30.06.2026 Q1 FY 2026-27.pdf', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Trading_Window_Closure_30.06.2026_Q1_FY_2026-27.pdf?v=1782385800' },
       { type: 'Other Disclosures', date: '20-june-26', description: 'BM Otcome 30.05.2026 Secretarial Auditor.pdf', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BM_Otcome_30.05.2026_Secretarial_Auditor.pdf?v=1781931274' },
       { type: 'Other Disclosures', date: '20-june-26', description: 'Press Release 22.05.2026', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Press_Release_22.05.2026.pdf?v=1781931103' },
       { type: 'Other Disclosures', date: '31-Mar-26', description: 'Outcome of Board Meeting - Audited Financial Results for the Financial year ended 31 March 2026', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Outcome_of_Board_Meeting_-_Audited_Financial_Results_for_the_Financial_year_ended_31_March_2026.pdf?v=1779343471' },
