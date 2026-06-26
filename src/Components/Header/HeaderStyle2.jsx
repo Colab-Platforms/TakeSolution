@@ -36,8 +36,11 @@ export default function HeaderStyle2({ variant }) {
           onClick={() => setMobileToggle(false)}
         />
       )}
+      <div className="header-top-banner">
+        <p>Take Solutions Limited is now Take Limited</p>
+      </div>
       <header
-        className={`cs_site_header header_style_2 cs_style_1 ${
+        className={`cs_site_header header_style_2 cs_style_1 has-top-banner ${
           variant ? variant : ''
         } cs_sticky_header cs_site_header_full_width ${
           mobileToggle ? 'cs_mobile_toggle_active' : ''
