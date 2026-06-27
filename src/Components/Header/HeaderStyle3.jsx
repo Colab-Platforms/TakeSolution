@@ -29,8 +29,11 @@ export default function HeaderStyle3({ variant }) {
 
   return (
     <div className='header-area2 header_nav_03'>
+      <div className="header-top-banner">
+        <p>Take Solutions Limited is now Take Limited</p>
+      </div>
     <header
-      className={`cs_site_header cs_style_1 ${
+      className={`cs_site_header cs_style_1 has-top-banner ${
         variant ? variant : ''
       } cs_sticky_header cs_site_header_full_width ${
         mobileToggle ? 'cs_mobile_toggle_active' : ''
