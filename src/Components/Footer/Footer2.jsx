@@ -87,7 +87,7 @@ export default function FooterPreview() {
         </div>
 
         <div className="copyright">
-          © Copyright 2026 By TAKESOLUTION
+          © Copyright 2026 By TAKE LIMITED
         </div>
       </footer>
     </div>
