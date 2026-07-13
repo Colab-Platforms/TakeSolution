@@ -57,7 +57,7 @@ const InvestorCorner = () => {
   const postalBallotData = {
     title: 'Notice of the Postal Ballot',
     years: [
-      { year: '2026', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TAKE_Postal_Ballot_Notice.pdf?v=1778820978' },
+      { year: 'PB/01/2026-27', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TAKE_Postal_Ballot_Notice.pdf?v=1778820978' },
       { year: '2023', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_FY22-23.pdf' },
       { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Take_Postal_Ballot_Notice_1.pdf' },
       { year: '2022', link: '/assets/investordata/investor-corner/Notice of the Postal Ballot/Postal_Ballot_Notice_TSL.pdf' },
