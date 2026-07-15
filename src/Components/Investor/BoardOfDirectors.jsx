@@ -313,7 +313,7 @@ const BoardOfDirectors = () => {
                 </p>
 
                 {/* Other Directorships Table */}
-                {director.directorships.length > 0 && (
+                {(director.directorships?.length ?? 0) > 0 && (
                   <div style={{ marginTop: '2.5rem', borderTop: '1px solid #f3f4f6', paddingTop: '2.5rem' }}>
                     <h4 style={{
                       fontSize: '1.25rem',
@@ -337,7 +337,7 @@ const BoardOfDirectors = () => {
                         </thead>
                         <tbody style={{ backgroundColor: 'white' }}>
                           {director.directorships.map((item, dIdx) => (
-                            <tr key={item.sr} style={{ borderBottom: dIdx === director.directorships.length - 1 ? 'none' : '1px solid #f3f4f6' }}>
+                            <tr key={item.sr} style={{ borderBottom: dIdx === (director.directorships?.length ?? 0) - 1 ? 'none' : '1px solid #f3f4f6' }}>
                               <td style={{ padding: '1rem', fontSize: '0.875rem', fontWeight: 'bold', color: '#9ca3af' }}>{item.sr}</td>
                               <td style={{ padding: '1rem', fontSize: '0.875rem', fontWeight: '600', color: '#1f2937' }}>{item.company}</td>
                               <td style={{ padding: '1rem', fontSize: '0.875rem', fontWeight: '500', color: '#4b5563' }}>{item.position}</td>
@@ -350,7 +350,7 @@ const BoardOfDirectors = () => {
                 )}
 
                 {/* No Other Directorships */}
-                {director.directorships.length === 0 && (
+                {(director.directorships?.length ?? 0) === 0 && (
                   <div style={{
                     marginTop: '2rem',
                     padding: '2rem',
