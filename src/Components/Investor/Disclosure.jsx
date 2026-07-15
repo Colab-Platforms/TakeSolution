@@ -585,17 +585,7 @@ const Disclosure = () => {
 
   };
 
-  // Annual Return data
-  const annualReturnYears = [
-    // { year: '2023-2024', link: '' },
-    { year: '2024-2025', link: '/assets/investordata/disclosure/2024-25/2024-25.pdf' },
-    { year: '2023-2024', link: '/assets/investordata/disclosure/2023-24/2023-2024.pdf' },
-    { year: '2022-2023', link: '/assets/investordata/disclosure/2022-23/MGT_7_22-23_TSL.pdf' },
-    { year: '2021-2022', link: '/assets/investordata/disclosure/2021-22/Form_MGT_7.pdf' },
-    { year: '2020-2021', link: '/assets/investordata/disclosure/2020-21/MGT_7_2020-21_TSL_Signed.pdf' },
-    { year: '2019-2020', link: '/assets/investordata/disclosure/2019-20/Form_MGT-7_2019-20_TSL_Signed.pdf' },
-    { year: '2018-2019', link: '/assets/investordata/disclosure/annual_return-2018-19.pdf' }
-  ];
+
 
   const currentDisclosures = disclosureData[selectedYear] || [];
 
@@ -643,28 +633,6 @@ const Disclosure = () => {
         </table>
       </div>
 
-      {/* Annual Return Section */}
-      <div className="annual-return-section">
-        <h4 className="annual-return-title">Annual Return</h4>
-        <div className="annual-return-table">
-          <div className="annual-return-row annual-return-header">
-            <div className="annual-return-cell">Financial Year</div>
-            {annualReturnYears.map((item, index) => (
-              <div key={index} className="annual-return-cell">{item.year}</div>
-            ))}
-          </div>
-          <div className="annual-return-row">
-            <div className="annual-return-cell">Annual Return</div>
-            {annualReturnYears.map((item, index) => (
-              <div key={index} className="annual-return-cell">
-                <a href={item.link} className="pdf-link" target="_blank" rel="noopener noreferrer">
-                  📄
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

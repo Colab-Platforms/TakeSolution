@@ -1976,4 +1976,50 @@ Don't show
   }
 }
 
+/* Sub-tab Navigation (Annual Report / Annual Return) */
+.sub-tab-nav {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 28px;
+  border-bottom: 2px solid #e0e0e0;
+  flex-wrap: wrap;
+}
+
+.sub-tab-btn {
+  padding: 10px 24px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.25s ease;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  margin-bottom: -2px;
+  letter-spacing: 0.02em;
+}
+
+.sub-tab-btn:hover {
+  color: #2285A3;
+  background: rgba(34, 133, 163, 0.05);
+}
+
+.sub-tab-btn.active {
+  color: #2285A3;
+  border-bottom-color: #2285A3;
+  background: transparent;
+}
+
+@media (max-width: 480px) {
+  .sub-tab-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+
 
