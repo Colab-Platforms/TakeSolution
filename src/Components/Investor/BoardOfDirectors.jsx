@@ -3,6 +3,7 @@ import React from 'react';
 const BoardOfDirectors = () => {
   const boardComposition = [
     { name: "Mr. Parmeshvar Dhangare", din: "11410125", designation: "Non-Executive Non-Independent Director & Chairman" },
+    { name: "Mr. Sunil Patra", din: "11728362", designation: "Managing Director" },
     { name: "Mr. Vilas Munis", din: "11533598", designation: "Non-Executive Non-Independent Director" },
     { name: "Ms. Pushpa Joshi", din: "06838093", designation: "Non-Executive Independent Director" },
     { name: "Mr. Kanwar Nitin Singh", din: "10204543", designation: "Non-Executive Independent Director" },
@@ -10,6 +11,7 @@ const BoardOfDirectors = () => {
   ];
 
   const kmpComposition = [
+    { name: "Mr. Sunil Patra", designation: "Chief Financial Officer" },
     { name: "Ms. Vandana Gupta", designation: "Company Secretary & Compliance Officer" },
   ];
 
@@ -54,6 +56,16 @@ const BoardOfDirectors = () => {
   ];
 
   const directors = [
+    {
+      name: "Mr. Sunil Patra",
+      designation: "Managing Director",
+      description: "Mr. Sunil Patra is a graduate having experience in customer service operations, business coordination and handling operational and financial matters. He possesses experience in managing customer relations, operational processes and administrative functions",
+      // directorships: [
+      //   { sr: 1, company: "Aar Shyam India Investment Company Limited", position: "CFO" },
+      //   { sr: 2, company: "Evoq Remedies Limited", position: "Independent Director" },
+      //   { sr: 3, company: "Vintage Coffee and Beverages Limited", position: "Independent Director" },
+      // ]
+    },
     {
       name: "Ms. Pushpa Joshi",
       designation: "Non-Executive Independent Director",
