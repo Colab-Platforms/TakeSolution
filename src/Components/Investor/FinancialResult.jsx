@@ -3,7 +3,7 @@ import { useState } from 'react';
 const FinancialResult = () => {
   const [selectedYear, setSelectedYear] = useState('FY26');
 
-  const years = ['FY26', 'FY25', 'FY24', 'FY23', 'FY22', 'FY21', 'FY20', 'FY19', 'FY18', ];
+  const years = ['FY 2026-27', 'FY 2025-26', 'FY 2024-25', 'FY 2023-24', 'FY 2022-23', 'FY 2021-22', 'FY 2020-21', 'FY 2019-20', 'FY 2018-19', ];
 
   const financialResultData = {
     FY26: [

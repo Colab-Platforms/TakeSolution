@@ -3,14 +3,14 @@ import React from 'react'
 const FinancialSubsidary = () => {
 
   const financialResultData = [
-        { type: 'Other Disclosures', year: 'FY-2017', description: 'subsidiary-company-financials_fy-2016-17', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2016-17.pdf' },
-        { type: 'Other Disclosures', year: 'FY-2018', description: 'subsidiary-company-financials_fy-2017-18', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2017-18.pdf' },
-        { type: 'Other Disclosures', year: 'FY-2019', description: 'subsidiary-company-financials_fy-2018-19', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2018-19.pdf' },
-        { type: 'Other Disclosures', year: 'FY-2020', description: 'subsidiary-company-financials_fy-2019-20', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2019-20.pdf' },
-        { type: 'Other Disclosures', year: 'FY-2021', description: 'subsidiary-company-financials_fy-2020-21', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2020-21.pdf' },
-        { type: 'Other Disclosures', year: 'FY-2022', description: 'subsidiary-company-financials_fy-2021-22', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2021-22.pdf' },
-        { type: 'Other Disclosures', year: 'FY-2023', description: 'subsidiary-company-financials_fy-2022-23', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2022-23.pdf' },
-        { type: 'Other Disclosures', year: 'FY-2024', description: 'subsidiary-company-financials_fy-2023-24', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2023-24.pdf' }
+        { type: 'Other Disclosures', year: 'FY 2017-18', description: 'subsidiary-company-financials_fy-2016-17', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2016-17.pdf' },
+        { type: 'Other Disclosures', year: 'FY 2018-19', description: 'subsidiary-company-financials_fy-2017-18', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2017-18.pdf' },
+        { type: 'Other Disclosures', year: 'FY 2019-20', description: 'subsidiary-company-financials_fy-2018-19', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2018-19.pdf' },
+        { type: 'Other Disclosures', year: 'FY 2020-21', description: 'subsidiary-company-financials_fy-2019-20', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2019-20.pdf' },
+        { type: 'Other Disclosures', year: 'FY 2021-22', description: 'subsidiary-company-financials_fy-2020-21', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2020-21.pdf' },
+        { type: 'Other Disclosures', year: 'FY 2022-23', description: 'subsidiary-company-financials_fy-2021-22', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2021-22.pdf' },
+        { type: 'Other Disclosures', year: 'FY 2023-24', description: 'subsidiary-company-financials_fy-2022-23', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2022-23.pdf' },
+        { type: 'Other Disclosures', year: 'FY 2024-25', description: 'subsidiary-company-financials_fy-2023-24', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2023-24.pdf' }
     ]
 
     // const currentYearData = reportsData[selectedYear] || reportsData['FY25'];
