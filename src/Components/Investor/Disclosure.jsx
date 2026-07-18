@@ -7,7 +7,10 @@ const Disclosure = () => {
 
   // Disclosure data for each year
   const disclosureData = {
+    FY27: [
+      { type: 'Other Disclosures', date: '20-june-26', description: 'TAKE Reg 74(5) 30.06.2026.pdf', link: '/assets/investordata/disclosure/disclosure-data/FY27/TAKE Reg 74(5) 30.06.2026.pdf' },
 
+    ],
 
     FY26: [
       { type: 'Other Disclosures', date: '20-june-26', description: 'Outcome of Board Meeting 09 July 2026.pdf', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Outcome_of_Board_Meeting_09_July_2026.pdf?v=1783658141' },
