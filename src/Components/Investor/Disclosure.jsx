@@ -3,7 +3,7 @@ import { useState } from 'react';
 const Disclosure = () => {
   const [selectedYear, setSelectedYear] = useState('FY26');
 
-  const years = ['FY26', 'FY25', 'FY24', 'FY23', 'FY22', 'FY21', 'FY20', 'FY19', 'FY18'];
+  const years = ['FY27', 'FY26', 'FY25', 'FY24', 'FY23', 'FY22', 'FY21', 'FY20', 'FY19', 'FY18'];
 
   // Disclosure data for each year
   const disclosureData = {
