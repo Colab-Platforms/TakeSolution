@@ -8,6 +8,8 @@ const Disclosure = () => {
   // Disclosure data for each year
   const disclosureData = {
     FY27: [
+      { type: 'Other Disclosures', date: '20-june-26', description: 'TAKE SHP 30.06.2026', link: 'assets/investordata/disclosure/disclosure-data/FY27/TAKE SHP 30.06.2026.pdf' },
+      { type: 'Other Disclosures', date: '20-june-26', description: 'TAKE Reg 76 30.06.2026', link: 'assets/investordata/disclosure/disclosure-data/FY27/TAKE Reg 76 30.06.2026.pdf' },
       { type: 'Other Disclosures', date: '20-june-26', description: 'TAKE Reg 74(5) 30.06.2026.pdf', link: '/assets/investordata/disclosure/disclosure-data/FY27/TAKE Reg 74(5) 30.06.2026.pdf' },
 
     ],
