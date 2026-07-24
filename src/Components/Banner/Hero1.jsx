@@ -21,11 +21,11 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		
 		// "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BAN_jpg.jpg?v=1772173590",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000001067.png?v=1774531828",
-		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784867073/One_minute_clinic_fj3b7o.png", //oneminute
-		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784866921/8_o79g5c.png", //clinicResearch
-		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784813534/7_rdaamj.png", // biotech
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg_0a614094-4be3-4d15-bced-782aa8bbddcb.jpg?v=1774006983", // lifescience
-		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784812827/Trusted_Intelligence._Human_Care._3_kj6str.png", // preventiveHealth
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894684/One_minute_clinic_1_q8miz2.png", //oneminute
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894738/Clinical_Research_1_ifgdcp.png", //clinicResearch
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894776/Biotech_for_Better_Life_1_xd98nz.png", // biotech
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784884058/Where_Science_Advances_Health_dxyzud.png", // lifescience
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784884058/Predict._Prevent._Protect_adubag.png", // preventiveHealth
 	];
 
 	const mobileImages = [
@@ -103,7 +103,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 			return (
 				<>
 					<span style={{ 
-						color: '#ffffff',
+						color: '#000000',
 						display: 'block',
 						textAlign: 'left',
 						margin: '0',
