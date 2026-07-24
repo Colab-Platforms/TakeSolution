@@ -21,8 +21,8 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		
 		// "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BAN_jpg.jpg?v=1772173590",
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000001067.png?v=1774531828",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2ndPage_jpg_71297878-758d-4086-9293-807efdd0570e.jpg?v=1774006984", //oneminute
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3rdPage.jpg_3.jpg?v=1774334017", //clinicResearch
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784867073/One_minute_clinic_fj3b7o.png", //oneminute
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784866921/8_o79g5c.png", //clinicResearch
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784813534/7_rdaamj.png", // biotech
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5thPage_jpg_0a614094-4be3-4d15-bced-782aa8bbddcb.jpg?v=1774006983", // lifescience
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784812827/Trusted_Intelligence._Human_Care._3_kj6str.png", // preventiveHealth
