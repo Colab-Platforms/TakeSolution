@@ -24,7 +24,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894684/One_minute_clinic_1_q8miz2.png", //oneminute
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894738/Clinical_Research_1_ifgdcp.png", //clinicResearch
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894776/Biotech_for_Better_Life_1_xd98nz.png", // biotech
-		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784884058/Where_Science_Advances_Health_dxyzud.png", // lifescience
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894776/Biotech_for_Better_Life_1_xd98nz.png", // lifescience
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784884058/Predict._Prevent._Protect_adubag.png", // preventiveHealth
 	];
 
