@@ -27,7 +27,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784884058/Where_Science_Advances_Health_dxyzud.png", // lifescience
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784895164/Predict._Prevent._Protect_s0phk1.png", // preventiveHealth
 	];
-
+    
 	const mobileImages = [
 		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MV_BANNER.png?v=1774531660",
 		// "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ban_mv_jpg.jpg?v=1772186025",

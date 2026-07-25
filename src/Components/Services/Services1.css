@@ -112,7 +112,7 @@
 /* Top Left Card - DNA */
 .top-left {
     background: 
-                url('/assets/images/serviceimages/Frame 31.jpg.jpeg');
+                url('https://res.cloudinary.com/dtupa1lfb/image/upload/v1784965595/Paragraph_Background_irsxwu.png');
     background-size: cover;
     background-position: center;
     
@@ -135,7 +135,7 @@
 /* Top Right Card - Data Science */
 .top-right {
     background: 
-                url('/assets/images/serviceimages/Frame 33.jpg.jpeg');
+                url('https://res.cloudinary.com/dtupa1lfb/image/upload/v1784965596/Paragraph_Background_3_msbt16.png');
     background-size: cover;
     background-position: center;
     /* padding: 87px 30px; */
@@ -186,7 +186,7 @@
 /* Bottom Left Card - Atom */
 .bottom-left {
     background:
-                url('/assets/images/serviceimages/Frame 32.jpg.jpeg');
+                url('https://res.cloudinary.com/dtupa1lfb/image/upload/v1784965595/Paragraph_Background_2_eub746.png');
     background-size: cover;
     background-position: center;
         /* align-content: end; */
