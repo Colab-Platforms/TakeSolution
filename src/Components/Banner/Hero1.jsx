@@ -20,7 +20,7 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	const desktopImages = [
 		
 		// "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/BAN_jpg.jpg?v=1772173590",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000001067.png?v=1774531828",
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1785152076/App_Banner_v2_mkgch4.png",
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894684/One_minute_clinic_1_q8miz2.png", //oneminute
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894738/Clinical_Research_1_ifgdcp.png", //clinicResearch
 		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1784894776/Biotech_for_Better_Life_1_xd98nz.png", // biotech
