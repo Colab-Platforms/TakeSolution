@@ -15,21 +15,21 @@ const Project4 = () => {
     const projects = [
         {
             id: 1,
-            image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000864.png?v=1772191874",
+            image: "https://res.cloudinary.com/dtupa1lfb/image/upload/v1785148485/Creating_change_that_truly_matters_1_bahciz.png",
             alt: "Mobile App Development",
             title: "Preventive Healthcare",
             subtitle: "Software"
         },
         {
             id: 2,
-            image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000865.png?v=1772191874",
+            image: "https://res.cloudinary.com/dtupa1lfb/image/upload/v1785148486/Creating_change_that_truly_matters_2_iw1qz9.png",
             alt: "Smart Technology Solutions",
             title: "One-Minute Clinic",
             subtitle: "Hardware"
         },
         {
             id: 3,
-            image: "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000867.png?v=1772191874",
+            image: "https://res.cloudinary.com/dtupa1lfb/image/upload/v1785148485/Creating_change_that_truly_matters_3_gm8mvx.png",
             alt: "Business Collaboration",
             title: "Marketplace",
             subtitle: "Software"

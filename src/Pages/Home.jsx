@@ -46,7 +46,7 @@ const Home = () => {
                 Title="Transforming Healthcare Through<br> Intelligence & <span>Innovation.</span>"
                 Content="For over two decades, Take Solutions has been at the forefront of delivering domain-intensive technology solutions across life sciences, clinical research, and biosciences. Today, the Company is entering a new era of transformation by integrating artificial intelligence across its core businesses while expanding into AI-driven diagnostics and preventive healthcare."
                 img2="https://res.cloudinary.com/dtupa1lfb/image/upload/v1784965596/Frame_1707482465_spcnsi.png"
-                img1="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/cedc1147320d3dd22ad8dee3240c180ddcef5228.png?v=1771851732"
+                img1="https://res.cloudinary.com/dtupa1lfb/image/upload/v1785148485/Transforming_Healthcare_Through_Intelligence_Innovation._1_xfjq5u.png"
                 img3="https://res.cloudinary.com/dtupa1lfb/image/upload/v1784965596/thumb3_t8aahs.png"
                 img4="https://res.cloudinary.com/dtupa1lfb/image/upload/v1784965595/Frame_1707482466_1_yb2kfo.png"
                 // BoxTitle1="Cloud Based Solution"
