@@ -29,13 +29,13 @@ const Hero1 = ({bgImg,SubTitle,Title,Content,BtnText,BtnLink,Image,VideoText}) =
 	];
     
 	const mobileImages = [
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/MV_BANNER.png?v=1774531660",
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1785229604/App_Banner_2_pduime.png",
 		// "https://cdn.shopify.com/s/files/1/0636/5226/6115/files/ban_mv_jpg.jpg?v=1772186025",
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/2nd_mv_2__jpg.jpg?v=1774333673", //oneminutute
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/3RD_MV.jpg_2.jpg?v=1774333673", //clinicalResearch
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/4th_mv.jpg_1.jpg?v=1774333673", //biotech
-		"https://cdn.shopify.com/s/files/1/0636/5226/6115/files/5th_mv.jpg_1.jpg?v=1774333673",   // lifescience   
-		"https://cdn.shopify.com/s/files/1/0636/add5226/6115/files/6th_mv.jpg_1.jpg?v=1774333673"   // preventive-healthcare
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1785242904/3_b68fns.png", //oneminutute
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1785242904/4_dcnzc7.png", //clinicalResearch
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1785242903/1_ufyfme.png", //biotech
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1785243523/biotech_vgbm0l.jpg",   // lifescience   
+		"https://res.cloudinary.com/dtupa1lfb/image/upload/v1785242904/2_sveihf.png"   // preventive-healthcare
 	];
 
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);	
