@@ -6,12 +6,12 @@ const FinancialResult = () => {
   const years = ['FY26', 'FY25', 'FY24', 'FY23', 'FY22', 'FY21', 'FY20', 'FY19', 'FY18', ];
 
   const financialResultData = {
-    FY27: [
-      { type: 'Other Disclosure', year: 'FY 2026-27', quarter: 'Q1', description: 'TAKE Outcome of Board Meeting UFR', link: '/assets/investordata/financial-results/FY-2027/TAKE Outcome of Board Meeting UFR.pdf'},
-      // { type: 'Other Disclosure', year: 'FY 2026-27', quarter: 'Q1', description: 'Standalone_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Standalone_Q1_FY26_TSL.pdf'},
+    // FY27: [
+    //   { type: 'Other Disclosure', year: 'FY 2026-27', quarter: 'Q1', description: 'TAKE Outcome of Board Meeting UFR', link: '/assets/investordata/financial-results/FY-2027/TAKE Outcome of Board Meeting UFR.pdf'},
+    //   // { type: 'Other Disclosure', year: 'FY 2026-27', quarter: 'Q1', description: 'Standalone_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Standalone_Q1_FY26_TSL.pdf'},
 
 
-    ],
+    // ],
     FY26: [
       { type: 'Other Disclosure', year: 'FY 2025-26', quarter: 'Q1', description: 'Consolidated_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Consolidated_Q1_FY26_TSL.pdf'},
       { type: 'Other Disclosure', year: 'FY 2025-26', quarter: 'Q1', description: 'Standalone_Q1_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Standalone_Q1_FY26_TSL.pdf'},
