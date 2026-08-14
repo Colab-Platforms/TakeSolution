@@ -8,6 +8,7 @@ const Disclosure = () => {
   // Disclosure data for each year
   const disclosureData = {
     FY27: [
+      { type: 'Other Disclosures', date: '12-Aug-26', description: 'BM Intimation UFR 30.06.2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1786710252/BM_Intimation_UFR_30.06.2026_hsyhex.pdf' },
       { type: 'Other Disclosures', date: '12-Aug-26', description: 'TAKE Outcome of Board Meeting UFR', link: '/assets/investordata/disclosure/disclosure-data/FY27/TAKE Outcome of Board Meeting UFR.pdf' },
       { type: 'Other Disclosures', date: '20-june-26', description: 'Take_Integrated Governance_30.06.2026', link: 'assets/investordata/disclosure/disclosure-data/FY27/Integrated Governance.xlsm.pdf' },
       { type: 'Other Disclosures', date: '20-june-26', description: 'TAKE SHP 30.06.2026', link: 'assets/investordata/disclosure/disclosure-data/FY27/TAKE SHP 30.06.2026.pdf' },
