@@ -49,7 +49,7 @@ export default function FooterPreview() {
 
             <div className="contact-item">
               <Mail size={16} color="#0f766e" />
-              <span>investorrelations@takesolutions.com</span>
+              <span>investorrelations@takelimited.com</span>
             </div>
 
             <div className="contact-item">
@@ -66,7 +66,7 @@ export default function FooterPreview() {
             </div>
 
             <p className="cin-text">
-              <strong className="cin-label">CIN:</strong> L63090TN2000PLC046338
+              <strong className="cin-label">CIN:</strong>  L72100TN2000PLC046338
             </p>
           </div>
 
