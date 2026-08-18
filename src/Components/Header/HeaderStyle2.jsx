@@ -52,7 +52,7 @@ export default function HeaderStyle2({ variant }) {
             <div className="cs_main_header_left">
               <Link to="/" className="cs_site_branding">
                 <img
-                src="https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Frame_1000000893.png?v=1772278639"
+                src="https://res.cloudinary.com/dtupa1lfb/image/upload/v1787055974/Take_logo_1_oowhku.png"
                 alt="Logo"
                 />
               </Link>
