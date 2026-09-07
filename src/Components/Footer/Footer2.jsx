@@ -11,7 +11,7 @@ export default function FooterPreview() {
         {/* Top Section */}
         <div className="top-section">
           <Link className="logo" to="/">
-            <img src="https://res.cloudinary.com/dtupa1lfb/image/upload/v1787055974/Take_logo_1_oowhku.png" alt="Logo" />
+            <img src="/assets/images/logo/Take%20logo%201.png" alt="Logo" />
           </Link>
 
           <div className="search-bar">

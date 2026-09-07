@@ -44,7 +44,7 @@ export default function Header({ variant }) {
 
             <div className="cs_main_header_left">
               <Link className="cs_site_branding" to="/">
-                <img src="https://res.cloudinary.com/dtupa1lfb/image/upload/v1787055974/Take_logo_1_oowhku.png" alt="Logo" />
+                <img src="/assets/images/logo/Take%20logo%201.png" alt="Logo" />
               </Link>
               </div>
 

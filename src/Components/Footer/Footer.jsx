@@ -20,7 +20,7 @@ const Footer = () => {
       ];  
 
       const LogoContent = {
-        img1:'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/TakeLogo_003.png?v=1771936186',
+        img1:'/assets/images/logo/Take%20logo%201.png',
         Content:'The Company delivers scalable digital solutions that accelerate research, improve healthcare efficiency, and enable predictive, personalized health outcomes worldwide.'
       }
 
