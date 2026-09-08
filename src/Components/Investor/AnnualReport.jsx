@@ -5,16 +5,16 @@ const AnnualReport = () => {
 
     // Annual Report data
     const annualReportData = [
-        { year: 'FY 2017-18', description: 'TAKE_Solutions_Annual_Report_2016-2017', link: '/assets/investordata/financial-results/FY-2017/Annual Report -2017.pdf' },
-        { year: 'FY 2018-19', description: 'TAKE_Solutions_Annual_Report_2017-2018', link: '/assets/investordata/annual-report/TAKE_Solutions_Annual_Report_2017-2018.pdf' },
-        { year: 'FY 2019-20', description: 'TAKE_Solutions_Annual_Report_2018-2019', link: '/assets/investordata/annual-report/TAKE_Solutions_Annual_Report_2018-2019.pdf' },
-        { year: 'FY 2020-21', description: 'TAKE_Solutions_Annual_Report_2019-2020', link: '/assets/investordata/financial-results/FY-2020/TAKE_Solutions_Annual_Report_2019-2020.pdf' },
-        { year: 'FY 2021-22', description: 'TAKE_Solutions_Annual_Report_2020-2021', link: '/assets/investordata/financial-results/FY-2021/TAKE_Solutions_Annual_Report_2020-2021.pdf' },
-        { year: 'FY 2022-23', description: 'TAKE_Solutions_Annual_Report_2021-2022', link: '/assets/investordata/financial-results/FY-2022/TAKE_Solutions_Annual_Report_2021-2022.pdf' },
-        { year: 'FY 2023-24', description: 'TAKE_Solutions_Annual_Report_2022-2023', link: '/assets/investordata/financial-results/FY-2023/TAKE_Solutions_Annual_Report_2022-2023.pdf' },
-        { year: 'FY 2024-25', description: 'TAKE_Solutions_Annual_Report_2023-2024', link: '/assets/investordata/financial-results/FY-2024/TAKE_Solutions_Annual_Report_2023-2024.pdf' },
-        { year: 'FY 2025-26', description: 'TAKE_Solutions_Annual_Report_2024-2025', link: '/assets/investordata/financial-results/FY-2025/TAKE_Solutions_Annual_Report_2024-2025.pdf' },
-        { year: 'FY 2025-26', description: 'TAKE_Solutions_Annual_Report_2024-2025', link: '/assets/investordata/financial-results/FY-2025/TAKE_Solutions_Annual_Report_2024-2025.pdf' },
+        { year: 'FY 2016-17', description: 'TAKE_Solutions_Annual_Report_2016-2017', link: '/assets/investordata/financial-results/FY-2017/Annual Report -2017.pdf' },
+        { year: 'FY 2017-18', description: 'TAKE_Solutions_Annual_Report_2017-2018', link: '/assets/investordata/annual-report/TAKE_Solutions_Annual_Report_2017-2018.pdf' },
+        { year: 'FY 2018-19', description: 'TAKE_Solutions_Annual_Report_2018-2019', link: '/assets/investordata/annual-report/TAKE_Solutions_Annual_Report_2018-2019.pdf' },
+        { year: 'FY 2019-20', description: 'TAKE_Solutions_Annual_Report_2019-2020', link: '/assets/investordata/financial-results/FY-2020/TAKE_Solutions_Annual_Report_2019-2020.pdf' },
+        { year: 'FY 2020-21', description: 'TAKE_Solutions_Annual_Report_2020-2021', link: '/assets/investordata/financial-results/FY-2021/TAKE_Solutions_Annual_Report_2020-2021.pdf' },
+        { year: 'FY 2021-22', description: 'TAKE_Solutions_Annual_Report_2021-2022', link: '/assets/investordata/financial-results/FY-2022/TAKE_Solutions_Annual_Report_2021-2022.pdf' },
+        { year: 'FY 2022-23', description: 'TAKE_Solutions_Annual_Report_2022-2023', link: '/assets/investordata/financial-results/FY-2023/TAKE_Solutions_Annual_Report_2022-2023.pdf' },
+        { year: 'FY 2023-24', description: 'TAKE_Solutions_Annual_Report_2023-2024', link: '/assets/investordata/financial-results/FY-2024/TAKE_Solutions_Annual_Report_2023-2024.pdf' },
+        { year: 'FY 2024-25', description: 'TAKE_Solutions_Annual_Report_2024-2025', link: '/assets/investordata/financial-results/FY-2025/TAKE_Solutions_Annual_Report_2024-2025.pdf' },
+        { year: 'FY 2025-26', description: 'TAKE_Solutions_Annual_Report_2024-2025', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1788859260/Take_Annual_Report_FY2025-26_klne4u.pdf' },
     ];
 
     // Annual Return data (moved from Disclosure tab)
