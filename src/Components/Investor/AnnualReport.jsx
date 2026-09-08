@@ -14,7 +14,7 @@ const AnnualReport = () => {
         { year: 'FY 2022-23', description: 'TAKE_Solutions_Annual_Report_2022-2023', link: '/assets/investordata/financial-results/FY-2023/TAKE_Solutions_Annual_Report_2022-2023.pdf' },
         { year: 'FY 2023-24', description: 'TAKE_Solutions_Annual_Report_2023-2024', link: '/assets/investordata/financial-results/FY-2024/TAKE_Solutions_Annual_Report_2023-2024.pdf' },
         { year: 'FY 2024-25', description: 'TAKE_Solutions_Annual_Report_2024-2025', link: '/assets/investordata/financial-results/FY-2025/TAKE_Solutions_Annual_Report_2024-2025.pdf' },
-        { year: 'FY 2025-26', description: 'TAKE_Solutions_Annual_Report_2024-2025', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1788859260/Take_Annual_Report_FY2025-26_klne4u.pdf' },
+        { year: 'FY 2025-26', description: 'Take Annual Report FY2025-26', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1788859260/Take_Annual_Report_FY2025-26_klne4u.pdf' },
     ];
 
     // Annual Return data (moved from Disclosure tab)
