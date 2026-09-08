@@ -26,7 +26,7 @@ const InvestorCorner = () => {
   const agmNoticeData = {
     title: 'Notice of the Annual General Meeting',
     years: [
-      { year: '2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1788793460/TAKE_AGM_Notice_dtoue9.pdf' },
+      { year: '2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1788858677/TAKE_AGM_Notice_1_hvhjds.pdf' },
       { year: '2025', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/TAKE_Solutions_AGM_Notice_2025.pdf' },
       { year: '2024', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/TAKE_Solutions_AGM_Notice_2024.pdf' },
       { year: '2023', link: '/assets/investordata/investor-corner/Notice of the Annual General Meeting/TAKE_Solutions_AGM_Notice_2023.pdf' },
