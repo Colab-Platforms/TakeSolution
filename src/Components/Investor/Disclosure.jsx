@@ -8,6 +8,8 @@ const Disclosure = () => {
   // Disclosure data for each year
   const disclosureData = {
     FY27: [
+      { type: 'Other Disclosures', date: '12-Aug-26', description: 'TAKE_Reg_74_5_Sept_2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1792837492/TAKE_Reg_74_5_Sept_2026_mhnmd6.pdf' },
+      { type: 'Other Disclosures', date: '12-Aug-26', description: 'TAKE_Shareholding_Pattern_30.09.2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1792837491/TAKE_Shareholding_Pattern_30.09.2026_wrsel8.pdf' },
       { type: 'Other Disclosures', date: '12-Aug-26', description: 'Submission of Revised AFR_31.03.2026 dated 22.06.2026', link: '/assets/investordata/disclosure/disclosure-data/FY27/Submission of Revised AFR_31.03.2026 dated 22.06.2026.pdf' },
       { type: 'Other Disclosures', date: '12-Aug-26', description: 'BM Intimation UFR 30.06.2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1786710252/BM_Intimation_UFR_30.06.2026_hsyhex.pdf' },
       { type: 'Other Disclosures', date: '12-Aug-26', description: 'TAKE Outcome of Board Meeting UFR', link: '/assets/investordata/disclosure/disclosure-data/FY27/TAKE Outcome of Board Meeting UFR.pdf' },
