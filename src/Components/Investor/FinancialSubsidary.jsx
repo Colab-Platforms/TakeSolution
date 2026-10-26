@@ -11,6 +11,7 @@ const FinancialSubsidary = () => {
         { type: 'Other Disclosures', year: 'FY 2022-23', description: 'subsidiary-company-financials_fy-2021-22', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2021-22.pdf' },
         { type: 'Other Disclosures', year: 'FY 2023-24', description: 'subsidiary-company-financials_fy-2022-23', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2022-23.pdf' },
         { type: 'Other Disclosures', year: 'FY 2024-25', description: 'subsidiary-company-financials_fy-2023-24', link: '/assets/investordata/Subsidiary Fianacials/subsidiary-company-financials_fy-2023-24.pdf' }
+        { type: 'Other Disclosures', year: 'FY 2025-26', description: 'subsidiary-company-financials_fy-2025-26', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1793019970/TAKE_Ventures_signed_Financials_mfoxhg.pdf' }
     ]
 
     // const currentYearData = reportsData[selectedYear] || reportsData['FY25'];
