@@ -9,7 +9,7 @@ const CorporateGovernance = () => {
     // { title: 'Take Policy terms and conditions of appointment of Independent Directors', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Take_Policy-terms_and_conditions_of_appointment_of_Independent_Directors.pdf?v=1776417044' },
     { title: 'Code of Conduct for Directors and Senior Management Personnel', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794484978/Code_of_Conduct_for_Directors_and_Senior_Management_Personnel_1_z2yoy9.pdf' },
     { title: 'Code of Conduct for Prohibition of Insider Trading', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794484894/CODE_OF_CONDUCT_FOR_PROHIBITION_OF_INSIDER_TRADING_vadxdm.pdf' },
-    { title: 'Dividend Distribution Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Dividend-Distribution-Policy.pdf' },
+    { title: 'TAKE Dividend Distribution Policy', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794487943/TAKE_Dividend-Distribution-Policy_o326wq.pdf' },
     { title: 'Handbook on Investors\' Rights', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Investors’ Rights Handbook.pdf' },
     { title: 'Nomination, Remuneration and Evaluation Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Nomination and Remuneration Policy - TSL.pdf' },
     { title: 'Policy on Disclosure on Material Events', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/policy-on-disclosure-on-material-events.pdf' },
