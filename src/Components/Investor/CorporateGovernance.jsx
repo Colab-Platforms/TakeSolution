@@ -14,7 +14,7 @@ const CorporateGovernance = () => {
     { title: 'Policy on Disclosure on Material Events', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/policy-on-disclosure-on-material-events.pdf' },
     { title: 'Policy on Prevention of Sexual harassment at Workplace', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Policy on Prevention of Sexual Harrassment at Workplace.pdf' },
     { title: 'Whistle Blower Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/whistle-blower-policy.pdf' },
-    { title: 'Code of Conduct for Independent Directors', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Code of Conduct for Independent Directors.pdf' },
+    { title: 'Code of Conduct for Independent Directors', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794475141/Code_of_Conduct_for_Directors_and_Senior_Management_Personnel_eubmup.pdf' },
     { title: 'Authorization of KMP under Regulation 30', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Authorisation_KMP_Reg30(5)_TSL.docx' },
     { title: 'CSR Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Corporate-Social-Responsibility.pdf' },
     { title: 'Familiarisation Programme', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/Take_Policy_FAMILIARISATION_PROGRAMME_FOR_INDEPENDENT_DIRECTORS.pdf?v=1780557608' },
