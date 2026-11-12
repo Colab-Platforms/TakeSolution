@@ -63,6 +63,10 @@ const CorporateGovernance = () => {
         { title: 'KMP authorised for the purpose of determining materiality', link: 'https://cdn.shopify.com/s/files/1/0636/5226/6115/files/KMP_authorised_for_the_purpose_of_determining_materiality.pdf?v=1776420396' },
 
   ]
+  const DetailsofKeyManagerialPersonnelandComplianceOfficer = [
+        { title: 'Disclosure of contact details of key managerial personnels', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794477848/Disclosure_of_contact_details_of_key_managerial_personnels_ln70vh.pdf' },
+
+  ]
 
   
 
@@ -153,6 +157,20 @@ const CorporateGovernance = () => {
         <h4 className="governance-section-title">KMP authorised for the purpose of determining materiality</h4>
         <div className="policies-grid">
           {kmpDeterminingAuthority.map((doc, index) => (
+            <div key={index} className="policy-item">
+              <a href={doc.link} className="policy-document-link" target="_blank" rel="noopener noreferrer">
+                <span className="pdf-icon">📄</span>
+                <span className="policy-title">{doc.title}</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Details of Key Managerial Personnel and Compliance Officer */}
+      <div className="governance-policies-section">
+        <h4 className="governance-section-title">Details of Key Managerial Personnel and Compliance Officer</h4>
+        <div className="policies-grid">
+          {DetailsofKeyManagerialPersonnelandComplianceOfficer.map((doc, index) => (
             <div key={index} className="policy-item">
               <a href={doc.link} className="policy-document-link" target="_blank" rel="noopener noreferrer">
                 <span className="pdf-icon">📄</span>
