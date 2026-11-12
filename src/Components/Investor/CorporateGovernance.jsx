@@ -48,7 +48,7 @@ const CorporateGovernance = () => {
 
   // Mandatory Dematerialisation Documents
   const investorGreviance = [
-    { title: 'Investor Grievance', link: '/assets/investordata/corporate-governance/investorGreviance/Investor Grievance (1).pdf' },
+    { title: 'Investor Grievance', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794476766/Investor_Grievance_aeb7jz.pdf' },
   ]
 
   const moaAndAoa = [
