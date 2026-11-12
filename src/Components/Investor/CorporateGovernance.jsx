@@ -29,7 +29,7 @@ const CorporateGovernance = () => {
     { title: 'Policy for Registrars and Share Transfer Agents', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/policy-for-registrars-and-share-transfer-agents.pdf' },
 
     { title: 'Take Investor_Grievances_Redressal_Policy', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Take Investor_Grievances_Redressal_Policy (1).pdf' },
-    { title: 'Take Policy-on-Materiality-of-and-dealing-with-related-party-transactions ', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Take Policy-on-Materiality-of-and-dealing-with-related-party-transactions (1).pdf' },
+    { title: 'Take Policy on Materiality of and dealing with related party transactions', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794478345/Take_Policy-on-Materiality-of-and-dealing-with-related-party-transactions_woy1ba.pdf' },
     { title: 'Take Risk-Management-policy ', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Take Risk-Management-policy (1).pdf' },
     // { title: 'Take Vigil-Mechanism-Policy ', link: '/assets/investordata/corporate-governance/Corporate-governance-policies/Take Vigil-Mechanism-Policy (1).pdf' }
     
