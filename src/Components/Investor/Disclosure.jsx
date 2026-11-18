@@ -8,6 +8,7 @@ const Disclosure = () => {
   // Disclosure data for each year
   const disclosureData = {
     FY27: [
+      { type: 'Other Disclosures', date: '18-Nov-26', description: 'TAKE News Adv 30.09.2026', link: '/assets/investordata/disclosure/disclosure-data/FY27/TAKE News Adv 30.09.2026.pdf' },
       { type: 'Other Disclosures', date: '12-Aug-26', description: 'TAKE Outcome UFR 30.09.2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794638510/TAKE_Outcome_UFR_30.09.2026_dfg2tz.pdf' },
       { type: 'Other Disclosures', date: '12-Aug-26', description: 'BM Intimation UFR 30.09.2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1794476883/BM_Intimation_UFR_30.09.2026_mdzfow.pdf' },
       { type: 'Other Disclosures', date: '12-Aug-26', description: 'Integrated Governance 30.09.2026', link: 'https://res.cloudinary.com/dlmcpmdpn/image/upload/v1793350982/Integrated_Governance_30.09.2026_buaceq.pdf' },
