@@ -28,7 +28,9 @@ const FinancialResult = () => {
       { type: 'Other Disclosure', year: 'FY 2025-26', quarter: 'Q2', description: 'Standalone_Q2_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q2/Standalone_Q2_FY26_TSL.pdf'},
       { type: 'Other Disclosure', year: 'FY 2025-26', quarter: 'Q3', description: 'Consolidated_Q3_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q3/Consolidated_Q3_FY26_TSL.pdf'},
       { type: 'Other Disclosure', year: 'FY 2025-26', quarter: 'Q3', description: 'Standalone_Q3_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q3/Standalone_Q3_FY26_TSL.pdf'},
-
+      { type: 'Other Disclosure', year: 'FY 2025-26', quarter: 'Q4', description: 'Consolidated_Q4_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q4/Consolidated_Q4_FY26_TSL.pdf'},
+      { type: 'Other Disclosure', year: 'FY 2025-26', quarter: 'Q4', description: 'Standalone_Q4_FY26_TSL', link: '/assets/investordata/financial-results/FY-2026/Q4/Standalone_Q4_FY26_TSL.pdf'},
+      
     ],
     FY25: [
       { type: 'Other Disclosure', year: 'FY 2024-25', quarter: 'Q1', description: 'Standalone_Q1_FY_25', link: '/assets/investordata/financial-results/FY-2025/Q1/Standalone_Q1_FY_25.pdf'},
