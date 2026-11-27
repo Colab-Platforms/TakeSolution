@@ -11,6 +11,11 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './assets/main.css';
 import './assets/responsive.css';
 
+// Refresh / hard refresh always opens the page at the top (the landing "What If" page on step 01),
+// instead of the browser putting the visitor back where they were.
+if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual';
+if (!window.location.hash) window.scrollTo(0, 0);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CarouselProvider>

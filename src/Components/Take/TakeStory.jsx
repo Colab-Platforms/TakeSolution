@@ -3,13 +3,20 @@ import { Link } from 'react-router-dom';
 
 const img = (n) => `/assets/take/${n}`;
 
+const meal = (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
+    <circle cx="12" cy="13" r="5.5" /><circle cx="12" cy="13" r="3" />
+    <path d="M3 4v4.5a1.5 1.5 0 0 0 3 0V4M4.5 4v16" /><path d="M20.5 4c-1.4.8-2 2.6-2 5v3h2V20" />
+  </svg>
+);
+
 const sources = [
-  { icon: <b className="tk-rx">Rx</b>, tag: 'RX', name: 'Prescription' },
-  { icon: <i className="bi bi-image" />, tag: 'JPG', name: 'Meal Photo' },
-  { icon: <i className="bi bi-heart" />, tag: 'APPLE', name: 'Apple Health' },
-  { icon: <i className="bi bi-smartwatch" />, tag: 'WHOOP', name: 'WHOOP' },
+  { icon: <i className="bi bi-capsule" />, tag: 'RX', name: 'Prescription' },
+  { icon: meal, tag: 'JPG', name: 'Meal Photo' },
+  { icon: <i className="bi bi-heart-pulse" />, tag: 'HK', name: 'Apple Health' },
+  { icon: <i className="bi bi-smartwatch" />, tag: 'WHP', name: 'WHOOP' },
   { icon: <i className="bi bi-activity" />, tag: 'HC', name: 'Health Connect' },
-  { icon: <i className="bi bi-justify-left" />, tag: 'PDF', name: 'PDF Report' },
+  { icon: <i className="bi bi-file-earmark-text" />, tag: 'PDF', name: 'PDF Report' },
 ];
 
 const COPIES = [0, 1, 2]; // three copies so each row is always full while it slides
@@ -63,7 +70,7 @@ export function TakeIntelligence() {
     <section className="tk-intel">
       <div className="tk-intel-shade" aria-hidden="true" />
 
-      <h2 className="tk-intel-title" data-reveal="up">We transform raw biological<br />data into your next best move.</h2>
+      <h2 className="tk-intel-title" data-reveal="up">We transform raw biological{' '}<br />data into your next best move.</h2>
 
       <div className="tk-flow" data-reveal="up" style={{ '--i': 1 }}>
         <div className="tk-flow-col tk-flow-in">
@@ -73,9 +80,10 @@ export function TakeIntelligence() {
               {COPIES.map((c) => (
                 <div className="tk-flow-set" key={c} aria-hidden={c > 0 || undefined}>
                   {sources.map((s) => (
-                    <div className="tk-src" key={s.name}>
-                      <div className="tk-src-tile">{s.icon}<em>{s.tag}</em></div>
-                      <span>{s.name}</span>
+                    <div className="tk-src tk-src-card" key={s.name}>
+                      <span className="tk-src-ico">{s.icon}</span>
+                      <em>{s.tag}</em>
+                      <b>{s.name}</b>
                     </div>
                   ))}
                 </div>
@@ -129,9 +137,9 @@ export function TakeIntelligence() {
       </div>
 
       <div className="tk-intel-foot">
-        <h3 data-reveal="up">One system. Built for<br />a longer, better life.</h3>
+        <h3 data-reveal="up">One system. Built for{' '}<br />a longer, better life.</h3>
         <div data-reveal="up" style={{ '--i': 1 }}>
-          <p>{"Working towards a future where your best years aren't behind you. They're the ones you haven't lived yet. TAKE connects everything your body tells you and turns it into years worth living."}</p>
+          <p>{"Working towards a future where your best years aren't behind"}{' '}<br className="tk-br-d" />{"you. They're the ones you haven't lived yet. TAKE connects"}{' '}<br className="tk-br-d" />everything your body tells you and turns it into years worth living.</p>
           <Link to="/about" className="tk-pill-dark">Our Approach</Link>
         </div>
       </div>

@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { TAKE_LOGO_PATH, TAKE_LOGO_VIEWBOX } from './takeLogoPath';
 import './take.css';
 
 const cols = [
-  ['Platform', [['TAKE.Health', '/'], ['TAKE Store', '/'], ['Report Analysis', '/'], ['Medical Vault', '/'], ['Nutrition Log', '/']]],
+  ['Platform', [['TAKE.Health', 'https://www.take.health/'], ['TAKE Store', 'https://shop.take.health/']]],
   ['Company', [['About', '/about'], ['Technology', '/services'], ['Latest News', '/'], ['Careers', '/contact']]],
   ['Investors', [['Financial Results', '/investor'], ['Annual Reports', '/investor'], ['Governance & Disclosures', '/investor'], ['Stock Information', '/investor']]],
 ];
@@ -18,6 +18,17 @@ const contact = [
 export default function TakeFooter() {
   const ref = useRef(null);
   const mark = useRef(null);
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+
+  // Back to top: always the top of the landing page (from any page, on phone and desktop)
+  const backToTop = (e) => {
+    e.preventDefault();
+    if (pathname === '/') { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    navigate('/');
+    // wait for the landing page to render, then start it from the very top
+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'instant' }), 0);
+  };
 
   // TAKE wordmark video (sky inside the letters): muted for iPhone autoplay, plays only while on screen
   useEffect(() => {
@@ -62,7 +73,9 @@ export default function TakeFooter() {
         {cols.map(([h, items]) => (
           <div className="tk-foot-col" key={h}>
             <h6>{h}</h6>
-            {items.map(([n, to]) => <Link key={n} to={to}>{n}</Link>)}
+            {items.map(([n, to]) => (to.startsWith('http')
+              ? <a key={n} href={to} target="_blank" rel="noopener noreferrer">{n}</a>
+              : <Link key={n} to={to}>{n}</Link>))}
           </div>
         ))}
         <div className="tk-foot-col">
@@ -75,7 +88,7 @@ export default function TakeFooter() {
         <span>© 2026 TAKE Limited · CIN L72100TN2000PLC046338</span>
         <nav>
           <Link to="/">Privacy</Link><Link to="/">Terms</Link><Link to="/">Cookies</Link>
-          <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Back to top ↑</button>
+          <button type="button" onClick={backToTop}>Back to top ↑</button>
         </nav>
       </div>
 

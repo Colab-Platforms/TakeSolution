@@ -1,22 +1,17 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
+import { TAKE_LOGO_PATH, TAKE_LOGO_VIEWBOX } from './takeLogoPath';
 import TakeHeader from './TakeHeader';
 
 const img = (n) => `/assets/take/${n}`;
-const ticker = ['Reads every lab report', 'Report AI, in plain words', 'Apple Watch & Whoop', 'Synced directly', 'Private by design', 'Your data, in your vault'];
 
-const DnaIcon = () => (
-  <svg viewBox="0 0 32 40" aria-hidden="true">
-    <path d="M7 2c0 10 18 14 18 18S7 28 7 38M25 2c0 10-18 14-18 18s18 8 18 18" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-    <path d="M10 8h12M12 14h8M12 26h8M10 32h12" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
-  </svg>
-);
+const FeatIcon = ({ name }) => <img src={img(`icon-${name}.png`)} alt="" draggable="false" />;
 
 const features = [
-  { icon: <i className="bi bi-people-fill" />, t: 'Ageing, Rewritten.', d: "We're building a future where getting older doesn't mean getting weaker." },
-  { icon: <DnaIcon />, t: 'Your Biology, Decoded.', d: 'Every report, meal and signal you track, turned into answers you can act on.' },
-  { icon: <i className="bi bi-heart-pulse-fill" />, t: 'More Good Years.', d: 'One ecosystem built to keep you living better for longer.' },
+  { icon: <FeatIcon name="family" />, t: 'Ageing, Rewritten.', d: "We're building a future where getting older doesn't mean getting weaker." },
+  { icon: <FeatIcon name="dna" />, t: 'Your Biology, Decoded.', d: 'Every report, meal and signal you track, turned into answers you can act on.' },
+  { icon: <FeatIcon name="heart" />, t: 'More Good Years.', d: 'One ecosystem built to keep you living better for longer.' },
 ];
 
 /* make sure iPhone Safari treats the video as muted, then play it only while on screen */
@@ -55,8 +50,8 @@ export function TakeHero({ overlay = false, layerRef = null }) {
       <div className="tk-hero2-shade" aria-hidden="true" />
 
       <h1 className="tk-hero2-title">
-        <span><span>See Beyond.</span></span>
-        <span><span>Outlive Your Faith.</span></span>
+        <span><span>Live Past the</span></span>
+        <span><span>Edge of Ageing.</span></span>
       </h1>
 
       <div className="tk-hero2-bottom">
@@ -71,11 +66,6 @@ export function TakeHero({ overlay = false, layerRef = null }) {
         </div>
       </div>
 
-      <div className="tk-ticker tk-ticker-hero">
-        <div className="tk-ticker-track">
-          {[...ticker, ...ticker, ...ticker, ...ticker].map((t, i) => <span key={i}>{t}</span>)}
-        </div>
-      </div>
     </section>
   );
 }
@@ -96,13 +86,33 @@ export function TakeWhatIf() {
   const pillBox = useRef(null);
   const layer = useRef(null);
   const [intro, setIntro] = useState(false);
+  const sec = useRef(null);
+  const opening = useRef(false); // the video-open animation has started (plays once)
   useAutoVideo(pill);
 
   /* Opening (as in the reference video): the small girl video in the pill grows into the
      full-screen hero, then the page rests on the hero. */
+  /* Once the visitor has gone past "What If" into the video, the white numbers page is removed,
+     so scrolling back up stops at the video hero instead of returning to the dial. */
+  const hideWhatIf = useCallback(() => {
+    const el = sec.current;
+    if (!el || el.style.display === 'none') return;
+    const h = el.offsetHeight;
+    const past = el.getBoundingClientRect().bottom <= 1; // already scrolled below it
+    el.style.display = 'none';
+    if (past) window.scrollTo({ top: Math.max(0, window.scrollY - h), behavior: 'instant' });
+  }, []);
+
+  useEffect(() => {
+    const skip = () => { opening.current = true; hideWhatIf(); };
+    window.addEventListener('tk:skip-whatif', skip);
+    return () => window.removeEventListener('tk:skip-whatif', skip);
+  }, [hideWhatIf]);
+
   const playIntro = useCallback(() => {
     const hero = document.querySelector('.tk-hero2-main');
-    if (!hero) return;
+    if (!hero || opening.current) return;
+    opening.current = true;
     if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) { hero.scrollIntoView(); return; }
     setIntro(true);
   }, []);
@@ -152,14 +162,14 @@ export function TakeWhatIf() {
       void hero.offsetWidth; // restart the text rise
       hero.classList.add('is-in', 'tk-hero2-handover');
       html.style.overflow = '';
+      hideWhatIf(); // the white numbers page is done: the page now starts on the video hero
       window.scrollTo({ top: hero.getBoundingClientRect().top + window.scrollY, behavior: 'instant' });
       setIntro(false);
     };
     raf = requestAnimationFrame(step);
     const safety = setTimeout(finish, INTRO_MS + 600); // never leave the page locked
     return () => { cancelAnimationFrame(raf); clearTimeout(safety); html.style.overflow = ''; };
-  }, [intro]);
-  const sec = useRef(null);
+  }, [intro, hideWhatIf]);
   const ring = useRef(null);
   const last = steps.length - 1;
 
@@ -171,8 +181,18 @@ export function TakeWhatIf() {
     let raf = 0;
     const update = () => {
       raf = 0;
+      if (el.style.display === 'none') return;
       const r = el.getBoundingClientRect();
       const span = el.offsetHeight - window.innerHeight;
+      /* Moved past step 04 without the wheel handler catching it: a trackpad swipe whose
+         events the browser will not let us cancel, a touch swipe, keys or the scrollbar.
+         Park on step 04 and play the same video-open animation. */
+      if (!opening.current && span > 0 && r.top < -span - 2) {
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY + span, behavior: 'instant' });
+        playIntro();
+        return;
+      }
+      if (r.bottom <= 1) { hideWhatIf(); return; }
       const p = span > 0 ? Math.min(1, Math.max(0, -r.top / span)) : 0;
       const pos = p * last; // 0 .. 3, continuous
       ring.current?.style.setProperty('--rot', `${-pos * STEP_DEG}deg`);
@@ -183,7 +203,7 @@ export function TakeWhatIf() {
     window.addEventListener('scroll', on, { passive: true });
     window.addEventListener('resize', on);
     return () => { window.removeEventListener('scroll', on); window.removeEventListener('resize', on); cancelAnimationFrame(raf); };
-  }, [last]);
+  }, [last, hideWhatIf, playIntro]);
 
   // clicking a number (or the arrow keys) scrolls the page to that step
   const go = useCallback((i) => {
@@ -196,35 +216,112 @@ export function TakeWhatIf() {
   }, [last]);
   const rot = -idx * STEP_DEG;
 
-  /* One wheel notch = exactly one step while the dial is pinned. The page only scrolls on
-     normally before step 01 (upwards) and after step 04 (downwards). */
+  /* One swipe (or one wheel notch) = exactly one step while the dial is pinned.
+     A Mac trackpad keeps firing wheel events for 1-2 s after the fingers lift (momentum), so
+     steps are counted per GESTURE, not per time window: a new gesture starts only after a short
+     pause in the events, or when the swipe clearly speeds up again (a fresh swipe during the
+     glide). Everything else in the same gesture is swallowed. The page only scrolls normally
+     before step 01 (upwards) and after step 04 (downwards). */
   useEffect(() => {
     const el = sec.current;
     if (!el) return undefined;
-    let lock = 0;
+    const GAP_MS = 180; // silence that ends a gesture (momentum events come every ~16 ms)
+    let lastEvt = 0; // time of the previous wheel event
+    let prevMag = 0; // size of the previous wheel event
+    let lastStep = 0; // time of the last step / video open
+    let stepAt = -1; // step we last moved to (the scroll may still be animating towards it)
+    let native = false; // this gesture was handed to the browser (scrolling out of the section)
     const onWheel = (e) => {
-      if (e.ctrlKey || Math.abs(e.deltaY) < 2) return; // pinch-zoom / tiny sideways nudges
+      if (e.ctrlKey || Math.abs(e.deltaY) < 1) return; // pinch-zoom / sideways nudges
+      const now = Date.now();
+      const mag = Math.abs(e.deltaY);
+      const fresh = now - lastEvt > GAP_MS
+        || (now - lastStep > 450 && mag > prevMag * 1.8 && mag > 14); // new swipe during the glide
+      lastEvt = now;
+      prevMag = mag;
+      if (fresh) native = false;
+      if (native) return; // keep the browser's own scroll for the rest of this gesture
+
       const r = el.getBoundingClientRect();
       const span = el.offsetHeight - window.innerHeight;
       if (span <= 0 || r.top > 2 || r.top < -span - 2) return; // not pinned: normal scrolling
+
+      if (!fresh) { e.preventDefault(); return; } // momentum / rest of the same swipe
+
       const p = Math.min(1, Math.max(0, -r.top / span));
-      const cur = Math.round(p * last);
+      const cur = now - lastStep < 1200 && stepAt >= 0 ? stepAt : Math.round(p * last);
       const dir = e.deltaY > 0 ? 1 : -1;
       const target = cur + dir;
-      if (target > last) { // step 04 + scroll down: the girl video opens out of the pill
+      if (target > last) { // step 04 + a new swipe down: the girl video opens out of the pill
         e.preventDefault();
-        if (Date.now() >= lock) { lock = Date.now() + 2000; playIntro(); }
+        lastStep = now;
+        playIntro();
         return;
       }
-      if (target < 0) return; // above step 01: let the page move on
+      if (target < 0) { native = true; return; } // above step 01: let the page move on
       e.preventDefault();
-      const now = Date.now();
-      if (now < lock) return; // trackpads send a burst of events for one swipe
-      lock = now + 850;
+      lastStep = now;
+      stepAt = target;
       go(target);
     };
     window.addEventListener('wheel', onWheel, { passive: false });
     return () => window.removeEventListener('wheel', onWheel);
+  }, [go, last, playIntro]);
+
+  /* Phones and tablets: one finger swipe = exactly one step while the dial is pinned.
+     Without this the page scrolls natively and a flick (plus the phone's glide) runs
+     through several steps at once. While pinned, the page's own scroll is held still and
+     the swipe direction picks the next step; a swipe up on step 04 opens the video. */
+  useEffect(() => {
+    const el = sec.current;
+    if (!el) return undefined;
+    let startY = 0;
+    let startX = 0;
+    let active = false; // this touch started while the dial was pinned
+    let lastStep = 0;
+    let stepAt = -1;
+    const pinned = () => {
+      if (el.style.display === 'none') return false;
+      const r = el.getBoundingClientRect();
+      const span = el.offsetHeight - window.innerHeight;
+      return span > 0 && r.top <= 2 && r.top >= -span - 2;
+    };
+    const onStart = (e) => {
+      if (e.touches.length !== 1) { active = false; return; } // pinch-zoom
+      startY = e.touches[0].clientY;
+      startX = e.touches[0].clientX;
+      active = pinned();
+    };
+    const onMove = (e) => {
+      if (active && e.cancelable) e.preventDefault(); // hold the page still while the dial is pinned
+    };
+    const onEnd = (e) => {
+      if (!active) return;
+      active = false;
+      const t = e.changedTouches[0];
+      const dy = startY - t.clientY; // > 0: finger moved up = go forward
+      if (Math.abs(dy) < 28 || Math.abs(dy) < Math.abs(t.clientX - startX)) return; // a tap or a sideways swipe
+      const r = el.getBoundingClientRect();
+      const span = el.offsetHeight - window.innerHeight;
+      const now = Date.now();
+      const cur = now - lastStep < 1000 && stepAt >= 0 ? stepAt : Math.round(Math.min(1, Math.max(0, -r.top / span)) * last);
+      const target = cur + (dy > 0 ? 1 : -1);
+      if (target > last) { lastStep = now; playIntro(); return; } // step 04 + swipe up: open the video
+      if (target < 0) return; // already on step 01 at the top of the page
+      lastStep = now;
+      stepAt = target;
+      go(target);
+    };
+    window.addEventListener('touchstart', onStart, { passive: true });
+    window.addEventListener('touchmove', onMove, { passive: false });
+    window.addEventListener('touchend', onEnd, { passive: true });
+    window.addEventListener('touchcancel', onEnd, { passive: true });
+    return () => {
+      window.removeEventListener('touchstart', onStart);
+      window.removeEventListener('touchmove', onMove);
+      window.removeEventListener('touchend', onEnd);
+      window.removeEventListener('touchcancel', onEnd);
+    };
   }, [go, last, playIntro]);
 
   const onKey = (e) => {
@@ -235,6 +332,9 @@ export function TakeWhatIf() {
   return (
     <section className="tk-whatif tk-whatif-scroll" ref={sec} aria-label="What if health was">
       <div className="tk-whatif-pin">
+      <Link to="/" className="tk-whatif-logo" aria-label="TAKE home">
+        <svg viewBox={TAKE_LOGO_VIEWBOX} role="img" aria-label="TAKE"><path d={TAKE_LOGO_PATH} /></svg>
+      </Link>
       <h2 className="tk-whatif-title" data-reveal="up">
         What If <span
           className="tk-whatif-pill"
