@@ -1258,3 +1258,46 @@ html, body { overflow-x: clip !important; }
 }
 /* "One system" paragraph spacing as in the Figma: tighter lines, softer grey */
 .tk .tk-intel-foot p { line-height: 1.45; letter-spacing: -0.005em; color: rgba(255, 255, 255, .8); }
+
+/* ---------- Phones only (Android / iPhone) ---------- */
+/* What If: arrow buttons instead of scrolling (hidden on tablet and desktop) */
+.tk .tk-dial-arrows { display: none; }
+@media (max-width: 767px) {
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone { height: 100vh; height: 100svh; }
+  .tk .tk-whatif-phone .tk-whatif-pin { position: relative; }
+  .tk .tk-dial-arrows { display: flex; justify-content: center; gap: 22px; margin-top: 28px; }
+  .tk .tk-dial-arrow { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-size: 22px; line-height: 1; padding: 0; cursor: pointer; border: 1px solid #d9d9d9; background: #fff; color: #111; -webkit-tap-highlight-color: transparent; }
+  .tk .tk-dial-arrow-next { background: #111; border-color: #111; color: #fff; }
+  .tk .tk-dial-arrow:disabled { opacity: .35; cursor: default; }
+  .tk .tk-whatif-phone .tk-dial-hint { margin-top: 18px; }
+}
+
+/* Investors: no blue line / blue text left behind after tapping a row */
+@media (max-width: 767px), (hover: none) {
+  .tk .tk-inv-row { -webkit-tap-highlight-color: transparent; }
+  .tk .tk-inv-row:hover b, .tk .tk-inv-row:hover small, .tk .tk-inv-row:hover i { transform: none; }
+  .tk .tk-inv-row:hover b { color: inherit; }
+  .tk .tk-inv-row:hover i { color: #555; }
+  .tk .tk-inv-row::after, .tk .tk-inv-row:hover::after, .tk .tk-inv-row:focus-visible::after { display: none; }
+  .tk .tk-inv-row:focus { outline: none; }
+}
+
+/* No animations on phones: entrance effects, floating/glowing decorations, hover motion.
+   The moving content strips (markers, member videos, data flow) keep scrolling. */
+@media (max-width: 767px) {
+  .tk *:not(.tk-ticker-track):not(.tk-videos-track):not(.tk-flow-track), .tk-header, .tk-foot, .tk-foot * { animation: none !important; transition: none !important; }
+  .tk.fx-ready [data-reveal], .tk [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .tk .tk-hero2-title > span > span, .tk .tk-hero2-cta p > span > span, .tk .tk-blood-copy h2 > span > span { transform: none !important; opacity: 1 !important; }
+  .tk .tk-feature > .tk-feature-bg { transform: none !important; }
+}
+
+/* Phones: arrows perfectly centred, and the arc turns smoothly to the next / previous number
+   (→ turns it one way, ← the other way). Overrides the phone "no animations" rule for the dial only. */
+@media (max-width: 767px) {
+  .tk .tk-dial-arrow svg { display: block; margin: 0; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-ring { transition: transform .8s cubic-bezier(.65, 0, .25, 1) !important; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-ring .tk-dial-num { transition: transform .8s cubic-bezier(.65, 0, .25, 1), background-color .4s ease, color .4s ease, border-color .4s ease !important; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-ring .tk-dial-pt { transition: opacity .5s ease !important; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-ring .tk-dial-dot { transition: background-color .5s ease, border-color .5s ease, box-shadow .5s ease !important; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-copy .tk-dial-swap { animation: tkSwap .6s cubic-bezier(.16, 1, .3, 1) both !important; }
+}
