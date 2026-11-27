@@ -78,13 +78,6 @@ const steps = [
 ];
 const STEP_DEG = 30; // gap between numbers on the arc (measured from the design)
 const INTRO_MS = 1500; // how long the girl video takes to grow from the pill to full screen
-const PHONE_MQ = '(max-width: 767px)';
-/* drawn arrow (a text "←" sits off-centre on iPhone fonts) */
-const ArrowIcon = ({ left = false }) => (
-  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" style={left ? { transform: 'scaleX(-1)' } : undefined}>
-    <path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
 const TICKS = Array.from({ length: 60 }, (_, i) => i * 6);
 
 export function TakeWhatIf() {
@@ -95,16 +88,6 @@ export function TakeWhatIf() {
   const [intro, setIntro] = useState(false);
   const sec = useRef(null);
   const opening = useRef(false); // the video-open animation has started (plays once)
-  /* Phones (Android / iPhone): the dial is NOT driven by scrolling. The section is one screen tall,
-     the ← → buttons (or a tap on a number) change the step, and the page scrolls normally. */
-  const [phone, setPhone] = useState(() => !!window.matchMedia?.(PHONE_MQ).matches);
-  useEffect(() => {
-    const mq = window.matchMedia?.(PHONE_MQ);
-    if (!mq) return undefined;
-    const on = () => setPhone(mq.matches);
-    mq.addEventListener?.('change', on);
-    return () => mq.removeEventListener?.('change', on);
-  }, []);
   useAutoVideo(pill);
 
   /* Opening (as in the reference video): the small girl video in the pill grows into the
@@ -210,7 +193,6 @@ export function TakeWhatIf() {
         return;
       }
       if (r.bottom <= 1) { hideWhatIf(); return; }
-      if (phone) return; // phones: the step comes from the arrows, not the scroll
       const p = span > 0 ? Math.min(1, Math.max(0, -r.top / span)) : 0;
       const pos = p * last; // 0 .. 3, continuous
       ring.current?.style.setProperty('--rot', `${-pos * STEP_DEG}deg`);
@@ -221,27 +203,17 @@ export function TakeWhatIf() {
     window.addEventListener('scroll', on, { passive: true });
     window.addEventListener('resize', on);
     return () => { window.removeEventListener('scroll', on); window.removeEventListener('resize', on); cancelAnimationFrame(raf); };
-  }, [last, hideWhatIf, playIntro, phone]);
-
-  // phones: turn the arc to the chosen step (no scroll position to follow)
-  useEffect(() => {
-    if (phone) ring.current?.style.setProperty('--rot', `${-idx * STEP_DEG}deg`);
-  }, [phone, idx]);
+  }, [last, hideWhatIf, playIntro]);
 
   // clicking a number (or the arrow keys) scrolls the page to that step
   const go = useCallback((i) => {
     const el = sec.current;
     if (!el) return;
-    if (phone) {
-      if (i > last) { playIntro(); return; }
-      setIdx(Math.min(last, Math.max(0, i)));
-      return;
-    }
     const k = Math.min(last, Math.max(0, i));
     const span = el.offsetHeight - window.innerHeight;
     const top = el.getBoundingClientRect().top + window.scrollY + (span * k) / last;
     window.scrollTo({ top: top + 1, behavior: 'smooth' });
-  }, [last, phone, playIntro]);
+  }, [last]);
   const rot = -idx * STEP_DEG;
 
   /* One swipe (or one wheel notch) = exactly one step while the dial is pinned.
@@ -302,7 +274,7 @@ export function TakeWhatIf() {
      the swipe direction picks the next step; a swipe up on step 04 opens the video. */
   useEffect(() => {
     const el = sec.current;
-    if (!el || phone) return undefined; // phones use the arrow buttons instead
+    if (!el) return undefined;
     let startY = 0;
     let startX = 0;
     let active = false; // this touch started while the dial was pinned
@@ -350,7 +322,7 @@ export function TakeWhatIf() {
       window.removeEventListener('touchend', onEnd);
       window.removeEventListener('touchcancel', onEnd);
     };
-  }, [go, last, playIntro, phone]);
+  }, [go, last, playIntro]);
 
   const onKey = (e) => {
     if (e.key === 'ArrowRight') { e.preventDefault(); go(idx + 1); }
@@ -358,7 +330,7 @@ export function TakeWhatIf() {
   };
 
   return (
-    <section className={`tk-whatif tk-whatif-scroll ${phone ? 'tk-whatif-phone' : ''}`} ref={sec} aria-label="What if health was">
+    <section className="tk-whatif tk-whatif-scroll" ref={sec} aria-label="What if health was">
       <div className="tk-whatif-pin">
       <Link to="/" className="tk-whatif-logo" aria-label="TAKE home">
         <svg viewBox={TAKE_LOGO_VIEWBOX} role="img" aria-label="TAKE"><path d={TAKE_LOGO_PATH} /></svg>
@@ -401,11 +373,7 @@ export function TakeWhatIf() {
             <h3>{steps[idx][0]}</h3>
             <p>{steps[idx][1]}</p>
           </div>
-          <div className="tk-dial-arrows">
-            <button type="button" className="tk-dial-arrow" onClick={() => go(idx - 1)} disabled={idx === 0} aria-label="Previous"><ArrowIcon left /></button>
-            <button type="button" className="tk-dial-arrow tk-dial-arrow-next" onClick={() => go(idx + 1)} aria-label={idx === last ? 'Open the TAKE story' : 'Next'}><ArrowIcon /></button>
-          </div>
-          <span className="tk-dial-hint">{phone ? 'Click a number or use the arrows' : 'Scroll, or click a number on the arc'}</span>
+          <span className="tk-dial-hint">Scroll, or click a number on the arc</span>
         </div>
       </div>
       </div>

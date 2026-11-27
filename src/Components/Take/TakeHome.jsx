@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
 import BottleRotate from './BottleRotate';
 import useScrollFx from './useScrollFx';
@@ -16,7 +17,7 @@ const apps = [
 ];
 const fuel = [
   ['bottle.jpg', 'Liposomal Berberine HCL', '1000mg · 99% pure · with Ceylon cinnamon and chromium. Metabolic support, built for absorption.', 'Know More'],
-  ['bottle.jpg', 'Magnesium', '440mg elemental · Quad-Mag Complex: bisglycinate, Aquamin®, Lipoza® and citrate', 'Notify Me'],
+  ['magnesium.webp', 'Magnesium', '440mg elemental · Quad-Mag Complex: bisglycinate, Aquamin®, Lipoza® and citrate', 'Notify Me'],
   ['bottle.jpg', 'CoQ-10', 'Everyday cellular energy.', 'Notify Me'],
   ['bottle.jpg', 'Coming Soon', '', 'Notify Me', true],
 ];
@@ -24,10 +25,11 @@ const fuel = [
 const markers = ['Cholesterol', 'Triglycerides', 'Non-HDL Cholesterol', 'Total Bilirubin', 'Globulin', 'Fasting Glucose', 'Free T4', 'Progesterone', 'Serum Iron', 'Fibrinogen', 'Vitamin D', 'HbA1c'];
 const labs = [
   ['lab1.jpg', '01', 'We come to you.', "Book in the TAKE app and pick a slot. We collect your sample at home, so there's no clinic, no queue and no waiting room."],
-  ['lab2.jpg', '02', 'Your body, in plain words.', 'Every marker decoded and set beside your sleep, steps and meals. For the first time, your results make sense next to your life.'],
+  ['lab2-tube.jpg', '02', 'Your body, in plain words.', 'Every marker decoded and set beside your sleep, steps and meals. For the first time, your results make sense next to your life.'],
   ['lab3.jpg', '03', 'Your next move, clear.', 'What each result means for you, what to change and what to take. Then watch every marker move, test after test.'],
 ];
-const videos = ['video1.jpg', 'video2.jpg', 'video3.jpg', 'video4.jpg', 'video1.jpg', 'video3.jpg'];
+// member stories (Trusted by leaders): poster on the card, the full video with sound opens on tap
+const videos = [1, 2, 3, 4, 5, 6].map((n) => `members/member${n}`);
 const news = [
   ['2015', 'Meta-analysis', 'Effect and safety of berberine in type 2 diabetes, hyperlipidaemia and hypertension', 'Lan J et al. · Journal of Ethnopharmacology', '27 RCTs. Berberine with lifestyle changes lowered glucose and lipid markers more than lifestyle changes alone. Trial quality varied.'],
   ['2012', 'Meta-analysis', 'Berberine in the treatment of type 2 diabetes: a systematic review', 'Dong H et al. · Evid-Based Complement Alternat Med', '14 RCTs. Meaningful reductions in fasting glucose and HbA1c, with few serious side effects.'],
@@ -63,6 +65,72 @@ function CapsuleVideo() {
   return <video ref={ref} className="tk-feature-vid" src={img('capsule.mp4')} poster={img('capsule-poster.jpg')} muted loop playsInline autoPlay preload="metadata" aria-hidden="true" />;
 }
 
+const CloseIcon = () => <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" /></svg>;
+const ExpandIcon = () => <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>;
+
+/* Large view of a member story: centred over the page, carries on from the same moment.
+   Closes on ×, Esc or a tap outside, and hands the time back to the card. */
+function MemberBig({ src, start, onClose }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const close = () => onClose(ref.current?.currentTime || 0);
+    const onKey = (e) => { if (e.key === 'Escape') close(); };
+    const html = document.documentElement;
+    const prev = html.style.overflow;
+    html.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKey);
+    return () => { window.removeEventListener('keydown', onKey); html.style.overflow = prev; };
+  }, [onClose]);
+  const close = () => onClose(ref.current?.currentTime || 0);
+  return createPortal(
+    <div className="tk-player" role="dialog" aria-modal="true" aria-label="Member story" onClick={close}>
+      <div className="tk-player-box" onClick={(e) => e.stopPropagation()}>
+        <video
+          ref={ref}
+          src={img(`${src}.mp4`)}
+          poster={img(`${src}.jpg`)}
+          controls
+          playsInline
+          onLoadedMetadata={(e) => { const v = e.currentTarget; try { v.currentTime = start; } catch { /* not seekable yet */ } v.play().catch(() => {}); }}
+        />
+        <button type="button" className="tk-player-close" onClick={close} aria-label="Close large video"><CloseIcon /></button>
+      </div>
+    </div>,
+    document.body,
+  );
+}
+
+/* One member story card. Tap: the video plays right there in the card, with sound and controls.
+   The expand button opens it large; × (or the end of the video) puts the card back to its picture. */
+function MemberCard({ src, on, onPlay, onStop, hidden }) {
+  const vid = useRef(null);
+  const [big, setBig] = useState(null); // start time of the large view, or null
+  if (on) {
+    const expand = () => { const v = vid.current; setBig(v ? v.currentTime : 0); v?.pause(); };
+    const shrink = (t) => {
+      setBig(null);
+      const v = vid.current;
+      if (v) { try { v.currentTime = t; } catch { /* ignore */ } v.play().catch(() => {}); }
+    };
+    return (
+      <div className="tk-video is-playing">
+        <video ref={vid} src={img(`${src}.mp4`)} poster={img(`${src}.jpg`)} controls autoPlay playsInline onEnded={onStop} />
+        <div className="tk-video-tools">
+          <button type="button" className="tk-video-tool" onClick={expand} aria-label="View large"><ExpandIcon /></button>
+          <button type="button" className="tk-video-tool" onClick={onStop} aria-label="Stop video"><CloseIcon /></button>
+        </div>
+        {big !== null && <MemberBig src={src} start={big} onClose={shrink} />}
+      </div>
+    );
+  }
+  return (
+    <button type="button" className="tk-video" aria-label="Play member story" tabIndex={hidden ? -1 : 0} onClick={onPlay}>
+      <img src={img(`${src}.jpg`)} alt="" loading="lazy" draggable="false" />
+      <span className="tk-video-play"><i className="bi bi-play-fill" /></span>
+    </button>
+  );
+}
+
 function Faq() {
   const [open, setOpen] = useState(0);
   return (
@@ -87,6 +155,7 @@ function Faq() {
 export default function TakeHome() {
   const root = useRef(null);
   useScrollFx(root);
+  const [playing, setPlaying] = useState(-1); // which member card is playing (-1: none)
   const { hash } = useLocation();
   // opening or refreshing the home page always starts on the landing page, step 01
   useEffect(() => {
@@ -138,7 +207,9 @@ export default function TakeHome() {
         <div className="tk-cards tk-cards-4">
           {fuel.map(([i, t, d, a, blur], k) => (
             <article key={t} data-reveal="up" style={{ '--i': k }}>
-              {i === 'bottle.jpg' ? <BottleRotate src={img('bottle.jpg')} label={img('bottle-label.jpg')} shade={img('bottle-shade.png')} alt={t} disabled={blur} /> : <img src={img(i)} alt={t} />}
+              {i === 'bottle.jpg'
+                ? <BottleRotate src={img('bottle.jpg')} label={img('bottle-label.jpg')} shade={img('bottle-shade.png')} alt={t} disabled={blur} />
+                : <div className="tk-rotate tk-rotate-static"><img className="tk-rotate-img" src={img(i)} alt={t} loading="lazy" draggable="false" /></div>}
               <h4>{t}</h4>{d && <p>{d}</p>}<Link to="/contact">{a}</Link>
             </article>
           ))}
@@ -176,12 +247,9 @@ export default function TakeHome() {
           <p data-reveal="up" style={{ '--i': 1 }}>Learn why professionals trust our solutions to complete their customer journeys.</p>
         </div>
         <div className="tk-videos" data-reveal="fade">
-          <div className="tk-videos-track">
+          <div className={`tk-videos-track ${playing >= 0 ? 'is-paused' : ''}`}>
             {[...videos, ...videos].map((v, i) => (
-              <button type="button" key={i} className="tk-video" aria-label="Play member story" tabIndex={i < videos.length ? 0 : -1}>
-                <img src={img(v)} alt="" loading="lazy" draggable="false" />
-                <span className="tk-video-play"><i className="bi bi-play-fill" /></span>
-              </button>
+              <MemberCard key={i} src={v} on={playing === i} hidden={i >= videos.length} onPlay={() => setPlaying(i)} onStop={() => setPlaying(-1)} />
             ))}
           </div>
         </div>
