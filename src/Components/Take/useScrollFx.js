@@ -16,7 +16,8 @@ export default function useScrollFx(rootRef) {
     if (!root) return undefined;
     const reveal = [...root.querySelectorAll('[data-reveal]')];
     const parallax = [...root.querySelectorAll('[data-parallax]')];
-    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    // phones (Android / iPhone): no reveal or parallax animations, content is simply there
+    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce), (max-width: 767px)').matches;
 
     if (reduce || !('IntersectionObserver' in window)) {
       reveal.forEach((el) => el.classList.add('is-in'));

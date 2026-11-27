@@ -1,9 +1,10 @@
-import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import BottleRotate from './BottleRotate';
 import useScrollFx from './useScrollFx';
 import { TakeIntelligence, TakeLoop, TakeWalkthrough } from './TakeStory';
 import { TakeHero, TakeWhatIf } from './TakeFirst';
+import { SECTIONS, scrollToSection } from './scrollToSection';
 import './take.css';
 
 const img = (n) => `/assets/take/${n}`;
@@ -22,9 +23,9 @@ const fuel = [
 
 const markers = ['Cholesterol', 'Triglycerides', 'Non-HDL Cholesterol', 'Total Bilirubin', 'Globulin', 'Fasting Glucose', 'Free T4', 'Progesterone', 'Serum Iron', 'Fibrinogen', 'Vitamin D', 'HbA1c'];
 const labs = [
-  ['lab1.jpg', '01', 'Book your test in the app', 'Pick a slot in the TAKE app. We come to you and take your sample at home.'],
-  ['lab2.jpg', '02', 'See your blood next to your life', 'Every marker is read in plain words and set beside your sleep, steps and meals. Your watch knows how you slept. Your blood knows why.'],
-  ['lab3.jpg', '03', 'Know what to do next', 'Clear ranges, what each result means for you, and what to change. Then track every marker from one test to the next.'],
+  ['lab1.jpg', '01', 'We come to you.', "Book in the TAKE app and pick a slot. We collect your sample at home, so there's no clinic, no queue and no waiting room."],
+  ['lab2.jpg', '02', 'Your body, in plain words.', 'Every marker decoded and set beside your sleep, steps and meals. For the first time, your results make sense next to your life.'],
+  ['lab3.jpg', '03', 'Your next move, clear.', 'What each result means for you, what to change and what to take. Then watch every marker move, test after test.'],
 ];
 const videos = ['video1.jpg', 'video2.jpg', 'video3.jpg', 'video4.jpg', 'video1.jpg', 'video3.jpg'];
 const news = [
@@ -39,11 +40,28 @@ const investors = [
   ['Governance & Disclosures', 'Policies & Exchange Updates', '/investor'],
 ];
 const faqs = [
-  ['Why did Take Solutions become TAKE Limited?', 'The new name reflects a broader focus: alongside life-sciences technology, we now build AI products for diagnostics and preventive health. The company, its listing and shareholders’ holdings are unchanged.'],
-  ['How do you keep health data secure?', 'Your reports and health data are encrypted in transit and at rest, kept in your private vault, and shared only when you choose to share them.'],
-  ['Where can I use the One-Minute Clinic?', 'The One-Minute Clinic is rolling out in phases. Join the waitlist in the TAKE app to hear when it reaches your city.'],
-  ['How can my organisation partner with TAKE?', 'We work with employers, labs, clinics and insurers. Get in touch through our contact page and our partnerships team will reach out.'],
+  ['Why did Take Solutions become Take Limited?', 'Our new name reflects a broader focus. Alongside life-sciences technology, we now build AI products for diagnostics and preventive health. Our listing and shareholders’ holdings are unchanged.'],
+  ['How do you keep health data secure?', 'Your health data stays private and under your control. We collect only what’s needed, protect it at every step and handle it in line with India’s Digital Personal Data Protection Act.'],
+  ['What does TAKE do?', 'TAKE is a longevity and health optimisation company. We combine personal health intelligence, biomarker insights and clinically studied nutrition into one ecosystem that helps people understand their biology, slow the drift of ageing and add more good years, not just more years.'],
+  ['Where can I find financial results and filings?', <>Every quarterly result, annual report and stock exchange filing is on our <Link to="/investor">Investor page</Link>.</>],
+  ['How can my organisation partner with TAKE?', <>Write to <a href="mailto:partnership@takelimited.com">partnership@takelimited.com</a> and our team will get back to you.</>],
 ];
+
+/* Berberine capsules video behind "Health starts with what you take." (muted for iPhone autoplay, plays only while on screen) */
+function CapsuleVideo() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const v = ref.current;
+    if (!v) return undefined;
+    v.muted = true;
+    v.setAttribute('muted', '');
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) { v.pause(); return undefined; }
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) v.play().catch(() => {}); else v.pause(); }, { threshold: 0.05 });
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
+  return <video ref={ref} className="tk-feature-vid" src={img('capsule.mp4')} poster={img('capsule-poster.jpg')} muted loop playsInline autoPlay preload="metadata" aria-hidden="true" />;
+}
 
 function Faq() {
   const [open, setOpen] = useState(0);
@@ -69,6 +87,19 @@ function Faq() {
 export default function TakeHome() {
   const root = useRef(null);
   useScrollFx(root);
+  const { hash } = useLocation();
+  // opening or refreshing the home page always starts on the landing page, step 01
+  useEffect(() => {
+    if (window.location.hash) return;
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, []);
+  // opened as /#investors or /#faq (header link from another page): go straight to that section
+  useEffect(() => {
+    const id = hash.slice(1);
+    if (!SECTIONS.includes(id)) return undefined;
+    const t = setTimeout(() => scrollToSection(id), 150);
+    return () => clearTimeout(t);
+  }, [hash]);
   return (
     <main className="tk" ref={root}>
       <TakeWhatIf />
@@ -91,8 +122,8 @@ export default function TakeHome() {
         </div>
       </section>
 
-      <section className="tk-feature tk-feature-capsule" style={{ '--bg': `url(${img('capsule.jpg')})` }}>
-        <div className="tk-feature-bg" data-parallax aria-hidden="true" />
+      <section className="tk-feature tk-feature-capsule tk-feature-video">
+        <CapsuleVideo />
         <div className="tk-feature-copy" data-reveal="left">
           <h2>Health starts with<br />what you take.</h2>
           <p>Discover clinically studied nutrients made for your health, and see your progress take shape in the TAKE app.</p>
@@ -102,8 +133,7 @@ export default function TakeHome() {
 
       <section className="tk-section tk-fuel">
         <div className="tk-head">
-          <h2 data-reveal="up">Fuel.</h2>
-          <p data-reveal="up" style={{ '--i': 1 }}>Your data writes the menu. Science checks it.</p>
+          <h2 data-reveal="up">Nutrition,<br />Beyond The Plate.</h2>
         </div>
         <div className="tk-cards tk-cards-4">
           {fuel.map(([i, t, d, a, blur], k) => (
@@ -132,7 +162,6 @@ export default function TakeHome() {
       <section className="tk-section">
         <div className="tk-head">
           <h2 data-reveal="up">Biomarkers And Labs.</h2>
-          <p data-reveal="up" style={{ '--i': 1 }}>Your watch knows how you slept. Your blood knows why.</p>
         </div>
         <div className="tk-cards tk-cards-3">
           {labs.map(([i, n, t, d], k) => (
@@ -143,7 +172,7 @@ export default function TakeHome() {
 
       <section className="tk-trust">
         <div className="tk-trust-head">
-          <h2 data-reveal="up"><span>Trusted by leaders</span>5000+ Users</h2>
+          <h2 data-reveal="up"><span>Trusted by leaders</span>8000+ Users</h2>
           <p data-reveal="up" style={{ '--i': 1 }}>Learn why professionals trust our solutions to complete their customer journeys.</p>
         </div>
         <div className="tk-videos" data-reveal="fade">
@@ -171,7 +200,7 @@ export default function TakeHome() {
         </div>
       </section>
 
-      <section className="tk-section tk-investors">
+      <section className="tk-section tk-investors" id="investors">
         <div className="tk-head"><h2 data-reveal="up">Investors.</h2></div>
         <div className="tk-inv-list">
           {investors.map(([t, s, to], k) => (

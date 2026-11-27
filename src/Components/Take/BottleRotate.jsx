@@ -99,7 +99,7 @@ export default function BottleRotate({ src, label, shade, geometry = DEFAULT_GEO
 
   const start = useCallback(() => {
     if (disabled || !ready) return;
-    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce), (max-width: 767px)').matches) return; // no spin on phones
     const s = anim.current;
     s.hovering = true;
     setMoving(true);

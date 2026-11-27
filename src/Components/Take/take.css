@@ -1102,3 +1102,202 @@ html, body { overflow-x: clip !important; }
 @media (max-width: 575px) { .tk .tk-feature .tk-blood-copy h2 { letter-spacing: -1.5px; } }
 /* the animated line wrappers inside headings take the heading's font (the global ".tk *" Founders rule must not apply) */
 .tk .tk-blood-copy h2 span, .tk .tk-hero2-title span, .tk .tk-whatif-title > span:not(.tk-whatif-pill) { font-family: inherit !important; font-weight: inherit !important; letter-spacing: inherit; }
+
+/* ---- Join Waitlist buttons hidden (header, mobile menu, hero, blood banner); delete this block to bring them back ---- */
+.tk-waitlist,
+.tk .tk-blood-copy .tk-btn { display: none !important; }
+@media (max-width: 991px) { .tk-header-v2 .tk-burger { margin-left: auto; } }
+
+/* ---- "Our Approach" button hidden (delete to bring it back) ---- */
+.tk .tk-intel-foot .tk-pill-dark { display: none !important; }
+/* Loop bullets: centred on the line of text */
+.tk .tk-loop-body li::before { top: .55em; }
+/* links inside FAQ answers (Investor page, partnership email) */
+.tk .tk-faq-a p a { color: #111; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color .25s ease; }
+.tk .tk-faq-a p a:hover { color: #2f5bff; }
+
+/* ---- third layer v2 (design 2026-11): wide data cards in, white app cards out ---- */
+.tk .tk-src.tk-src-card { position: relative; flex: 0 0 auto; width: max(112px, 8.9vw); height: max(76px, 5.9vw); display: block; border: 1px solid rgba(255, 255, 255, .14); border-radius: max(8px, .7vw); background: rgba(255, 255, 255, .035); color: #fff; transition: border-color .4s ease, background-color .4s ease; }
+.tk .tk-src-card:hover { border-color: rgba(120, 160, 255, .6); background: rgba(90, 130, 255, .08); }
+.tk .tk-src-card .tk-src-ico { position: absolute; left: 10%; top: 13%; display: grid; place-items: center; width: max(18px, 1.5vw); height: max(18px, 1.5vw); font-size: max(16px, 1.35vw); line-height: 1; color: rgba(255, 255, 255, .9); }
+.tk .tk-src-card .tk-src-ico svg { width: 100%; height: 100%; }
+.tk .tk-src-card .tk-src-ico i::before { display: block; }
+.tk .tk-src-card em { position: absolute; right: 9%; top: 13%; font-style: normal; font-size: max(7px, .52vw); letter-spacing: .06em; color: rgba(255, 255, 255, .5); border: 0; padding: 0; }
+.tk .tk-src-card b { position: absolute; left: 10%; bottom: 14%; font-weight: 400 !important; font-size: max(9px, .7vw); color: rgba(255, 255, 255, .9); white-space: nowrap; }
+
+.tk .tk-out { width: max(140px, 11.8vw); background: #f4f4f2; border: 0; border-radius: max(8px, .65vw); padding: max(5px, .42vw); box-shadow: 0 10px 30px rgba(0, 0, 0, .35); }
+.tk .tk-out:hover { border: 0; box-shadow: 0 14px 36px rgba(60, 100, 255, .25); }
+.tk .tk-out-media { aspect-ratio: 1.3; border-radius: max(5px, .42vw); background: #e9ecf3; }
+.tk .tk-out > span { text-align: left; font-family: inherit !important; font-weight: 500; font-size: max(9px, .68vw); color: #111; padding: max(7px, .6vw) max(3px, .25vw) max(3px, .25vw); }
+.tk .tk-glucose { background: #fff; padding: 10% 9% 0; }
+.tk .tk-glucose > span { display: none; }
+.tk .tk-glucose > b { font-size: max(12px, 1.1vw); }
+@media (max-width: 991px) {
+  .tk .tk-src.tk-src-card { width: 112px; height: 76px; }
+  .tk .tk-out { width: 140px; }
+  .tk .tk-out > span { font-size: 11px; }
+}
+.tk .tk-out .tk-glucose svg { flex: 0 0 auto; height: 42%; margin-top: 10%; }
+
+/* TAKE logo (black) at the top of the white "What If" page, same place as the header logo */
+.tk .tk-whatif-logo { position: absolute; top: max(18px, 1.9vw); left: var(--tk-pad); z-index: 3; display: block; line-height: 0; }
+.tk .tk-whatif-logo svg { display: block; width: max(64px, 5.2vw); height: auto; fill: #0d0d0d; }
+.tk .tk-whatif-pin { padding-top: max(72px, 6.6vw); }
+
+/* hero title v2: "Live Past the / Edge of Ageing." in ABC Diatype Expanded */
+.tk .tk-hero2 .tk-hero2-title { font-family: 'ABC Diatype Expanded', sans-serif !important; font-weight: 500 !important; font-size: max(36px, 4.6vw); line-height: 1.1; letter-spacing: -0.035em; }
+.tk .tk-hero2-title > span { padding-bottom: .04em; }
+@media (max-width: 575px) { .tk .tk-hero2 .tk-hero2-title { font-size: 34px; } }
+
+
+/* ===== phones (Android, iPhone): mobile design ===== */
+@media (max-width: 991px) {
+  /* hero: features first, then "Your body holds the answers." with its white line at the bottom */
+  .tk .tk-hero2-cta { order: 0; }
+}
+@media (max-width: 767px) {
+  /* TAKE App and Nutrition cards: one swipeable row, the next card peeking in */
+  .tk .tk-cards-4 { display: flex; grid-template-columns: none; gap: 14px; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; margin: 0 calc(-1 * var(--gut)); padding: 0 var(--gut) 10px; scroll-padding: 0 var(--gut); scrollbar-width: none; }
+  .tk .tk-cards-4::-webkit-scrollbar { display: none; }
+  .tk .tk-cards-4 > article { flex: 0 0 78%; min-width: 0; scroll-snap-align: start; margin-top: 0 !important; }
+  .tk .tk-cards-4:has(.tk-rotate) > article { flex-basis: 70%; }
+  .tk .tk-cards-4 article > p { max-width: none; }
+}
+
+/* ===== phone fixes from device screenshots ===== */
+/* footer wordmark video: keep its real shape (1920x400) so the letters are never squashed or cut */
+.tk-foot-mark video { aspect-ratio: 1920 / 400; height: auto !important; object-fit: cover; }
+@media (max-width: 767px) {
+  .tk-foot-mark { height: auto; padding-top: 32px; overflow: hidden; }
+  .tk-foot-mark video { width: 100%; margin-bottom: -3%; }
+  /* Let's talk: buttons stacked, as in the mobile design */
+  .tk-foot-btns { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .tk-foot-talk { gap: 28px; }
+  .tk-foot-main { row-gap: 40px; }
+  .tk-foot-col { gap: 18px; }
+  /* Your Clarity: the glucose curve keeps a visible height */
+  .tk .tk-out .tk-glucose svg { height: 46px; flex: 0 0 46px; margin-top: 14px; }
+  .tk .tk-out .tk-glucose path { stroke-dasharray: none; animation: none; }
+  .tk .tk-src-card .tk-src-ico { width: 20px; height: 20px; font-size: 18px; }
+}
+@media (max-width: 767px) {
+  .tk-foot-col { gap: 16px; }
+  .tk-foot-col h6 { line-height: 1.2; margin: 0 0 6px; }
+  .tk-foot-col a { font-size: 14px; line-height: 1.3; }
+}
+/* footer wordmark: the box is a flex row, so stop it stretching/cropping the video; the box shows the top 82% of the letters */
+.tk-foot-mark { align-items: flex-start; height: calc(83vw / 4.8 * .82 + max(36px, 4.2vw)); }
+.tk-foot-mark video { align-self: flex-start; flex: 0 0 auto; }
+@media (min-width: 576px) and (max-width: 767px) { .tk-foot-mark { height: auto; } }
+@media (max-width: 575px) { .tk-foot-mark { height: auto; } }
+
+/* "What If" dial on tall screens (phones, portrait tablets): a bigger arc that runs off the bottom,
+   like the desktop design, instead of a small full circle with empty white space under it */
+@media (max-width: 575px) {
+  .tk .tk-whatif-scroll { --R: 80vw; }
+}
+@media (min-width: 576px) and (max-width: 1199px) and (orientation: portrait) {
+  .tk .tk-whatif-scroll { --R: 64vw; }
+}
+@media (max-width: 575px) {
+  .tk .tk-whatif-scroll { --top: max(56px, calc(100vh - 700px)); --top: max(56px, calc(100svh - 700px)); }
+}
+
+/* phones/tablets: Your Data -> Our Intelligence -> Your Clarity (top to bottom), each label above its row */
+@media (max-width: 991px) {
+  .tk .tk-flow { gap: 34px; }
+  .tk .tk-flow-core { order: 0 !important; }
+  .tk .tk-flow-col { display: flex; flex-direction: column; }
+  .tk .tk-flow-col > small { order: -1; margin: 0 0 12px !important; }
+  .tk .tk-flow-core small { margin-top: 14px; }
+}
+
+/* TAKE tile: always a perfect square (explicit equal width + height; iPhone Safari can stretch aspect-ratio boxes) */
+.tk .tk-core-frame { --core: max(150px, 16.5vw); width: var(--core); height: var(--core); min-height: 0; aspect-ratio: auto; box-sizing: border-box; flex: 0 0 auto; align-self: center; }
+.tk .tk-core-tile { width: 100%; height: 100%; aspect-ratio: 1; }
+@media (max-width: 991px) { .tk .tk-core-frame { --core: 176px; } }
+@media (max-width: 767px) {
+  .tk .tk-src.tk-src-card { width: 124px; height: 84px; border-radius: 12px; }
+  .tk .tk-src-card b { font-size: 12px; }
+  .tk .tk-src-card em { font-size: 9px; }
+  .tk .tk-src-card .tk-src-ico { width: 24px; height: 24px; font-size: 21px; }
+  .tk .tk-out { width: 168px; border-radius: 12px; padding: 7px; }
+  .tk .tk-out > span { font-size: 12px; }
+}
+
+/* What If / hero feature icons: the PNG icons from the design */
+.tk .tk-hero2-icon img { height: 100%; width: auto; display: block; }
+
+/* "One system. Built for a longer, better life." heading and paragraph centred on each other */
+.tk .tk-intel-foot { align-items: center; }
+.tk .tk-intel-foot p { margin: 0; }
+@media (max-width: 991px) { .tk .tk-intel-foot { align-items: start; } }
+
+/* "One system" block, as in the design: paragraph top-aligned with the heading, wider column that ends on the right gutter */
+.tk .tk-intel-foot { align-items: start; }
+.tk .tk-intel-foot > div { justify-self: end; width: 100%; max-width: max(320px, 38.5vw); padding-top: max(6px, .7vw); }
+.tk .tk-intel-foot p { font-size: max(14px, 1.2vw); line-height: 1.6; }
+@media (max-width: 991px) { .tk .tk-intel-foot > div { justify-self: start; max-width: none; padding-top: 0; } }
+/* "One system" paragraph: same three lines as the design on desktop, natural wrapping on tablet and phone */
+.tk .tk-intel-foot > div { max-width: none; width: auto; }
+@media (max-width: 991px) { .tk .tk-intel-foot .tk-br-d { display: none; } }
+
+/* "Health starts with what you take.": capsule video fills the section, dark fade on the left keeps the copy readable */
+.tk .tk-feature-capsule.tk-feature-video { background: #03080f; overflow: hidden; aspect-ratio: 2.107 / 1; }
+.tk .tk-feature-video > .tk-feature-vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: 0; pointer-events: none; }
+.tk .tk-feature-video::before { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, rgba(2,6,14,.78) 0%, rgba(2,6,14,.45) 38%, rgba(2,6,14,0) 62%), linear-gradient(0deg, rgba(2,6,14,.45) 0%, rgba(2,6,14,0) 45%); }
+.tk .tk-feature-video > .tk-feature-copy { position: relative; z-index: 2; }
+@media (max-width: 991px) {
+  .tk .tk-feature-capsule.tk-feature-video { aspect-ratio: auto; min-height: 440px; }
+  .tk .tk-feature-video > .tk-feature-vid { object-position: 60% center; }
+}
+@media (max-width: 767px) {
+  .tk .tk-feature-capsule.tk-feature-video { background: #03080f; }
+  .tk .tk-feature-video > .tk-feature-vid { inset: 0 0 auto 0; height: 86vw; }
+  .tk .tk-feature-video::before { inset: 0 0 auto 0; height: 86vw; background: linear-gradient(180deg, rgba(3,8,15,0) 55%, #03080f 98%); }
+}
+/* "One system" paragraph spacing as in the Figma: tighter lines, softer grey */
+.tk .tk-intel-foot p { line-height: 1.45; letter-spacing: -0.005em; color: rgba(255, 255, 255, .8); }
+
+/* ---------- Phones only (Android / iPhone) ---------- */
+/* What If: arrow buttons instead of scrolling (hidden on tablet and desktop) */
+.tk .tk-dial-arrows { display: none; }
+@media (max-width: 767px) {
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone { height: 100vh; height: 100svh; }
+  .tk .tk-whatif-phone .tk-whatif-pin { position: relative; }
+  .tk .tk-dial-arrows { display: flex; justify-content: center; gap: 22px; margin-top: 28px; }
+  .tk .tk-dial-arrow { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-size: 22px; line-height: 1; padding: 0; cursor: pointer; border: 1px solid #d9d9d9; background: #fff; color: #111; -webkit-tap-highlight-color: transparent; }
+  .tk .tk-dial-arrow-next { background: #111; border-color: #111; color: #fff; }
+  .tk .tk-dial-arrow:disabled { opacity: .35; cursor: default; }
+  .tk .tk-whatif-phone .tk-dial-hint { margin-top: 18px; }
+}
+
+/* Investors: no blue line / blue text left behind after tapping a row */
+@media (max-width: 767px), (hover: none) {
+  .tk .tk-inv-row { -webkit-tap-highlight-color: transparent; }
+  .tk .tk-inv-row:hover b, .tk .tk-inv-row:hover small, .tk .tk-inv-row:hover i { transform: none; }
+  .tk .tk-inv-row:hover b { color: inherit; }
+  .tk .tk-inv-row:hover i { color: #555; }
+  .tk .tk-inv-row::after, .tk .tk-inv-row:hover::after, .tk .tk-inv-row:focus-visible::after { display: none; }
+  .tk .tk-inv-row:focus { outline: none; }
+}
+
+/* No animations on phones: entrance effects, floating/glowing decorations, hover motion.
+   The moving content strips (markers, member videos, data flow) keep scrolling. */
+@media (max-width: 767px) {
+  .tk *:not(.tk-ticker-track):not(.tk-videos-track):not(.tk-flow-track), .tk-header, .tk-foot, .tk-foot * { animation: none !important; transition: none !important; }
+  .tk.fx-ready [data-reveal], .tk [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .tk .tk-hero2-title > span > span, .tk .tk-hero2-cta p > span > span, .tk .tk-blood-copy h2 > span > span { transform: none !important; opacity: 1 !important; }
+  .tk .tk-feature > .tk-feature-bg { transform: none !important; }
+}
+
+/* Phones: arrows perfectly centred, and the arc turns smoothly to the next / previous number
+   (→ turns it one way, ← the other way). Overrides the phone "no animations" rule for the dial only. */
+@media (max-width: 767px) {
+  .tk .tk-dial-arrow svg { display: block; margin: 0; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-ring { transition: transform .8s cubic-bezier(.65, 0, .25, 1) !important; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-ring .tk-dial-num { transition: transform .8s cubic-bezier(.65, 0, .25, 1), background-color .4s ease, color .4s ease, border-color .4s ease !important; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-ring .tk-dial-pt { transition: opacity .5s ease !important; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-ring .tk-dial-dot { transition: background-color .5s ease, border-color .5s ease, box-shadow .5s ease !important; }
+  .tk .tk-whatif.tk-whatif-scroll.tk-whatif-phone .tk-dial .tk-dial-copy .tk-dial-swap { animation: tkSwap .6s cubic-bezier(.16, 1, .3, 1) both !important; }
+}
