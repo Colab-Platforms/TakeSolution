@@ -22,6 +22,13 @@ const fuel = [
   ['bottle.jpg', 'Coming Soon', '', 'Notify Me', true],
 ];
 
+/* bottles that turn 360 degrees on hover: flat label strip + lighting map + label geometry in the photo
+   (Berberine: tools/bottle_label_strip.py, front + back photos; Magnesium: tools/bottle_label_strip_front.py, front only) */
+const spin = {
+  'bottle.jpg': { label: 'bottle-label.jpg', shade: 'bottle-shade.png' },
+  'magnesium.webp': { label: 'magnesium-label.jpg', shade: 'magnesium-shade.png', geometry: { cx: 324.5, r: 264.5, top: 288, bottom: 878, x0: 60, stripWidth: 1662 } },
+};
+
 const markers = ['Cholesterol', 'Triglycerides', 'Non-HDL Cholesterol', 'Total Bilirubin', 'Globulin', 'Fasting Glucose', 'Free T4', 'Progesterone', 'Serum Iron', 'Fibrinogen', 'Vitamin D', 'HbA1c'];
 const labs = [
   ['lab1.jpg', '01', 'We come to you.', "Book in the TAKE app and pick a slot. We collect your sample at home, so there's no clinic, no queue and no waiting room."],
@@ -207,8 +214,8 @@ export default function TakeHome() {
         <div className="tk-cards tk-cards-4">
           {fuel.map(([i, t, d, a, blur], k) => (
             <article key={t} data-reveal="up" style={{ '--i': k }}>
-              {i === 'bottle.jpg'
-                ? <BottleRotate src={img('bottle.jpg')} label={img('bottle-label.jpg')} shade={img('bottle-shade.png')} alt={t} disabled={blur} />
+              {spin[i]
+                ? <BottleRotate src={img(i)} label={img(spin[i].label)} shade={img(spin[i].shade)} geometry={spin[i].geometry} alt={t} disabled={blur} />
                 : <div className="tk-rotate tk-rotate-static"><img className="tk-rotate-img" src={img(i)} alt={t} loading="lazy" draggable="false" /></div>}
               <h4>{t}</h4>{d && <p>{d}</p>}<Link to="/contact">{a}</Link>
             </article>
