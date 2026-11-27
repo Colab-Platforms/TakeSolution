@@ -1102,3 +1102,8 @@ html, body { overflow-x: clip !important; }
 @media (max-width: 575px) { .tk .tk-feature .tk-blood-copy h2 { letter-spacing: -1.5px; } }
 /* the animated line wrappers inside headings take the heading's font (the global ".tk *" Founders rule must not apply) */
 .tk .tk-blood-copy h2 span, .tk .tk-hero2-title span, .tk .tk-whatif-title > span:not(.tk-whatif-pill) { font-family: inherit !important; font-weight: inherit !important; letter-spacing: inherit; }
+
+/* ---- Join Waitlist buttons hidden (header, mobile menu, hero, blood banner); delete this block to bring them back ---- */
+.tk-waitlist,
+.tk .tk-blood-copy .tk-btn { display: none !important; }
+@media (max-width: 991px) { .tk-header-v2 .tk-burger { margin-left: auto; } }
