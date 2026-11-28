@@ -1285,7 +1285,7 @@ html, body { overflow-x: clip !important; }
 /* No animations on phones: entrance effects, floating/glowing decorations, hover motion.
    The moving content strips (markers, member videos, data flow) keep scrolling. */
 @media (max-width: 767px) {
-  .tk *:not(.tk-ticker-track):not(.tk-videos-track):not(.tk-flow-track), .tk-header, .tk-foot, .tk-foot * { animation: none !important; transition: none !important; }
+  .tk *:not(.tk-ticker-track):not(.tk-videos-track):not(.tk-flow-track):not(.tk-intel *), .tk-header, .tk-foot, .tk-foot * { animation: none !important; transition: none !important; }
   .tk.fx-ready [data-reveal], .tk [data-reveal] { opacity: 1 !important; transform: none !important; }
   .tk .tk-hero2-title > span > span, .tk .tk-hero2-cta p > span > span, .tk .tk-blood-copy h2 > span > span { transform: none !important; opacity: 1 !important; }
   .tk .tk-feature > .tk-feature-bg { transform: none !important; }
@@ -1351,3 +1351,77 @@ html, body { overflow-x: clip !important; }
 .tk .tk-video-tool svg { display: block; }
 .tk-player-close { padding: 0; font-size: 0; }
 .tk-player-close svg { display: block; width: 16px; height: 16px; }
+
+/* Berberine / Magnesium: 360-degree render videos in the product frame */
+.tk .tk-rotate.tk-spin { cursor: pointer; }
+.tk .tk-rotate.tk-spin::after { display: none; }
+.tk .tk-spin video { height: 100%; width: auto; max-width: 100%; aspect-ratio: 540 / 836; object-fit: contain; display: block; background: #fff; }
+
+/* What If step title (Figma): Founders Grotesk Medium 84px on the 1440 frame, centred, one line */
+.tk .tk-dial-copy { width: min(1000px, 94vw); }
+.tk .tk-dial-copy h3 { font-size: max(40px, 5.83vw); line-height: 1; letter-spacing: -0.01em; white-space: nowrap; margin: max(10px, .6vw) 0 max(14px, 1.2vw); }
+.tk .tk-dial-copy p { max-width: 560px; }
+@media (max-width: 575px) {
+  .tk .tk-dial-copy h3 { font-size: 46px; }
+  .tk .tk-dial-copy p { max-width: 320px; }
+}
+
+/* products not out yet (CoQ-10, next product): blurred bottle with "Coming Soon" written over it */
+.tk .tk-soon-wrap { position: relative; }
+.tk .tk-soon { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 2; white-space: nowrap; padding: .62em 1.25em .5em; border-radius: 999px; background: rgba(255, 255, 255, .9); color: #111; font-size: max(12px, .9vw); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; box-shadow: 0 6px 22px rgba(0, 0, 0, .12); pointer-events: none; }
+
+/* TAKE App cards: all four in one straight row (no step-down offset) */
+.tk .tk-cards-4 article:nth-child(n) { margin-top: 0; }
+.tk .tk-cards-4 { align-items: start; }
+/* "Coming Soon" label: centred exactly on the bottle, text centred inside the pill */
+.tk .tk-soon-wrap { margin-bottom: max(10px, .9vw); }
+.tk .tk-soon-wrap > .tk-rotate { margin-bottom: 0; }
+.tk .tk-soon { display: inline-flex; align-items: center; justify-content: center; line-height: 1; height: 2.9em; padding: .12em 1.35em 0; box-sizing: border-box; }
+/* capitals only: push the text down by the unused descender space so it sits in the middle of the pill */
+.tk .tk-soon { padding-top: .7em; }
+
+/* footer TAKE video: show the whole word, with space under it */
+.tk-foot-mark { height: auto !important; overflow: visible; padding-bottom: max(32px, 3.6vw); }
+.tk-foot-mark video { margin-bottom: 0 !important; }
+/* footer TAKE word: only a small margin above and below */
+.tk-foot-mark { padding-top: max(14px, 1.3vw) !important; padding-bottom: max(16px, 1.5vw); }
+
+/* header menu (TAKE.Health · TAKE.Shop · Investors · FAQ): this font draws its capitals high in the line,
+   so nudge the words down to sit on the same centre line as the TAKE logo */
+@media (min-width: 992px) {
+  .tk-header-v2 .tk-nav > a:not(.tk-waitlist) { position: relative; top: .34em; }
+}
+
+/* home page: the pinned header slides in from the top once the visitor scrolls down from the video hero */
+.tk-header.tk-header-v2.tk-header-pinned { animation: tkHeadIn .45s cubic-bezier(.2, .7, .2, 1) both; }
+@keyframes tkHeadIn { from { transform: translateY(-100%); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .tk-header.tk-header-v2.tk-header-pinned { animation: none; } }
+
+/* CoQ-10 card: same gap under the bottle as the other products (14px), label centred on the bottle itself */
+.tk .tk-soon-wrap { margin-bottom: 0; }
+.tk .tk-soon-wrap > .tk-rotate { margin-bottom: 14px; }
+.tk .tk-soon { top: calc(50% - 7px); }
+/* "COMING SOON": text trimmed to its capital height so equal padding centres it on every computer */
+@supports (text-box: trim-both cap alphabetic) {
+  .tk .tk-soon { display: inline-block; height: auto; padding: 1.15em 1.4em; text-box: trim-both cap alphabetic; }
+}
+.tk .tk-soon { top: 50%; }
+
+/* product cards: Know More / Notify Me sit on one line across the row, however long each description is */
+.tk .tk-fuel .tk-cards-4 { align-items: stretch; }
+.tk .tk-fuel .tk-cards-4 > article { display: flex; flex-direction: column; }
+.tk .tk-fuel .tk-cards-4 > article > a { margin-top: auto; align-self: flex-start; }
+.tk .tk-fuel .tk-cards-4 > article > p { margin-bottom: max(22px, 2vw); }
+
+/* phones: the "Our Intelligence" section keeps its motion (spinning ring text, glowing tile, flowing data rows) */
+/* phones: show the whole app walkthrough video (16:9) so nothing at its edges, like the TAKE logo, is cut off */
+@media (max-width: 575px) {
+  .tk .tk-walk-video { aspect-ratio: 16 / 9; object-fit: contain; }
+}
+
+/* phones: "Your blood knows things you don't. Yet." starts on the same left line as the rest of the page */
+@media (max-width: 767px) {
+  .tk .tk-feature-light { align-items: flex-start; }
+  .tk .tk-feature-light .tk-blood-copy { width: 100%; max-width: none; margin-left: 0; margin-right: 0; align-self: flex-start; text-align: left; }
+  .tk .tk-feature-light .tk-blood-copy > p { max-width: 34em; margin-left: 0; }
+}

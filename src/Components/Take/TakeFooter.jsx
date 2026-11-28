@@ -6,7 +6,7 @@ import './take.css';
 const cols = [
   ['Platform', [['TAKE.Health', 'https://www.take.health/'], ['TAKE Store', 'https://shop.take.health/']]],
   ['Company', [['About', '/about'], ['Technology', '/services'], ['Latest News', '/'], ['Careers', '/contact']]],
-  ['Investors', [['Financial Results', '/investor'], ['Annual Reports', '/investor'], ['Governance & Disclosures', '/investor'], ['Stock Information', '/investor']]],
+  ['Investors', [['Financial Results', '/investor#financial-results'], ['Annual Reports', '/investor#annual-reports'], ['Governance & Disclosures', '/investor#corporate-governance'], ['Stock Information', '/investor']]],
 ];
 const contact = [
   ['investorrelations@takelimited.com', 'mailto:investorrelations@takelimited.com'],

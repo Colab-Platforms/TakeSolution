@@ -13,3 +13,8 @@ export function scrollToSection(id) {
   }, 1400);
   return true;
 }
+
+// set once the visitor has opened a page other than home (cleared by a refresh)
+let leftHome = false;
+export const markLeftHome = () => { leftHome = true; };
+export const hasLeftHome = () => leftHome;
