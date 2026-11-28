@@ -1425,3 +1425,8 @@ html, body { overflow-x: clip !important; }
   .tk .tk-feature-light .tk-blood-copy { width: 100%; max-width: none; margin-left: 0; margin-right: 0; align-self: flex-start; text-align: left; }
   .tk .tk-feature-light .tk-blood-copy > p { max-width: 34em; margin-left: 0; }
 }
+
+/* desktop / laptop only: smaller gap under the footer TAKE word (phones and tablets keep theirs) */
+@media (min-width: 992px) {
+  .tk-foot-mark { padding-bottom: max(8px, .55vw) !important; }
+}
