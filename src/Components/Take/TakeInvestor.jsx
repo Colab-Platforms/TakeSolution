@@ -50,7 +50,10 @@ const GOVERNANCE = [
   docs('Details of Key Managerial Personnel and Compliance Officer', D.cg_DetailsofKeyManagerialPersonnelandComplianceOfficer),
 ];
 // disclosures and announcements are kept per financial year ('FY27': [...]); the year filter uses those keys
-const perFY = (obj) => Object.entries(obj).map(([fy, list]) => ({ fy, items: list.map((d) => ({ title: d.description, year: d.year || `FY ${fy.slice(2)}`, date: d.date, link: d.link })) }));
+// newest first: compare the year number inside a label ('FY27', '2025', 'PB/02/2026-27' ...)
+const yearNum = (label) => { const m = String(label).match(/(\d{4})|(\d{2})(?!\d)/); if (!m) return -1; return m[1] ? +m[1] : 2000 + +m[2]; };
+const newestFirst = (a, b) => yearNum(b) - yearNum(a);
+const perFY = (obj) => Object.entries(obj).sort(([a], [b]) => newestFirst(a, b)).map(([fy, list]) => ({ fy, items: list.map((d) => ({ title: d.description, year: d.year || `FY ${fy.slice(2)}`, date: d.date, link: d.link })) }));
 
 /* ------------------------------------------------------------------ rise-up animation */
 
@@ -236,10 +239,66 @@ function DocCard({ title, meta, link, idx = 0 }) {
 
 const ALL = 'All years';
 
+/* Drop-down in the TAKE style (the browser's own list cannot be styled): rounded list with a soft shadow,
+   the chosen option in blue with a tick. Mouse, touch and keyboard (arrows, Enter, Esc); closes on an outside click. */
+function Dropdown({ value, options, onChange, label }) {
+  const [open, setOpen] = useState(false);
+  const [hi, setHi] = useState(0); // highlighted option while the list is open
+  const box = useRef(null);
+  const list = useRef(null);
+  const current = options.find((o) => o.value === value) || options[0];
+  const at = Math.max(0, options.findIndex((o) => o.value === value));
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const away = (e) => { if (!box.current?.contains(e.target)) setOpen(false); };
+    document.addEventListener('pointerdown', away);
+    return () => document.removeEventListener('pointerdown', away);
+  }, [open]);
+  // keep the highlighted option in view inside the list
+  useEffect(() => {
+    if (open) list.current?.children[hi]?.scrollIntoView({ block: 'nearest' });
+  }, [open, hi]);
+
+  const pick = (o) => { onChange(o.value); setOpen(false); };
+  const onKey = (e) => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (!open) { setOpen(true); setHi(at); return; }
+      setHi((h) => Math.min(options.length - 1, Math.max(0, h + (e.key === 'ArrowDown' ? 1 : -1))));
+    } else if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      if (open) pick(options[hi]); else { setOpen(true); setHi(at); }
+    } else if (e.key === 'Escape' || e.key === 'Tab') setOpen(false);
+  };
+
+  return (
+    <div className={`inv-dd ${open ? 'is-open' : ''}`} ref={box}>
+      <button type="button" className="inv-dd-btn" aria-haspopup="listbox" aria-expanded={open} aria-label={label}
+        onClick={() => { setOpen(!open); setHi(at); }} onKeyDown={onKey}>
+        <span>{current?.label}</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+      </button>
+      {open && (
+        <ul className="inv-dd-list" role="listbox" aria-label={label} ref={list}>
+          {options.map((o, k) => (
+            <li key={String(o.value)} role="option" aria-selected={o.value === value}
+              className={`${o.value === value ? 'is-sel' : ''} ${k === hi ? 'is-hi' : ''} ${o.muted ? 'is-muted' : ''}`}
+              onPointerEnter={() => setHi(k)} onClick={() => pick(o)}>
+              <span>{o.label}</span>
+              {o.value === value && <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 /* categories: [{ label, items }]; each item may carry a year. Pick a category and a year, then Search. */
 function DocExplorer({ title, categories, yearLabel = 'Year' }) {
   const [cat, setCat] = useState(0);
-  const yearsOf = (c) => [...new Set(categories[c].items.map((i) => i.year).filter(Boolean))];
+  const yearsOf = (c) => [...new Set(categories[c].items.map((i) => i.year).filter(Boolean))].sort(newestFirst);
   const [year, setYear] = useState(ALL);
   const [applied, setApplied] = useState({ cat: 0, year: ALL });
   const years = yearsOf(cat);
@@ -249,19 +308,11 @@ function DocExplorer({ title, categories, yearLabel = 'Year' }) {
       <Title>{title}</Title>
        <form {...rise(1)} className="inv-filters" onSubmit={(e) => { e.preventDefault(); setApplied({ cat, year }); }}>
         {categories.length > 1 && (
-          <label className="inv-select">
-            <select value={cat} onChange={(e) => { const c = +e.target.value; setCat(c); setYear(ALL); setApplied({ cat: c, year: ALL }); }} aria-label="Category">
-              {categories.map((c, k) => <option key={c.label} value={k}>{c.label}</option>)}
-            </select>
-          </label>
+          <Dropdown label="Category" value={cat} options={categories.map((c, k) => ({ value: k, label: c.label }))}
+            onChange={(c) => { setCat(c); setYear(ALL); setApplied({ cat: c, year: ALL }); }} />
         )}
         {years.length > 0 && (
-          <label className="inv-select">
-            <select value={year} onChange={(e) => setYear(e.target.value)} aria-label="Year">
-              <option>{ALL}</option>
-              {years.map((y) => <option key={y}>{y}</option>)}
-            </select>
-          </label>
+          <Dropdown label="Year" value={year} options={[ALL, ...years].map((y) => ({ value: y, label: y }))} onChange={setYear} />
         )}
         <button type="submit" className="inv-search">Search</button>
       </form>
@@ -287,11 +338,8 @@ function YearExplorer({ title, data }) {
     <section className="inv-block">
       <Title>{title}</Title>
        <form {...rise(1)} className="inv-filters" onSubmit={(e) => { e.preventDefault(); setApplied(sel); }}>
-        <label className="inv-select">
-          <select value={sel} onChange={(e) => setSel(+e.target.value)} aria-label="Financial year">
-            {fys.map((f, k) => <option key={f.fy} value={k}>{f.fy}{f.items.length ? '' : ' (no documents)'}</option>)}
-          </select>
-        </label>
+        <Dropdown label="Financial year" value={sel} onChange={setSel}
+          options={fys.map((f, k) => ({ value: k, label: f.items.length ? f.fy : `${f.fy} (no documents)`, muted: !f.items.length }))} />
         <button type="submit" className="inv-search">Search</button>
       </form>
       {shown.length ? (
