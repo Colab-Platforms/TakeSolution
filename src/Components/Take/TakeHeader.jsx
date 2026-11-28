@@ -26,8 +26,26 @@ export default function TakeHeader({ embedded = false }) {
     return () => window.removeEventListener('scroll', on);
   }, [embedded]);
 
-  // on the home page the header sits inside the field-video hero (the page opens on "What If")
-  if (!embedded && pathname === '/') return null;
+  /* Home page: the header is part of the video hero at the top. Once the visitor scrolls down from the
+     hero, this fixed copy stays on screen (dark glass bar) for the rest of the page. It never shows on the
+     white "What If" intro, which has its own logo. */
+  const [homePinned, setHomePinned] = useState(false);
+  useEffect(() => {
+    if (embedded || pathname !== '/') return undefined;
+    let raf = 0;
+    const check = () => {
+      raf = 0;
+      const hero = document.querySelector('.tk-hero2-main');
+      setHomePinned(!!hero && hero.getBoundingClientRect().top < -40);
+    };
+    const on = () => { if (!raf) raf = requestAnimationFrame(check); };
+    check();
+    window.addEventListener('scroll', on, { passive: true });
+    window.addEventListener('resize', on);
+    return () => { window.removeEventListener('scroll', on); window.removeEventListener('resize', on); cancelAnimationFrame(raf); };
+  }, [embedded, pathname]);
+
+  if (!embedded && pathname === '/' && !homePinned) return null;
 
   // Investors / FAQ: scroll to that section of the home page (from another page, open the home page there)
   const goSection = (e, h) => {
@@ -38,7 +56,7 @@ export default function TakeHeader({ embedded = false }) {
   };
 
   return (
-    <header className={`tk-header tk-header-v2 ${embedded ? 'tk-header-embed' : ''} ${solid ? 'is-solid' : ''} ${open ? 'is-open' : ''}`}>
+    <header className={`tk-header tk-header-v2 ${embedded ? 'tk-header-embed' : ''} ${solid || homePinned ? 'is-solid' : ''} ${homePinned ? 'tk-header-pinned' : ''} ${open ? 'is-open' : ''}`}>
       <Link to="/" className="tk-logo" aria-label="TAKE home"><img src="/assets/take/take-logo-white.png" alt="TAKE" /></Link>
       <nav className={`tk-nav ${open ? 'open' : ''}`}>
         {links.map(([n, h]) => {

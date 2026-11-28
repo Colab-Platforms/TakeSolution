@@ -5,20 +5,20 @@ import BottleRotate from './BottleRotate';
 import useScrollFx from './useScrollFx';
 import { TakeIntelligence, TakeLoop, TakeWalkthrough } from './TakeStory';
 import { TakeHero, TakeWhatIf } from './TakeFirst';
-import { SECTIONS, scrollToSection } from './scrollToSection';
+import { SECTIONS, hasLeftHome, scrollToSection } from './scrollToSection';
 import './take.css';
 
 const img = (n) => `/assets/take/${n}`;
 const apps = [
-  ['app1.jpg', 'Report Analysis', 'Your biology. Decoded. Upload a lab report and see each value explained in plain words.'],
-  ['app2.jpg', 'Medical Vault', 'Your reports and prescriptions, kept private in one place and ready when your doctor asks.'],
-  ['app3.jpg', 'Nutrition Log', 'Snap your plate and AI food analysis does the counting. Your meals, read beside your markers.'],
+  ['app-report.jpg', 'Report Analysis', 'Your biology. Decoded. Upload a lab report and see each value explained in plain words.'],
+  ['app-vault.jpg', 'Medical Vault', 'Your reports and prescriptions, kept private in one place and ready when your doctor asks.'],
+  ['app-nutrition.jpg', 'Nutrition Log', 'Snap your plate and AI food analysis does the counting. Your meals, read beside your markers.'],
   ['app4.jpg', 'Wearable sync', 'Apple Watch and WHOOP sync directly. Fitbit and others come in through Apple Health or Google Health Connect.'],
 ];
 const fuel = [
-  ['bottle.jpg', 'Liposomal Berberine HCL', '1000mg · 99% pure · with Ceylon cinnamon and chromium. Metabolic support, built for absorption.', 'Know More'],
-  ['magnesium.webp', 'Magnesium', '440mg elemental · Quad-Mag Complex: bisglycinate, Aquamin®, Lipoza® and citrate', 'Notify Me'],
-  ['bottle.jpg', 'CoQ-10', 'Everyday cellular energy.', 'Notify Me'],
+  ['berberine-v2-render', 'Liposomal Berberine HCL', '1000mg · 99% pure · with Ceylon cinnamon and chromium. Metabolic support, built for absorption.', 'Know More'],
+  ['magnesium-v2-render', 'Magnesium', '440mg elemental · Quad-Mag Complex: bisglycinate, Aquamin®, Lipoza® and citrate', 'Notify Me'],
+  ['bottle.jpg', 'CoQ-10', 'Everyday cellular energy.', 'Notify Me', true],
   ['bottle.jpg', 'Coming Soon', '', 'Notify Me', true],
 ];
 
@@ -44,9 +44,9 @@ const news = [
   ['2016', 'Review', 'Research progress on berberine with a special focus on its oral bioavailability', 'Liu CS et al. · Fitoterapia', 'The delivery problem. Why oral berberine is poorly absorbed and how lipid-based carriers can improve it.'],
 ];
 const investors = [
-  ['Financial Results', 'Quarterly & Annual', '/investor'],
-  ['Annual Reports', 'Company Performance', '/investor'],
-  ['Governance & Disclosures', 'Policies & Exchange Updates', '/investor'],
+  ['Financial Results', 'Quarterly & Annual', '/investor#financial-results'],
+  ['Annual Reports', 'Company Performance', '/investor#annual-reports'],
+  ['Governance & Disclosures', 'Policies & Exchange Updates', '/investor#corporate-governance'],
 ];
 const faqs = [
   ['Why did Take Solutions become Take Limited?', 'Our new name reflects a broader focus. Alongside life-sciences technology, we now build AI products for diagnostics and preventive health. Our listing and shareholders’ holdings are unchanged.'],
@@ -138,6 +138,20 @@ function MemberCard({ src, on, onPlay, onStop, hidden }) {
   );
 }
 
+/* 360-degree studio render of a bottle (Berberine, Magnesium): turns while the pointer is on it,
+   stops where it is when the pointer leaves. On phones a tap starts / stops it. */
+function ProductSpin({ name, alt }) {
+  const ref = useRef(null);
+  const play = () => { const v = ref.current; if (v) { v.muted = true; v.play().catch(() => {}); } };
+  const stop = () => ref.current?.pause();
+  const toggle = () => { const v = ref.current; if (v) { if (v.paused) play(); else stop(); } };
+  return (
+    <div className="tk-rotate tk-spin" onMouseEnter={play} onMouseLeave={stop} onClick={toggle} role="img" aria-label={alt}>
+      <video ref={ref} src={img(`${name}.mp4`)} poster={img(`${name}.jpg`)} muted loop playsInline preload="metadata" aria-hidden="true" />
+    </div>
+  );
+}
+
 function Faq() {
   const [open, setOpen] = useState(0);
   return (
@@ -167,6 +181,8 @@ export default function TakeHome() {
   // opening or refreshing the home page always starts on the landing page, step 01
   useEffect(() => {
     if (window.location.hash) return;
+    // back from another page (Investors, Contact...): skip the "What If" intro and open on the video hero
+    if (hasLeftHome()) window.dispatchEvent(new Event('tk:skip-whatif'));
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, []);
   // opened as /#investors or /#faq (header link from another page): go straight to that section
@@ -212,12 +228,21 @@ export default function TakeHome() {
           <h2 data-reveal="up">Nutrition,<br />Beyond The Plate.</h2>
         </div>
         <div className="tk-cards tk-cards-4">
-          {fuel.map(([i, t, d, a, blur], k) => (
+          {/* the unnamed next product ("Coming Soon") is hidden for now; remove the filter to show it again */}
+          {fuel.filter(([, t]) => t !== 'Coming Soon').map(([i, t, d, a, blur], k) => (
             <article key={t} data-reveal="up" style={{ '--i': k }}>
-              {spin[i]
-                ? <BottleRotate src={img(i)} label={img(spin[i].label)} shade={img(spin[i].shade)} geometry={spin[i].geometry} alt={t} disabled={blur} />
+              {/-(spin|render)$/.test(i)
+                ? <ProductSpin name={i} alt={t} />
+                : spin[i]
+                ? (
+                  <div className="tk-soon-wrap">
+                    <BottleRotate src={img(i)} label={img(spin[i].label)} shade={img(spin[i].shade)} geometry={spin[i].geometry} alt={t} disabled={blur} />
+                    {blur && t !== 'Coming Soon' && <span className="tk-soon">Coming Soon</span>}
+                  </div>
+                )
                 : <div className="tk-rotate tk-rotate-static"><img className="tk-rotate-img" src={img(i)} alt={t} loading="lazy" draggable="false" /></div>}
-              <h4>{t}</h4>{d && <p>{d}</p>}<Link to="/contact">{a}</Link>
+              {/* the unnamed next product keeps its blurred bottle and Notify Me, without the "Coming Soon" title */}
+              {t !== 'Coming Soon' && <h4>{t}</h4>}{d && <p>{d}</p>}<a href="https://shop.take.health/" target="_blank" rel="noopener noreferrer">{a}</a>
             </article>
           ))}
         </div>
